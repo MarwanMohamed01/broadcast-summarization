@@ -1,0 +1,5 @@
+/* Minor tweaks on top of Tailwind */
+
+.rc-slider-handle:focus-visible {
+  box-shadow: 0 0 0 3px #3b82f655;
+}

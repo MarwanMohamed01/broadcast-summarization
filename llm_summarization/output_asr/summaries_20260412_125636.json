@@ -1,0 +1,105 @@
+{
+  "run_timestamp": "2026-04-12T23:15:12.752369",
+  "chunks_count": 59,
+  "chunks_source": "C:\\Users\\lenovo\\Desktop\\GIU Berlin\\Masters\\ticker_extraction\\asr\\output\\chunks",
+  "level1_intermediate": "C:\\Users\\lenovo\\Desktop\\GIU Berlin\\Masters\\ticker_extraction\\llm_summarization\\output_asr\\level1_20260412_125636.json",
+  "level2_system_prompt": "You are a professional news editor. You receive a list of paragraph summaries, each covering 15 minutes of a ~14-hour TV news broadcast. Write a 5-7 paragraph final summary covering all the day's major stories and themes in chronological order. Each paragraph should focus on a distinct topic or time block. Write in clear neutral journalistic language. Do not add information not present in the input. Do not use bullet points or headings.",
+  "results": [
+    {
+      "provider": "groq",
+      "model_id": "llama-3.3-70b-versatile",
+      "display_name": "Llama 3.3 70B (Groq)",
+      "summary": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_seconds": 0.09,
+      "status": "error",
+      "error": "Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kg9vrby3f8zb98sje8rnrfb2` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98522, Requested 7228. Please try again in 1h22m48s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "timestamp": "2026-04-12T23:13:10.870665"
+    },
+    {
+      "provider": "groq",
+      "model_id": "llama-3.1-8b-instant",
+      "display_name": "Llama 3.1 8B (Groq)",
+      "summary": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_seconds": 0.09,
+      "status": "error",
+      "error": "Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.1-8b-instant` in organization `org_01kg9vrby3f8zb98sje8rnrfb2` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 11335, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "timestamp": "2026-04-12T23:13:10.964090"
+    },
+    {
+      "provider": "groq",
+      "model_id": "qwen/qwen3-32b",
+      "display_name": "Qwen3 32B (Groq)",
+      "summary": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_seconds": 0.14,
+      "status": "error",
+      "error": "Error code: 413 - {'error': {'message': 'Request too large for model `qwen/qwen3-32b` in organization `org_01kg9vrby3f8zb98sje8rnrfb2` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 12388, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "timestamp": "2026-04-12T23:13:11.103970"
+    },
+    {
+      "provider": "groq",
+      "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "display_name": "Llama 4 Scout 17B (Groq)",
+      "summary": "The day's major stories and themes began with escalating tensions between the US and Iran, with US President Donald Trump dismissing the idea of direct talks and making new demands, including Iran's surrender of its nuclear program, missiles, and influence in the region. The US and Iran engaged in a series of military exchanges, with the US rescuing a downed airman from Iranian territory and Iran launching drone and missile attacks on Gulf countries, including Kuwait, Bahrain, and Israel. The conflict also spilled over into Lebanon, with Israeli airstrikes killing dozens of people, including civilians, and Iranian-backed Hezbollah fighters. The humanitarian crisis in Gaza deepened, with Hamas rejecting calls to disarm as part of a ceasefire plan and civilians struggling to survive amidst destruction and restrictions on aid. The global economy felt the pinch, with energy prices soaring and countries such as Sri Lanka and Indian-administered Kashmir facing economic hardship. Diplomatic efforts, led by Pakistan and other countries, aimed to de-escalate tensions, but the situation remained volatile, with both sides hardening their positions. The conflict raised concerns about the potential for broader war, nuclear accidents, and devastating consequences for the region.",
+      "input_tokens": 9886,
+      "output_tokens": 238,
+      "latency_seconds": 0.99,
+      "status": "success",
+      "error": null,
+      "timestamp": "2026-04-12T23:13:12.089491"
+    },
+    {
+      "provider": "ollama",
+      "model_id": "llama3.2",
+      "display_name": "Llama 3.2 3B (Ollama local)",
+      "summary": "The day began with a tense standoff between the US and Iran, as President Donald Trump dismissed direct talks and made demands that include surrendering nuclear capabilities and influence in the region. This rhetoric has been seen as strengthening Iran's position, rather than weakening it. Meanwhile, news emerged of a successful rescue operation for a US Airman held captive by Iranian forces, with President Trump announcing on social media that the pilot had been behind enemy lines but would be \"just fine\". The rescue operation involved intense fighting and dozens of aircraft, raising questions about the effectiveness of US military operations in hostile territory.\n\nThe situation in Gaza remained volatile, despite ceasefire talks. Hamas announced that it will not disarm during negotiations, citing Israeli aggression and a refusal to meet international demands for a withdrawal from occupied territories. Daily shootings and bombings continued, with religious leaders calling for peace amidst the Easter holiday celebrations. The ongoing conflict has resulted in significant loss of life and displacement of civilians.\n\nIn other global news, countries are seeking reliable energy supplies as they navigate the challenges of climate change and economic uncertainty. Greece is reassessing its nuclear energy options, despite having no history of nuclear power, due to growing concerns about energy security and the need for baseload electricity. The country's reliance on imported fossil fuels has driven up costs, while climate change and renewable energy efforts have reignited the debate over nuclear power.\n\nThe international community is also grappling with the implications of emerging technologies, including nuclear power. As countries seek to stabilize energy costs and support their economic ambitions, some are exploring the potential benefits of emerging nuclear technologies. In Greece's case, this could involve the development of large data centers and undersea cables, which would require reliable and stable baseload electricity.\n\nThe situation in the Middle East remains a major concern, with ongoing tensions between Israel and Hamas in Gaza. The US has been critical of Israeli actions in the region, while also expressing concerns about Iranian aggression. As the conflict continues to simmer, international leaders are urging restraint and calling for a peaceful resolution.\n\nIn other news, the successful rescue of the US Airman from Iranian captivity has raised questions about the effectiveness of US military operations in hostile territory. The operation involved intense fighting and dozens of aircraft, highlighting the risks faced by US personnel serving overseas.\n\nAs the day drew to a close, international leaders were focusing on finding ways to stabilize global energy markets and reduce tensions between countries. With climate change and economic uncertainty posing significant challenges, the need for reliable and sustainable energy supplies is becoming increasingly pressing.",
+      "input_tokens": 482,
+      "output_tokens": 502,
+      "latency_seconds": 91.33,
+      "status": "success",
+      "error": null,
+      "timestamp": "2026-04-12T23:14:43.422832"
+    },
+    {
+      "provider": "gemini",
+      "model_id": "gemini-2.5-flash",
+      "display_name": "Gemini 2.5 Flash",
+      "summary": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_seconds": 0.32,
+      "status": "error",
+      "error": "429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyCTMtJ07pmnynyT5OOOfGMxT0EOsXm74Y0",
+      "timestamp": "2026-04-12T23:14:43.743412"
+    },
+    {
+      "provider": "huggingface",
+      "model_id": "meta-llama/Meta-Llama-3-8B-Instruct",
+      "display_name": "Llama 3 8B (HuggingFace)",
+      "summary": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_seconds": 0.87,
+      "status": "error",
+      "error": "(Request ID: Root=1-69dc0b44-772078e66d7fe2a357ab068d;d1e29f78-391d-4e83-a7ff-d3c132521eef)\n\nBad request:",
+      "timestamp": "2026-04-12T23:14:44.620528"
+    },
+    {
+      "provider": "cohere",
+      "model_id": "command-r-08-2024",
+      "display_name": "Command-R (Cohere)",
+      "summary": "The day's news coverage focused heavily on the escalating tensions and ongoing conflicts in the Middle East, particularly between the United States, Iran, and Israel. The situation was characterized by a series of threats, retaliatory actions, and a potential breakdown in diplomatic efforts.\n\nThe early segments highlighted the rescue of a US airman from Iranian territory, an event that added fuel to the already tense relations between the two countries. This incident was followed by a series of developments, including Gaza's ceasefire plan, which faced challenges due to Hamas' refusal to disarm. The subdued Easter celebrations in the occupied Palestinian territories reflected the impact of the ongoing Iran war on religious observances.\n\nAs the day progressed, the news shifted to the escalating military conflict, with a focus on the potential consequences for the Gulf region. Experts analyzed the diplomatic strategies and the challenges of finding a negotiated solution, while also discussing the impact of the war on global economies. The threat of further military action and the potential for a broader regional conflict loomed large.\n\nThe humanitarian crisis in Gaza was a recurring theme, with reports of Israeli airstrikes and restrictions on aid exacerbating an already dire situation. Palestinians in Gaza faced severe shortages and limited access to basic necessities, while the international community's response was criticized as inadequate.\n\nThroughout the day, the news coverage also highlighted the far-reaching effects of the Middle East conflict. From the impact on artisans in Kashmir to the rising oil prices affecting the French fishing industry, the war's influence was felt across various sectors and regions. Additionally, the use of AI technology to combat gun violence and the discovery of explosives near critical infrastructure added to the complexity of the global situation.",
+      "input_tokens": 8256.0,
+      "output_tokens": 337.0,
+      "latency_seconds": 28.13,
+      "status": "success",
+      "error": null,
+      "timestamp": "2026-04-12T23:15:12.751368"
+    }
+  ]
+}

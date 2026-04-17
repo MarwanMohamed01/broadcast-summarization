@@ -1,0 +1,119 @@
+{
+  "run_timestamp": "2026-03-13T16:58:15.961543",
+  "news_items_count": 18,
+  "news_items_source": "C:\\Users\\lenovo\\Desktop\\GIU Berlin\\Masters\\ticker_extraction\\ticker_extraction_v6\\output\\final\\news_items.json",
+  "prompt": {
+    "system": "You are a professional news editor. Your task is to read a list of news headlines extracted from a TV news ticker and produce a single, coherent summary paragraph that covers all the key stories. Write in clear, neutral journalistic language. Do not add information that is not in the headlines. Do not use bullet points or lists — write one flowing paragraph.",
+    "user": "Below are 18 news headlines extracted from an Al Jazeera news ticker. Summarize ALL of them into one coherent paragraph.\n\n1. SUDAN'S KORDOFAN REGION BECOMES LATEST BATTLEGROUND BETWEEN SUDANESE ARMY AND RSF\n2. U.S. PRESIDENT DECLARES SAUDI ARABIA MAJOR NON-NATO ALLY AFTER CROWN PRINCE'S VISIT\n3. SEVERAL PEOPLE KILLED AS RUSSIAN DRONES AND MISSILES HIT MULTIPLE CITIES IN UKRAINE\n4. INDONESIA RAISES ALERT FOR MOUNT SEMERU VOLCANOLCANCANO TO Highest LEVEL AFTER ERUPTIONS\n5. U.S. PRESIDENT SAYS 'GAZA BOARD OF PEACE' WILL INCLUDE REPS FROM 'MOST MAJOR COUNTRIES'\n6. ISRAELI FORCES AND SETTLERS HAVE KILLED 1,073 PALESTINIANS IN OCCUPIED WEST BANK SINCE OCTOBER 2023\n7. TWo CABINET MINISTERS RESIGN IN THE PHILIPPINES AFTER BEING IMPLICATED IN CORRUPTION SCANDAL\n8. CHINA BANS ALL IMPORTS OF JAPANESE SEAFOOD AS TAIWAN DIPLOMATIC DISPUTE ESCALATES\n9. U.S. CONGRESS APPROVES BILL FORCING JUSTICE DEPT TO RELEASE REMAINING EPSTEIN FILES\n10. POLAND CLOSES LAST OPERATING RUSSIAN CONSULATE IN CITy OF GDANSK AFTER RAIL BLAST\n11. AT LEAST Two PEOPLE KILLED AND OTHERS KIDNAPPED AFTER GUNMEN ATTACK CHURCH IN NIGERIA\n12. UN SecURITY COUNCIL PASSES RESOLUTION BACKING TRUMP'S PEACE PLAN FOR GAZA ON MONDAY\n13. ISRAELI ARMY WARNS PEOPLE TO FLEE TWO VILLAGES IN SOUTHERN LEBANON AFTER STRIKES KILL 14\n14. GAZA HEALTH MINISTRY: ISRAEL HAS KILLED AT LEAST 280 PALESTINIANS SINCE OcT 10 CEASEFIRE STARTED\n15. AT LEAST 14 CHILDREN INJURED AND BUILDINGS DAMAGED IN RUSSIAN STRIKES ON UKRAINE UKRAINE'$ PRESIDENT ATTENDE PEACE TALKS\n16. ISRAELI ATTACKS AcROSS GAZA HAVE KILLED AT LEAST 69,513 PALESTINIANS SINCE OCTOBER 2023\n17. SAUDI CROWN PRINCE SAYS INVESTMENT IN U.S. WILL INCREASE TO $1 TRILLION OVER FOUR YEARS\n18. U.S. AND SAUDI ARABIA Strike SEVERAL DEALS AT MEETING INCLUDING SALE OF U.S. MILITARY JETS"
+  },
+  "results": [
+    {
+      "provider": "groq",
+      "model_id": "llama-3.3-70b-versatile",
+      "display_name": "Llama 3.3 70B (Groq)",
+      "summary": "Violence and diplomatic developments are unfolding across the globe, with Sudan's Kordofan region becoming the latest battleground between the Sudanese army and the RSF. In Ukraine, Russian drones and missiles have hit multiple cities, killing several people, while in Nigeria, gunmen have attacked a church, killing at least two people and kidnapping others. The Israeli-Palestinian conflict continues to escalate, with Israeli forces and settlers having killed over 1,073 Palestinians in the occupied West Bank since October 2023, and at least 69,513 Palestinians killed in Gaza since the same period. The Gaza Health Ministry has also reported that at least 280 Palestinians have been killed since the October 10 ceasefire started. Meanwhile, Israeli strikes in southern Lebanon have prompted the army to warn people to flee two villages. In other news, the US President has declared Saudi Arabia a major non-NATO ally after a visit from the Saudi Crown Prince, who announced plans to increase investment in the US to $1 trillion over four years, and the two countries have struck several deals, including the sale of US military jets. The US Congress has approved a bill forcing the Justice Department to release remaining Epstein files, while in the Philippines, two cabinet ministers have resigned after being implicated in a corruption scandal. China has banned all imports of Japanese seafood as a diplomatic dispute with Taiwan escalates, and Poland has closed the last operating Russian consulate in the city of Gdansk after a rail blast. The UN Security Council has passed a resolution backing a peace plan for Gaza, and the US President has announced plans for a 'Gaza Board of Peace' that will include representatives from most major countries. Additionally, Indonesia has raised the alert level for Mount Semeru to its highest level after eruptions, and Ukraine's president has attended peace talks amidst ongoing Russian strikes that have injured at least 14 children and damaged buildings.",
+      "input_tokens": 715,
+      "output_tokens": 379,
+      "latency_seconds": 1.84,
+      "status": "success",
+      "error": null,
+      "timestamp": "2026-03-13T16:52:46.956296"
+    },
+    {
+      "provider": "groq",
+      "model_id": "llama-3.1-8b-instant",
+      "display_name": "Llama 3.1 8B (Groq)",
+      "summary": "Global tensions and conflicts continue to escalate, with multiple hotspots around the world. In Sudan, the Kordofan region has become the latest battleground between the Sudanese army and the Rapid Support Forces. Meanwhile, in Ukraine, Russian drones and missiles have hit multiple cities, resulting in several deaths. In the Middle East, the Israeli-Palestinian conflict remains a major concern, with Israeli forces and settlers killing over 1,000 Palestinians in the occupied West Bank since October 2023, and at least 280 Palestinians killed in Gaza since the October ceasefire started. The US has declared Saudi Arabia a major non-NATO ally, following a visit from the Saudi crown prince, who also announced that Saudi investment in the US will increase to $1 trillion over four years. The US and Saudi Arabia have also struck several deals, including the sale of US military jets. In other developments, Indonesia has raised the alert level for Mount Semeru volcano after eruptions, while China has banned all imports of Japanese seafood amid a diplomatic dispute with Taiwan. In the Philippines, two cabinet ministers have resigned following a corruption scandal, and Poland has closed its last operating Russian consulate in Gdansk after a rail blast. In Nigeria, gunmen have attacked a church, killing at least two people and kidnapping others. The UN Security Council has passed a resolution backing the Trump peace plan for Gaza, while the US Congress has approved a bill forcing the Justice Department to release remaining Epstein files.",
+      "input_tokens": 715,
+      "output_tokens": 294,
+      "latency_seconds": 0.57,
+      "status": "success",
+      "error": null,
+      "timestamp": "2026-03-13T16:52:47.531110"
+    },
+    {
+      "provider": "groq",
+      "model_id": "qwen/qwen3-32b",
+      "display_name": "Qwen3 32B (Groq)",
+      "summary": "<think>\nOkay, let's tackle this. The user wants a coherent summary of 18 news headlines from Al Jazeera. First, I need to read through all the headlines carefully to understand the key points.\n\nStarting with Sudan's Kordofan region becoming a battleground. That's a conflict point. Then the U.S. designating Saudi Arabia as a major non-NATO ally after the Crown Prince's visit. That's a diplomatic move. Next, Russia's attacks on Ukraine causing casualties. Indonesia's volcano alert is a natural disaster. The U.S. president's Gaza peace plan involving major countries. The Israeli forces and settlers killing Palestinians in the West Bank. Philippines losing two cabinet ministers to corruption. China banning Japanese seafood due to Taiwan tensions. U.S. Congress pushing for Epstein files. Poland closing a Russian consulate after a rail blast. Nigeria's church attack with deaths and kidnappings. UN Security Council backing Trump's Gaza plan. Israel warning villages in Lebanon after strikes. Gaza's health ministry reporting deaths since the ceasefire. Russian strikes in Ukraine injuring children and damaging buildings. Israeli attacks in Gaza with high casualties. Saudi investment in the U.S. and military deals.\n\nNow, I need to group similar topics. The Middle East conflicts (Sudan, Israel-Palestine, Saudi-U.S. relations), Ukraine and Russia, Indonesia's volcano, Philippines corruption, China-Japan-Taiwan, U.S. Congress, Poland, Nigeria, UN resolution, and the military deals.\n\nI should start by mentioning the Sudan conflict first as it's the first headline. Then move to the U.S.-Saudi alliance and related deals. Next, the Russian attacks on Ukraine, including the casualties and the volcano alert. Then the Israeli-Palestinian issues, including the West Bank, Gaza casualties, and the UN resolution. The Philippines corruption, China's seafood ban, U.S. Congress, Poland's consulate closure, Nigeria's church attack. Finally, the Saudi investment and military deals.\n\nNeed to ensure the flow connects these points without listing them. Use transitions like \"Meanwhile,\" \"Additionally,\" \"In other news,\" etc. Check for any missing key points and ensure all 18 are covered. Avoid adding extra info, just the facts from the headlines. Make sure the paragraph is neutral and journalistic. Let me piece it together step by step, making sure each headline is addressed concisely.\n</think>\n\nSudan’s Kordofan region has erupted into conflict as the Sudanese army and the paramilitary Rapid Support Forces (RSF) clash, while in Ukraine, Russian drones and missiles struck multiple cities, killing several people and damaging infrastructure. Meanwhile, Indonesia raised its highest alert for Mount Semeru’s volcanic activity after recent eruptions. In the Middle East, Israeli forces and settlers were reported to have killed 1,073 Palestinians in the occupied West Bank since October 2023, and the Gaza Health Ministry stated that at least 280 Palestinians have been killed since a ceasefire began on October 10. The U.S. president announced a “Gaza Board of Peace” involving representatives from major countries, while the UN Security Council passed a resolution backing former U.S. President Donald Trump’s peace plan for Gaza. Separately, the U.S. designated Saudi Arabia a major non-NATO ally following Crown Prince Mohammed bin Salman’s visit, and the two nations struck military deals, including the sale of U.S. jets, alongside a pledge to boost Saudi investments in the U.S. to $1 trillion over four years. In other developments, two Philippine cabinet ministers resigned amid a corruption scandal, China banned Japanese seafood imports amid escalating tensions with Taiwan, and Poland closed its last Russian consulate in Gdańsk after a rail blast. Nigeria reported two killed and others kidnapped in a church attack, while Lebanon’s southern villages faced Israeli evacuation warnings after strikes killed 14. Additionally, U.S. Congress approved a bill to release remaining files from the Jeffrey Epstein case, and Ukraine’s president attended peace talks despite Russian strikes that injured children and damaged buildings.",
+      "input_tokens": 717,
+      "output_tokens": 824,
+      "latency_seconds": 1.96,
+      "status": "success",
+      "error": null,
+      "timestamp": "2026-03-13T16:52:49.488194"
+    },
+    {
+      "provider": "groq",
+      "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "display_name": "Llama 4 Scout 17B (Groq)",
+      "summary": "Here is a summary of the 18 news headlines in one coherent paragraph:\n\nViolence continues to escalate in several regions, with Sudan's Kordofan region becoming a new battleground between the Sudanese army and the RSF, while Israeli forces and settlers have killed 1,073 Palestinians in the occupied West Bank since October 2023, and Israeli attacks across Gaza have killed at least 69,513 Palestinians since then. In Ukraine, Russian drones and missiles have hit multiple cities, killing several people and injuring at least 14 children, with President Volodymyr Zelensky attending peace talks. The conflict in Gaza has also spilled over into Lebanon, where Israeli strikes have killed 14 people, prompting the Israeli army to warn residents to flee two villages. Meanwhile, diplomatic efforts are underway, with the US President announcing a \"Gaza Board of Peace\" that will include representatives from major countries, and the UN Security Council passing a resolution backing a peace plan for Gaza. In other news, the US has declared Saudi Arabia a major non-NATO ally, with Crown Prince Mohammed bin Salman announcing a $1 trillion investment in the US over four years, and the two countries striking several deals, including the sale of US military jets. Additionally, China has banned all imports of Japanese seafood amid a diplomatic dispute with Taiwan, while Indonesia has raised the alert level for Mount Semeru volcano to its highest level after eruptions. There have also been developments in the Philippines, where two cabinet ministers have resigned over a corruption scandal, and in Nigeria, where gunmen have attacked a church, killing at least two people and kidnapping others. Finally, the US Congress has approved a bill forcing the Justice Department to release remaining Epstein files, and Poland has closed its last operating Russian consulate in Gdansk after a rail blast.",
+      "input_tokens": 699,
+      "output_tokens": 366,
+      "latency_seconds": 0.98,
+      "status": "success",
+      "error": null,
+      "timestamp": "2026-03-13T16:52:50.466631"
+    },
+    {
+      "provider": "ollama",
+      "model_id": "llama3.2",
+      "display_name": "Llama 3.2 3B (Ollama local)",
+      "summary": "Here is a summary paragraph covering all 18 news headlines:\n\nTensions are escalating across the globe, with multiple conflicts and diplomatic crises unfolding simultaneously. In Sudan, the Kordofan region has become a battleground between the Sudanese army and the Rapid Support Forces (RSF), while in Ukraine, Russian drones and missiles have struck multiple cities, killing several people. In the Middle East, a diplomatic dispute between China and Japan has led to China banning all imports of Japanese seafood, and Saudi Arabia has strengthened its ties with the US, with President declaring the country a major non-NATO ally after a visit by Crown Prince. In Gaza, the situation remains dire, with Israel having killed at least 280 Palestinians since a ceasefire started in October, and the Israeli army warning people to flee two villages in southern Lebanon after strikes killed 14. The US Congress has approved a bill forcing the Justice Department to release remaining Epstein files, while a corruption scandal in the Philippines has led to the resignation of two cabinet ministers. In other news, a UN Security Council resolution has been passed backing Trump's peace plan for Gaza, and a meeting between the US and Saudi Arabia has resulted in several deals, including the sale of US military jets. Additionally, a church attack in Nigeria has killed at least two people and kidnapped others, while a rail blast in Poland has led to the closure of the last operating Russian consulate in the city of Gdansk.",
+      "input_tokens": 705,
+      "output_tokens": 288,
+      "latency_seconds": 91.95,
+      "status": "success",
+      "error": null,
+      "timestamp": "2026-03-13T16:54:22.419619"
+    },
+    {
+      "provider": "ollama",
+      "model_id": "llama3.1:8b",
+      "display_name": "Llama 3.1 8B (Ollama local)",
+      "summary": "Global tensions and conflicts continue to escalate, with multiple hotspots around the world. In Sudan, the Kordofan region has become the latest battleground between the Sudanese army and the Rapid Support Forces. Meanwhile, in Ukraine, Russian drones and missiles have struck multiple cities, killing several people. In the Middle East, the Israeli-Palestinian conflict has intensified, with Israeli forces and settlers responsible for the deaths of over 1,000 Palestinians in the occupied West Bank since October 2023, and at least 280 Palestinians killed in Gaza since the October ceasefire. The US has declared Saudi Arabia a major non-NATO ally, and the two countries have struck several deals, including the sale of US military jets, with Saudi investment in the US set to increase to $1 trillion over four years. In other developments, the Philippines has seen two cabinet ministers resign over a corruption scandal, while China has banned all imports of Japanese seafood in a diplomatic dispute with Taiwan. In Indonesia, a volcano has erupted, prompting a high alert, and in Nigeria, at least two people were killed and others kidnapped in a church attack. The US Congress has also approved a bill forcing the release of remaining Epstein files, and Poland has closed its last operating Russian consulate in the city of Gdansk.",
+      "input_tokens": 695,
+      "output_tokens": 259,
+      "latency_seconds": 222.73,
+      "status": "success",
+      "error": null,
+      "timestamp": "2026-03-13T16:58:05.149521"
+    },
+    {
+      "provider": "gemini",
+      "model_id": "gemini-1.5-flash",
+      "display_name": "Gemini 1.5 Flash",
+      "summary": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_seconds": 0.3,
+      "status": "error",
+      "error": "404 Client Error: Not Found for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyCTMtJ07pmnynyT5OOOfGMxT0EOsXm74Y0",
+      "timestamp": "2026-03-13T16:58:05.448748"
+    },
+    {
+      "provider": "huggingface",
+      "model_id": "meta-llama/Meta-Llama-3-8B-Instruct",
+      "display_name": "Llama 3 8B (HuggingFace)",
+      "summary": "Global tensions continue to escalate as multiple conflicts and diplomatic disputes unfold across the world. In Sudan, the Kordofan region has become the latest battleground between the Sudanese army and the Rapid Support Forces. Meanwhile, in the Middle East, the Israeli-Palestinian conflict has resulted in the deaths of over 1,000 Palestinians in the occupied West Bank since October 2023, with Israel's military warning people to flee two villages in southern Lebanon after strikes killed 14. In Gaza, the health ministry reports that at least 280 Palestinians have been killed since the October 10 ceasefire started, while Israeli attacks across the territory have resulted in the deaths of at least 69,513 Palestinians since October 2023. The United States has declared Saudi Arabia a major non-NATO ally after Crown Prince Mohammed bin Salman's visit, with the two countries striking several deals, including the sale of US military jets, and increasing investment to $1 trillion over four years. In Ukraine, Russian drones and missiles have hit multiple cities, killing several people and injuring at least 14 children, while the country's president attends peace talks. Indonesia has raised the alert level for Mount Semeru volcano to its highest level after eruptions, and China has banned all imports of Japanese seafood as a diplomatic dispute with Taiwan escalates. In the Philippines, two cabinet ministers have resigned after being implicated in a corruption scandal, and in Nigeria, gunmen have attacked a church, killing at least two people and kidnapping others. The United Nations Security Council has passed a resolution backing the Trump peace plan for Gaza, and the US Congress has approved a bill forcing the Justice Department to release remaining Epstein files. Additionally, Poland has closed the last operating Russian consulate in the city of Gdansk after a rail blast.",
+      "input_tokens": 715,
+      "output_tokens": 357,
+      "latency_seconds": 5.2,
+      "status": "success",
+      "error": null,
+      "timestamp": "2026-03-13T16:58:10.648337"
+    },
+    {
+      "provider": "cohere",
+      "model_id": "command-r-08-2024",
+      "display_name": "Command-R (Cohere)",
+      "summary": "Conflict and diplomatic tensions dominate the global news agenda, with several regions facing escalating violence and political upheaval. In Sudan, the Kordofan region has become the latest flashpoint, witnessing battles between the Sudanese army and the RSF. Meanwhile, the U.S. President's declaration of Saudi Arabia as a major non-NATO ally after the Crown Prince's visit has raised concerns, particularly as the kingdom pledges a significant increase in investment in the U.S. over the next four years. The ongoing conflict in Ukraine took a deadly turn as Russian drones and missiles struck multiple cities, while Indonesia raised the alert level for Mount Semeru volcano after eruptions. The situation in the Middle East remains critical, with Israeli forces and settlers killing over a thousand Palestinians in the occupied West Bank since October 2023. Gaza, in particular, has seen a surge in violence, with the Israeli army warning residents to flee two villages in southern Lebanon after strikes killed 14 people. The U.S. Congress has approved a bill to release the remaining Epstein files, and Poland has closed the last operating Russian consulate in Gdansk following a rail blast. Additionally, a corruption scandal in the Philippines led to the resignation of two cabinet ministers. As diplomatic disputes escalate, China has banned all imports of Japanese seafood, and the UN Security Council passed a resolution backing Trump's peace plan for Gaza.",
+      "input_tokens": 741.0,
+      "output_tokens": 274.0,
+      "latency_seconds": 5.31,
+      "status": "success",
+      "error": null,
+      "timestamp": "2026-03-13T16:58:15.959543"
+    }
+  ]
+}

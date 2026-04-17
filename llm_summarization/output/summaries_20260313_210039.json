@@ -1,0 +1,23 @@
+{
+  "run_timestamp": "2026-03-13T21:00:39.422430",
+  "news_items_count": 18,
+  "news_items_source": "C:\\Users\\lenovo\\Desktop\\GIU Berlin\\Masters\\ticker_extraction\\ticker_extraction_v6\\output\\final\\news_items.json",
+  "prompt": {
+    "system": "You are a professional news editor. Your task is to read a list of news headlines extracted from a TV news ticker and produce a single, coherent summary paragraph that covers all the key stories. Write in clear, neutral journalistic language. Do not add information that is not in the headlines. Do not use bullet points or lists — write one flowing paragraph.",
+    "user": "Below are 18 news headlines extracted from an Al Jazeera news ticker. Summarize ALL of them into one coherent paragraph.\n\n1. SUDAN'S KORDOFAN REGION BECOMES LATEST BATTLEGROUND BETWEEN SUDANESE ARMY AND RSF\n2. U.S. PRESIDENT DECLARES SAUDI ARABIA MAJOR NON-NATO ALLY AFTER CROWN PRINCE'S VISIT\n3. SEVERAL PEOPLE KILLED AS RUSSIAN DRONES AND MISSILES HIT MULTIPLE CITIES IN UKRAINE\n4. INDONESIA RAISES ALERT FOR MOUNT SEMERU VOLCANOLCANCANO TO Highest LEVEL AFTER ERUPTIONS\n5. U.S. PRESIDENT SAYS 'GAZA BOARD OF PEACE' WILL INCLUDE REPS FROM 'MOST MAJOR COUNTRIES'\n6. ISRAELI FORCES AND SETTLERS HAVE KILLED 1,073 PALESTINIANS IN OCCUPIED WEST BANK SINCE OCTOBER 2023\n7. TWo CABINET MINISTERS RESIGN IN THE PHILIPPINES AFTER BEING IMPLICATED IN CORRUPTION SCANDAL\n8. CHINA BANS ALL IMPORTS OF JAPANESE SEAFOOD AS TAIWAN DIPLOMATIC DISPUTE ESCALATES\n9. U.S. CONGRESS APPROVES BILL FORCING JUSTICE DEPT TO RELEASE REMAINING EPSTEIN FILES\n10. POLAND CLOSES LAST OPERATING RUSSIAN CONSULATE IN CITy OF GDANSK AFTER RAIL BLAST\n11. AT LEAST Two PEOPLE KILLED AND OTHERS KIDNAPPED AFTER GUNMEN ATTACK CHURCH IN NIGERIA\n12. UN SecURITY COUNCIL PASSES RESOLUTION BACKING TRUMP'S PEACE PLAN FOR GAZA ON MONDAY\n13. ISRAELI ARMY WARNS PEOPLE TO FLEE TWO VILLAGES IN SOUTHERN LEBANON AFTER STRIKES KILL 14\n14. GAZA HEALTH MINISTRY: ISRAEL HAS KILLED AT LEAST 280 PALESTINIANS SINCE OcT 10 CEASEFIRE STARTED\n15. AT LEAST 14 CHILDREN INJURED AND BUILDINGS DAMAGED IN RUSSIAN STRIKES ON UKRAINE UKRAINE'$ PRESIDENT ATTENDE PEACE TALKS\n16. ISRAELI ATTACKS AcROSS GAZA HAVE KILLED AT LEAST 69,513 PALESTINIANS SINCE OCTOBER 2023\n17. SAUDI CROWN PRINCE SAYS INVESTMENT IN U.S. WILL INCREASE TO $1 TRILLION OVER FOUR YEARS\n18. U.S. AND SAUDI ARABIA Strike SEVERAL DEALS AT MEETING INCLUDING SALE OF U.S. MILITARY JETS"
+  },
+  "results": [
+    {
+      "provider": "gemini",
+      "model_id": "gemini-2.5-flash",
+      "display_name": "Gemini 2.5 Flash",
+      "summary": "The Kordofan region has emerged as the latest battleground between the Sudanese Army and the RSF. In Ukraine, Russian drones and missiles killed several people and injured at least 14 children, damaging buildings in multiple cities, even as Ukraine's president attended peace talks. The Israeli-Palestinian conflict saw Israeli attacks across Gaza kill at least 69,513 Palestinians since October 2023, with the Gaza Health Ministry reporting 280 Palestinian deaths since the October 10 ceasefire began. Israeli forces and settlers have also killed 1,073 Palestinians in the occupied West Bank since October 2023, while the Israeli army warned residents to flee two southern Lebanese villages after strikes killed 14. Amidst these developments, the U.S. President stated a 'Gaza Board of Peace' would include representatives from 'most major countries,' and the UN Security Council passed a resolution backing Trump's peace plan for Gaza. Separately, the U.S. President declared Saudi Arabia a major non-NATO ally after the Crown Prince's visit, during which several deals were struck, including the sale of U.S. military jets, and Saudi Arabia committed to increasing investment in the U.S. to $1 trillion over four years. In other international news, Indonesia raised the alert for Mount Semeru to its highest level following eruptions, and China banned all imports of Japanese seafood as a diplomatic dispute with Taiwan escalated. The Philippines saw two cabinet ministers resign after being implicated in a corruption scandal, while Poland closed its last operating Russian consulate in Gdansk after a rail blast. Additionally, gunmen attacked a church in Nigeria, killing at least two people and kidnapping others, and the U.S. Congress approved a bill to force the Justice Department to release remaining Epstein files.",
+      "input_tokens": 657,
+      "output_tokens": 370,
+      "latency_seconds": 14.48,
+      "status": "success",
+      "error": null,
+      "timestamp": "2026-03-13T21:00:39.421353"
+    }
+  ]
+}

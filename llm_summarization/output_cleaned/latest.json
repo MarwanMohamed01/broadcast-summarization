@@ -1,0 +1,119 @@
+{
+  "run_timestamp": "2026-04-11T14:37:08.006355",
+  "news_items_count": 38,
+  "news_items_source": "C:\\Users\\lenovo\\Desktop\\GIU Berlin\\Masters\\ticker_extraction\\ticker_extraction_v6\\output\\final\\news_items_cleaned.json",
+  "prompt": {
+    "system": "You are a professional news editor. Your task is to read a list of news headlines extracted from a TV news ticker and produce a single, coherent summary paragraph that covers all the key stories. Write in clear, neutral journalistic language. Do not add information that is not in the headlines. Do not use bullet points or lists — write one flowing paragraph.",
+    "user": "Below are 38 news headlines extracted from an Al Jazeera news ticker. Summarize ALL of them into one coherent paragraph.\n\n1. PRESIDENT TRUMP TELLS U.S. MEDIA THAT DEAL IS POSSIBLE BY MONDAY AS IRAN 'NEGOTIATING NOW'\n2. LEBANON HEALTH MINISTRY: 1,461 PEOPLE KILLED AND INJURED IN ISRAELI ATTACKS SINCE START OF WAR\n3. IRAN'S PARLIAMENT SPEAKER WARNS TRUMP'S 'RECKLESS MOVES' MEAN 'WHOLE REGION GOING TO BURN'\n4. IRANIAN MEDIA SAY SENIOR IRANIAN MILITARY COMMANDER HAS BEEN KILLED IN U.S-ISRAELI ATTACKS\n5. MULTIPLE INJURIES REPORTED AFTER IRANIAN MISSILE ATTACK HITS CENTRAL ISRAEL, INCLUDING RESIDENTIAL AREAS\n6. QATAR'S FOREIGN MINISTER'S SOLIDARITY WITH KUWAIT AFTER IRANIAN ATTACKS ON ENERGY FACILITIES\n7. EIGHT OPEC+ COUNTRIES AGREE TO INCREASE PRODUCTION QUOTAS BY 206,000 BARRELS PER DAY FROM MAY\n8. ISRAELI MILITARY STRIKES AREAS AROUND BEIRUT, KILLING AT LEAST FIVE PEOPLE AND INJURING DOZENS\n9. IRAN FOREIGN MINISTRY SPOKESMAN SAYS U.S. HAS DESTROYED DIPLOMATIC PROCESSES ON DEFENCE OF NATION\n10. RESCUE CHARITIES SAY 71 PEOPLE REMAIN MISSING AT SEA AFTER 32 RESCUED NEAR ITALIAN COAST\n11. IRANIAN PRESIDENT'S OFFICE: HORMUZ WILL REOPEN WHEN TRANSIT REVENUES COMPENSATE WAR DAMAGES\n12. IRAN SAYS U.S.-ISRAELI STRIKE HAS KILLED 13 PEOPLE IN A RESIDENTIAL AREA SOUTHWEST OF TEHRAN\n13. UN URGES WORLD TO PREVENT 'ATROCIOUS ACTS' AFTER TRUMP THREATS\n14. IRAN'S REVOLUTIONARY GUARDS SAYS IT HAS TARGETED PETROCHEMICAL PLANTS IN UAE, KUWAIT AND BAHRAIN\n15. HAMAS SAYS IT WILL NOT DISARM BECAUSE PALESTINIANS CONTINUE TO BE TARGETED BY ISRAEL IN THE GAZA STRIP\n16. TRUMP THREATENS STRIKES ON IRAN'S POWER PLANTS IF HORMUZ IS NOT OPENED BY 0000 GMT WEDNESDAY\n17. SIX PEOPLE INJURED BY MISSILE INTERCEPTION DEBRIS IN RESIDENTIAL AREA OF NORI: HEALTH MINISTRY\n18. U.S. FORCES RESCUE MISSING AIRMAN IN IRAN TWO DAYS AFTER AMERICAN FIGHTER JET WENT DOWN\n19. MEDICS SAY ISRAEL KILLED FOUR PALESTINIANS IN NORTHERN GAZA STRIP DESPITE CEASEFIRE\n20. IRAN'S REVOLUTIONARY GUARD ANNOUNCES DEATH OF INTELLIGENCE CHIEF NADEMI\n21. IRAN SAYS STRUCK U.S. FORCES RELOCATED ON KUWAIT'S BUBIYAN ISLAND\n22. TWO PEOPLE KILLED, TWO MISSING AFTER IRANIAN MTS BUILDING IN ISRAELI CITY OF HAIFA\n23. ISRAELI FORCES KILLED 1,138 PALESTINIANS IN OCCUPIED WEST BANK SINCE OCTOBER\n24. ARTEMIS II ASTRONAUTS GLIMPSE MOON'S 'GRAND CANYON' AHEAD OF HISTORIC LUNAR FLYBY\n25. IRAN KILLED 95 PEOPLE ACROSS COUNTRY OVER PAST 24 HOURS, INCLUDING SIX CHILDREN\n26. ISRAELI ARMY ATTACK KILLS WORLD HEALTH ORGANIZATION DRIVER IN GAZA\n27. LEBANESE ARMY SAYS ONE SOLDIER KILLED IN ISRAELI ATTACK IN SOUTHERN LEBANON\n28. IRAN'S REPORTED ATTACK ON ISRAELI-LINKED SHIP OFF COAST OF UAE\n29. QATARI PRIME MINISTER PRESSES FOR 'PEACEFUL MEANS' TO RESOLVE MIDDLE EAST CONFLICT\n30. IRAN'S ATOMIC ENERGY CHIEF ACCUSES UN NUCLEAR WATCHDOG OF INACTION; WARNS OF RISK FROM ATTACK\n31. AUTHORITIES: 2,076 PEOPLE KILLED AND 26,500 INJURED\n32. 5 INFRASTRUCTURE SECOND PHASE IN JANUARY BUT PROGRESS STALLED\n33. GAZA HEALTH MINISTRY: 72,292 PALESTINIANS KILLED IN ISRAELI ATTACKS SINCE OCTOBER 2023\n34. ISRAELI FORCES AND SETTLERS HAVE KILLED 1,138 PALESTINIANS\n35. MORE THAN ARCITIES BOMBED BY U.S. AND ISRAEL OVERNIGHT\n36. IRAN SAYS U.S.-ISRAELI STRIKES KILL AT LEAST 34 PEOPLE ACROSS COUNTRY OVER PAST 24 HOURS\n37. 4 COUNTRIES AGREE OIL QUOTAS BY 206,000 BARRELS\n38. UN NUCLEAR WATCHDOG OF INACTION, WARNS OF RISK FROM ATTACKS ON BUSHEHR POWER PLANT"
+  },
+  "results": [
+    {
+      "provider": "groq",
+      "model_id": "llama-3.3-70b-versatile",
+      "display_name": "Llama 3.3 70B (Groq)",
+      "summary": "Tensions in the Middle East continue to escalate as the US, Israel, and Iran engage in a series of attacks and retaliations. President Trump has stated that a deal with Iran is possible by Monday, despite the country's parliament speaker warning that the region is on the brink of chaos due to Trump's \"reckless moves\". Iranian military commanders have been killed in US-Israeli attacks, and Iran has targeted petrochemical plants in the UAE, Kuwait, and Bahrain, as well as Israeli-linked ships. The conflict has resulted in significant casualties, with Lebanon's health ministry reporting 1,461 people killed and injured in Israeli attacks, while the Gaza health ministry has reported 72,292 Palestinians killed in Israeli attacks since October 2023. Israel has also killed Palestinians in the West Bank and Gaza Strip, including a World Health Organization driver, and has struck areas around Beirut, killing at least five people. Iran has struck back, hitting central Israel with missiles and killing at least 13 people in a residential area southwest of Tehran. The US has threatened to strike Iran's power plants if the Hormuz Strait is not reopened, and has relocated forces to Kuwait's Bubiyan Island. Meanwhile, OPEC+ countries have agreed to increase production quotas, and Qatar's foreign minister has expressed solidarity with Kuwait after Iranian attacks on energy facilities. The UN has urged the world to prevent \"atrocious acts\" and has warned of the risks of attacks on nuclear facilities, such as the Bushehr power plant. Rescue efforts are also underway, with 32 people rescued near the Italian coast, although 71 remain missing. Amidst the chaos, astronauts on the Artemis II mission have glimpsed the moon's \"grand canyon\" ahead of a historic lunar flyby, providing a rare moment of distraction from the conflict.",
+      "input_tokens": 1268,
+      "output_tokens": 368,
+      "latency_seconds": 4.59,
+      "status": "success",
+      "error": null,
+      "timestamp": "2026-04-11T14:26:18.055005"
+    },
+    {
+      "provider": "groq",
+      "model_id": "llama-3.1-8b-instant",
+      "display_name": "Llama 3.1 8B (Groq)",
+      "summary": "A deepening conflict in the Middle East has led to a significant escalation in violence, with multiple countries involved in the crisis. The situation began with Israeli attacks on Lebanon, which have resulted in over 1,400 deaths and injuries since the start of the war. Iran has responded with missile attacks on Israeli residential areas, including a strike that killed 13 people in a southwestern Tehran neighborhood. The US has also been involved, with President Trump threatening strikes on Iran's power plants if the Strait of Hormuz is not reopened by Wednesday. Iran's parliament speaker has warned that Trump's actions will lead to a wider regional conflict. The situation has also led to a rise in tensions between Iran and its neighbors, with reports of Iranian attacks on energy facilities in Kuwait and the UAE. The UN has urged the international community to prevent \"atrocious acts\" in the region. Meanwhile, the humanitarian situation in Gaza continues to deteriorate, with reports of Israeli forces killing dozens of Palestinians, including children. The conflict has also had a significant impact on global oil markets, with OPEC+ countries agreeing to increase production quotas by 206,000 barrels per day.",
+      "input_tokens": 1268,
+      "output_tokens": 232,
+      "latency_seconds": 0.63,
+      "status": "success",
+      "error": null,
+      "timestamp": "2026-04-11T14:26:18.686266"
+    },
+    {
+      "provider": "groq",
+      "model_id": "qwen/qwen3-32b",
+      "display_name": "Qwen3 32B (Groq)",
+      "summary": "The Al Jazeera news ticker highlights escalating tensions between Iran and Israel, with both sides reporting significant casualties and military actions. Iran’s Revolutionary Guards claimed to have targeted petrochemical plants in the UAE, Kuwait, and Bahrain, while Israeli strikes in Lebanon and the occupied West Bank have killed at least 1,138 Palestinians and one Lebanese soldier since October, according to local authorities. Iran reported 95 deaths, including six children, over 24 hours from U.S.-Israeli strikes, with a senior Iranian military commander and intelligence chief killed in recent attacks. Israeli forces also struck residential areas in central Israel and the northern Gaza Strip, injuring dozens and killing four Palestinians despite a ceasefire. U.S. President Trump suggested a potential deal with Iran by Monday, but Iran’s parliament speaker warned that Trump’s “reckless moves” risk igniting regional conflict. Meanwhile, Iran’s president stated the Strait of Hormuz would reopen only when transit revenues compensate for war damages, following U.S. threats to strike power plants if the strait remains closed. The UN urged global action to prevent “atrocious acts” after Trump’s threats, while Qatar’s foreign minister and prime minister called for peaceful resolution of Middle East conflicts. OPEC+ nations agreed to increase oil production by 206,000 barrels per day from May, and U.S. forces rescued a missing airman in Iran after a fighter jet crash. Elsewhere, the Artemis II mission observed the Moon’s “Grand Canyon,” and rescue operations continued for 71 people missing at sea near Italy after 32 were rescued. Gaza’s health ministry reported 72,292 Palestinian deaths since October 2023, and Lebanon’s health ministry documented 1,461 casualties from Israeli attacks. Iran’s atomic energy chief accused the UN nuclear watchdog of inaction, warning of risks to the Bushehr power plant amid ongoing strikes.",
+      "input_tokens": 1311,
+      "output_tokens": 904,
+      "latency_seconds": 3.11,
+      "status": "success",
+      "error": null,
+      "timestamp": "2026-04-11T14:26:21.792442"
+    },
+    {
+      "provider": "groq",
+      "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "display_name": "Llama 4 Scout 17B (Groq)",
+      "summary": "Here is a summary of the 38 news headlines in one coherent paragraph:\n\nThe conflict between Iran and Israel has escalated, with Iranian President Trump's suggesting a deal is possible by Monday as Iran begins negotiating. However, Iran's Parliament Speaker warned that Trump's \"reckless moves\" could engulf the entire region. The conflict has resulted in significant casualties, with Lebanon's Health Ministry reporting 1,461 people killed or injured in Israeli attacks, and Gaza's Health Ministry reporting 72,292 Palestinians killed since October 2023. Iranian media reported that a senior military commander was killed in a US-Israeli attack, and Iran's Revolutionary Guard announced the death of its intelligence chief. The violence has spread to other countries, with Israeli military strikes hitting areas around Beirut, killing at least five people, and Iranian missile attacks hitting central Israel, including residential areas. The US and Israel have carried out strikes on Iranian targets, killing at least 34 people across the country over the past 24 hours. The conflict has also impacted oil production, with eight OPEC+ countries agreeing to increase production quotas by 206,000 barrels per day from May. The situation has prompted international concern, with the UN urging the world to prevent \"atrocious acts\" and Qatar's Prime Minister pressing for a peaceful resolution. Meanwhile, medics reported that Israel killed four Palestinians in the northern Gaza Strip despite a ceasefire, and Israeli forces have killed 1,138 Palestinians in the occupied West Bank since October. The crisis has also affected other regions, with 71 people reported missing at sea after being rescued near the Italian coast, and a US airman rescued in Iran after his fighter jet went down. Iran's Atomic Energy Chief accused the UN nuclear watchdog of inaction and warned of risks from attacks on the Bushehr power plant.",
+      "input_tokens": 1265,
+      "output_tokens": 367,
+      "latency_seconds": 1.02,
+      "status": "success",
+      "error": null,
+      "timestamp": "2026-04-11T14:26:22.811195"
+    },
+    {
+      "provider": "ollama",
+      "model_id": "llama3.2",
+      "display_name": "Llama 3.2 3B (Ollama local)",
+      "summary": "Here is a summary of the news headlines in one coherent paragraph:\n\nUS President Trump has announced that a deal with Iran may be possible by Monday, as Tehran claims to be \"negotiating now\" despite Trump's previous threats. The situation escalated after Israeli attacks on Lebanon, killing 1,461 people and injuring hundreds more since the start of the war, prompting warnings from Iranian Parliament Speaker that \"the whole region is going to burn\". Iran has also reported significant losses, including the death of a senior military commander, while multiple civilians were injured in an attack by Iranian missiles on central Israel. The US and Israel have launched strikes on Iranian targets, including energy facilities, with Qatar's foreign minister expressing solidarity with Kuwait following attacks on its energy infrastructure. Meanwhile, OPEC+ countries agreed to increase oil production quotas, and a UN nuclear watchdog warned of the risk of attacks on Iran's Bushehr power plant. In other news, rescue charities reported that 71 people remain missing at sea after an Italian coast incident, while Hamas vowed not to disarm despite continued Israeli targeting in Gaza. The situation remains volatile, with Israel killing four Palestinians in northern Gaza despite a ceasefire and Trump threatening strikes on Iranian power plants if Hormuz is not reopened by Wednesday.",
+      "input_tokens": 1258,
+      "output_tokens": 251,
+      "latency_seconds": 185.01,
+      "status": "success",
+      "error": null,
+      "timestamp": "2026-04-11T14:29:27.821384"
+    },
+    {
+      "provider": "ollama",
+      "model_id": "llama3.1:8b",
+      "display_name": "Llama 3.1 8B (Ollama local)",
+      "summary": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_seconds": 302.06,
+      "status": "error",
+      "error": "HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=300)",
+      "timestamp": "2026-04-11T14:34:29.881242"
+    },
+    {
+      "provider": "gemini",
+      "model_id": "gemini-2.5-flash",
+      "display_name": "Gemini 2.5 Flash",
+      "summary": "Amid escalating tensions, President Trump indicated a deal with Iran was possible by Monday, even as he threatened strikes on Iran's power plants if the Strait of Hormuz was not opened by Wednesday, prompting the UN to urge prevention of \"atrocious acts.\" Iran's parliament speaker warned Trump's \"reckless moves\" could lead to the \"whole region going to burn,\" while its Foreign Ministry spokesman stated the U.S. had destroyed diplomatic processes. Iran's President's office affirmed Hormuz would reopen when war damages were compensated, and its atomic energy chief accused the UN nuclear watchdog of inaction, warning of risks from attacks on the Bushehr power plant. Both sides reported significant casualties and attacks: Iranian media claimed a senior Iranian military commander was killed in U.S.-Israeli attacks, with Iran reporting U.S.-Israeli strikes killed at least 34 people across the country, including 13 in a residential area southwest of Tehran, and 95 people, including six children, over the past 24 hours, also announcing the death of intelligence chief Nademi. U.S. forces rescued a missing airman in Iran. Conversely, multiple injuries were reported after an Iranian missile attack hit central Israel, including residential areas, with six people injured by missile interception debris. Iran's Revolutionary Guards claimed targeting petrochemical plants in UAE, Kuwait, and Bahrain, striking U.S. forces on Kuwait's Bubiyan Island, and attacking an Israeli-linked ship off the UAE coast, prompting Qatar's Foreign Minister to express solidarity with Kuwait. Two people were also killed and two went missing in the Israeli city of Haifa, following an incident involving an Iranian MTS building. The broader conflict saw the Lebanon Health Ministry report 1,461 people killed and injured in Israeli attacks, which included strikes around Beirut killing at least five people and injuring dozens, and one Lebanese soldier. In Palestinian territories, the Gaza Health Ministry reported 72,292 Palestinians killed in Israeli attacks since October 2023, with Israeli forces killing 1,138 Palestinians in the occupied West Bank since October, and medics noting four Palestinians were killed in northern Gaza despite a ceasefire. An Israeli army attack also killed a World Health Organization driver in Gaza. Hamas reiterated it would not disarm due to ongoing targeting of Palestinians. Overall, authorities reported 2,076 people killed and 26,500 injured, with multiple cities bombed by U.S. and Israel overnight. The Qatari Prime Minister pressed for \"peaceful means\" to resolve the Middle East conflict. In economic news, eight OPEC+ countries agreed to increase oil production quotas by 206,000 barrels per day from May. Separately, rescue charities reported 71 people remained missing at sea after 32 were rescued near the Italian coast. Artemis II astronauts glimpsed the Moon's 'Grand Canyon' ahead of a historic lunar flyby, while progress on a phase of infrastructure development stalled in January.",
+      "input_tokens": 1212,
+      "output_tokens": 616,
+      "latency_seconds": 22.48,
+      "status": "success",
+      "error": null,
+      "timestamp": "2026-04-11T14:34:52.362473"
+    },
+    {
+      "provider": "huggingface",
+      "model_id": "meta-llama/Meta-Llama-3-8B-Instruct",
+      "display_name": "Llama 3 8B (HuggingFace)",
+      "summary": "Tensions in the Middle East continue to escalate as the conflict between Iran, Israel, and the United States intensifies. Iranian President Trump has indicated that a deal may be possible by Monday, but Iran's Parliament Speaker has warned that Trump's \"reckless moves\" could lead to the entire region being engulfed in chaos. The situation has already resulted in significant loss of life, with Lebanon's Health Ministry reporting 1,461 people killed and injured in Israeli attacks since the start of the war. Iranian media have also reported the death of a senior Iranian military commander in a U.S.-Israeli attack, while multiple injuries have been reported after an Iranian missile attack hit central Israel, including residential areas. The conflict has also had a significant impact on the global energy market, with OPEC+ countries agreeing to increase production quotas by 206,000 barrels per day. The United Nations has urged the world to prevent \"atrocious acts\" after Trump's threats, while Iran's Revolutionary Guard has targeted petrochemical plants in the UAE, Kuwait, and Bahrain. The humanitarian crisis in the Gaza Strip continues, with Hamas stating that it will not disarm as long as Palestinians are targeted by Israel. The situation remains volatile, with Trump threatening strikes on Iran's power plants if the Strait of Hormuz is not reopened by Wednesday.",
+      "input_tokens": 1268,
+      "output_tokens": 266,
+      "latency_seconds": 4.48,
+      "status": "success",
+      "error": null,
+      "timestamp": "2026-04-11T14:34:56.839558"
+    },
+    {
+      "provider": "cohere",
+      "model_id": "command-r-08-2024",
+      "display_name": "Command-R (Cohere)",
+      "summary": "Tensions are escalating in the Middle East, with a focus on the ongoing conflict between Iran and the U.S.-Israel alliance. President Trump has expressed optimism about a potential deal by Monday, claiming Iran is now negotiating, while Iranian officials warn of severe consequences if their demands are not met. The situation has resulted in a deadly war, with over 1,461 casualties in Lebanon alone since the start. Iranian media reports the killing of a senior military commander in U.S.-Israeli attacks, and the country's Revolutionary Guards have targeted petrochemical plants in the UAE, Kuwait, and Bahrain. Meanwhile, the U.S. has rescued a missing airman in Iran, and Trump has threatened strikes on Iran's power plants if the Hormuz Strait is not reopened. The conflict has also impacted the Gaza Strip, where Hamas has vowed not to disarm, and Israeli forces have killed over 1,100 Palestinians. The UN has urged global action to prevent further atrocities, as the death toll rises, with over 95 people killed across Iran in the past 24 hours. The conflict has also spread to the energy sector, with OPEC+ countries agreeing to increase production quotas, and Qatar showing solidarity with Kuwait after Iranian attacks on energy facilities.",
+      "input_tokens": 1384.0,
+      "output_tokens": 255.0,
+      "latency_seconds": 131.16,
+      "status": "success",
+      "error": null,
+      "timestamp": "2026-04-11T14:37:08.003429"
+    }
+  ]
+}

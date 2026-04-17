@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import cv2; import numpy; import tqdm; from rapidfuzz import fuzz; print\\('Core deps OK'\\)\" && python -c \"import easyocr; print\\('EasyOCR OK'\\)\" && python -c \"import pytesseract; print\\('Tesseract OK'\\)\")",
+      "Bash(cd \"C:/Users/lenovo/Desktop/GIU Berlin/Masters/ticker_extraction/ticker_extraction_v5\" && python -c \"\nimport config\nfrom step4_ocr import ocr_panorama_chunks\nfrom pathlib import Path\n\nchunks = sorted\\(config.PANORAMA_DIR.glob\\('panorama_chunk_*.png'\\)\\)\nprint\\(f'Found {len\\(chunks\\)} chunks'\\)\ntext = ocr_panorama_chunks\\(chunks\\)\nprint\\(f'\\\\nFirst 500 chars:\\\\n{text[:500]}'\\)\n\")",
+      "Bash(\"C:/Program Files/Tesseract-OCR/tesseract.exe\" --version && \"C:/Program Files/Tesseract-OCR/tesseract.exe\" --list-langs)",
+      "Bash(\"C:/Program Files/Tesseract-OCR/tesseract.exe\" \"C:/Users/lenovo/Desktop/GIU Berlin/Masters/ticker_extraction/ticker_extraction_v5/output/ocr/test_tight_inv.png\" stdout --psm 7 --oem 3 -l eng)",
+      "Bash(cd \"C:/Users/lenovo/Desktop/GIU Berlin/Masters/ticker_extraction/ticker_extraction_v5\" && python main.py --engine tesseract 2>&1)",
+      "Bash(cd \"C:\\\\Users\\\\lenovo\\\\Desktop\\\\GIU Berlin\\\\Masters\\\\ticker_extraction\\\\ticker_extraction_v5\" && python -c \"\nimport config\nconfig.OCR_ENGINE = 'tesseract'\nfrom step4_ocr import ocr_panorama_chunks\nfrom step5_segment import segment_news\n\nchunks = sorted\\(config.PANORAMA_DIR.glob\\('panorama_chunk_*.png'\\)\\)\nprint\\(f'Found {len\\(chunks\\)} panorama chunks'\\)\n\ntext = ocr_panorama_chunks\\(chunks\\)\nprint\\('\\\\n--- First 1500 chars ---'\\)\nprint\\(text[:1500]\\)\n\nprint\\('\\\\n\\\\nSegmenting...'\\)\nitems = segment_news\\(text\\)\nprint\\('\\\\n--- All items ---'\\)\nfor item in items:\n    print\\(f'  [{item[\\\\\"id\\\\\"]}] {item[\\\\\"text\\\\\"][:120]}'\\)\n\")",
+      "Bash(cd \"C:\\\\Users\\\\lenovo\\\\Desktop\\\\GIU Berlin\\\\Masters\\\\ticker_extraction\\\\ticker_extraction_v5\" && python -c \"\nimport config\nconfig.OCR_ENGINE = 'tesseract'\nfrom step4_ocr import ocr_panorama_chunks\nfrom step5_segment import segment_news\n\nchunks = sorted\\(config.PANORAMA_DIR.glob\\('panorama_chunk_*.png'\\)\\)\ntext = ocr_panorama_chunks\\(chunks\\)\n\nprint\\('\\\\nSegmenting...'\\)\nitems = segment_news\\(text\\)\nprint\\('\\\\n--- All unique news items ---'\\)\nfor item in items:\n    print\\(f'  [{item[\\\\\"id\\\\\"]}] {item[\\\\\"text\\\\\"]}'\\)\n\")",
+      "Bash(cd \"C:\\\\Users\\\\lenovo\\\\Desktop\\\\GIU Berlin\\\\Masters\\\\ticker_extraction\\\\ticker_extraction_v5\" && python -c \"\nimport config\nconfig.OCR_ENGINE = 'tesseract'\nfrom step4_ocr import ocr_panorama_chunks\nfrom step5_segment import segment_news\n\nchunks = sorted\\(config.PANORAMA_DIR.glob\\('panorama_chunk_*.png'\\)\\)\ntext = ocr_panorama_chunks\\(chunks\\)\n\nprint\\('\\\\nSegmenting...'\\)\nitems = segment_news\\(text\\)\nprint\\('\\\\n--- Final news items ---'\\)\nfor item in items:\n    print\\(f'  [{item[\\\\\"id\\\\\"]}] {item[\\\\\"text\\\\\"]}'\\)\n\")",
+      "Bash(cd \"C:\\\\Users\\\\lenovo\\\\Desktop\\\\GIU Berlin\\\\Masters\\\\ticker_extraction\\\\ticker_extraction_v5\" && python -c \"\nimport config\nfrom step5_segment import segment_news\n\ntext = \\(config.OCR_DIR / 'full_ocr_text.txt'\\).read_text\\(encoding='utf-8'\\)\nitems = segment_news\\(text\\)\nprint\\('\\\\n--- Final news items ---'\\)\nfor item in items:\n    print\\(f'  [{item[\\\\\"id\\\\\"]}] {item[\\\\\"text\\\\\"]}'\\)\n\")",
+      "Bash(cd \"C:/Users/lenovo/Desktop/GIU Berlin/Masters/ticker_extraction/ticker_extraction_v6\" && python step5_segment.py 2>&1)",
+      "Bash(find '/c/Users/lenovo/Desktop/GIU Berlin/Masters/ticker_extraction/ticker_extraction_v6/output' -type f -name *.json)",
+      "Bash(python main.py)",
+      "Bash(powershell -c \"Get-Content ''C:\\\\Users\\\\lenovo\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-lenovo-Desktop-GIU-Berlin-Masters-ticker-extraction\\\\b9358a05-80bb-4a4b-9325-b9a6b13ae39a\\\\tasks\\\\bwjzxeshg.output'' -Tail 30\")",
+      "Bash(python -c \":*)",
+      "Bash(pip install:*)"
+    ]
+  }
+}

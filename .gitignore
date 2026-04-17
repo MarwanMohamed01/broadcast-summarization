@@ -1,0 +1,57 @@
+# ── Large media / data (too big for git) ─────────────
+videos/
+*.mp4
+*.wav
+*.mp3
+*.avi
+*.mov
+*.mkv
+
+# ── OCR intermediate outputs (multi-GB) ──────────────
+ticker_extraction_v6/output/ticker_frames/
+ticker_extraction_v6/output/panorama/
+ticker_extraction_v6/output/chunks/*/ticker_frames/
+ticker_extraction_v6/output/chunks/*/panorama/
+
+# ── ASR intermediate outputs (multi-GB) ──────────────
+asr/output/audio_full.wav
+asr/output/audio_slice_*.wav
+asr/output/_chunks_transcript_full/
+
+# ── Validation panorama PNGs (15 MB each) ────────────
+validation/ground_truth/*.png
+
+# ── Python ────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+
+# ── Virtual environments ─────────────────────────────
+venv/
+.venv/
+env/
+news_summarization/
+
+# ── Environment variables / secrets ──────────────────
+.env
+*.env
+!.env.example
+
+# ── OS / editor ──────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ── Web app runtime data ─────────────────────────────
+webapp/uploads/*
+!webapp/uploads/.gitkeep
+webapp/jobs/*
+!webapp/jobs/.gitkeep
+webapp/frontend/node_modules/
+webapp/frontend/dist/
+
+# ── Logs ─────────────────────────────────────────────
+logs/
+*.log

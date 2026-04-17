@@ -1,0 +1,119 @@
+{
+  "run_timestamp": "2026-03-13T16:50:47.261743",
+  "news_items_count": 18,
+  "news_items_source": "C:\\Users\\lenovo\\Desktop\\GIU Berlin\\Masters\\ticker_extraction\\ticker_extraction_v6\\output\\final\\news_items.json",
+  "prompt": {
+    "system": "You are a professional news editor. Your task is to read a list of news headlines extracted from a TV news ticker and produce a single, coherent summary paragraph that covers all the key stories. Write in clear, neutral journalistic language. Do not add information that is not in the headlines. Do not use bullet points or lists — write one flowing paragraph.",
+    "user": "Below are 18 news headlines extracted from an Al Jazeera news ticker. Summarize ALL of them into one coherent paragraph.\n\n1. SUDAN'S KORDOFAN REGION BECOMES LATEST BATTLEGROUND BETWEEN SUDANESE ARMY AND RSF\n2. U.S. PRESIDENT DECLARES SAUDI ARABIA MAJOR NON-NATO ALLY AFTER CROWN PRINCE'S VISIT\n3. SEVERAL PEOPLE KILLED AS RUSSIAN DRONES AND MISSILES HIT MULTIPLE CITIES IN UKRAINE\n4. INDONESIA RAISES ALERT FOR MOUNT SEMERU VOLCANOLCANCANO TO Highest LEVEL AFTER ERUPTIONS\n5. U.S. PRESIDENT SAYS 'GAZA BOARD OF PEACE' WILL INCLUDE REPS FROM 'MOST MAJOR COUNTRIES'\n6. ISRAELI FORCES AND SETTLERS HAVE KILLED 1,073 PALESTINIANS IN OCCUPIED WEST BANK SINCE OCTOBER 2023\n7. TWo CABINET MINISTERS RESIGN IN THE PHILIPPINES AFTER BEING IMPLICATED IN CORRUPTION SCANDAL\n8. CHINA BANS ALL IMPORTS OF JAPANESE SEAFOOD AS TAIWAN DIPLOMATIC DISPUTE ESCALATES\n9. U.S. CONGRESS APPROVES BILL FORCING JUSTICE DEPT TO RELEASE REMAINING EPSTEIN FILES\n10. POLAND CLOSES LAST OPERATING RUSSIAN CONSULATE IN CITy OF GDANSK AFTER RAIL BLAST\n11. AT LEAST Two PEOPLE KILLED AND OTHERS KIDNAPPED AFTER GUNMEN ATTACK CHURCH IN NIGERIA\n12. UN SecURITY COUNCIL PASSES RESOLUTION BACKING TRUMP'S PEACE PLAN FOR GAZA ON MONDAY\n13. ISRAELI ARMY WARNS PEOPLE TO FLEE TWO VILLAGES IN SOUTHERN LEBANON AFTER STRIKES KILL 14\n14. GAZA HEALTH MINISTRY: ISRAEL HAS KILLED AT LEAST 280 PALESTINIANS SINCE OcT 10 CEASEFIRE STARTED\n15. AT LEAST 14 CHILDREN INJURED AND BUILDINGS DAMAGED IN RUSSIAN STRIKES ON UKRAINE UKRAINE'$ PRESIDENT ATTENDE PEACE TALKS\n16. ISRAELI ATTACKS AcROSS GAZA HAVE KILLED AT LEAST 69,513 PALESTINIANS SINCE OCTOBER 2023\n17. SAUDI CROWN PRINCE SAYS INVESTMENT IN U.S. WILL INCREASE TO $1 TRILLION OVER FOUR YEARS\n18. U.S. AND SAUDI ARABIA Strike SEVERAL DEALS AT MEETING INCLUDING SALE OF U.S. MILITARY JETS"
+  },
+  "results": [
+    {
+      "provider": "groq",
+      "model_id": "llama-3.3-70b-versatile",
+      "display_name": "Llama 3.3 70B (Groq)",
+      "summary": "Violence and diplomatic developments are unfolding across the globe, with Sudan's Kordofan region becoming the latest battleground between the Sudanese army and the RSF. In Ukraine, Russian drones and missiles have hit multiple cities, killing several people, while in the Middle East, Israeli forces and settlers have killed over 1,073 Palestinians in the occupied West Bank since October 2023, with the Gaza Health Ministry reporting at least 280 Palestinian deaths since the October 10 ceasefire. The Israeli army has also warned people to flee two villages in southern Lebanon after strikes killed 14 people, and Israeli attacks across Gaza have resulted in a significant loss of life, with at least 69,513 Palestinians killed since October 2023. Meanwhile, the US President has declared Saudi Arabia a major non-Nato ally after the Crown Prince's visit, during which several deals were struck, including the sale of US military jets, and the Crown Prince announced plans to increase investment in the US to $1 trillion over four years. In other news, the US Congress has approved a bill forcing the Justice Department to release remaining Epstein files, and the US President has announced plans for a 'Gaza Board of Peace' comprising representatives from most major countries, which has received backing from the UN Security Council. Additionally, China has banned all imports of Japanese seafood amid escalating diplomatic tensions with Taiwan, while in the Philippines, two cabinet ministers have resigned after being implicated in a corruption scandal. Natural disasters are also affecting several regions, with Indonesia raising the alert level for Mount Semeru to its highest level after eruptions, and in Nigeria, at least two people have been killed and others kidnapped after gunmen attacked a church. Poland has closed the last operating Russian consulate in the city of Gdansk after a rail blast, and Ukraine's president has attended peace talks as the country continues to face Russian strikes, which have injured at least 14 children and damaged buildings.",
+      "input_tokens": 715,
+      "output_tokens": 389,
+      "latency_seconds": 2.03,
+      "status": "success",
+      "error": null,
+      "timestamp": "2026-03-13T16:46:51.671142"
+    },
+    {
+      "provider": "groq",
+      "model_id": "gemma2-9b-it",
+      "display_name": "Gemma 2 9B (Groq)",
+      "summary": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_seconds": 0.33,
+      "status": "error",
+      "error": "Error code: 400 - {'error': {'message': 'The model `gemma2-9b-it` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}",
+      "timestamp": "2026-03-13T16:46:51.998402"
+    },
+    {
+      "provider": "groq",
+      "model_id": "mixtral-8x7b-32768",
+      "display_name": "Mixtral 8x7B (Groq)",
+      "summary": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_seconds": 0.09,
+      "status": "error",
+      "error": "Error code: 400 - {'error': {'message': 'The model `mixtral-8x7b-32768` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}",
+      "timestamp": "2026-03-13T16:46:52.090052"
+    },
+    {
+      "provider": "ollama",
+      "model_id": "llama3.2",
+      "display_name": "Llama 3.2 (Ollama)",
+      "summary": "Here is a summary paragraph covering all the key stories:\n\nTensions are escalating across the globe as conflicts continue to simmer. In Sudan, fighting between the Sudanese army and the Rapid Support Forces (RSF) has reached the Kordofan region, with reports of casualties and displacement. Meanwhile, in the Middle East, the situation in Gaza has taken a deadly turn, with Israel's military strikes killing at least 280 Palestinians since the October ceasefire, and the Israeli army warning people to flee two villages in southern Lebanon after strikes killed 14. In Ukraine, Russian drones and missiles have struck multiple cities, killing several people, while the US Congress has approved a bill forcing the Justice Department to release remaining Epstein files. In the Asia-Pacific, diplomatic tensions are rising, with China banning all imports of Japanese seafood amid a dispute with Taiwan, and the Philippines experiencing a corruption scandal that has led to the resignation of two cabinet ministers. In Africa, a church attack in Nigeria has killed at least two people and kidnapped others, while the UN Security Council has passed a resolution backing Trump's peace plan for Gaza. In the United States, the President has declared Saudi Arabia a major non-NATO ally after a visit by Crown Prince Mohammed bin Salman, and has announced plans to increase investment in Saudi Arabia to $1 trillion over four years.",
+      "input_tokens": 705,
+      "output_tokens": 267,
+      "latency_seconds": 102.25,
+      "status": "success",
+      "error": null,
+      "timestamp": "2026-03-13T16:48:34.341200"
+    },
+    {
+      "provider": "ollama",
+      "model_id": "llama3.1:8b",
+      "display_name": "Llama 3.1 8B (Ollama)",
+      "summary": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_seconds": 122.04,
+      "status": "error",
+      "error": "HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=120)",
+      "timestamp": "2026-03-13T16:50:36.383681"
+    },
+    {
+      "provider": "gemini",
+      "model_id": "gemini-1.5-flash",
+      "display_name": "Gemini 1.5 Flash",
+      "summary": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_seconds": 1.72,
+      "status": "error",
+      "error": "DLL load failed while importing _rust: The specified procedure could not be found.",
+      "timestamp": "2026-03-13T16:50:38.101490"
+    },
+    {
+      "provider": "huggingface",
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "display_name": "Mistral 7B (HF)",
+      "summary": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_seconds": 1.57,
+      "status": "error",
+      "error": "404 Client Error: Not Found for url: https://router.huggingface.co/novita/v3/openai/chat/completions (Request ID: Root=1-69b4324f-4a3b373c7167adc17be9c0d1;eab20cfa-15d2-4e76-a71c-41751b21ed5a)",
+      "timestamp": "2026-03-13T16:50:39.670882"
+    },
+    {
+      "provider": "openai",
+      "model_id": "gpt-4o-mini",
+      "display_name": "GPT-4o Mini (OpenAI)",
+      "summary": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_seconds": 6.66,
+      "status": "error",
+      "error": "Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+      "timestamp": "2026-03-13T16:50:46.330777"
+    },
+    {
+      "provider": "cohere",
+      "model_id": "command-r",
+      "display_name": "Command-R (Cohere)",
+      "summary": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_seconds": 0.93,
+      "status": "error",
+      "error": "headers: {'access-control-expose-headers': 'X-Debug-Trace-ID', 'cache-control': 'no-cache, no-store, no-transform, must-revalidate, private, max-age=0', 'content-encoding': 'gzip', 'content-type': 'application/json', 'expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'pragma': 'no-cache', 'vary': 'Origin,Accept-Encoding', 'x-accel-expires': '0', 'x-debug-trace-id': 'd338db577a307610ad6243e881530b40', 'x-endpoint-monthly-call-limit': '1000', 'x-trial-endpoint-call-limit': '20', 'x-trial-endpoint-call-remaining': '19', 'date': 'Fri, 13 Mar 2026 15:50:47 GMT', 'x-envoy-upstream-service-time': '15', 'server': 'envoy', 'via': '1.1 google', 'alt-svc': 'h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000', 'transfer-encoding': 'chunked'}, status_code: 404, body: {'id': 'f06e7231-bcda-43ae-8c72-c1112c7beecb', 'message': \"model 'command-r' was removed on September 15, 2025. See https://docs.cohere.com/docs/models#command for a list of models you can use instead.\"}",
+      "timestamp": "2026-03-13T16:50:47.259357"
+    }
+  ]
+}

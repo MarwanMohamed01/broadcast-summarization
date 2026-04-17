@@ -1,0 +1,98 @@
+{
+  "run_timestamp": "2026-04-13T02:05:37.460557",
+  "level1_source": "C:\\Users\\lenovo\\Desktop\\GIU Berlin\\Masters\\ticker_extraction\\llm_summarization\\output_asr\\level1_20260412_125636.json",
+  "retry_run": true,
+  "results": [
+    {
+      "provider": "groq",
+      "model_id": "llama-3.3-70b-versatile",
+      "display_name": "Llama 3.3 70B (Groq)",
+      "summary": "The day's major stories began with the ongoing tensions between the US and Iran, with President Trump's rhetoric being seen as potentially strengthening Iran's position. A US airman who was missing in Iran after his F-15E fighter jet was shot down was rescued in a daring operation, involving a firefight and the deployment of dozens of aircraft and hundreds of troops. Meanwhile, in the Gaza Strip, Hamas stated that it would not disarm, a key component of the second phase of the Gaza ceasefire plan, citing continued Israeli aggression and the killing of Palestinians.\n\nAs the day progressed, the conflict between the US, Israel, and Iran continued to escalate, with US President Donald Trump setting a Tuesday deadline for Iran to reopen the Strait of Hormuz, threatening to bomb Iranian power plants and bridges if it didn't comply. Iran's foreign ministry dismissed the warning, vowing swift retaliation to any US attacks, and the country's leaders emphasized their right to defend themselves. The region saw a surge in violence, with Israeli airstrikes on Lebanon, Iranian missile strikes on Israel, and attacks on US and Israeli targets in the Gulf.\n\nThe humanitarian crisis in Gaza deepened, with hundreds of thousands of Palestinians struggling to survive, and many resorting to collecting scrap metal from rubble to earn a living. The situation was exacerbated by the lack of international attention and pressure on Israel to ease restrictions, with experts warning of a potential descent into famine conditions. The Gaza Strip was also facing a significant shortage of food, fuel, and medical supplies, with the RAFA border crossing closed and deliveries of essential goods further restricted.\n\nThe conflict had far-reaching effects, including disruptions to energy supplies, with Pakistan emerging as an alternative corridor, and impacts on industries such as handicrafts in Kashmir and fishing in France, where rising fuel costs were forcing some boats to stay in port. The situation remained volatile, with various groups, including Hamas, refusing to disarm amidst ongoing violence and calls for peace. The international community was watching to see how the situation would unfold, with concerns growing about the potential for further escalation and the risk of a nuclear accident.\n\nAs the day drew to a close, the situation remained dire, with reports of attacks in multiple cities across Iran and the Gulf region, and concerns growing about the potential for further escalation. The US and Iran remained at odds, with President Trump's deadline for Iran to reopen the Strait of Hormuz looming, and the country's leaders vowing to defend themselves against any US attacks. The conflict was having a significant impact on the global economy, with energy prices soaring and vital shipping lanes being targeted, leading to a significant disruption in the global economy.\n\nIn other news, the Easter holiday was being celebrated under the shadow of war, with many countries affected by the conflict. The discovery of explosives near a pipeline carrying Russian gas to Hungary had raised concerns about the stability of the region, and the use of AI to combat gun violence in Birmingham, Alabama, had sparked controversy over its effectiveness and potential targeting of black communities. The situation in the Middle East remained complex and dangerous, with no clear end in sight to the conflict.",
+      "input_tokens": 6204,
+      "output_tokens": 624,
+      "latency_seconds": 4.19,
+      "status": "success",
+      "error": null,
+      "timestamp": "2026-04-13T01:57:14.664779",
+      "level1_coverage": "36/59"
+    },
+    {
+      "provider": "groq",
+      "model_id": "llama-3.1-8b-instant",
+      "display_name": "Llama 3.1 8B (Groq)",
+      "summary": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_seconds": 0.12,
+      "status": "error",
+      "error": "Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.1-8b-instant` in organization `org_01kg9vrby3f8zb98sje8rnrfb2` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 11335, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "timestamp": "2026-04-13T01:58:47.000109",
+      "level1_coverage": "59/59"
+    },
+    {
+      "provider": "groq",
+      "model_id": "qwen/qwen3-32b",
+      "display_name": "Qwen3 32B (Groq)",
+      "summary": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_seconds": 0.1,
+      "status": "error",
+      "error": "Error code: 413 - {'error': {'message': 'Request too large for model `qwen/qwen3-32b` in organization `org_01kg9vrby3f8zb98sje8rnrfb2` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 12388, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+      "timestamp": "2026-04-13T02:02:19.352022",
+      "level1_coverage": "59/59"
+    },
+    {
+      "provider": "groq",
+      "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "display_name": "Llama 4 Scout 17B (Groq)",
+      "summary": "The day's major stories and themes began with escalating tensions between the US and Iran, with US President Donald Trump dismissing the idea of direct talks and making new demands, including Iran's surrender of its nuclear program, missiles, and influence in the region. A US airman was rescued in Iran after a 48-hour search operation, and Trump announced the successful mission on social media. The rescue came as the US deadline for Iran to open the Strait of Hormuz approached, and amid conflicting accounts of a US military operation in Iran. The conflict continued to spread, with Hamas rejecting calls to disarm, and Israeli airstrikes targeting Hezbollah's military infrastructure in Lebanon, resulting in civilian casualties and displacement.\n\nAs the conflict escalated, Pope Leo delivered his first Easter mass as pontiff, calling for mercy and highlighting the suffering of the vulnerable amidst global conflicts. The Middle East conflict had far-reaching effects, including the closure of a major border crossing between Lebanon and Syria, and impacting artisans in Indian-administered Kashmir who relied on selling handicrafts to the Middle East. The conflict also affected the fishing industry in France and Cuba, where a US fuel blockade was causing an unprecedented public health emergency.\n\nThe situation between the US and Iran continued to escalate, with Trump threatening a swift retaliation against Iran if the Strait of Hormuz was not reopened. Iran responded, saying Trump's threats were an indication of a \"criminal mindset\" and an expression of \"public incitement for war crimes.\" The conflict resulted in multiple attacks on various countries, including Israel, Iran, Lebanon, and others, with a missile falling near a toxic waste dump in Israel and a chemical plant in the area being hit by fragments, causing a fire but no hazardous material leak.\n\nThe humanitarian crisis in Gaza deepened, despite a US-brokered ceasefire that came into effect in October, as Israel continued to restrict aid and carry out airstrikes, killing hundreds of Palestinians and wounding thousands more. The war in Iran disrupted global supply chains, exacerbating the crisis, with Palestinians struggling to access basic necessities like food, medicine, and shelter. The UN estimated that 1.7 million people were forced from their homes, and those still living in Gaza faced dire conditions.\n\nThe conflict continued to escalate, with Israeli strikes hitting targets in Lebanon and Iran launching a missile strike on Haifa, Israel, injuring four people. The US rescued a downed airman from Iranian territory after a daring operation involving dozens of aircraft. The International Atomic Energy Agency and the World Health Organization expressed concern over a recent strike near Iran's Bushehr nuclear plant, which had been attacked four times since the war began.\n\nThe situation remained volatile, with concerns about a potential nuclear accident at Iran's Boucher nuclear plant, which had been attacked four times since the conflict began. The conflict had significant impacts on the global economy, with energy prices soaring due to the disruption of shipping lanes and supply routes. The war showed no signs of abating, with both sides hardening their positions and the Israeli military facing growing skepticism at home over the government's strategy in the war with Iran and Hezbollah.\n\nThe ongoing conflict had far-reaching consequences, including a rising death toll in Lebanon, where Israeli strikes killed civilians and Hezbollah members, and economic hardship in Sri Lanka, where fuel prices surged and people struggled to cope. The conflict continued to affect various countries, including Kuwait, Bahrain, and the UAE, with numerous attacks reported across several countries. The Gulf Cooperation Council countries were caught in the middle, with Qatar's Prime Minister calling for a peaceful resolution to the conflict.\n\nThe Israeli military continued to launch attacks on southern Lebanon, killing civilians and causing widespread damage. The Lebanese health ministry reported over 1,460 people killed and more than 4,000 wounded since the conflict began. The conflict showed no signs of abating, with both sides hardening their positions and the Israeli military facing growing skepticism at home over the government's strategy in the war with Iran and Hezbollah.\n\nIn conclusion, the day's major stories and themes were dominated by the escalating conflict between the US and Iran, with far-reaching consequences for the Middle East and beyond. The conflict continued to spread, with multiple attacks reported across several countries, and showed no signs of abating. The humanitarian crisis in Gaza deepened, and the global economy felt the pinch, with energy prices soaring due to the disruption of shipping lanes and supply routes.",
+      "input_tokens": 9886,
+      "output_tokens": 897,
+      "latency_seconds": 2.46,
+      "status": "success",
+      "error": null,
+      "timestamp": "2026-04-13T02:04:23.834793",
+      "level1_coverage": "59/59"
+    },
+    {
+      "provider": "gemini",
+      "model_id": "gemini-2.5-flash",
+      "display_name": "Gemini 2.5 Flash",
+      "summary": "The day's news broadcast opened with escalating tensions between the United States and Iran, following President Trump's rhetoric demanding unconditional surrender and threatening to take Iran's oil. Reports detailed the rescue of a US airman in Iran after his fighter jet went down, an operation the US described as involving an intense firefight, though Iranian state media disputed the account. Concurrently, the Gaza ceasefire talks remained deadlocked, with Hamas refusing to disarm amidst ongoing Israeli attacks. Early Israeli strikes were reported in Beirut's southern suburbs and Haifa, where a residential building partially collapsed after being hit by a projectile.\n\nAs the morning progressed, President Trump issued a Tuesday 8 p.m. ET deadline for Iran to reopen the Strait of Hormuz, threatening strikes on Iranian civilian sites, including power plants and bridges. Iran vowed swift retaliation against any US-related location in the Middle East if its infrastructure was attacked, with its parliament speaker accusing Trump of war crimes. Amidst these threats, multiple Iranian cities, including near the Bushehr nuclear power plant, were reportedly bombarded. The conflict's far-reaching economic effects were noted, impacting Kashmiri handicraft artisans, disrupting the French fishing industry, and leading to Senegal limiting government travel due to rising oil prices.\n\nThe military actions intensified with reports of drone and missile attacks on critical energy and desalination infrastructure in Gulf countries, attributed to Iranian aggression. Russia evacuated workers from Iran's Bushehr nuclear plant after a nearby strike, prompting international concern from the IAEA and WHO about potential nuclear accidents and radioactive contamination. Israeli forces continued strikes in Beirut's southern suburbs, causing civilian casualties and displacement, and targeting bridges in southern Lebanon, leading to the closure of the al-Masnaa border crossing with Syria.\n\nDespite his aggressive rhetoric, President Trump also indicated ongoing negotiations and optimism for a quick agreement, a \"dichotomous approach\" that experts suggested complicated the situation for Iranian leadership. The US successfully rescued a second airman, a weapons systems officer, from Iranian territory after their F-15E fighter jet was shot down, following an intense firefight. Meanwhile, Hamas reiterated its stance, refusing to discuss the second phase of the Gaza ceasefire plan until the first phase, including a cessation of hostilities and humanitarian aid, was fully implemented.\n\nA significant portion of the broadcast highlighted the deepening humanitarian crisis in Gaza, described as a \"forgotten famine,\" with Israel accused of violating ceasefire terms through continued airstrikes and severe restrictions on aid and building materials. Palestinians faced dire conditions, including severe food insecurity, a critical lack of medical supplies, and inadequate shelter. The occupied West Bank was also characterized as a \"forgotten war,\" with reports of unpunished Israeli settler attacks and a \"strangulation process\" denying medical access, leading to speakers characterizing the situation as \"genocide\" and a \"crime against humanity.\"\n\nThe day concluded with continued widespread missile and drone attacks across the region, including further Iranian strikes on Haifa and Israeli attacks in Beirut and Qom. Concerns remained high regarding repeated strikes on Iran's Bushehr nuclear power plant, which could lead to a regional catastrophe. The disruption of shipping through the Strait of Hormuz led to the emergence of alternative regional energy routes and exacerbated energy crises in countries like Pakistan and Sri Lanka. Experts debated the effectiveness of escalating US military pressure on Iran, warning that further threats could lead to an \"escalation trap\" and broader regional damage.",
+      "input_tokens": 3761,
+      "output_tokens": 696,
+      "latency_seconds": 13.85,
+      "status": "success",
+      "error": null,
+      "timestamp": "2026-04-13T02:04:39.688377",
+      "level1_coverage": "21/59"
+    },
+    {
+      "provider": "huggingface",
+      "model_id": "meta-llama/Meta-Llama-3-8B-Instruct",
+      "display_name": "Llama 3 8B (HuggingFace)",
+      "summary": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "latency_seconds": 0.88,
+      "status": "error",
+      "error": "(Request ID: Root=1-69dc333a-2ad247cd254743b65c2fde52;66dbea9f-0c90-4ab8-9e21-d1f48b426897)\n\nBad request:",
+      "timestamp": "2026-04-13T02:05:14.385541",
+      "level1_coverage": "59/59"
+    },
+    {
+      "provider": "cohere",
+      "model_id": "command-r-08-2024",
+      "display_name": "Command-R (Cohere)",
+      "summary": "The day's news coverage focused on the escalating tensions and ongoing conflicts in the Middle East, with a particular emphasis on the war between the US, Israel, and Iran. The situation has led to a series of deadly strikes and attacks across the region, with no signs of a resolution in sight. \n\nThe early segments highlighted the impact of the conflict on various countries and regions, including the occupied Palestinian territories, where subdued Easter celebrations reflected the ongoing war. The war's reach extended to Kashmir, where artisans faced economic challenges, and the French fishing industry, affected by rising oil prices. The discovery of explosives near a Russian gas pipeline in Serbia and the refugee boat tragedy in the Mediterranean also underscored the global implications of the Middle East conflict. \n\nAs the day progressed, the news shifted to the escalating tensions between the US and Iran, with President Trump issuing ultimatums and threats. The potential consequences of military action were discussed, including the impact on the Gulf region and the risk of further escalation. The rescue of US airmen from Iranian territory and the ongoing conflict's impact on Israel were also key stories, with missile strikes causing casualties and displacement. \n\nThe humanitarian crisis in Gaza was a significant focus, with reports of families collecting scrap metal to survive and the lack of access to basic necessities. The war's impact on global supply chains and the resulting food shortages were also highlighted, with the international community urged to address the crisis. \n\nThe later segments explored the political and strategic dimensions of the conflict, including the role of Pakistan in mediating between Iran and the US-Israel alliance. The potential for a negotiated solution was discussed, but the lack of trust and the ongoing attacks made a peaceful resolution seem distant. The impact of the war on global energy markets and the rise in fuel prices were also covered, with analysts predicting potential benefits for Russia. \n\nOverall, the day's news coverage painted a picture of a region in crisis, with escalating tensions, deadly strikes, and a humanitarian disaster unfolding in Gaza. The global implications of the conflict were evident, affecting energy prices, trade, and the lives of people across the world.",
+      "input_tokens": 8256.0,
+      "output_tokens": 429.0,
+      "latency_seconds": 19.07,
+      "status": "success",
+      "error": null,
+      "timestamp": "2026-04-13T02:05:35.457648",
+      "level1_coverage": "59/59"
+    }
+  ]
+}
