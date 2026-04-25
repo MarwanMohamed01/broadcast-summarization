@@ -1,6 +1,4 @@
-# TV News Summarization
-
-**Vision-Based Extraction and LLM-Powered Summarization of TV News Tickers**
+# Multimodal Vision- and Audio-Based Extraction and LLM-Powered Summarization of TV News
 
 Master's Thesis — German International University (GIU), Berlin
 
@@ -15,7 +13,14 @@ An end-to-end pipeline that automatically extracts and summarizes news content f
 | **Visual** | Scrolling ticker bar | OCR (EasyOCR + Tesseract) | Extracted headlines + 9-LLM summaries |
 | **Audio** | Spoken broadcast | ASR (Whisper) | Full transcript + 9-LLM multi-paragraph summaries |
 
-Both paths are compared against human reference summaries using ROUGE and BERTScore. A web interface allows users to upload any news video, select a time range, and get summarized results from 9 different LLMs.
+Both paths are compared against human reference summaries using ROUGE and BERTScore.
+
+The repository ships **two web surfaces** that share a single design system:
+
+- **`site/`** — a polished, read-only **defense site** (Astro static export) that animates every pipeline stage and exposes the precomputed results for committee review.
+- **`webapp/frontend/`** — an **interactive workbench** (React + FastAPI) where a user uploads a video, picks a time range, and runs the live OCR / ASR / LLM pipeline.
+
+A separate **OCR engine comparison** (`ocr_comparison/`) benchmarks five OCR engines (Tesseract, EasyOCR, PaddleOCR, docTR, CRAFT+TrOCR) on the same two ground-truth panoramas, in both pure and Tesseract-dash-augmented configurations.
 
 ### Key Results
 
@@ -28,6 +33,32 @@ Both paths are compared against human reference summaries using ROUGE and BERTSc
 | **WER** | 35.9% | **19.6%** |
 
 Validated against 39 manually-annotated ground-truth headlines from two 30-minute slices of a 14-hour Al Jazeera broadcast.
+
+### OCR Engine Comparison (head-to-head, CPU-only)
+
+Five engines on the **same two ground-truth panoramas**, segmentation pipeline held constant, two configurations reported.
+
+**Pure engines (no Tesseract dash augmentation)**
+
+| Engine | Mean F1 | Notes |
+|---|---|---|
+| Tesseract | **85.4%** | Only engine to natively detect the `" - "` delimiter |
+| docTR | 63.9% | Detects some dashes |
+| PaddleOCR | 8.5% | Noisy recognition, few dashes |
+| EasyOCR | 0.0% | Skips `" - "` glyph entirely → segmentation collapses |
+| CRAFT + TrOCR | 0.0% | Same dash problem |
+
+**Engines + Tesseract dash augmentation (matches v6 production architecture)**
+
+| Engine | Mean F1 | CER | Time | Peak RAM |
+|---|---|---|---|---|
+| **EasyOCR** | **91.3%** | **8.8%** | 3.9 min | 1.8 GB |
+| Tesseract | 85.4% | 10.2% | 0.6 min | 4 MB |
+| docTR | 80.3% | 12.0% | 6.0 min | 2.1 GB |
+| PaddleOCR | 23.0% | 27.8% | 21.9 min | 596 MB |
+| CRAFT + TrOCR (hybrid) | 29.9% | 29.8% | 52.4 min | 2.8 GB |
+
+EasyOCR's win in the augmented configuration validates v6's choice of EasyOCR as the primary recognizer.
 
 ---
 
@@ -87,8 +118,8 @@ Validated against 39 manually-annotated ground-truth headlines from two 30-minut
 ### Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/tv-news-summarizer.git
-cd tv-news-summarizer
+git clone https://github.com/MarwanMohamed01/broadcast-summarization.git
+cd broadcast-summarization
 
 pip install -r requirements.txt
 ```
@@ -142,19 +173,63 @@ python asr/chunk_transcript.py
 python asr/summarize_transcript.py
 ```
 
-### Run the Web App
+### Run the Interactive Workbench (`webapp/`)
 
 ```bash
 # Terminal 1: Backend (FastAPI)
 uvicorn webapp.backend.main:app --reload --port 8000
 
-# Terminal 2: Frontend (React + Vite)
+# Terminal 2: Frontend (React + Vite, redesigned with shared design system)
 cd webapp/frontend
 npm install
 npm run dev
 ```
 
 Open http://localhost:5173 in your browser.
+
+### Run the Defense Site (`site/`)
+
+A polished, read-only Astro site that animates every pipeline stage using the
+already-saved outputs. Built for the supervisor and committee — no live runs.
+
+```bash
+# 1. Extract a 30-second demo MP4 + WAV from the source video (idempotent, ~1 min)
+python videos/extract_demo_clip.py
+
+# 2. (Optional but recommended) Capture real EasyOCR bboxes + scroll deltas
+#    on Slice A so the OCR + scroll-detection stages render real data
+python site/scripts/instrument_slice_A.py
+
+# 3. Build the asset bundle (panoramas → WebP, waveform peaks, eval scores)
+cd site
+python scripts/build_assets.py
+
+# 4. Run the dev server
+npm install
+npm run dev      # http://localhost:4321
+```
+
+Routes: `/`, `/visual`, `/audio`, `/results`, `/explore`. Static export (`npm run build`) deploys to any static host.
+
+### Run the OCR Engine Comparison (`ocr_comparison/`)
+
+```bash
+pip install paddlepaddle paddleocr "python-doctr[torch]" transformers torch psutil
+
+# Run each engine on both ground-truth slices (skips already-done pairs)
+python -m ocr_comparison.run_ocr_engine --engine tesseract   --slice all
+python -m ocr_comparison.run_ocr_engine --engine easyocr     --slice all
+python -m ocr_comparison.run_ocr_engine --engine paddle      --slice all
+python -m ocr_comparison.run_ocr_engine --engine doctr       --slice all
+python -m ocr_comparison.run_ocr_engine --engine craft_trocr --slice all
+
+# Two segmentation passes: pure engines + Tesseract-dash-augmented
+python -m ocr_comparison.regenerate_pure
+python -m ocr_comparison.augment_dashes
+
+# Aggregate both tables into ocr_comparison/output/comparison_report.{json,txt}
+python -m ocr_comparison.evaluate_all
+```
 
 ### Run Validation
 
@@ -204,9 +279,24 @@ python validation/validate_extraction.py
 │   ├── summarize_transcript.py # 2-level hierarchical LLM summarization
 │   └── output/                 # transcript.json/.txt/.srt + chunks/
 │
-├── webapp/                     # Web interface
+├── webapp/                     # Interactive workbench
 │   ├── backend/                # FastAPI (upload, job queue, pipeline orchestration)
-│   └── frontend/               # React + Vite + Tailwind (video preview, range slider, results)
+│   └── frontend/               # React + Vite + Tailwind (redesigned, uses design-system/)
+│
+├── site/                       # Defense site (Astro static export)
+│   ├── src/                    # layouts, pages (visual, audio, results, explore), components
+│   ├── public/data/            # built — gitignored, regenerated by scripts/build_assets.py
+│   └── scripts/                # build_assets.py + instrument_slice_A.py (real OCR bboxes)
+│
+├── design-system/              # Shared visual identity (no build step)
+│   ├── tokens.css              # CSS custom properties (light/dark, motion, type)
+│   └── components/             # React stage components used by site/ AND webapp/frontend/
+│
+├── ocr_comparison/             # Multi-OCR head-to-head experiment
+│   ├── engines/                # Tesseract, EasyOCR, Paddle, docTR, CRAFT+TrOCR adapters
+│   ├── augment_dashes.py       # Tesseract PSM 6 dash augmentation
+│   ├── regenerate_pure.py      # Pure-engine segmentation rebuild
+│   └── evaluate_all.py         # Both comparison tables: pure + augmented
 │
 ├── results/                    # Evaluation reports (validation_report.json)
 ├── requirements.txt

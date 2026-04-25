@@ -1,5 +1,11 @@
-/* Minor tweaks on top of Tailwind */
+/* Minor tweaks on top of Tailwind. Most styling lives in index.css /
+   tokens.css and inline Tailwind classes — this file only patches a
+   few third-party widgets (rc-slider) that bring their own CSS. */
 
 .rc-slider-handle:focus-visible {
-  box-shadow: 0 0 0 3px #3b82f655;
+  box-shadow: 0 0 0 3px var(--color-visual) !important;
+  outline: none;
+}
+.rc-slider-handle:hover {
+  filter: brightness(1.05);
 }

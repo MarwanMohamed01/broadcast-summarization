@@ -1,0 +1,57 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ResultsHero from "../../../design-system/components/shared/ResultsHero.jsx";
+import EvalStage from "../../../design-system/components/visual/EvalStage.jsx";
+import GTOverlay from "../../../design-system/components/shared/GTOverlay.jsx";
+---
+
+<BaseLayout
+  title="Results · TV news multimodal extraction"
+  description="Quantitative evaluation of both pipelines and all nine LLMs."
+>
+  <section class="border-b border-border">
+    <div class="max-w-content mx-auto px-6 pt-20 pb-12">
+      <h1 class="text-4xl lg:text-5xl font-semibold tracking-tight">
+        Quantitative results
+      </h1>
+      <p class="prose-thesis mt-4 max-w-2xl">
+        Two evaluations.  <strong>Headline extraction</strong> is scored
+        against 39 manually-annotated headlines from two 30-minute slices.
+        <strong>Summarisation</strong> is scored with ROUGE-L and BERTScore
+        against a hand-written reference summary.
+      </p>
+    </div>
+  </section>
+
+  <section class="border-b border-border">
+    <div class="max-w-content mx-auto px-6 py-16">
+      <h2 class="text-2xl font-semibold mb-6">Headline extraction</h2>
+      <ResultsHero client:load reportUrl="/data/stats/validation_report.json" />
+      <p class="text-sm text-text-muted mt-4 max-w-2xl">
+        The single LLM-cleaning pass lifts F1 by <strong>+3.3 points</strong>
+        and cuts character-error-rate roughly in half.  Precision climbs even
+        more sharply (75.0% → 84.2%) because the cleaner removes merged
+        headlines that previously inflated the false-positive count.
+      </p>
+    </div>
+  </section>
+
+  <EvalStage client:load accent="visual" />
+
+  <section class="border-t border-border">
+    <div class="max-w-content mx-auto px-6 py-16 grid lg:grid-cols-2 gap-6">
+      <GTOverlay
+        client:load
+        sliceLabel="Slice A · 08:30–09:00"
+        gtUrl="/data/ground_truth/slice_A_headlines.txt"
+        extractedUrl="/data/headlines/news_items_cleaned.json"
+      />
+      <GTOverlay
+        client:load
+        sliceLabel="Slice B · 13:00–13:30"
+        gtUrl="/data/ground_truth/slice_B_headlines.txt"
+        extractedUrl="/data/headlines/news_items_cleaned.json"
+      />
+    </div>
+  </section>
+</BaseLayout>

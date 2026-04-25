@@ -1,0 +1,23 @@
+{
+  "engine": "paddle",
+  "slice": "slice_A",
+  "panorama_size_px": [
+    142165,
+    87
+  ],
+  "elapsed_seconds": 1318.63,
+  "pixels_per_second": 9379.7,
+  "rss_mb_before": 74.9,
+  "rss_mb_after": 671.0,
+  "rss_mb_delta": 596.1,
+  "text_length_chars": 2204,
+  "word_count": 49,
+  "meta": {
+    "engine": "paddle",
+    "slice_w": 3000,
+    "stride": 1500,
+    "slices_processed": 95,
+    "model": "PP-OCRv4 (en)",
+    "confidence_threshold": 0.5
+  }
+}

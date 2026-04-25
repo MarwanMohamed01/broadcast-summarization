@@ -1,0 +1,1791 @@
+{
+  "timestamp": "2026-04-25T15:42:01.296665",
+  "engines_compared": [
+    "tesseract",
+    "easyocr",
+    "paddle",
+    "doctr",
+    "craft_trocr"
+  ],
+  "end_to_end_engines": [
+    "tesseract",
+    "easyocr",
+    "paddle",
+    "doctr"
+  ],
+  "hybrid_engines": [
+    "craft_trocr"
+  ],
+  "configurations": {
+    "pure": "Engine alone — no Tesseract dash augmentation",
+    "augmented": "Engine + Tesseract PSM 6 dash augmentation (matches v6 production)"
+  },
+  "pure_results": [
+    {
+      "stage": "tesseract",
+      "slice": "slice_A",
+      "gt_count": 27,
+      "extracted_count": 24,
+      "thresholds": {
+        "60": {
+          "tp_gt": 24,
+          "tp_ext": 23,
+          "fn": 3,
+          "fp": 1,
+          "precision": 0.9583,
+          "recall": 0.8889,
+          "f1": 0.9223
+        },
+        "70": {
+          "tp_gt": 21,
+          "tp_ext": 22,
+          "fn": 6,
+          "fp": 2,
+          "precision": 0.9167,
+          "recall": 0.7778,
+          "f1": 0.8415
+        },
+        "80": {
+          "tp_gt": 20,
+          "tp_ext": 20,
+          "fn": 7,
+          "fp": 4,
+          "precision": 0.8333,
+          "recall": 0.7407,
+          "f1": 0.7843
+        }
+      },
+      "exact_matches": 13,
+      "coverage_at_50_pct": 26,
+      "avg_cer_at_70": 0.0871,
+      "avg_wer_at_70": 0.1603,
+      "missed_headlines": [
+        "GAZA HEALTH MINISTRY: 716 PALESTINIANS KILLED IN ISRAELI ATTACKS SINCE CEASEFIRE STARTED IN OCTOBER",
+        "GAZA HEALTH MINISTRY: 72,292 PALESTINIANS KILLED IN ISRAELI ATTACKS SINCE OCTOBER 2023",
+        "EIGHT OPEC+ COUNTRIES AGREE TO INCREASE OIL PRODUCTION QUOTAS BY 206,000 BARRELS PER DAY FROM MAY",
+        "LEBANESE ARMY SAYS ONE SOLDIER KILLED IN ISRAELI ATTACK IN SOUTHERN LEBANON",
+        "MEDICS SAY ISRAELI AIR STRIKES KILLED FOUR PALESTINIANS IN NORTHERN GAZA STRIP DESPITE CEASEFIRE",
+        "ISRAELI MILITARY CONTINUES TO STRIKE BEIRUT, KILLING AT LEAST FIVE PEOPLE AND INJURING DOZENS"
+      ],
+      "false_positive_count": 2,
+      "false_positives_sample": [
+        "“paws PARLIAMENT SPEAKER WARNS TRUMP’S TRUMP’S ‘RECKLESS ‘RECKLESS MOVES’ MOVES’ MEAN MEAN",
+        "TRUMP OPENED SY 0000 GMT WEDNESDAY"
+      ],
+      "is_hybrid": false,
+      "timing": {
+        "engine": "tesseract",
+        "slice": "slice_A",
+        "panorama_size_px": [
+          142165,
+          87
+        ],
+        "elapsed_seconds": 39.68,
+        "pixels_per_second": 311671.7,
+        "rss_mb_before": 107.7,
+        "rss_mb_after": 112.1,
+        "rss_mb_delta": 4.4,
+        "text_length_chars": 10150,
+        "word_count": 1661,
+        "meta": {
+          "engine": "tesseract",
+          "slice_w": 3000,
+          "stride": 1500,
+          "slices_processed": 95,
+          "psm": 7,
+          "confidence_threshold": 20
+        }
+      },
+      "config": "pure"
+    },
+    {
+      "stage": "tesseract",
+      "slice": "slice_B",
+      "gt_count": 28,
+      "extracted_count": 23,
+      "thresholds": {
+        "60": {
+          "tp_gt": 27,
+          "tp_ext": 23,
+          "fn": 1,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.9643,
+          "f1": 0.9818
+        },
+        "70": {
+          "tp_gt": 23,
+          "tp_ext": 21,
+          "fn": 5,
+          "fp": 2,
+          "precision": 0.913,
+          "recall": 0.8214,
+          "f1": 0.8648
+        },
+        "80": {
+          "tp_gt": 21,
+          "tp_ext": 19,
+          "fn": 7,
+          "fp": 4,
+          "precision": 0.8261,
+          "recall": 0.75,
+          "f1": 0.7862
+        }
+      },
+      "exact_matches": 12,
+      "coverage_at_50_pct": 28,
+      "avg_cer_at_70": 0.1137,
+      "avg_wer_at_70": 0.2478,
+      "missed_headlines": [
+        "U.S. FORCES RESCUE MISSING AIRMAN IN IRAN TWO DAYS AFTER AMERICAN FIGHTER JET WENT DOWN",
+        "IRAN SAYS STRUCK U.S. FORCES RELOCATED ON KUWAIT'S BUBIYAN ISLAND",
+        "WORLD HEALTH ORGANIZATION DRIVER SHOT & KILLED BY ISRAELI ARMY IN GAZA",
+        "GAZA HEALTH MINISTRY: 716 PALESTINIANS KILLED IN ISRAELI ATTACKS SINCE CEASEFIRE STARTED IN OCTOBER",
+        "GAZA HEALTH MINISTRY: 72,292 PALESTINIANS KILLED IN ISRAELI ATTACKS SINCE OCTOBER 2023"
+      ],
+      "false_positive_count": 2,
+      "false_positives_sample": [
+        "TWO FE),IISFAMISSIISDING IN iRITYAL U.S. FRGGSRIN IWCA AMERICAN FIGHTER JET WENT DOWN",
+        "ILE f KILL‘SEVIE EAR-OBAH MINI: 1 PEIN) WERSTIIART OF W.WORLHIOGANIZATION DRIVER SHOT & KILLED BY ISRAELIARMY@A"
+      ],
+      "is_hybrid": false,
+      "timing": {
+        "engine": "tesseract",
+        "slice": "slice_B",
+        "panorama_size_px": [
+          128868,
+          87
+        ],
+        "elapsed_seconds": 32.17,
+        "pixels_per_second": 348463.0,
+        "rss_mb_before": 102.7,
+        "rss_mb_after": 106.4,
+        "rss_mb_delta": 3.7,
+        "text_length_chars": 9609,
+        "word_count": 1559,
+        "meta": {
+          "engine": "tesseract",
+          "slice_w": 3000,
+          "stride": 1500,
+          "slices_processed": 86,
+          "psm": 7,
+          "confidence_threshold": 20
+        }
+      },
+      "config": "pure"
+    },
+    {
+      "stage": "easyocr",
+      "slice": "slice_A",
+      "gt_count": 27,
+      "extracted_count": 0,
+      "thresholds": {
+        "60": {
+          "tp_gt": 0,
+          "tp_ext": 0,
+          "fn": 27,
+          "fp": 0,
+          "precision": 0,
+          "recall": 0.0,
+          "f1": 0
+        },
+        "70": {
+          "tp_gt": 0,
+          "tp_ext": 0,
+          "fn": 27,
+          "fp": 0,
+          "precision": 0,
+          "recall": 0.0,
+          "f1": 0
+        },
+        "80": {
+          "tp_gt": 0,
+          "tp_ext": 0,
+          "fn": 27,
+          "fp": 0,
+          "precision": 0,
+          "recall": 0.0,
+          "f1": 0
+        }
+      },
+      "exact_matches": 0,
+      "coverage_at_50_pct": 0,
+      "avg_cer_at_70": null,
+      "avg_wer_at_70": null,
+      "missed_headlines": [
+        "GAZA HEALTH MINISTRY: 716 PALESTINIANS KILLED IN ISRAELI ATTACKS SINCE CEASEFIRE STARTED IN OCTOBER",
+        "GAZA HEALTH MINISTRY: 72,292 PALESTINIANS KILLED IN ISRAELI ATTACKS SINCE OCTOBER 2023",
+        "ISRAELI FORCES AND SETTLERS HAVE KILLED 1,138 PALESTINIANS IN OCCUPIED WEST BANK SINCE OCTOBER 2023",
+        "D.R. CONGO TO TEMPORARILY ACCEPT DEPORTED MIGRANTS UNDER NEW DEAL WITH THE U.S.",
+        "RESCUE CHARITIES SAY 71 PEOPLE REMAIN MISSING AT SEA AFTER 32 RESCUED NEAR ITALIAN COAST",
+        "ARTEMIS II ASTRONAUTS GLIMPSE MOON'S 'GRAND CANYON' AHEAD OF HISTORIC LUNAR FLYBY",
+        "TRUMP THREATENS ON IRAN'S POWER PLANTS IF HORMUZ IS NOT OPENED BY 0000 GMT WEDNESDAY",
+        "IRAN'S PARLIAMENT SPEAKER WARNS TRUMP'S 'RECKLESS MOVES' MEAN 'WHOLE REGION GOING TO BURN'",
+        "MORE THAN A DOZEN IRANIAN CITIES BOMBED BY U.S. AND ISRAEL OVERNIGHT",
+        "IRAN SAYS U.S.-ISRAELI STRIKES KILL AT LEAST 34 PEOPLE ACROSS COUNTRY OVER PAST 24 HOURS, INCLUDING SIX CHILDREN",
+        "IRAN'S MISSION TO UN URGES WORLD TO PREVENT 'ATROCIOUS ACT' AFTER TRUMP THREATS",
+        "MULTIPLE INJURIES REPORTED AFTER IRAN MISSILE ATTACK HITS CENTRAL ISRAEL, IN TEL AVIV AREA",
+        "TWO PEOPLE KILLED, TWO REMAIN MISSING AFTER IRANIAN MISSILE HITS BUILDING IN ISRAELI CITY OF HAIFA",
+        "U.S. FORCES RESCUE MISSING AIRMAN IN IRAN TWO DAYS AFTER AMERICAN FIGHTER JET WENT DOWN",
+        "IRANIAN MEDIA SAY SENIOR IRANIAN MILITARY COMMANDER HAS BEEN KILLED IN U.S.-ISRAELI ATTACKS",
+        "IRANIAN AUTHORITIES: 2,076 PEOPLE KILLED AND 26,500 INJURED IN U.S.-ISRAELI STRIKES SINCE FEBRUARY 28",
+        "IRANIAN PRESIDENT OFFICE: HORMUZ WILL REOPEN ONLY WHEN TRANSIT REVENUES COMPENSATE WAR DAMAGES",
+        "IRAN'S REVOLUTIONARY GUARD SAYS IT HAS TARGETED PETROCHEMICAL PLANTS IN UAE,KUWAIT AND BAHRAIN",
+        "QATAR'S FOREIGN MINISTER EXPRESSES SOLIDARITY WITH KUWAIT AFTER IRANIAN ATTACKS ON ENERGY FACILITIES",
+        "EIGHT OPEC+ COUNTRIES AGREE TO INCREASE OIL PRODUCTION QUOTAS BY 206,000 BARRELS PER DAY FROM MAY",
+        "LEBANESE ARMY SAYS ONE SOLDIER KILLED IN ISRAELI ATTACK IN SOUTHERN LEBANON",
+        "ISRAELI AIR STRIKE ON SOUTHERN LEBANON KILLS SEVEN PEOPLE, INCLUDING FOUR-YEAR-OLD GIRL",
+        "LEBANESE HEALTH MINISTRY: FOUR PEOPLE KILLED AND 39 INJURED IN ISRAELI RAID ON JNAH AREA SOUTH OF BEIRUT",
+        "LEBANON'S HEALTH MINISTRY: 1,461 PEOPLE KILLED AND 4,430 WOUNDED IN ISRAELI ATTACKS SINCE START OF WAR",
+        "MEDICS SAY ISRAELI AIR STRIKES KILLED FOUR PALESTINIANS IN NORTHERN GAZA STRIP DESPITE CEASEFIRE",
+        "HAMAS SAYS IT WILL NOT DISARM BECAUSE PALESTINIANS CONTINUE TO BE TARGETED BY ISRAEL IN THE GAZA STRIP",
+        "ISRAELI MILITARY CONTINUES TO STRIKE BEIRUT, KILLING AT LEAST FIVE PEOPLE AND INJURING DOZENS"
+      ],
+      "false_positive_count": 0,
+      "false_positives_sample": [],
+      "is_hybrid": false,
+      "timing": {
+        "engine": "easyocr",
+        "slice": "slice_A",
+        "panorama_size_px": [
+          142165,
+          87
+        ],
+        "elapsed_seconds": 232.22,
+        "pixels_per_second": 53260.7,
+        "rss_mb_before": 73.1,
+        "rss_mb_after": 1895.1,
+        "rss_mb_delta": 1822.0,
+        "text_length_chars": 10644,
+        "word_count": 124,
+        "meta": {
+          "engine": "easyocr",
+          "slice_w": 3000,
+          "stride": 1500,
+          "slices_processed": 95,
+          "upscale": 3,
+          "confidence_threshold": 0.3
+        }
+      },
+      "config": "pure"
+    },
+    {
+      "stage": "easyocr",
+      "slice": "slice_B",
+      "gt_count": 28,
+      "extracted_count": 0,
+      "thresholds": {
+        "60": {
+          "tp_gt": 0,
+          "tp_ext": 0,
+          "fn": 28,
+          "fp": 0,
+          "precision": 0,
+          "recall": 0.0,
+          "f1": 0
+        },
+        "70": {
+          "tp_gt": 0,
+          "tp_ext": 0,
+          "fn": 28,
+          "fp": 0,
+          "precision": 0,
+          "recall": 0.0,
+          "f1": 0
+        },
+        "80": {
+          "tp_gt": 0,
+          "tp_ext": 0,
+          "fn": 28,
+          "fp": 0,
+          "precision": 0,
+          "recall": 0.0,
+          "f1": 0
+        }
+      },
+      "exact_matches": 0,
+      "coverage_at_50_pct": 0,
+      "avg_cer_at_70": null,
+      "avg_wer_at_70": null,
+      "missed_headlines": [
+        "ARTEMIS II ASTRONAUTS GLIMPSE MOON'S 'GRAND CANYON' AHEAD OF HISTORIC LUNAR FLYBY",
+        "TRUMP THREATENS ON IRAN'S POWER PLANTS IF HORMUZ IS NOT OPENED BY 0000 GMT WEDNESDAY",
+        "IRANIAN FOREIGN MINISTRY SPOKESMAN SAYS U.S. HAS DESTROYED DIPLOMATIC PROCESS, FOCUS IS ON DEFENCE OF NATION",
+        "IRAN'S REVOLUTIONARY GUARD ANNOUNCES DEATH OF INTELLIGENCE CHIEF MAJID KHADEMI",
+        "MORE THAN A DOZEN IRANIAN CITIES BOMBED BY U.S. AND ISRAEL OVERNIGHT",
+        "IRAN SAYS U.S.-ISRAELI STRIKES KILL AT LEAST 34 PEOPLE ACROSS COUNTRY OVER 24 HOURS, INCLUDING SIX CHILDREN",
+        "IRAN'S ATOMIC ENERGY CHIEF ACCUSES UN NUCLEAR WATCHDOG OF INACTION, WARNS OF RISK FROM ATTACKS ON BUSHEHR POWER PLANTS",
+        "MULTIPLE INJURIES REPORTED AFTER IRANIAN MISSILE ATTACK HITS CENTRAL ISRAEL, INCLUDING TEL AVIV AREA",
+        "TWO PEOPLE KILLED, TWO MISSING AFTER IRANIAN MISSILE HITS BUILDING IN ISRAELI CITY OF HAIFA",
+        "U.S. FORCES RESCUE MISSING AIRMAN IN IRAN TWO DAYS AFTER AMERICAN FIGHTER JET WENT DOWN",
+        "IRANIAN AUTHORITIES: 2,076 PEOPLE KILLED AND 26,500 INJURED IN U.S.-ISRAELI STRIKES SINCE FEBRUARY 28",
+        "IRAN SAYS STRUCK U.S. FORCES RELOCATED ON KUWAIT'S BUBIYAN ISLAND",
+        "SIX PEOPLE INJURED BY MISSILE INTERCEPTION DEBRIS IN NORTHERN KUWAIT: HEALTH MINISTRY",
+        "IRAN SAYS IT HAS TARGETED PETROCHEMICAL PLANTS IN UAE, KUWAIT AND BAHRAIN",
+        "QATAR PRIME MINISTER PRESSES FOR 'PEACEFUL MEANS' TO RESOLVE MIDDLE EAST CONFLICT",
+        "EIGHT OPEC+ COUNTRIES AGREE TO INCREASE OIL PRODUCTION QUOTAS BY 206,000 BARRELS PER DAY FROM MAY",
+        "ISRAELI MILITARY CONTINUES TO STRIKE AREA AROUND BEIRUT, KILLING AT LEAST FIVE PEOPLE AND INJURING DOZENS",
+        "ISRAELI AIR STRIKE ON SOUTHERN LEBANON KILLS SEVEN PEOPLE, INCLUDING FOUR-YEAR-OLD GIRL",
+        "LEBANON'S HEALTH MINISTRY: 1,461 PEOPLE KILLED AND 4,430 WOUNDED IN ISRAELI ATTACKS SINCE START OF WAR",
+        "WORLD HEALTH ORGANIZATION DRIVER SHOT & KILLED BY ISRAELI ARMY IN GAZA",
+        "HAMAS SAYS IT WILL NOT DISARM BECAUSE PALESTINIANS CONTINUE TO BE TARGETED BY ISRAEL IN THE GAZA STRIP",
+        "GAZA HEALTH MINISTRY: 716 PALESTINIANS KILLED IN ISRAELI ATTACKS SINCE CEASEFIRE STARTED IN OCTOBER",
+        "GAZA HEALTH MINISTRY: 72,292 PALESTINIANS KILLED IN ISRAELI ATTACKS SINCE OCTOBER 2023",
+        "ISRAELI FORCES AND SETTLERS HAVE KILLED 1,138 PALESTINIANS IN OCCUPIED WEST BANK SINCE OCTOBER 2023",
+        "D.R. CONGO TO TEMPORARILY ACCEPT DEPORTED MIGRANTS UNDER NEW DEAL WITH THE U.S.",
+        "RESCUE CHARITIES SAY 71 PEOPLE REMAIN MISSING AT SEA AFTER 32 RESCUED NEAR ITALIAN COAST",
+        "ARTEMIS II ASTRONAUTS GLIMPSE MOON'S 'GRAND CANYON' AHEAD OF HISTORIC LUNAR FLYBY",
+        "TRUMP THREATENS ON IRAN'S POWER PLANTS IF HORMUZ IS NOT OPENED BY 0000 GMT WEDNESDAY"
+      ],
+      "false_positive_count": 0,
+      "false_positives_sample": [],
+      "is_hybrid": false,
+      "timing": {
+        "engine": "easyocr",
+        "slice": "slice_B",
+        "panorama_size_px": [
+          128868,
+          87
+        ],
+        "elapsed_seconds": 197.24,
+        "pixels_per_second": 56842.0,
+        "rss_mb_before": 1893.0,
+        "rss_mb_after": 1896.4,
+        "rss_mb_delta": 3.4,
+        "text_length_chars": 9886,
+        "word_count": 119,
+        "meta": {
+          "engine": "easyocr",
+          "slice_w": 3000,
+          "stride": 1500,
+          "slices_processed": 86,
+          "upscale": 3,
+          "confidence_threshold": 0.3
+        }
+      },
+      "config": "pure"
+    },
+    {
+      "stage": "paddle",
+      "slice": "slice_A",
+      "gt_count": 27,
+      "extracted_count": 6,
+      "thresholds": {
+        "60": {
+          "tp_gt": 1,
+          "tp_ext": 1,
+          "fn": 26,
+          "fp": 5,
+          "precision": 0.1667,
+          "recall": 0.037,
+          "f1": 0.0606
+        },
+        "70": {
+          "tp_gt": 1,
+          "tp_ext": 1,
+          "fn": 26,
+          "fp": 5,
+          "precision": 0.1667,
+          "recall": 0.037,
+          "f1": 0.0606
+        },
+        "80": {
+          "tp_gt": 0,
+          "tp_ext": 0,
+          "fn": 27,
+          "fp": 6,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0
+        }
+      },
+      "exact_matches": 0,
+      "coverage_at_50_pct": 4,
+      "avg_cer_at_70": 0.6778,
+      "avg_wer_at_70": 0.8462,
+      "missed_headlines": [
+        "GAZA HEALTH MINISTRY: 716 PALESTINIANS KILLED IN ISRAELI ATTACKS SINCE CEASEFIRE STARTED IN OCTOBER",
+        "GAZA HEALTH MINISTRY: 72,292 PALESTINIANS KILLED IN ISRAELI ATTACKS SINCE OCTOBER 2023",
+        "ISRAELI FORCES AND SETTLERS HAVE KILLED 1,138 PALESTINIANS IN OCCUPIED WEST BANK SINCE OCTOBER 2023",
+        "D.R. CONGO TO TEMPORARILY ACCEPT DEPORTED MIGRANTS UNDER NEW DEAL WITH THE U.S.",
+        "RESCUE CHARITIES SAY 71 PEOPLE REMAIN MISSING AT SEA AFTER 32 RESCUED NEAR ITALIAN COAST",
+        "ARTEMIS II ASTRONAUTS GLIMPSE MOON'S 'GRAND CANYON' AHEAD OF HISTORIC LUNAR FLYBY",
+        "TRUMP THREATENS ON IRAN'S POWER PLANTS IF HORMUZ IS NOT OPENED BY 0000 GMT WEDNESDAY",
+        "MORE THAN A DOZEN IRANIAN CITIES BOMBED BY U.S. AND ISRAEL OVERNIGHT",
+        "IRAN SAYS U.S.-ISRAELI STRIKES KILL AT LEAST 34 PEOPLE ACROSS COUNTRY OVER PAST 24 HOURS, INCLUDING SIX CHILDREN",
+        "IRAN'S MISSION TO UN URGES WORLD TO PREVENT 'ATROCIOUS ACT' AFTER TRUMP THREATS",
+        "MULTIPLE INJURIES REPORTED AFTER IRAN MISSILE ATTACK HITS CENTRAL ISRAEL, IN TEL AVIV AREA",
+        "TWO PEOPLE KILLED, TWO REMAIN MISSING AFTER IRANIAN MISSILE HITS BUILDING IN ISRAELI CITY OF HAIFA",
+        "U.S. FORCES RESCUE MISSING AIRMAN IN IRAN TWO DAYS AFTER AMERICAN FIGHTER JET WENT DOWN",
+        "IRANIAN MEDIA SAY SENIOR IRANIAN MILITARY COMMANDER HAS BEEN KILLED IN U.S.-ISRAELI ATTACKS",
+        "IRANIAN AUTHORITIES: 2,076 PEOPLE KILLED AND 26,500 INJURED IN U.S.-ISRAELI STRIKES SINCE FEBRUARY 28",
+        "IRANIAN PRESIDENT OFFICE: HORMUZ WILL REOPEN ONLY WHEN TRANSIT REVENUES COMPENSATE WAR DAMAGES",
+        "IRAN'S REVOLUTIONARY GUARD SAYS IT HAS TARGETED PETROCHEMICAL PLANTS IN UAE,KUWAIT AND BAHRAIN",
+        "QATAR'S FOREIGN MINISTER EXPRESSES SOLIDARITY WITH KUWAIT AFTER IRANIAN ATTACKS ON ENERGY FACILITIES",
+        "EIGHT OPEC+ COUNTRIES AGREE TO INCREASE OIL PRODUCTION QUOTAS BY 206,000 BARRELS PER DAY FROM MAY",
+        "LEBANESE ARMY SAYS ONE SOLDIER KILLED IN ISRAELI ATTACK IN SOUTHERN LEBANON",
+        "ISRAELI AIR STRIKE ON SOUTHERN LEBANON KILLS SEVEN PEOPLE, INCLUDING FOUR-YEAR-OLD GIRL",
+        "LEBANESE HEALTH MINISTRY: FOUR PEOPLE KILLED AND 39 INJURED IN ISRAELI RAID ON JNAH AREA SOUTH OF BEIRUT",
+        "LEBANON'S HEALTH MINISTRY: 1,461 PEOPLE KILLED AND 4,430 WOUNDED IN ISRAELI ATTACKS SINCE START OF WAR",
+        "MEDICS SAY ISRAELI AIR STRIKES KILLED FOUR PALESTINIANS IN NORTHERN GAZA STRIP DESPITE CEASEFIRE",
+        "HAMAS SAYS IT WILL NOT DISARM BECAUSE PALESTINIANS CONTINUE TO BE TARGETED BY ISRAEL IN THE GAZA STRIP",
+        "ISRAELI MILITARY CONTINUES TO STRIKE BEIRUT, KILLING AT LEAST FIVE PEOPLE AND INJURING DOZENS"
+      ],
+      "false_positive_count": 5,
+      "false_positives_sample": [
+        "(RAN(AN PRES(CENT'S GFF(CE: HORM",
+        "NSIN OCCUPSED WEST BANK SINCE OCTOBEA 2O23",
+        "3SN1 R6ESS5SSEESCSSSCS5- SSLSSOCESSSCRESREPCKS IAANIANAUTHOASTSES: Z,BT6AEOPLANDIS,SDD SUSEO SUS.S.-SSAAELSSTAIKESSINCEFEBRUARY Z8 TTERARGAMAGES",
+        "D.A. CONGD JD JEMPDPA SSSSSSSS ASS SSRAEC CERISGKS",
+        "GAZA KEALTK ULN GAEASEALSHMSSSKS TS6 P C.R. CONGO TO TEMPORARILY ACCEPT BEPO CSMASSSSY"
+      ],
+      "is_hybrid": false,
+      "timing": {
+        "engine": "paddle",
+        "slice": "slice_A",
+        "panorama_size_px": [
+          142165,
+          87
+        ],
+        "elapsed_seconds": 1318.63,
+        "pixels_per_second": 9379.7,
+        "rss_mb_before": 74.9,
+        "rss_mb_after": 671.0,
+        "rss_mb_delta": 596.1,
+        "text_length_chars": 2204,
+        "word_count": 49,
+        "meta": {
+          "engine": "paddle",
+          "slice_w": 3000,
+          "stride": 1500,
+          "slices_processed": 95,
+          "model": "PP-OCRv4 (en)",
+          "confidence_threshold": 0.5
+        }
+      },
+      "config": "pure"
+    },
+    {
+      "stage": "paddle",
+      "slice": "slice_B",
+      "gt_count": 28,
+      "extracted_count": 9,
+      "thresholds": {
+        "60": {
+          "tp_gt": 6,
+          "tp_ext": 6,
+          "fn": 22,
+          "fp": 3,
+          "precision": 0.6667,
+          "recall": 0.2143,
+          "f1": 0.3243
+        },
+        "70": {
+          "tp_gt": 2,
+          "tp_ext": 2,
+          "fn": 26,
+          "fp": 7,
+          "precision": 0.2222,
+          "recall": 0.0714,
+          "f1": 0.1081
+        },
+        "80": {
+          "tp_gt": 2,
+          "tp_ext": 2,
+          "fn": 26,
+          "fp": 7,
+          "precision": 0.2222,
+          "recall": 0.0714,
+          "f1": 0.1081
+        }
+      },
+      "exact_matches": 0,
+      "coverage_at_50_pct": 15,
+      "avg_cer_at_70": 0.2233,
+      "avg_wer_at_70": 0.5167,
+      "missed_headlines": [
+        "ARTEMIS II ASTRONAUTS GLIMPSE MOON'S 'GRAND CANYON' AHEAD OF HISTORIC LUNAR FLYBY",
+        "TRUMP THREATENS ON IRAN'S POWER PLANTS IF HORMUZ IS NOT OPENED BY 0000 GMT WEDNESDAY",
+        "IRANIAN FOREIGN MINISTRY SPOKESMAN SAYS U.S. HAS DESTROYED DIPLOMATIC PROCESS, FOCUS IS ON DEFENCE OF NATION",
+        "MORE THAN A DOZEN IRANIAN CITIES BOMBED BY U.S. AND ISRAEL OVERNIGHT",
+        "IRAN SAYS U.S.-ISRAELI STRIKES KILL AT LEAST 34 PEOPLE ACROSS COUNTRY OVER 24 HOURS, INCLUDING SIX CHILDREN",
+        "IRAN'S ATOMIC ENERGY CHIEF ACCUSES UN NUCLEAR WATCHDOG OF INACTION, WARNS OF RISK FROM ATTACKS ON BUSHEHR POWER PLANTS",
+        "MULTIPLE INJURIES REPORTED AFTER IRANIAN MISSILE ATTACK HITS CENTRAL ISRAEL, INCLUDING TEL AVIV AREA",
+        "TWO PEOPLE KILLED, TWO MISSING AFTER IRANIAN MISSILE HITS BUILDING IN ISRAELI CITY OF HAIFA",
+        "IRANIAN AUTHORITIES: 2,076 PEOPLE KILLED AND 26,500 INJURED IN U.S.-ISRAELI STRIKES SINCE FEBRUARY 28",
+        "IRAN SAYS STRUCK U.S. FORCES RELOCATED ON KUWAIT'S BUBIYAN ISLAND",
+        "SIX PEOPLE INJURED BY MISSILE INTERCEPTION DEBRIS IN NORTHERN KUWAIT: HEALTH MINISTRY",
+        "IRAN SAYS IT HAS TARGETED PETROCHEMICAL PLANTS IN UAE, KUWAIT AND BAHRAIN",
+        "QATAR PRIME MINISTER PRESSES FOR 'PEACEFUL MEANS' TO RESOLVE MIDDLE EAST CONFLICT",
+        "EIGHT OPEC+ COUNTRIES AGREE TO INCREASE OIL PRODUCTION QUOTAS BY 206,000 BARRELS PER DAY FROM MAY",
+        "ISRAELI MILITARY CONTINUES TO STRIKE AREA AROUND BEIRUT, KILLING AT LEAST FIVE PEOPLE AND INJURING DOZENS",
+        "ISRAELI AIR STRIKE ON SOUTHERN LEBANON KILLS SEVEN PEOPLE, INCLUDING FOUR-YEAR-OLD GIRL",
+        "LEBANON'S HEALTH MINISTRY: 1,461 PEOPLE KILLED AND 4,430 WOUNDED IN ISRAELI ATTACKS SINCE START OF WAR",
+        "WORLD HEALTH ORGANIZATION DRIVER SHOT & KILLED BY ISRAELI ARMY IN GAZA",
+        "HAMAS SAYS IT WILL NOT DISARM BECAUSE PALESTINIANS CONTINUE TO BE TARGETED BY ISRAEL IN THE GAZA STRIP",
+        "GAZA HEALTH MINISTRY: 716 PALESTINIANS KILLED IN ISRAELI ATTACKS SINCE CEASEFIRE STARTED IN OCTOBER",
+        "GAZA HEALTH MINISTRY: 72,292 PALESTINIANS KILLED IN ISRAELI ATTACKS SINCE OCTOBER 2023",
+        "ISRAELI FORCES AND SETTLERS HAVE KILLED 1,138 PALESTINIANS IN OCCUPIED WEST BANK SINCE OCTOBER 2023",
+        "D.R. CONGO TO TEMPORARILY ACCEPT DEPORTED MIGRANTS UNDER NEW DEAL WITH THE U.S.",
+        "RESCUE CHARITIES SAY 71 PEOPLE REMAIN MISSING AT SEA AFTER 32 RESCUED NEAR ITALIAN COAST",
+        "ARTEMIS II ASTRONAUTS GLIMPSE MOON'S 'GRAND CANYON' AHEAD OF HISTORIC LUNAR FLYBY",
+        "TRUMP THREATENS ON IRAN'S POWER PLANTS IF HORMUZ IS NOT OPENED BY 0000 GMT WEDNESDAY"
+      ],
+      "false_positive_count": 7,
+      "false_positives_sample": [
+        "AKTEMISITRSTTUNAUCS GLIMPSE MUUN'S GRRNGTE ETRLHEG SUK CHILOREN",
+        "(ABKRCHIEISS ZENTDDWN JRANIANAUTHDRITE MAARYZIRYLEKEE(QNIIS BUBIYAN ISLANO",
+        "SIXPEORLENLRESRXSS LSIEPPZESSESFOA PEAEEFSE MEAS'TS AESSLFE MISE EAST CUNECI(CT",
+        "MUCTIPLE INSURIES REPORTEO AFTER IRAN CLUDINGTEZ AVIV AREA",
+        "WORLD HEAANIZATIGN GRVER SKOT & KILLEG BY(ARCC(C ,ZPZPALESTINIANS KIELES IN ISRAELS ATTACKS SINCE OCTOBER ZOZ3",
+        "HAN SAYS U.S. -ISRAELI STRIKES KILL AT LEAST 34 PEGRLE ACRASS CAUKCRKCKE CKS ON BUSHEHR POWER PLANTS",
+        "MDRE THAN A DDZENES VS ANDSSIAEI DYEANGHT"
+      ],
+      "is_hybrid": false,
+      "timing": {
+        "engine": "paddle",
+        "slice": "slice_B",
+        "panorama_size_px": [
+          128868,
+          87
+        ],
+        "elapsed_seconds": 1312.49,
+        "pixels_per_second": 8542.2,
+        "rss_mb_before": 71.3,
+        "rss_mb_after": 662.4,
+        "rss_mb_delta": 591.1,
+        "text_length_chars": 2388,
+        "word_count": 44,
+        "meta": {
+          "engine": "paddle",
+          "slice_w": 3000,
+          "stride": 1500,
+          "slices_processed": 86,
+          "model": "PP-OCRv4 (en)",
+          "confidence_threshold": 0.5
+        }
+      },
+      "config": "pure"
+    },
+    {
+      "stage": "doctr",
+      "slice": "slice_A",
+      "gt_count": 27,
+      "extracted_count": 18,
+      "thresholds": {
+        "60": {
+          "tp_gt": 18,
+          "tp_ext": 16,
+          "fn": 9,
+          "fp": 2,
+          "precision": 0.8889,
+          "recall": 0.6667,
+          "f1": 0.7619
+        },
+        "70": {
+          "tp_gt": 16,
+          "tp_ext": 15,
+          "fn": 11,
+          "fp": 3,
+          "precision": 0.8333,
+          "recall": 0.5926,
+          "f1": 0.6926
+        },
+        "80": {
+          "tp_gt": 11,
+          "tp_ext": 11,
+          "fn": 16,
+          "fp": 7,
+          "precision": 0.6111,
+          "recall": 0.4074,
+          "f1": 0.4889
+        }
+      },
+      "exact_matches": 5,
+      "coverage_at_50_pct": 22,
+      "avg_cer_at_70": 0.2113,
+      "avg_wer_at_70": 0.4491,
+      "missed_headlines": [
+        "D.R. CONGO TO TEMPORARILY ACCEPT DEPORTED MIGRANTS UNDER NEW DEAL WITH THE U.S.",
+        "RESCUE CHARITIES SAY 71 PEOPLE REMAIN MISSING AT SEA AFTER 32 RESCUED NEAR ITALIAN COAST",
+        "MORE THAN A DOZEN IRANIAN CITIES BOMBED BY U.S. AND ISRAEL OVERNIGHT",
+        "IRAN SAYS U.S.-ISRAELI STRIKES KILL AT LEAST 34 PEOPLE ACROSS COUNTRY OVER PAST 24 HOURS, INCLUDING SIX CHILDREN",
+        "IRAN'S MISSION TO UN URGES WORLD TO PREVENT 'ATROCIOUS ACT' AFTER TRUMP THREATS",
+        "MULTIPLE INJURIES REPORTED AFTER IRAN MISSILE ATTACK HITS CENTRAL ISRAEL, IN TEL AVIV AREA",
+        "TWO PEOPLE KILLED, TWO REMAIN MISSING AFTER IRANIAN MISSILE HITS BUILDING IN ISRAELI CITY OF HAIFA",
+        "IRANIAN AUTHORITIES: 2,076 PEOPLE KILLED AND 26,500 INJURED IN U.S.-ISRAELI STRIKES SINCE FEBRUARY 28",
+        "IRANIAN PRESIDENT OFFICE: HORMUZ WILL REOPEN ONLY WHEN TRANSIT REVENUES COMPENSATE WAR DAMAGES",
+        "EIGHT OPEC+ COUNTRIES AGREE TO INCREASE OIL PRODUCTION QUOTAS BY 206,000 BARRELS PER DAY FROM MAY",
+        "ISRAELI MILITARY CONTINUES TO STRIKE BEIRUT, KILLING AT LEAST FIVE PEOPLE AND INJURING DOZENS"
+      ],
+      "false_positive_count": 3,
+      "false_positives_sample": [
+        "COUNTRY OVER PAST 24 HOUL LUDING",
+        "COUNTRIES AGREE TO INCREASE OIL PRODUCTION QUOTAS_BY 206, ,000 BARRELS 3 PER DAYFROMMAY TOSTRIKE BERUT.MALLINCATLEAST FIVE PEOPLE AND INJURING DOZENS",
+        "PEOPLE NAM KILLED AA AND 26, 500 AAN IN. JURED N U.S. N -ISRAELI STRIKES SINCE FEBRUARY 28 . IRANIAN PRESIDENT'S OFFICE: HORMUZ WILL REOPEN ONLY WHEN"
+      ],
+      "is_hybrid": false,
+      "timing": {
+        "engine": "doctr",
+        "slice": "slice_A",
+        "panorama_size_px": [
+          142165,
+          87
+        ],
+        "elapsed_seconds": 391.6,
+        "pixels_per_second": 31584.2,
+        "rss_mb_before": 73.1,
+        "rss_mb_after": 2150.1,
+        "rss_mb_delta": 2077.1,
+        "text_length_chars": 11114,
+        "word_count": 1595,
+        "meta": {
+          "engine": "doctr",
+          "slice_w": 3000,
+          "stride": 1500,
+          "slices_processed": 95,
+          "det_arch": "db_resnet50",
+          "reco_arch": "crnn_vgg16_bn",
+          "confidence_threshold": 0.3
+        }
+      },
+      "config": "pure"
+    },
+    {
+      "stage": "doctr",
+      "slice": "slice_B",
+      "gt_count": 28,
+      "extracted_count": 14,
+      "thresholds": {
+        "60": {
+          "tp_gt": 14,
+          "tp_ext": 12,
+          "fn": 14,
+          "fp": 2,
+          "precision": 0.8571,
+          "recall": 0.5,
+          "f1": 0.6316
+        },
+        "70": {
+          "tp_gt": 13,
+          "tp_ext": 11,
+          "fn": 15,
+          "fp": 3,
+          "precision": 0.7857,
+          "recall": 0.4643,
+          "f1": 0.5837
+        },
+        "80": {
+          "tp_gt": 10,
+          "tp_ext": 9,
+          "fn": 18,
+          "fp": 5,
+          "precision": 0.6429,
+          "recall": 0.3571,
+          "f1": 0.4592
+        }
+      },
+      "exact_matches": 6,
+      "coverage_at_50_pct": 21,
+      "avg_cer_at_70": 0.1913,
+      "avg_wer_at_70": 0.4104,
+      "missed_headlines": [
+        "TRUMP THREATENS ON IRAN'S POWER PLANTS IF HORMUZ IS NOT OPENED BY 0000 GMT WEDNESDAY",
+        "IRANIAN FOREIGN MINISTRY SPOKESMAN SAYS U.S. HAS DESTROYED DIPLOMATIC PROCESS, FOCUS IS ON DEFENCE OF NATION",
+        "MORE THAN A DOZEN IRANIAN CITIES BOMBED BY U.S. AND ISRAEL OVERNIGHT",
+        "IRAN SAYS U.S.-ISRAELI STRIKES KILL AT LEAST 34 PEOPLE ACROSS COUNTRY OVER 24 HOURS, INCLUDING SIX CHILDREN",
+        "TWO PEOPLE KILLED, TWO MISSING AFTER IRANIAN MISSILE HITS BUILDING IN ISRAELI CITY OF HAIFA",
+        "U.S. FORCES RESCUE MISSING AIRMAN IN IRAN TWO DAYS AFTER AMERICAN FIGHTER JET WENT DOWN",
+        "IRANIAN AUTHORITIES: 2,076 PEOPLE KILLED AND 26,500 INJURED IN U.S.-ISRAELI STRIKES SINCE FEBRUARY 28",
+        "IRAN SAYS STRUCK U.S. FORCES RELOCATED ON KUWAIT'S BUBIYAN ISLAND",
+        "IRAN SAYS IT HAS TARGETED PETROCHEMICAL PLANTS IN UAE, KUWAIT AND BAHRAIN",
+        "QATAR PRIME MINISTER PRESSES FOR 'PEACEFUL MEANS' TO RESOLVE MIDDLE EAST CONFLICT",
+        "ISRAELI AIR STRIKE ON SOUTHERN LEBANON KILLS SEVEN PEOPLE, INCLUDING FOUR-YEAR-OLD GIRL",
+        "WORLD HEALTH ORGANIZATION DRIVER SHOT & KILLED BY ISRAELI ARMY IN GAZA",
+        "HAMAS SAYS IT WILL NOT DISARM BECAUSE PALESTINIANS CONTINUE TO BE TARGETED BY ISRAEL IN THE GAZA STRIP",
+        "RESCUE CHARITIES SAY 71 PEOPLE REMAIN MISSING AT SEA AFTER 32 RESCUED NEAR ITALIAN COAST",
+        "TRUMP THREATENS ON IRAN'S POWER PLANTS IF HORMUZ IS NOT OPENED BY 0000 GMT WEDNESDAY"
+      ],
+      "false_positive_count": 3,
+      "false_positives_sample": [
+        "KUWAIT ANDBA QATARMINISTER 1111 PRESSES F FOR PEACEFUL",
+        "MORE U.S. ANDISRAEL OVE IRAN_SASRAELI 34PEOPLEACRUNTRY OVER PAST2CLUDING SIX CHILDREN",
+        "FOR MORE GOTO ALJAZEERA.COM"
+      ],
+      "is_hybrid": false,
+      "timing": {
+        "engine": "doctr",
+        "slice": "slice_B",
+        "panorama_size_px": [
+          128868,
+          87
+        ],
+        "elapsed_seconds": 332.81,
+        "pixels_per_second": 33687.3,
+        "rss_mb_before": 2148.5,
+        "rss_mb_after": 2240.8,
+        "rss_mb_delta": 92.2,
+        "text_length_chars": 9887,
+        "word_count": 1389,
+        "meta": {
+          "engine": "doctr",
+          "slice_w": 3000,
+          "stride": 1500,
+          "slices_processed": 86,
+          "det_arch": "db_resnet50",
+          "reco_arch": "crnn_vgg16_bn",
+          "confidence_threshold": 0.3
+        }
+      },
+      "config": "pure"
+    },
+    {
+      "stage": "craft_trocr",
+      "slice": "slice_A",
+      "gt_count": 27,
+      "extracted_count": 0,
+      "thresholds": {
+        "60": {
+          "tp_gt": 0,
+          "tp_ext": 0,
+          "fn": 27,
+          "fp": 0,
+          "precision": 0,
+          "recall": 0.0,
+          "f1": 0
+        },
+        "70": {
+          "tp_gt": 0,
+          "tp_ext": 0,
+          "fn": 27,
+          "fp": 0,
+          "precision": 0,
+          "recall": 0.0,
+          "f1": 0
+        },
+        "80": {
+          "tp_gt": 0,
+          "tp_ext": 0,
+          "fn": 27,
+          "fp": 0,
+          "precision": 0,
+          "recall": 0.0,
+          "f1": 0
+        }
+      },
+      "exact_matches": 0,
+      "coverage_at_50_pct": 0,
+      "avg_cer_at_70": null,
+      "avg_wer_at_70": null,
+      "missed_headlines": [
+        "GAZA HEALTH MINISTRY: 716 PALESTINIANS KILLED IN ISRAELI ATTACKS SINCE CEASEFIRE STARTED IN OCTOBER",
+        "GAZA HEALTH MINISTRY: 72,292 PALESTINIANS KILLED IN ISRAELI ATTACKS SINCE OCTOBER 2023",
+        "ISRAELI FORCES AND SETTLERS HAVE KILLED 1,138 PALESTINIANS IN OCCUPIED WEST BANK SINCE OCTOBER 2023",
+        "D.R. CONGO TO TEMPORARILY ACCEPT DEPORTED MIGRANTS UNDER NEW DEAL WITH THE U.S.",
+        "RESCUE CHARITIES SAY 71 PEOPLE REMAIN MISSING AT SEA AFTER 32 RESCUED NEAR ITALIAN COAST",
+        "ARTEMIS II ASTRONAUTS GLIMPSE MOON'S 'GRAND CANYON' AHEAD OF HISTORIC LUNAR FLYBY",
+        "TRUMP THREATENS ON IRAN'S POWER PLANTS IF HORMUZ IS NOT OPENED BY 0000 GMT WEDNESDAY",
+        "IRAN'S PARLIAMENT SPEAKER WARNS TRUMP'S 'RECKLESS MOVES' MEAN 'WHOLE REGION GOING TO BURN'",
+        "MORE THAN A DOZEN IRANIAN CITIES BOMBED BY U.S. AND ISRAEL OVERNIGHT",
+        "IRAN SAYS U.S.-ISRAELI STRIKES KILL AT LEAST 34 PEOPLE ACROSS COUNTRY OVER PAST 24 HOURS, INCLUDING SIX CHILDREN",
+        "IRAN'S MISSION TO UN URGES WORLD TO PREVENT 'ATROCIOUS ACT' AFTER TRUMP THREATS",
+        "MULTIPLE INJURIES REPORTED AFTER IRAN MISSILE ATTACK HITS CENTRAL ISRAEL, IN TEL AVIV AREA",
+        "TWO PEOPLE KILLED, TWO REMAIN MISSING AFTER IRANIAN MISSILE HITS BUILDING IN ISRAELI CITY OF HAIFA",
+        "U.S. FORCES RESCUE MISSING AIRMAN IN IRAN TWO DAYS AFTER AMERICAN FIGHTER JET WENT DOWN",
+        "IRANIAN MEDIA SAY SENIOR IRANIAN MILITARY COMMANDER HAS BEEN KILLED IN U.S.-ISRAELI ATTACKS",
+        "IRANIAN AUTHORITIES: 2,076 PEOPLE KILLED AND 26,500 INJURED IN U.S.-ISRAELI STRIKES SINCE FEBRUARY 28",
+        "IRANIAN PRESIDENT OFFICE: HORMUZ WILL REOPEN ONLY WHEN TRANSIT REVENUES COMPENSATE WAR DAMAGES",
+        "IRAN'S REVOLUTIONARY GUARD SAYS IT HAS TARGETED PETROCHEMICAL PLANTS IN UAE,KUWAIT AND BAHRAIN",
+        "QATAR'S FOREIGN MINISTER EXPRESSES SOLIDARITY WITH KUWAIT AFTER IRANIAN ATTACKS ON ENERGY FACILITIES",
+        "EIGHT OPEC+ COUNTRIES AGREE TO INCREASE OIL PRODUCTION QUOTAS BY 206,000 BARRELS PER DAY FROM MAY",
+        "LEBANESE ARMY SAYS ONE SOLDIER KILLED IN ISRAELI ATTACK IN SOUTHERN LEBANON",
+        "ISRAELI AIR STRIKE ON SOUTHERN LEBANON KILLS SEVEN PEOPLE, INCLUDING FOUR-YEAR-OLD GIRL",
+        "LEBANESE HEALTH MINISTRY: FOUR PEOPLE KILLED AND 39 INJURED IN ISRAELI RAID ON JNAH AREA SOUTH OF BEIRUT",
+        "LEBANON'S HEALTH MINISTRY: 1,461 PEOPLE KILLED AND 4,430 WOUNDED IN ISRAELI ATTACKS SINCE START OF WAR",
+        "MEDICS SAY ISRAELI AIR STRIKES KILLED FOUR PALESTINIANS IN NORTHERN GAZA STRIP DESPITE CEASEFIRE",
+        "HAMAS SAYS IT WILL NOT DISARM BECAUSE PALESTINIANS CONTINUE TO BE TARGETED BY ISRAEL IN THE GAZA STRIP",
+        "ISRAELI MILITARY CONTINUES TO STRIKE BEIRUT, KILLING AT LEAST FIVE PEOPLE AND INJURING DOZENS"
+      ],
+      "false_positive_count": 0,
+      "false_positives_sample": [],
+      "is_hybrid": true,
+      "timing": {
+        "engine": "craft_trocr",
+        "slice": "slice_A",
+        "panorama_size_px": [
+          142165,
+          87
+        ],
+        "elapsed_seconds": 3306.13,
+        "pixels_per_second": 3741.0,
+        "rss_mb_before": 74.4,
+        "rss_mb_after": 2895.4,
+        "rss_mb_delta": 2821.0,
+        "text_length_chars": 9162,
+        "word_count": 144,
+        "meta": {
+          "engine": "craft_trocr",
+          "detector": "EasyOCR CRAFT",
+          "recognizer": "microsoft/trocr-base-printed",
+          "slice_w": 3000,
+          "stride": 1500,
+          "slices_processed": 95,
+          "note": "Hybrid recognizer-only pipeline, reported separately."
+        }
+      },
+      "config": "pure"
+    },
+    {
+      "stage": "craft_trocr",
+      "slice": "slice_B",
+      "gt_count": 28,
+      "extracted_count": 0,
+      "thresholds": {
+        "60": {
+          "tp_gt": 0,
+          "tp_ext": 0,
+          "fn": 28,
+          "fp": 0,
+          "precision": 0,
+          "recall": 0.0,
+          "f1": 0
+        },
+        "70": {
+          "tp_gt": 0,
+          "tp_ext": 0,
+          "fn": 28,
+          "fp": 0,
+          "precision": 0,
+          "recall": 0.0,
+          "f1": 0
+        },
+        "80": {
+          "tp_gt": 0,
+          "tp_ext": 0,
+          "fn": 28,
+          "fp": 0,
+          "precision": 0,
+          "recall": 0.0,
+          "f1": 0
+        }
+      },
+      "exact_matches": 0,
+      "coverage_at_50_pct": 0,
+      "avg_cer_at_70": null,
+      "avg_wer_at_70": null,
+      "missed_headlines": [
+        "ARTEMIS II ASTRONAUTS GLIMPSE MOON'S 'GRAND CANYON' AHEAD OF HISTORIC LUNAR FLYBY",
+        "TRUMP THREATENS ON IRAN'S POWER PLANTS IF HORMUZ IS NOT OPENED BY 0000 GMT WEDNESDAY",
+        "IRANIAN FOREIGN MINISTRY SPOKESMAN SAYS U.S. HAS DESTROYED DIPLOMATIC PROCESS, FOCUS IS ON DEFENCE OF NATION",
+        "IRAN'S REVOLUTIONARY GUARD ANNOUNCES DEATH OF INTELLIGENCE CHIEF MAJID KHADEMI",
+        "MORE THAN A DOZEN IRANIAN CITIES BOMBED BY U.S. AND ISRAEL OVERNIGHT",
+        "IRAN SAYS U.S.-ISRAELI STRIKES KILL AT LEAST 34 PEOPLE ACROSS COUNTRY OVER 24 HOURS, INCLUDING SIX CHILDREN",
+        "IRAN'S ATOMIC ENERGY CHIEF ACCUSES UN NUCLEAR WATCHDOG OF INACTION, WARNS OF RISK FROM ATTACKS ON BUSHEHR POWER PLANTS",
+        "MULTIPLE INJURIES REPORTED AFTER IRANIAN MISSILE ATTACK HITS CENTRAL ISRAEL, INCLUDING TEL AVIV AREA",
+        "TWO PEOPLE KILLED, TWO MISSING AFTER IRANIAN MISSILE HITS BUILDING IN ISRAELI CITY OF HAIFA",
+        "U.S. FORCES RESCUE MISSING AIRMAN IN IRAN TWO DAYS AFTER AMERICAN FIGHTER JET WENT DOWN",
+        "IRANIAN AUTHORITIES: 2,076 PEOPLE KILLED AND 26,500 INJURED IN U.S.-ISRAELI STRIKES SINCE FEBRUARY 28",
+        "IRAN SAYS STRUCK U.S. FORCES RELOCATED ON KUWAIT'S BUBIYAN ISLAND",
+        "SIX PEOPLE INJURED BY MISSILE INTERCEPTION DEBRIS IN NORTHERN KUWAIT: HEALTH MINISTRY",
+        "IRAN SAYS IT HAS TARGETED PETROCHEMICAL PLANTS IN UAE, KUWAIT AND BAHRAIN",
+        "QATAR PRIME MINISTER PRESSES FOR 'PEACEFUL MEANS' TO RESOLVE MIDDLE EAST CONFLICT",
+        "EIGHT OPEC+ COUNTRIES AGREE TO INCREASE OIL PRODUCTION QUOTAS BY 206,000 BARRELS PER DAY FROM MAY",
+        "ISRAELI MILITARY CONTINUES TO STRIKE AREA AROUND BEIRUT, KILLING AT LEAST FIVE PEOPLE AND INJURING DOZENS",
+        "ISRAELI AIR STRIKE ON SOUTHERN LEBANON KILLS SEVEN PEOPLE, INCLUDING FOUR-YEAR-OLD GIRL",
+        "LEBANON'S HEALTH MINISTRY: 1,461 PEOPLE KILLED AND 4,430 WOUNDED IN ISRAELI ATTACKS SINCE START OF WAR",
+        "WORLD HEALTH ORGANIZATION DRIVER SHOT & KILLED BY ISRAELI ARMY IN GAZA",
+        "HAMAS SAYS IT WILL NOT DISARM BECAUSE PALESTINIANS CONTINUE TO BE TARGETED BY ISRAEL IN THE GAZA STRIP",
+        "GAZA HEALTH MINISTRY: 716 PALESTINIANS KILLED IN ISRAELI ATTACKS SINCE CEASEFIRE STARTED IN OCTOBER",
+        "GAZA HEALTH MINISTRY: 72,292 PALESTINIANS KILLED IN ISRAELI ATTACKS SINCE OCTOBER 2023",
+        "ISRAELI FORCES AND SETTLERS HAVE KILLED 1,138 PALESTINIANS IN OCCUPIED WEST BANK SINCE OCTOBER 2023",
+        "D.R. CONGO TO TEMPORARILY ACCEPT DEPORTED MIGRANTS UNDER NEW DEAL WITH THE U.S.",
+        "RESCUE CHARITIES SAY 71 PEOPLE REMAIN MISSING AT SEA AFTER 32 RESCUED NEAR ITALIAN COAST",
+        "ARTEMIS II ASTRONAUTS GLIMPSE MOON'S 'GRAND CANYON' AHEAD OF HISTORIC LUNAR FLYBY",
+        "TRUMP THREATENS ON IRAN'S POWER PLANTS IF HORMUZ IS NOT OPENED BY 0000 GMT WEDNESDAY"
+      ],
+      "false_positive_count": 0,
+      "false_positives_sample": [],
+      "is_hybrid": true,
+      "timing": {
+        "engine": "craft_trocr",
+        "slice": "slice_B",
+        "panorama_size_px": [
+          128868,
+          87
+        ],
+        "elapsed_seconds": 2983.86,
+        "pixels_per_second": 3757.4,
+        "rss_mb_before": 71.2,
+        "rss_mb_after": 2819.1,
+        "rss_mb_delta": 2747.9,
+        "text_length_chars": 8463,
+        "word_count": 125,
+        "meta": {
+          "engine": "craft_trocr",
+          "detector": "EasyOCR CRAFT",
+          "recognizer": "microsoft/trocr-base-printed",
+          "slice_w": 3000,
+          "stride": 1500,
+          "slices_processed": 86,
+          "note": "Hybrid recognizer-only pipeline, reported separately."
+        }
+      },
+      "config": "pure"
+    }
+  ],
+  "augmented_results": [
+    {
+      "stage": "tesseract",
+      "slice": "slice_A",
+      "gt_count": 27,
+      "extracted_count": 24,
+      "thresholds": {
+        "60": {
+          "tp_gt": 24,
+          "tp_ext": 24,
+          "fn": 3,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.8889,
+          "f1": 0.9412
+        },
+        "70": {
+          "tp_gt": 22,
+          "tp_ext": 22,
+          "fn": 5,
+          "fp": 2,
+          "precision": 0.9167,
+          "recall": 0.8148,
+          "f1": 0.8627
+        },
+        "80": {
+          "tp_gt": 21,
+          "tp_ext": 20,
+          "fn": 6,
+          "fp": 4,
+          "precision": 0.8333,
+          "recall": 0.7778,
+          "f1": 0.8046
+        }
+      },
+      "exact_matches": 14,
+      "coverage_at_50_pct": 27,
+      "avg_cer_at_70": 0.1104,
+      "avg_wer_at_70": 0.2185,
+      "missed_headlines": [
+        "TRUMP THREATENS ON IRAN'S POWER PLANTS IF HORMUZ IS NOT OPENED BY 0000 GMT WEDNESDAY",
+        "IRANIAN PRESIDENT OFFICE: HORMUZ WILL REOPEN ONLY WHEN TRANSIT REVENUES COMPENSATE WAR DAMAGES",
+        "LEBANESE HEALTH MINISTRY: FOUR PEOPLE KILLED AND 39 INJURED IN ISRAELI RAID ON JNAH AREA SOUTH OF BEIRUT",
+        "MEDICS SAY ISRAELI AIR STRIKES KILLED FOUR PALESTINIANS IN NORTHERN GAZA STRIP DESPITE CEASEFIRE",
+        "ISRAELI MILITARY CONTINUES TO STRIKE BEIRUT, KILLING AT LEAST FIVE PEOPLE AND INJURING DOZENS"
+      ],
+      "false_positive_count": 2,
+      "false_positives_sample": [
+        "- IRANIAN S OFFICE: WILL REOPEN ONLY nevis COMPENSATE WAR las TARGETED PETROCHEMICAL PLANTS IN UAE, KUWAIT AND",
+        "- “paws PARLIAMENT SPEAKER WARNS TRUMP’S TRUMP’S ‘RECKLESS ‘RECKLESS MOVES’ MOVES’ MEAN MEAN"
+      ],
+      "is_hybrid": false,
+      "timing": {
+        "engine": "tesseract",
+        "slice": "slice_A",
+        "panorama_size_px": [
+          142165,
+          87
+        ],
+        "elapsed_seconds": 39.68,
+        "pixels_per_second": 311671.7,
+        "rss_mb_before": 107.7,
+        "rss_mb_after": 112.1,
+        "rss_mb_delta": 4.4,
+        "text_length_chars": 10150,
+        "word_count": 1661,
+        "meta": {
+          "engine": "tesseract",
+          "slice_w": 3000,
+          "stride": 1500,
+          "slices_processed": 95,
+          "psm": 7,
+          "confidence_threshold": 20
+        }
+      },
+      "config": "augmented"
+    },
+    {
+      "stage": "tesseract",
+      "slice": "slice_B",
+      "gt_count": 28,
+      "extracted_count": 23,
+      "thresholds": {
+        "60": {
+          "tp_gt": 25,
+          "tp_ext": 22,
+          "fn": 3,
+          "fp": 1,
+          "precision": 0.9565,
+          "recall": 0.8929,
+          "f1": 0.9236
+        },
+        "70": {
+          "tp_gt": 22,
+          "tp_ext": 21,
+          "fn": 6,
+          "fp": 2,
+          "precision": 0.913,
+          "recall": 0.7857,
+          "f1": 0.8446
+        },
+        "80": {
+          "tp_gt": 20,
+          "tp_ext": 19,
+          "fn": 8,
+          "fp": 4,
+          "precision": 0.8261,
+          "recall": 0.7143,
+          "f1": 0.7661
+        }
+      },
+      "exact_matches": 16,
+      "coverage_at_50_pct": 25,
+      "avg_cer_at_70": 0.0936,
+      "avg_wer_at_70": 0.2242,
+      "missed_headlines": [
+        "TRUMP THREATENS ON IRAN'S POWER PLANTS IF HORMUZ IS NOT OPENED BY 0000 GMT WEDNESDAY",
+        "IRANIAN FOREIGN MINISTRY SPOKESMAN SAYS U.S. HAS DESTROYED DIPLOMATIC PROCESS, FOCUS IS ON DEFENCE OF NATION",
+        "U.S. FORCES RESCUE MISSING AIRMAN IN IRAN TWO DAYS AFTER AMERICAN FIGHTER JET WENT DOWN",
+        "GAZA HEALTH MINISTRY: 716 PALESTINIANS KILLED IN ISRAELI ATTACKS SINCE CEASEFIRE STARTED IN OCTOBER",
+        "GAZA HEALTH MINISTRY: 72,292 PALESTINIANS KILLED IN ISRAELI ATTACKS SINCE OCTOBER 2023",
+        "TRUMP THREATENS ON IRAN'S POWER PLANTS IF HORMUZ IS NOT OPENED BY 0000 GMT WEDNESDAY"
+      ],
+      "false_positive_count": 2,
+      "false_positives_sample": [
+        "- TWO FE),IISFAMISSIISDING IN iRITYAL U.S. FRGGSRIN IWCA AMERICAN FIGHTER JET WENT DOWN",
+        "- GAZA HEALTH MINISTRY: 716 PALESTINIANS"
+      ],
+      "is_hybrid": false,
+      "timing": {
+        "engine": "tesseract",
+        "slice": "slice_B",
+        "panorama_size_px": [
+          128868,
+          87
+        ],
+        "elapsed_seconds": 32.17,
+        "pixels_per_second": 348463.0,
+        "rss_mb_before": 102.7,
+        "rss_mb_after": 106.4,
+        "rss_mb_delta": 3.7,
+        "text_length_chars": 9609,
+        "word_count": 1559,
+        "meta": {
+          "engine": "tesseract",
+          "slice_w": 3000,
+          "stride": 1500,
+          "slices_processed": 86,
+          "psm": 7,
+          "confidence_threshold": 20
+        }
+      },
+      "config": "augmented"
+    },
+    {
+      "stage": "easyocr",
+      "slice": "slice_A",
+      "gt_count": 27,
+      "extracted_count": 22,
+      "thresholds": {
+        "60": {
+          "tp_gt": 26,
+          "tp_ext": 22,
+          "fn": 1,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.963,
+          "f1": 0.9811
+        },
+        "70": {
+          "tp_gt": 22,
+          "tp_ext": 22,
+          "fn": 5,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.8148,
+          "f1": 0.898
+        },
+        "80": {
+          "tp_gt": 22,
+          "tp_ext": 22,
+          "fn": 5,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.8148,
+          "f1": 0.898
+        }
+      },
+      "exact_matches": 18,
+      "coverage_at_50_pct": 27,
+      "avg_cer_at_70": 0.056,
+      "avg_wer_at_70": 0.1358,
+      "missed_headlines": [
+        "GAZA HEALTH MINISTRY: 716 PALESTINIANS KILLED IN ISRAELI ATTACKS SINCE CEASEFIRE STARTED IN OCTOBER",
+        "GAZA HEALTH MINISTRY: 72,292 PALESTINIANS KILLED IN ISRAELI ATTACKS SINCE OCTOBER 2023",
+        "LEBANON'S HEALTH MINISTRY: 1,461 PEOPLE KILLED AND 4,430 WOUNDED IN ISRAELI ATTACKS SINCE START OF WAR",
+        "MEDICS SAY ISRAELI AIR STRIKES KILLED FOUR PALESTINIANS IN NORTHERN GAZA STRIP DESPITE CEASEFIRE",
+        "ISRAELI MILITARY CONTINUES TO STRIKE BEIRUT, KILLING AT LEAST FIVE PEOPLE AND INJURING DOZENS"
+      ],
+      "false_positive_count": 0,
+      "false_positives_sample": [],
+      "is_hybrid": false,
+      "timing": {
+        "engine": "easyocr",
+        "slice": "slice_A",
+        "panorama_size_px": [
+          142165,
+          87
+        ],
+        "elapsed_seconds": 232.22,
+        "pixels_per_second": 53260.7,
+        "rss_mb_before": 73.1,
+        "rss_mb_after": 1895.1,
+        "rss_mb_delta": 1822.0,
+        "text_length_chars": 10644,
+        "word_count": 124,
+        "meta": {
+          "engine": "easyocr",
+          "slice_w": 3000,
+          "stride": 1500,
+          "slices_processed": 95,
+          "upscale": 3,
+          "confidence_threshold": 0.3
+        }
+      },
+      "config": "augmented"
+    },
+    {
+      "stage": "easyocr",
+      "slice": "slice_B",
+      "gt_count": 28,
+      "extracted_count": 28,
+      "thresholds": {
+        "60": {
+          "tp_gt": 28,
+          "tp_ext": 27,
+          "fn": 0,
+          "fp": 1,
+          "precision": 0.9643,
+          "recall": 1.0,
+          "f1": 0.9818
+        },
+        "70": {
+          "tp_gt": 27,
+          "tp_ext": 25,
+          "fn": 1,
+          "fp": 3,
+          "precision": 0.8929,
+          "recall": 0.9643,
+          "f1": 0.9272
+        },
+        "80": {
+          "tp_gt": 25,
+          "tp_ext": 23,
+          "fn": 3,
+          "fp": 5,
+          "precision": 0.8214,
+          "recall": 0.8929,
+          "f1": 0.8557
+        }
+      },
+      "exact_matches": 17,
+      "coverage_at_50_pct": 28,
+      "avg_cer_at_70": 0.1191,
+      "avg_wer_at_70": 0.2004,
+      "missed_headlines": [
+        "TWO PEOPLE KILLED, TWO MISSING AFTER IRANIAN MISSILE HITS BUILDING IN ISRAELI CITY OF HAIFA"
+      ],
+      "false_positive_count": 3,
+      "false_positives_sample": [
+        "Two PEOPLE KILLED, TWO MISSING AFTER IRANIAN ASSII ANIS: ,06 PEOFE KCES RELOCATEDY'EOPLEJRII 'EKIDAY FROM MAY",
+        "TWO FEJ IIAFAMISSITSDING IN ;RITYAI U.S; FRGGSIAN INQA AMERICAN FIGHTER JET WENT DOWN",
+        "RILCUETREASADIBEIR , KI FIPN(IRAIFEU EION KILLISEVIEI AR-OBAH MINI: PEIN) WIERTTSIIART OF WWORLHIOGANIZATION DRIVER SHOT & KILLED BY ISRAELI ARMN CA"
+      ],
+      "is_hybrid": false,
+      "timing": {
+        "engine": "easyocr",
+        "slice": "slice_B",
+        "panorama_size_px": [
+          128868,
+          87
+        ],
+        "elapsed_seconds": 197.24,
+        "pixels_per_second": 56842.0,
+        "rss_mb_before": 1893.0,
+        "rss_mb_after": 1896.4,
+        "rss_mb_delta": 3.4,
+        "text_length_chars": 9886,
+        "word_count": 119,
+        "meta": {
+          "engine": "easyocr",
+          "slice_w": 3000,
+          "stride": 1500,
+          "slices_processed": 86,
+          "upscale": 3,
+          "confidence_threshold": 0.3
+        }
+      },
+      "config": "augmented"
+    },
+    {
+      "stage": "paddle",
+      "slice": "slice_A",
+      "gt_count": 27,
+      "extracted_count": 29,
+      "thresholds": {
+        "60": {
+          "tp_gt": 8,
+          "tp_ext": 9,
+          "fn": 19,
+          "fp": 20,
+          "precision": 0.3103,
+          "recall": 0.2963,
+          "f1": 0.3032
+        },
+        "70": {
+          "tp_gt": 5,
+          "tp_ext": 5,
+          "fn": 22,
+          "fp": 24,
+          "precision": 0.1724,
+          "recall": 0.1852,
+          "f1": 0.1786
+        },
+        "80": {
+          "tp_gt": 3,
+          "tp_ext": 3,
+          "fn": 24,
+          "fp": 26,
+          "precision": 0.1034,
+          "recall": 0.1111,
+          "f1": 0.1071
+        }
+      },
+      "exact_matches": 1,
+      "coverage_at_50_pct": 15,
+      "avg_cer_at_70": 0.2539,
+      "avg_wer_at_70": 0.6051,
+      "missed_headlines": [
+        "GAZA HEALTH MINISTRY: 716 PALESTINIANS KILLED IN ISRAELI ATTACKS SINCE CEASEFIRE STARTED IN OCTOBER",
+        "GAZA HEALTH MINISTRY: 72,292 PALESTINIANS KILLED IN ISRAELI ATTACKS SINCE OCTOBER 2023",
+        "ISRAELI FORCES AND SETTLERS HAVE KILLED 1,138 PALESTINIANS IN OCCUPIED WEST BANK SINCE OCTOBER 2023",
+        "D.R. CONGO TO TEMPORARILY ACCEPT DEPORTED MIGRANTS UNDER NEW DEAL WITH THE U.S.",
+        "RESCUE CHARITIES SAY 71 PEOPLE REMAIN MISSING AT SEA AFTER 32 RESCUED NEAR ITALIAN COAST",
+        "TRUMP THREATENS ON IRAN'S POWER PLANTS IF HORMUZ IS NOT OPENED BY 0000 GMT WEDNESDAY",
+        "IRAN SAYS U.S.-ISRAELI STRIKES KILL AT LEAST 34 PEOPLE ACROSS COUNTRY OVER PAST 24 HOURS, INCLUDING SIX CHILDREN",
+        "MULTIPLE INJURIES REPORTED AFTER IRAN MISSILE ATTACK HITS CENTRAL ISRAEL, IN TEL AVIV AREA",
+        "TWO PEOPLE KILLED, TWO REMAIN MISSING AFTER IRANIAN MISSILE HITS BUILDING IN ISRAELI CITY OF HAIFA",
+        "U.S. FORCES RESCUE MISSING AIRMAN IN IRAN TWO DAYS AFTER AMERICAN FIGHTER JET WENT DOWN",
+        "IRANIAN MEDIA SAY SENIOR IRANIAN MILITARY COMMANDER HAS BEEN KILLED IN U.S.-ISRAELI ATTACKS",
+        "IRANIAN AUTHORITIES: 2,076 PEOPLE KILLED AND 26,500 INJURED IN U.S.-ISRAELI STRIKES SINCE FEBRUARY 28",
+        "IRAN'S REVOLUTIONARY GUARD SAYS IT HAS TARGETED PETROCHEMICAL PLANTS IN UAE,KUWAIT AND BAHRAIN",
+        "QATAR'S FOREIGN MINISTER EXPRESSES SOLIDARITY WITH KUWAIT AFTER IRANIAN ATTACKS ON ENERGY FACILITIES",
+        "EIGHT OPEC+ COUNTRIES AGREE TO INCREASE OIL PRODUCTION QUOTAS BY 206,000 BARRELS PER DAY FROM MAY",
+        "LEBANESE ARMY SAYS ONE SOLDIER KILLED IN ISRAELI ATTACK IN SOUTHERN LEBANON",
+        "ISRAELI AIR STRIKE ON SOUTHERN LEBANON KILLS SEVEN PEOPLE, INCLUDING FOUR-YEAR-OLD GIRL",
+        "LEBANESE HEALTH MINISTRY: FOUR PEOPLE KILLED AND 39 INJURED IN ISRAELI RAID ON JNAH AREA SOUTH OF BEIRUT",
+        "LEBANON'S HEALTH MINISTRY: 1,461 PEOPLE KILLED AND 4,430 WOUNDED IN ISRAELI ATTACKS SINCE START OF WAR",
+        "MEDICS SAY ISRAELI AIR STRIKES KILLED FOUR PALESTINIANS IN NORTHERN GAZA STRIP DESPITE CEASEFIRE",
+        "HAMAS SAYS IT WILL NOT DISARM BECAUSE PALESTINIANS CONTINUE TO BE TARGETED BY ISRAEL IN THE GAZA STRIP",
+        "ISRAELI MILITARY CONTINUES TO STRIKE BEIRUT, KILLING AT LEAST FIVE PEOPLE AND INJURING DOZENS"
+      ],
+      "false_positive_count": 24,
+      "false_positives_sample": [
+        "CRAC CC GATS AECER AMERICANFIGRTEA SET WENT SOWN-",
+        "(RAN(AN PRES(CENT'S GFF(CE: HORM",
+        "- ASEASS SGSEOLE ACAOSSCOUNTAY DUEA PASIS SNCCUDSNG SSX CHLDREN",
+        "KUWAIT AFER IRANIAN ATTACKS DN ENEAGY FACSLSTSES",
+        "- TBECBYC.S. ANS TRAEL OTERNTGHT- TRAN SAYS U.S,-ISRAELI STRIKES KILL AT LEAST 34 PEOPLE ACROSS COUNTRY QVER PAS",
+        "- SSSACSS SSSCE EEASEFSSE SSASSESSSS SSSCSSSB",
+        "ESGHT DPEC+ COUNTRIES AGREE TO INCREAS",
+        "GESIAS TARGETEO PETROCHEMICALPLANTS IN UAE.",
+        "- NSIN OCCUPSED WEST BANK SINCE OCTOBEA 2O23",
+        "KAN A OOZENRAELSRISTEFZCSG SSXSTAOCSOUATAATS"
+      ],
+      "is_hybrid": false,
+      "timing": {
+        "engine": "paddle",
+        "slice": "slice_A",
+        "panorama_size_px": [
+          142165,
+          87
+        ],
+        "elapsed_seconds": 1318.63,
+        "pixels_per_second": 9379.7,
+        "rss_mb_before": 74.9,
+        "rss_mb_after": 671.0,
+        "rss_mb_delta": 596.1,
+        "text_length_chars": 2204,
+        "word_count": 49,
+        "meta": {
+          "engine": "paddle",
+          "slice_w": 3000,
+          "stride": 1500,
+          "slices_processed": 95,
+          "model": "PP-OCRv4 (en)",
+          "confidence_threshold": 0.5
+        }
+      },
+      "config": "augmented"
+    },
+    {
+      "stage": "paddle",
+      "slice": "slice_B",
+      "gt_count": 28,
+      "extracted_count": 22,
+      "thresholds": {
+        "60": {
+          "tp_gt": 12,
+          "tp_ext": 12,
+          "fn": 16,
+          "fp": 10,
+          "precision": 0.5455,
+          "recall": 0.4286,
+          "f1": 0.48
+        },
+        "70": {
+          "tp_gt": 7,
+          "tp_ext": 7,
+          "fn": 21,
+          "fp": 15,
+          "precision": 0.3182,
+          "recall": 0.25,
+          "f1": 0.28
+        },
+        "80": {
+          "tp_gt": 3,
+          "tp_ext": 3,
+          "fn": 25,
+          "fp": 19,
+          "precision": 0.1364,
+          "recall": 0.1071,
+          "f1": 0.12
+        }
+      },
+      "exact_matches": 0,
+      "coverage_at_50_pct": 19,
+      "avg_cer_at_70": 0.302,
+      "avg_wer_at_70": 0.5315,
+      "missed_headlines": [
+        "ARTEMIS II ASTRONAUTS GLIMPSE MOON'S 'GRAND CANYON' AHEAD OF HISTORIC LUNAR FLYBY",
+        "TRUMP THREATENS ON IRAN'S POWER PLANTS IF HORMUZ IS NOT OPENED BY 0000 GMT WEDNESDAY",
+        "MORE THAN A DOZEN IRANIAN CITIES BOMBED BY U.S. AND ISRAEL OVERNIGHT",
+        "IRAN'S ATOMIC ENERGY CHIEF ACCUSES UN NUCLEAR WATCHDOG OF INACTION, WARNS OF RISK FROM ATTACKS ON BUSHEHR POWER PLANTS",
+        "MULTIPLE INJURIES REPORTED AFTER IRANIAN MISSILE ATTACK HITS CENTRAL ISRAEL, INCLUDING TEL AVIV AREA",
+        "IRANIAN AUTHORITIES: 2,076 PEOPLE KILLED AND 26,500 INJURED IN U.S.-ISRAELI STRIKES SINCE FEBRUARY 28",
+        "IRAN SAYS STRUCK U.S. FORCES RELOCATED ON KUWAIT'S BUBIYAN ISLAND",
+        "SIX PEOPLE INJURED BY MISSILE INTERCEPTION DEBRIS IN NORTHERN KUWAIT: HEALTH MINISTRY",
+        "IRAN SAYS IT HAS TARGETED PETROCHEMICAL PLANTS IN UAE, KUWAIT AND BAHRAIN",
+        "QATAR PRIME MINISTER PRESSES FOR 'PEACEFUL MEANS' TO RESOLVE MIDDLE EAST CONFLICT",
+        "ISRAELI AIR STRIKE ON SOUTHERN LEBANON KILLS SEVEN PEOPLE, INCLUDING FOUR-YEAR-OLD GIRL",
+        "LEBANON'S HEALTH MINISTRY: 1,461 PEOPLE KILLED AND 4,430 WOUNDED IN ISRAELI ATTACKS SINCE START OF WAR",
+        "WORLD HEALTH ORGANIZATION DRIVER SHOT & KILLED BY ISRAELI ARMY IN GAZA",
+        "HAMAS SAYS IT WILL NOT DISARM BECAUSE PALESTINIANS CONTINUE TO BE TARGETED BY ISRAEL IN THE GAZA STRIP",
+        "GAZA HEALTH MINISTRY: 716 PALESTINIANS KILLED IN ISRAELI ATTACKS SINCE CEASEFIRE STARTED IN OCTOBER",
+        "GAZA HEALTH MINISTRY: 72,292 PALESTINIANS KILLED IN ISRAELI ATTACKS SINCE OCTOBER 2023",
+        "ISRAELI FORCES AND SETTLERS HAVE KILLED 1,138 PALESTINIANS IN OCCUPIED WEST BANK SINCE OCTOBER 2023",
+        "D.R. CONGO TO TEMPORARILY ACCEPT DEPORTED MIGRANTS UNDER NEW DEAL WITH THE U.S.",
+        "RESCUE CHARITIES SAY 71 PEOPLE REMAIN MISSING AT SEA AFTER 32 RESCUED NEAR ITALIAN COAST",
+        "ARTEMIS II ASTRONAUTS GLIMPSE MOON'S 'GRAND CANYON' AHEAD OF HISTORIC LUNAR FLYBY",
+        "TRUMP THREATENS ON IRAN'S POWER PLANTS IF HORMUZ IS NOT OPENED BY 0000 GMT WEDNESDAY"
+      ],
+      "false_positive_count": 15,
+      "false_positives_sample": [
+        "RTEONOCTOBER-GAZAKEACTKMNSTRK.TZZPZPACESTASK",
+        "ACTRTKTRESS. RESCSECSARSESSATTTFEOFCEREMASNMISSING",
+        "AKTEMISITRSTTUNAUCS GLIMPSE MUUN'S GRRNGTE ETRLHEG SUK CHILOREN",
+        "MAARYZIRYLEKEE(QNIIS BUBIYAN ISLANO",
+        "LSIEPPZESSESFOA PEAEEFSE MEAS'TS AESSLFE MISE EAST CUNECI(CT",
+        "E(GKT GPEC+ -ECHTDPEE+EDUNSESSDSSSSSB 2SSSSSBASAELSPEASAYFASMMAY",
+        "SRAELI FORCES AND SETTLERS KAYEK!",
+        "(SRAELSFORCES AIGSETTCERSKRTESCSSCSS6TSCESTIAKS IKGCCOPTE",
+        "- MUCTIPLE INSURIES REPORTEO AFTER IRAN CLUDINGTEZ AVIV AREA",
+        "ISRAEL IN SHE GALA SSRIP JARSSSRAELS ASTANS6TTE IIBTINS KILLEO IN ISRAELIATTACKS SINCE OCTOBER ZBZ3"
+      ],
+      "is_hybrid": false,
+      "timing": {
+        "engine": "paddle",
+        "slice": "slice_B",
+        "panorama_size_px": [
+          128868,
+          87
+        ],
+        "elapsed_seconds": 1312.49,
+        "pixels_per_second": 8542.2,
+        "rss_mb_before": 71.3,
+        "rss_mb_after": 662.4,
+        "rss_mb_delta": 591.1,
+        "text_length_chars": 2388,
+        "word_count": 44,
+        "meta": {
+          "engine": "paddle",
+          "slice_w": 3000,
+          "stride": 1500,
+          "slices_processed": 86,
+          "model": "PP-OCRv4 (en)",
+          "confidence_threshold": 0.5
+        }
+      },
+      "config": "augmented"
+    },
+    {
+      "stage": "doctr",
+      "slice": "slice_A",
+      "gt_count": 27,
+      "extracted_count": 30,
+      "thresholds": {
+        "60": {
+          "tp_gt": 27,
+          "tp_ext": 25,
+          "fn": 0,
+          "fp": 5,
+          "precision": 0.8333,
+          "recall": 1.0,
+          "f1": 0.9091
+        },
+        "70": {
+          "tp_gt": 22,
+          "tp_ext": 24,
+          "fn": 5,
+          "fp": 6,
+          "precision": 0.8,
+          "recall": 0.8148,
+          "f1": 0.8073
+        },
+        "80": {
+          "tp_gt": 19,
+          "tp_ext": 21,
+          "fn": 8,
+          "fp": 9,
+          "precision": 0.7,
+          "recall": 0.7037,
+          "f1": 0.7018
+        }
+      },
+      "exact_matches": 14,
+      "coverage_at_50_pct": 27,
+      "avg_cer_at_70": 0.1216,
+      "avg_wer_at_70": 0.344,
+      "missed_headlines": [
+        "GAZA HEALTH MINISTRY: 716 PALESTINIANS KILLED IN ISRAELI ATTACKS SINCE CEASEFIRE STARTED IN OCTOBER",
+        "GAZA HEALTH MINISTRY: 72,292 PALESTINIANS KILLED IN ISRAELI ATTACKS SINCE OCTOBER 2023",
+        "IRANIAN MEDIA SAY SENIOR IRANIAN MILITARY COMMANDER HAS BEEN KILLED IN U.S.-ISRAELI ATTACKS",
+        "IRANIAN AUTHORITIES: 2,076 PEOPLE KILLED AND 26,500 INJURED IN U.S.-ISRAELI STRIKES SINCE FEBRUARY 28",
+        "LEBANESE HEALTH MINISTRY: FOUR PEOPLE KILLED AND 39 INJURED IN ISRAELI RAID ON JNAH AREA SOUTH OF BEIRUT"
+      ],
+      "false_positive_count": 6,
+      "false_positives_sample": [
+        "AMADOZENRAEISRIST TEF2LIG SIXITROCIOUER TRATS",
+        "- IRANIAN MEDIA SAY SENIOR IRANIAN MILITARY COMMANDER HAS_BEEN RAMANAVTHOMITIES2074 PEOPLE KILLED AND STRIKES SINCEFEBRUARY28",
+        "AT SEA ESCUED NEAR ITALIAN COAST",
+        "COUNTRY OVER PAST 24 HOUL LUDING",
+        "LEBANESE ARMY SAYS ONE",
+        "FORMORE COTOALJAZERA.COM"
+      ],
+      "is_hybrid": false,
+      "timing": {
+        "engine": "doctr",
+        "slice": "slice_A",
+        "panorama_size_px": [
+          142165,
+          87
+        ],
+        "elapsed_seconds": 391.6,
+        "pixels_per_second": 31584.2,
+        "rss_mb_before": 73.1,
+        "rss_mb_after": 2150.1,
+        "rss_mb_delta": 2077.1,
+        "text_length_chars": 11114,
+        "word_count": 1595,
+        "meta": {
+          "engine": "doctr",
+          "slice_w": 3000,
+          "stride": 1500,
+          "slices_processed": 95,
+          "det_arch": "db_resnet50",
+          "reco_arch": "crnn_vgg16_bn",
+          "confidence_threshold": 0.3
+        }
+      },
+      "config": "augmented"
+    },
+    {
+      "stage": "doctr",
+      "slice": "slice_B",
+      "gt_count": 28,
+      "extracted_count": 36,
+      "thresholds": {
+        "60": {
+          "tp_gt": 28,
+          "tp_ext": 28,
+          "fn": 0,
+          "fp": 8,
+          "precision": 0.7778,
+          "recall": 1.0,
+          "f1": 0.875
+        },
+        "70": {
+          "tp_gt": 25,
+          "tp_ext": 26,
+          "fn": 3,
+          "fp": 10,
+          "precision": 0.7222,
+          "recall": 0.8929,
+          "f1": 0.7985
+        },
+        "80": {
+          "tp_gt": 24,
+          "tp_ext": 25,
+          "fn": 4,
+          "fp": 11,
+          "precision": 0.6944,
+          "recall": 0.8571,
+          "f1": 0.7673
+        }
+      },
+      "exact_matches": 12,
+      "coverage_at_50_pct": 28,
+      "avg_cer_at_70": 0.1171,
+      "avg_wer_at_70": 0.4246,
+      "missed_headlines": [
+        "U.S. FORCES RESCUE MISSING AIRMAN IN IRAN TWO DAYS AFTER AMERICAN FIGHTER JET WENT DOWN",
+        "GAZA HEALTH MINISTRY: 716 PALESTINIANS KILLED IN ISRAELI ATTACKS SINCE CEASEFIRE STARTED IN OCTOBER",
+        "GAZA HEALTH MINISTRY: 72,292 PALESTINIANS KILLED IN ISRAELI ATTACKS SINCE OCTOBER 2023"
+      ],
+      "false_positive_count": 10,
+      "false_positives_sample": [
+        "RESCUE MISSING ATSEAAFTER 32REIOAST",
+        "GAZA HEALTH MMSTRE7IAPALESTIMINS",
+        "TWO E)IREAMISSIFSOING IN SRITYAI U. 5. FRGGRIANI IWCA AMEI RICA AN FIGHTER JET WENT DOWN",
+        "RILCIETREASOIBEIF, LI FIPNGBAIREVEON KILLISEVIE EAR-OBAHH MINI: PEIIND WER/TIIART OF WWORLMDGANZATION DRIVER SHOT KILLED BYISRAELI ARMV ICA",
+        "MOON'S GRANDCANYON AHEAD OF MISTONCLUMARFLVeYORE GOTOALJAZEERA.COM",
+        "- ISRAEL, INCLUDING TELAVIV AREA",
+        "IRANIAN AUTHORITIES: 2,076 PEOPLE KILLED AND 26,500U. ELI STRIICE FEBRUA JARYAN SAYS STRUCK U.S. FORCESRELOCATED: ON KUWAIT'SBUED",
+        "KUWAIT ANDBA QATARMINISTER 1111 PRESSES F FOR PEACEFUL",
+        "MIDDLE EAST CONFLICT",
+        "NULLEDNISBACUATAGKS SINCE OCTOBER2023"
+      ],
+      "is_hybrid": false,
+      "timing": {
+        "engine": "doctr",
+        "slice": "slice_B",
+        "panorama_size_px": [
+          128868,
+          87
+        ],
+        "elapsed_seconds": 332.81,
+        "pixels_per_second": 33687.3,
+        "rss_mb_before": 2148.5,
+        "rss_mb_after": 2240.8,
+        "rss_mb_delta": 92.2,
+        "text_length_chars": 9887,
+        "word_count": 1389,
+        "meta": {
+          "engine": "doctr",
+          "slice_w": 3000,
+          "stride": 1500,
+          "slices_processed": 86,
+          "det_arch": "db_resnet50",
+          "reco_arch": "crnn_vgg16_bn",
+          "confidence_threshold": 0.3
+        }
+      },
+      "config": "augmented"
+    },
+    {
+      "stage": "craft_trocr",
+      "slice": "slice_A",
+      "gt_count": 27,
+      "extracted_count": 56,
+      "thresholds": {
+        "60": {
+          "tp_gt": 26,
+          "tp_ext": 37,
+          "fn": 1,
+          "fp": 19,
+          "precision": 0.6607,
+          "recall": 0.963,
+          "f1": 0.7837
+        },
+        "70": {
+          "tp_gt": 12,
+          "tp_ext": 12,
+          "fn": 15,
+          "fp": 44,
+          "precision": 0.2143,
+          "recall": 0.4444,
+          "f1": 0.2892
+        },
+        "80": {
+          "tp_gt": 4,
+          "tp_ext": 4,
+          "fn": 23,
+          "fp": 52,
+          "precision": 0.0714,
+          "recall": 0.1481,
+          "f1": 0.0964
+        }
+      },
+      "exact_matches": 0,
+      "coverage_at_50_pct": 27,
+      "avg_cer_at_70": 0.3219,
+      "avg_wer_at_70": 0.7734,
+      "missed_headlines": [
+        "GAZA HEALTH MINISTRY: 716 PALESTINIANS KILLED IN ISRAELI ATTACKS SINCE CEASEFIRE STARTED IN OCTOBER",
+        "ISRAELI FORCES AND SETTLERS HAVE KILLED 1,138 PALESTINIANS IN OCCUPIED WEST BANK SINCE OCTOBER 2023",
+        "RESCUE CHARITIES SAY 71 PEOPLE REMAIN MISSING AT SEA AFTER 32 RESCUED NEAR ITALIAN COAST",
+        "ARTEMIS II ASTRONAUTS GLIMPSE MOON'S 'GRAND CANYON' AHEAD OF HISTORIC LUNAR FLYBY",
+        "TRUMP THREATENS ON IRAN'S POWER PLANTS IF HORMUZ IS NOT OPENED BY 0000 GMT WEDNESDAY",
+        "IRAN'S PARLIAMENT SPEAKER WARNS TRUMP'S 'RECKLESS MOVES' MEAN 'WHOLE REGION GOING TO BURN'",
+        "IRAN SAYS U.S.-ISRAELI STRIKES KILL AT LEAST 34 PEOPLE ACROSS COUNTRY OVER PAST 24 HOURS, INCLUDING SIX CHILDREN",
+        "MULTIPLE INJURIES REPORTED AFTER IRAN MISSILE ATTACK HITS CENTRAL ISRAEL, IN TEL AVIV AREA",
+        "TWO PEOPLE KILLED, TWO REMAIN MISSING AFTER IRANIAN MISSILE HITS BUILDING IN ISRAELI CITY OF HAIFA",
+        "IRANIAN MEDIA SAY SENIOR IRANIAN MILITARY COMMANDER HAS BEEN KILLED IN U.S.-ISRAELI ATTACKS",
+        "IRAN'S REVOLUTIONARY GUARD SAYS IT HAS TARGETED PETROCHEMICAL PLANTS IN UAE,KUWAIT AND BAHRAIN",
+        "EIGHT OPEC+ COUNTRIES AGREE TO INCREASE OIL PRODUCTION QUOTAS BY 206,000 BARRELS PER DAY FROM MAY",
+        "LEBANESE HEALTH MINISTRY: FOUR PEOPLE KILLED AND 39 INJURED IN ISRAELI RAID ON JNAH AREA SOUTH OF BEIRUT",
+        "LEBANON'S HEALTH MINISTRY: 1,461 PEOPLE KILLED AND 4,430 WOUNDED IN ISRAELI ATTACKS SINCE START OF WAR",
+        "ISRAELI MILITARY CONTINUES TO STRIKE BEIRUT, KILLING AT LEAST FIVE PEOPLE AND INJURING DOZENS"
+      ],
+      "false_positive_count": 44,
+      "false_positives_sample": [
+        "TRANSPARCHAS, SPAKER MARNS TRANS RECLASS ANDES MEA'S ARE REFUN GOING TO BURN",
+        "MULTING NUMRS REPARED AFTER TRAIMASALE AT TAX WITHEN RAIL ISALE, INCLUDING TAX",
+        "IRANAN HOUSEY, SEWOR RAWAWWALIARY COMMUNBEH MILES INUS, ISRELL ATTARKS",
+        "BANSPENDULARY BASI HAS AREYED PERINDENIA, PLANTS INUAL, IUNAT AND BARAN",
+        "RANINA PRESCIPT SUMOS MINOC INCLUSIONS INCLUS TRANSIT REFUNDS COMBASATE WARRANTS TRANS REQUITIONAR GUARD SATMAS, JARGETED PERINDENUAL PRANS INUAL, RAN",
+        "AURICE TRANSIA INTERCHESS SUBJECT WITH MAILS AGAIN ATASS JAYAN TRANSICIES INCLUSIVE",
+        "GAZA HEALTH MINISTRY: AMENT SEAKER MARKS TRUPS REGALES ADVES MEAW WHOLE REGION DURN",
+        "RAMAN MEDASA, SEWAR RAWA MULTRAY TAMANDER MASSIEN KILLES,VUSSABLEJAYS",
+        "TRANSAS USASMAEL STRIMES KULAN LEAST APEOPLE ADDRESS COUNTRY ONGRANS TAH ITEM",
+        "MULTIPG NUMBER INIANASAS ATACK WITHS CENTRA, ISNAE, INCLUDING TELLAY AREA"
+      ],
+      "is_hybrid": true,
+      "timing": {
+        "engine": "craft_trocr",
+        "slice": "slice_A",
+        "panorama_size_px": [
+          142165,
+          87
+        ],
+        "elapsed_seconds": 3306.13,
+        "pixels_per_second": 3741.0,
+        "rss_mb_before": 74.4,
+        "rss_mb_after": 2895.4,
+        "rss_mb_delta": 2821.0,
+        "text_length_chars": 9162,
+        "word_count": 144,
+        "meta": {
+          "engine": "craft_trocr",
+          "detector": "EasyOCR CRAFT",
+          "recognizer": "microsoft/trocr-base-printed",
+          "slice_w": 3000,
+          "stride": 1500,
+          "slices_processed": 95,
+          "note": "Hybrid recognizer-only pipeline, reported separately."
+        }
+      },
+      "config": "augmented"
+    },
+    {
+      "stage": "craft_trocr",
+      "slice": "slice_B",
+      "gt_count": 28,
+      "extracted_count": 58,
+      "thresholds": {
+        "60": {
+          "tp_gt": 26,
+          "tp_ext": 27,
+          "fn": 2,
+          "fp": 31,
+          "precision": 0.4655,
+          "recall": 0.9286,
+          "f1": 0.6201
+        },
+        "70": {
+          "tp_gt": 14,
+          "tp_ext": 13,
+          "fn": 14,
+          "fp": 45,
+          "precision": 0.2241,
+          "recall": 0.5,
+          "f1": 0.3095
+        },
+        "80": {
+          "tp_gt": 5,
+          "tp_ext": 5,
+          "fn": 23,
+          "fp": 53,
+          "precision": 0.0862,
+          "recall": 0.1786,
+          "f1": 0.1163
+        }
+      },
+      "exact_matches": 0,
+      "coverage_at_50_pct": 28,
+      "avg_cer_at_70": 0.2731,
+      "avg_wer_at_70": 0.7225,
+      "missed_headlines": [
+        "TRUMP THREATENS ON IRAN'S POWER PLANTS IF HORMUZ IS NOT OPENED BY 0000 GMT WEDNESDAY",
+        "IRANIAN FOREIGN MINISTRY SPOKESMAN SAYS U.S. HAS DESTROYED DIPLOMATIC PROCESS, FOCUS IS ON DEFENCE OF NATION",
+        "IRAN SAYS U.S.-ISRAELI STRIKES KILL AT LEAST 34 PEOPLE ACROSS COUNTRY OVER 24 HOURS, INCLUDING SIX CHILDREN",
+        "IRAN'S ATOMIC ENERGY CHIEF ACCUSES UN NUCLEAR WATCHDOG OF INACTION, WARNS OF RISK FROM ATTACKS ON BUSHEHR POWER PLANTS",
+        "MULTIPLE INJURIES REPORTED AFTER IRANIAN MISSILE ATTACK HITS CENTRAL ISRAEL, INCLUDING TEL AVIV AREA",
+        "IRANIAN AUTHORITIES: 2,076 PEOPLE KILLED AND 26,500 INJURED IN U.S.-ISRAELI STRIKES SINCE FEBRUARY 28",
+        "SIX PEOPLE INJURED BY MISSILE INTERCEPTION DEBRIS IN NORTHERN KUWAIT: HEALTH MINISTRY",
+        "EIGHT OPEC+ COUNTRIES AGREE TO INCREASE OIL PRODUCTION QUOTAS BY 206,000 BARRELS PER DAY FROM MAY",
+        "ISRAELI MILITARY CONTINUES TO STRIKE AREA AROUND BEIRUT, KILLING AT LEAST FIVE PEOPLE AND INJURING DOZENS",
+        "HAMAS SAYS IT WILL NOT DISARM BECAUSE PALESTINIANS CONTINUE TO BE TARGETED BY ISRAEL IN THE GAZA STRIP",
+        "GAZA HEALTH MINISTRY: 716 PALESTINIANS KILLED IN ISRAELI ATTACKS SINCE CEASEFIRE STARTED IN OCTOBER",
+        "GAZA HEALTH MINISTRY: 72,292 PALESTINIANS KILLED IN ISRAELI ATTACKS SINCE OCTOBER 2023",
+        "ISRAELI FORCES AND SETTLERS HAVE KILLED 1,138 PALESTINIANS IN OCCUPIED WEST BANK SINCE OCTOBER 2023",
+        "TRUMP THREATENS ON IRAN'S POWER PLANTS IF HORMUZ IS NOT OPENED BY 0000 GMT WEDNESDAY"
+      ],
+      "false_positive_count": 45,
+      "false_positives_sample": [
+        "BANS WINICER: CHESEN INTERNATIONAL INCLUS, WASHINGTON TRANSIA PRESER",
+        "GALANANAN SURY, YAPALES WASSALES IN USABLE ATAXES INEASER SRAND INVOICE",
+        "MULTAGE NUMMERSTERTER FREE TRANIAN ASSIDE ATAB WITH IS CENTRA ISSABLE INCLUSIVE TAILABLE ITEMS",
+        "GRA HELAN MINSPLASETWASKALB INSRABLE ATTAKS SNICE CORBAS",
+        "RICETREAD BEIP, NUT TERNISAREU EON KILL SEIVE BAR-DASH MIN. PETUN WESZTART ORNINGENGANIZATION DRINER SHOT & KULED BY/SARELL ARNAVA",
+        "KEMEL PARGES AND SETALES MAKE KLESI, JAPALASYANAS IN CONDING MUST PAINT SINCE JAYA ITEMS",
+        "WWW.PAPAS KLES, MINNESINA FRIER RAIN USNA INCLUS, A FREE ARE ARE AGAIN PERFORNAILS.COM/PRIM",
+        "REFUNDS RELIPING RICE, USE FACE WILL AND ACCUMATED IN GENERAL ATTASES SANDER FOR",
+        "ARTERS IASTRAN USSUES ANDING TRAU CANDA, MEAS PERINDUR, LOWER ORVICE OF TAILABLEAN",
+        "BAS ANDIN EARRY, MEAUTES INTERMAS ANDITION, INCLUS, PLEASE PRICE AND ON PLEASE"
+      ],
+      "is_hybrid": true,
+      "timing": {
+        "engine": "craft_trocr",
+        "slice": "slice_B",
+        "panorama_size_px": [
+          128868,
+          87
+        ],
+        "elapsed_seconds": 2983.86,
+        "pixels_per_second": 3757.4,
+        "rss_mb_before": 71.2,
+        "rss_mb_after": 2819.1,
+        "rss_mb_delta": 2747.9,
+        "text_length_chars": 8463,
+        "word_count": 125,
+        "meta": {
+          "engine": "craft_trocr",
+          "detector": "EasyOCR CRAFT",
+          "recognizer": "microsoft/trocr-base-printed",
+          "slice_w": 3000,
+          "stride": 1500,
+          "slices_processed": 86,
+          "note": "Hybrid recognizer-only pipeline, reported separately."
+        }
+      },
+      "config": "augmented"
+    }
+  ]
+}

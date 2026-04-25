@@ -1,0 +1,23 @@
+{
+  "engine": "easyocr",
+  "slice": "slice_B",
+  "panorama_size_px": [
+    128868,
+    87
+  ],
+  "elapsed_seconds": 197.24,
+  "pixels_per_second": 56842.0,
+  "rss_mb_before": 1893.0,
+  "rss_mb_after": 1896.4,
+  "rss_mb_delta": 3.4,
+  "text_length_chars": 9886,
+  "word_count": 119,
+  "meta": {
+    "engine": "easyocr",
+    "slice_w": 3000,
+    "stride": 1500,
+    "slices_processed": 86,
+    "upscale": 3,
+    "confidence_threshold": 0.3
+  }
+}

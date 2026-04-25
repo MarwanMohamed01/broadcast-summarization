@@ -1,0 +1,94 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  {/* ── HERO ───────────────────────────────── */}
+  <section class="border-b border-border">
+    <div class="max-w-content mx-auto px-6 pt-24 pb-16 lg:pt-36 lg:pb-24">
+      <span class="pill mb-6">Master's thesis · GIU Berlin</span>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight max-w-4xl text-text">
+        Multimodal Vision- and Audio-Based Extraction
+        <span class="block text-text-muted font-normal mt-2">
+          and LLM-Powered Summarization of TV News
+        </span>
+      </h1>
+      <p class="prose-thesis mt-8 text-lg">
+        Two parallel pipelines run on the same broadcast.
+        <span class="text-visual font-medium">Vision</span> reads the scrolling
+        ticker bar; <span class="text-audio font-medium">audio</span>
+        transcribes the spoken news. Both feed into the same nine LLMs and
+        get scored against the same human reference.
+      </p>
+
+      <div class="mt-10 flex flex-wrap gap-3">
+        <a href="/visual" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-md
+                                 bg-text text-bg text-sm font-medium hover:opacity-90 transition-opacity">
+          Walk through the visual pipeline →
+        </a>
+        <a href="/audio" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-md
+                                border border-border text-sm font-medium hover:bg-surface-2 transition-colors">
+          Walk through the audio pipeline →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  {/* ── PATH OVERVIEW ──────────────────────── */}
+  <section>
+    <div class="max-w-content mx-auto px-6 py-20 grid lg:grid-cols-2 gap-8">
+      <a href="/visual"
+         class="card p-6 hover:shadow-elevated transition-shadow group">
+        <span class="pill pill-visual mb-4">Visual path</span>
+        <h2 class="text-2xl font-semibold mb-2 group-hover:text-visual transition-colors">
+          OCR of the scrolling ticker
+        </h2>
+        <p class="prose-thesis">
+          Sample frames → detect scroll offsets → stitch panorama →
+          recognise text → segment into headlines → LLM-clean → summarise.
+          <strong>F1 88.1%</strong> on the 14-hour validation set after cleaning.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-2 text-xs">
+          <span class="pill">EasyOCR + Tesseract</span>
+          <span class="pill">Gemini 2.5 Flash cleaner</span>
+          <span class="pill">9 LLM summarisers</span>
+        </div>
+      </a>
+
+      <a href="/audio"
+         class="card p-6 hover:shadow-elevated transition-shadow group">
+        <span class="pill pill-audio mb-4">Audio path</span>
+        <h2 class="text-2xl font-semibold mb-2 group-hover:text-audio transition-colors">
+          Whisper ASR of the spoken broadcast
+        </h2>
+        <p class="prose-thesis">
+          Extract audio → faster-whisper streaming transcription → 15-min
+          chunks → per-chunk summaries (Level 1) → final summary per LLM
+          (Level 2). 13,517 segments transcribed at 3.07× realtime on CPU.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-2 text-xs">
+          <span class="pill">faster-whisper small int8</span>
+          <span class="pill">59 chunks × 9 models</span>
+          <span class="pill">Hierarchical L1 → L2</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  {/* ── KEY NUMBERS ────────────────────────── */}
+  <section class="border-t border-border bg-surface-2/40">
+    <div class="max-w-content mx-auto px-6 py-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {[
+        ["14.55 h", "Source broadcast"],
+        ["13,517", "ASR segments"],
+        ["88.1 %", "Visual F1 (cleaned)"],
+        ["9", "LLMs evaluated"],
+      ].map(([n, l]) => (
+        <div class="card p-6">
+          <div class="text-3xl font-semibold tracking-tight text-text">{n}</div>
+          <div class="text-sm text-text-muted mt-1">{l}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

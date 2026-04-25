@@ -1,0 +1,23 @@
+{
+  "engine": "tesseract",
+  "slice": "slice_A",
+  "panorama_size_px": [
+    142165,
+    87
+  ],
+  "elapsed_seconds": 39.68,
+  "pixels_per_second": 311671.7,
+  "rss_mb_before": 107.7,
+  "rss_mb_after": 112.1,
+  "rss_mb_delta": 4.4,
+  "text_length_chars": 10150,
+  "word_count": 1661,
+  "meta": {
+    "engine": "tesseract",
+    "slice_w": 3000,
+    "stride": 1500,
+    "slices_processed": 95,
+    "psm": 7,
+    "confidence_threshold": 20
+  }
+}

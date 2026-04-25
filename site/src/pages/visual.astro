@@ -1,0 +1,55 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SourceVideoStage      from "../../../design-system/components/visual/SourceVideoStage.jsx";
+import FrameExtractionStage  from "../../../design-system/components/visual/FrameExtractionStage.jsx";
+import ScrollDetectionStage  from "../../../design-system/components/visual/ScrollDetectionStage.jsx";
+import PanoramaStitchStage   from "../../../design-system/components/visual/PanoramaStitchStage.jsx";
+import OCRStage              from "../../../design-system/components/visual/OCRStage.jsx";
+import SegmentationStage     from "../../../design-system/components/visual/SegmentationStage.jsx";
+import LLMCleanStage         from "../../../design-system/components/visual/LLMCleanStage.jsx";
+import LLMFanoutStage        from "../../../design-system/components/visual/LLMFanoutStage.jsx";
+import EvalStage             from "../../../design-system/components/visual/EvalStage.jsx";
+
+// Build segment URLs for the panorama-stitch + OCR stages
+const segments = Array.from({ length: 10 }, (_, i) =>
+  `/data/panorama/slice_A/segment_${String(i).padStart(3, "0")}.webp`
+);
+---
+
+<BaseLayout
+  title="Visual pipeline · TV news multimodal extraction"
+  description="OCR of the scrolling AlJazeera ticker bar, animated stage by stage."
+>
+  {/* hero */}
+  <section class="border-b border-border">
+    <div class="max-w-content mx-auto px-6 pt-20 pb-12">
+      <span class="pill pill-visual mb-4">Visual path</span>
+      <h1 class="text-4xl lg:text-5xl font-semibold tracking-tight">
+        From a scrolling ticker bar to clean, summarised headlines
+      </h1>
+      <p class="prose-thesis mt-4 max-w-2xl">
+        Eight stages, every one runs on the same 30-second clip you saw on
+        the landing page. Scroll to play each animation; click <em>Replay</em>
+        to watch again, or <em>Show data</em> to inspect what was actually
+        produced.
+      </p>
+    </div>
+  </section>
+
+  <SourceVideoStage      client:load videoSrc="/video/demo_clip_30s.mp4" />
+  <FrameExtractionStage  client:load
+                         statsUrl="/data/instrumented/slice_A/frame_stats.json"
+                         pipelineStatsUrl="/data/stats/pipeline_stats.json" />
+  <ScrollDetectionStage  client:load
+                         deltasUrl="/data/instrumented/slice_A/scroll_deltas.json" />
+  <PanoramaStitchStage   client:load segmentSrcs={segments} />
+  <OCRStage              client:load
+                         segmentSrc={segments[0]}
+                         bboxesUrl="/data/instrumented/slice_A/ocr_bboxes.json" />
+  <SegmentationStage     client:load />
+  <LLMCleanStage         client:load />
+  <LLMFanoutStage        client:load accent="visual" />
+  <EvalStage             client:load accent="visual"
+                         scoresUrl="/data/stats/eval_scores.json"
+                         variant="visual_27min" />
+</BaseLayout>

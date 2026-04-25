@@ -1,15 +1,60 @@
+/* fonts (offline shippable) */
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/inter/700.css";
+@import "@fontsource/jetbrains-mono/400.css";
+@import "@fontsource/jetbrains-mono/600.css";
+
+/* shared design tokens */
+@import "../../../design-system/tokens.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-family: system-ui, -apple-system, sans-serif;
-  color-scheme: light;
+/* ── card ──────────────────────────────────────────────── */
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
 }
 
-body {
-  margin: 0;
-  min-height: 100vh;
-  background: #f3f4f6;
-  color: #111827;
+/* ── pill ──────────────────────────────────────────────── */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  font-size: var(--text-xs);
+  font-weight: 500;
+  color: var(--color-text-muted);
 }
+.pill-visual { color: var(--color-visual); background: var(--color-visual-soft); border-color: transparent; }
+.pill-audio  { color: var(--color-audio);  background: var(--color-audio-soft);  border-color: transparent; }
+
+/* ── primary button ────────────────────────────────────── */
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 16px; border-radius: var(--radius-md);
+  background: var(--color-text); color: var(--color-bg);
+  font-size: var(--text-sm); font-weight: 500;
+  transition: opacity var(--motion-fast), transform var(--motion-fast);
+}
+.btn-primary:hover:not(:disabled) { opacity: 0.9; }
+.btn-primary:active { transform: translateY(1px); }
+.btn-primary:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.btn-secondary {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 8px 14px; border-radius: var(--radius-md);
+  background: transparent; color: var(--color-text);
+  border: 1px solid var(--color-border);
+  font-size: var(--text-sm); font-weight: 500;
+  transition: background var(--motion-fast);
+}
+.btn-secondary:hover:not(:disabled) { background: var(--color-surface-2); }

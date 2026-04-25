@@ -1,25 +1,19 @@
 import { useEffect, useRef, useState } from "react";
 import Slider from "rc-slider";
 import "rc-slider/assets/index.css";
+import { Play } from "lucide-react";
 
-/**
- * Video player + draggable range picker.
- *
- * Props:
- *   src        — video URL
- *   duration   — total duration in seconds (from backend metadata)
- *   start      — current selected start (seconds)
- *   end        — current selected end (seconds)
- *   maxSegment — maximum allowed segment length in seconds (default 1800 = 30 min)
- *   onChange   — (start, end) => void
- */
+function fmt(s) {
+  s = Math.floor(s);
+  const h = Math.floor(s / 3600);
+  const m = Math.floor((s % 3600) / 60);
+  const ss = s % 60;
+  if (h > 0) return `${h}:${String(m).padStart(2, "0")}:${String(ss).padStart(2, "0")}`;
+  return `${m}:${String(ss).padStart(2, "0")}`;
+}
+
 export default function VideoRangeSelector({
-  src,
-  duration,
-  start,
-  end,
-  maxSegment = 30 * 60,
-  onChange,
+  src, duration, start, end, maxSegment = 30 * 60, onChange,
 }) {
   const videoRef = useRef(null);
   const [currentTime, setCurrentTime] = useState(start || 0);
@@ -34,84 +28,43 @@ export default function VideoRangeSelector({
 
   function handleSliderChange(values) {
     const [s, e] = values;
-    // Clamp segment length to maxSegment
-    let clampedStart = s;
-    let clampedEnd = e;
+    let cs = s, ce = e;
     if (e - s > maxSegment) {
-      // Keep whichever handle the user was dragging closer to its previous value
-      if (Math.abs(s - start) > Math.abs(e - end)) {
-        clampedStart = e - maxSegment;
-      } else {
-        clampedEnd = s + maxSegment;
-      }
+      if (Math.abs(s - start) > Math.abs(e - end)) cs = e - maxSegment;
+      else ce = s + maxSegment;
     }
-    onChange(clampedStart, clampedEnd);
+    onChange(cs, ce);
     if (videoRef.current) {
-      // Jump playback to whichever handle just moved
-      const movedStart = Math.abs(clampedStart - start) > Math.abs(clampedEnd - end);
-      videoRef.current.currentTime = movedStart ? clampedStart : clampedEnd;
+      const movedStart = Math.abs(cs - start) > Math.abs(ce - end);
+      videoRef.current.currentTime = movedStart ? cs : ce;
     }
   }
 
   function jumpTo(sec) {
-    if (videoRef.current) {
-      videoRef.current.currentTime = sec;
-      videoRef.current.play().catch(() => {});
-    }
-  }
-
-  function fmt(s) {
-    s = Math.floor(s);
-    const h = Math.floor(s / 3600);
-    const m = Math.floor((s % 3600) / 60);
-    const ss = s % 60;
-    if (h > 0) return `${h}:${String(m).padStart(2, "0")}:${String(ss).padStart(2, "0")}`;
-    return `${m}:${String(ss).padStart(2, "0")}`;
+    const v = videoRef.current;
+    if (!v) return;
+    v.currentTime = sec;
+    v.play().catch(() => {});
   }
 
   const segMin = ((end - start) / 60).toFixed(1);
   const overLimit = end - start > maxSegment;
 
   return (
-    <div style={{ marginBottom: 12 }}>
+    <div className="space-y-3">
       <video
-        ref={videoRef}
-        src={src}
-        controls
-        style={{
-          width: "100%",
-          maxHeight: 360,
-          background: "#000",
-          borderRadius: 6,
-        }}
+        ref={videoRef} src={src} controls
+        className="w-full max-h-[360px] rounded-md bg-black ring-1 ring-border"
       />
 
-      <div
-        style={{
-          background: "#f9fafb",
-          border: "1px solid #e5e7eb",
-          borderRadius: 6,
-          padding: "12px 16px",
-          marginTop: 8,
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            fontSize: "0.85rem",
-            color: "#6b7280",
-            marginBottom: 6,
-          }}
-        >
+      <div className="card p-4">
+        <div className="flex justify-between text-[11px] text-text-muted mono mb-2">
           <span>0:00</span>
-          <span>
-            playhead: <strong>{fmt(currentTime)}</strong>
-          </span>
+          <span>playhead: <strong className="text-text">{fmt(currentTime)}</strong></span>
           <span>{fmt(duration)}</span>
         </div>
 
-        <div style={{ padding: "0 10px" }}>
+        <div className="px-2.5">
           <Slider
             range
             min={0}
@@ -122,65 +75,34 @@ export default function VideoRangeSelector({
             allowCross={false}
             pushable={1}
             styles={{
-              track: { background: "#3b82f6", height: 6 },
-              rail: { background: "#d1d5db", height: 6 },
+              track: { background: "var(--color-visual)", height: 6 },
+              rail:  { background: "var(--color-border)", height: 6 },
               handle: {
-                background: "#3b82f6",
-                border: "2px solid #fff",
-                boxShadow: "0 0 0 2px #3b82f6",
-                width: 16,
-                height: 16,
-                marginTop: -5,
-                opacity: 1,
+                background: "var(--color-visual)",
+                border: "2px solid var(--color-bg)",
+                boxShadow: "0 0 0 2px var(--color-visual)",
+                width: 16, height: 16, marginTop: -5, opacity: 1,
               },
             }}
           />
         </div>
 
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-            marginTop: 12,
-            fontSize: "0.9rem",
-          }}
-        >
-          <div>
-            <strong>Start:</strong> {fmt(start)}
-            <button
-              onClick={() => jumpTo(start)}
-              style={{
-                marginLeft: 6,
-                padding: "2px 8px",
-                fontSize: "0.8rem",
-                cursor: "pointer",
-              }}
-            >
-              ▶ preview
+        <div className="flex justify-between items-center mt-4 text-sm flex-wrap gap-3">
+          <div className="flex items-center gap-2">
+            <span className="text-text-muted">Start</span>
+            <strong className="mono">{fmt(start)}</strong>
+            <button onClick={() => jumpTo(start)} className="btn-secondary !px-2 !py-1 text-[11px]">
+              <Play size={10} />
             </button>
           </div>
-          <div
-            style={{
-              color: overLimit ? "#dc2626" : "#374151",
-              fontWeight: 600,
-            }}
-          >
-            Segment: {segMin} min
-            {overLimit && ` (max ${maxSegment / 60} min)`}
+          <div className={`font-semibold ${overLimit ? "text-error" : "text-text"}`}>
+            {segMin} min{overLimit && ` (max ${maxSegment / 60} min)`}
           </div>
-          <div>
-            <strong>End:</strong> {fmt(end)}
-            <button
-              onClick={() => jumpTo(end)}
-              style={{
-                marginLeft: 6,
-                padding: "2px 8px",
-                fontSize: "0.8rem",
-                cursor: "pointer",
-              }}
-            >
-              ▶ preview
+          <div className="flex items-center gap-2">
+            <span className="text-text-muted">End</span>
+            <strong className="mono">{fmt(end)}</strong>
+            <button onClick={() => jumpTo(end)} className="btn-secondary !px-2 !py-1 text-[11px]">
+              <Play size={10} />
             </button>
           </div>
         </div>

@@ -1,0 +1,28 @@
+{
+  "segmentation": {
+    "delimiter_detected": " - ",
+    "delimiter_count": 112,
+    "raw_items_after_split": 101,
+    "items_after_quality_filter": 92,
+    "filtered_out_total": 9,
+    "filtered_out_by_reason": {
+      "garbage": 9
+    },
+    "items_passed_filter": 92,
+    "duplicates_dropped": 40,
+    "duplicates_replaced_with_better": 23,
+    "merge_artifacts_removed": 1,
+    "final_unique_news_items": 28,
+    "estimated_ticker_cycles": 3.6,
+    "final_items_quality": {
+      "avg_quality_score": 0.911,
+      "min_quality_score": 0.867,
+      "max_quality_score": 0.986
+    },
+    "final_items_length": {
+      "avg_chars": 94.2,
+      "min_chars": 55,
+      "max_chars": 148
+    }
+  }
+}

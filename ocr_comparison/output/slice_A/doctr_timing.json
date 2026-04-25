@@ -1,0 +1,24 @@
+{
+  "engine": "doctr",
+  "slice": "slice_A",
+  "panorama_size_px": [
+    142165,
+    87
+  ],
+  "elapsed_seconds": 391.6,
+  "pixels_per_second": 31584.2,
+  "rss_mb_before": 73.1,
+  "rss_mb_after": 2150.1,
+  "rss_mb_delta": 2077.1,
+  "text_length_chars": 11114,
+  "word_count": 1595,
+  "meta": {
+    "engine": "doctr",
+    "slice_w": 3000,
+    "stride": 1500,
+    "slices_processed": 95,
+    "det_arch": "db_resnet50",
+    "reco_arch": "crnn_vgg16_bn",
+    "confidence_threshold": 0.3
+  }
+}

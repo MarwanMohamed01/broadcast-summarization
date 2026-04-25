@@ -1,0 +1,24 @@
+{
+  "engine": "craft_trocr",
+  "slice": "slice_B",
+  "panorama_size_px": [
+    128868,
+    87
+  ],
+  "elapsed_seconds": 2983.86,
+  "pixels_per_second": 3757.4,
+  "rss_mb_before": 71.2,
+  "rss_mb_after": 2819.1,
+  "rss_mb_delta": 2747.9,
+  "text_length_chars": 8463,
+  "word_count": 125,
+  "meta": {
+    "engine": "craft_trocr",
+    "detector": "EasyOCR CRAFT",
+    "recognizer": "microsoft/trocr-base-printed",
+    "slice_w": 3000,
+    "stride": 1500,
+    "slices_processed": 86,
+    "note": "Hybrid recognizer-only pipeline, reported separately."
+  }
+}

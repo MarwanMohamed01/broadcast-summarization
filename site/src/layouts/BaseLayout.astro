@@ -1,0 +1,43 @@
+---
+import "../styles/global.css";
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+
+export interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Multimodal Vision- and Audio-Based Extraction and LLM-Powered Summarization of TV News",
+  description = "Two parallel pipelines turning broadcast news into structured summaries — a Master's thesis at GIU Berlin.",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+
+    <!-- Theme: respect OS preference, persist to localStorage -->
+    <script is:inline>
+      const stored = localStorage.getItem("theme");
+      const sysDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.dataset.theme = stored || (sysDark ? "dark" : "light");
+    </script>
+  </head>
+  <body class="min-h-screen bg-bg text-text antialiased">
+    <a href="#main"
+       class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:bg-surface focus:text-text focus:border focus:border-border focus:rounded-md focus:px-3 focus:py-2">
+      Skip to content
+    </a>
+    <Nav />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

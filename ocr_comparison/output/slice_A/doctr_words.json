@@ -1,0 +1,7977 @@
+[
+  {
+    "x": 5,
+    "text": "TRIP",
+    "confidence": 0.9995604157447815
+  },
+  {
+    "x": 67,
+    "text": "-",
+    "confidence": 0.9990566372871399
+  },
+  {
+    "x": 90,
+    "text": "GAZA",
+    "confidence": 0.9909512996673584
+  },
+  {
+    "x": 146,
+    "text": "HEALTH",
+    "confidence": 0.704082727432251
+  },
+  {
+    "x": 237,
+    "text": "MINISTRY:716",
+    "confidence": 0.8211419582366943
+  },
+  {
+    "x": 389,
+    "text": "PALESTINIANS",
+    "confidence": 0.8976776003837585
+  },
+  {
+    "x": 553,
+    "text": "KILLEDIN",
+    "confidence": 0.9893084168434143
+  },
+  {
+    "x": 662,
+    "text": "ISRAELIATTACKS",
+    "confidence": 0.8964481949806213
+  },
+  {
+    "x": 858,
+    "text": "SINCE",
+    "confidence": 0.9982320666313171
+  },
+  {
+    "x": 916,
+    "text": "CEASEFIRE",
+    "confidence": 0.9955540299415588
+  },
+  {
+    "x": 1042,
+    "text": "STARTEDI",
+    "confidence": 0.6014054417610168
+  },
+  {
+    "x": 1142,
+    "text": "IN",
+    "confidence": 0.958649754524231
+  },
+  {
+    "x": 1171,
+    "text": "OCTOBER",
+    "confidence": 0.9951785802841187
+  },
+  {
+    "x": 1300,
+    "text": "GAZA",
+    "confidence": 0.999765932559967
+  },
+  {
+    "x": 1359,
+    "text": "HEALTH",
+    "confidence": 0.9990988969802856
+  },
+  {
+    "x": 1450,
+    "text": "MINISTRY:",
+    "confidence": 0.9908466935157776
+  },
+  {
+    "x": 1561,
+    "text": "72,292",
+    "confidence": 0.9988020658493042
+  },
+  {
+    "x": 1634,
+    "text": "PALESTINIANS",
+    "confidence": 0.996898889541626
+  },
+  {
+    "x": 1798,
+    "text": "KILLEDIN",
+    "confidence": 0.9910783171653748
+  },
+  {
+    "x": 1901,
+    "text": "ISRAELIA",
+    "confidence": 0.9881600141525269
+  },
+  {
+    "x": 1992,
+    "text": "ATTACKS",
+    "confidence": 0.9984673857688904
+  },
+  {
+    "x": 2100,
+    "text": "SINCE",
+    "confidence": 0.9957048296928406
+  },
+  {
+    "x": 2162,
+    "text": "OCTOBER",
+    "confidence": 0.9935043454170227
+  },
+  {
+    "x": 2267,
+    "text": "2023",
+    "confidence": 0.9999614953994751
+  },
+  {
+    "x": 2337,
+    "text": "-",
+    "confidence": 0.8011175990104675
+  },
+  {
+    "x": 2361,
+    "text": "ISRAELIRCES",
+    "confidence": 0.9978203773498535
+  },
+  {
+    "x": 2507,
+    "text": "AND",
+    "confidence": 0.9999963045120239
+  },
+  {
+    "x": 2557,
+    "text": "SETTLERS",
+    "confidence": 0.9989281296730042
+  },
+  {
+    "x": 2668,
+    "text": "HAVE",
+    "confidence": 0.9998431205749512
+  },
+  {
+    "x": 2730,
+    "text": "KILLED",
+    "confidence": 0.9999665021896362
+  },
+  {
+    "x": 2815,
+    "text": "1,138",
+    "confidence": 0.9980173110961914
+  },
+  {
+    "x": 2874,
+    "text": "PALESTINIANS",
+    "confidence": 0.9772045016288757
+  },
+  {
+    "x": 3032,
+    "text": "IN",
+    "confidence": 0.9839067459106445
+  },
+  {
+    "x": 3061,
+    "text": "OCCUPIED",
+    "confidence": 0.9928703904151917
+  },
+  {
+    "x": 3172,
+    "text": "WEST",
+    "confidence": 0.9986745119094849
+  },
+  {
+    "x": 3240,
+    "text": "BANK",
+    "confidence": 0.9998252987861633
+  },
+  {
+    "x": 3301,
+    "text": "SINCE",
+    "confidence": 0.9807708859443665
+  },
+  {
+    "x": 3366,
+    "text": "OCTOBER",
+    "confidence": 0.7996584177017212
+  },
+  {
+    "x": 3474,
+    "text": "2023",
+    "confidence": 0.9999186992645264
+  },
+  {
+    "x": 3536,
+    "text": "-",
+    "confidence": 0.5276286602020264
+  },
+  {
+    "x": 3565,
+    "text": "D.R.",
+    "confidence": 0.9995799660682678
+  },
+  {
+    "x": 3609,
+    "text": "CONGO",
+    "confidence": 0.9864361882209778
+  },
+  {
+    "x": 3691,
+    "text": "TO",
+    "confidence": 0.9996428489685059
+  },
+  {
+    "x": 3720,
+    "text": "TEMPORARILY",
+    "confidence": 0.999860405921936
+  },
+  {
+    "x": 3852,
+    "text": "Y",
+    "confidence": 0.9548708200454712
+  },
+  {
+    "x": 3873,
+    "text": "ACCEPT",
+    "confidence": 0.9976711869239807
+  },
+  {
+    "x": 3960,
+    "text": "DEGRANTS",
+    "confidence": 0.9973141551017761
+  },
+  {
+    "x": 4025,
+    "text": "ERL",
+    "confidence": 0.3132656216621399
+  },
+  {
+    "x": 4075,
+    "text": "UNDER",
+    "confidence": 0.9960924983024597
+  },
+  {
+    "x": 4154,
+    "text": "NEW",
+    "confidence": 0.9987688660621643
+  },
+  {
+    "x": 4209,
+    "text": "DEAL",
+    "confidence": 0.999929666519165
+  },
+  {
+    "x": 4271,
+    "text": "WITH",
+    "confidence": 0.993984043598175
+  },
+  {
+    "x": 4330,
+    "text": "THE",
+    "confidence": 0.9995515942573547
+  },
+  {
+    "x": 4374,
+    "text": "U.S.",
+    "confidence": 0.9402531981468201
+  },
+  {
+    "x": 4458,
+    "text": "RESCUE",
+    "confidence": 0.9981244206428528
+  },
+  {
+    "x": 4546,
+    "text": "CHARITIES",
+    "confidence": 0.9978269934654236
+  },
+  {
+    "x": 4666,
+    "text": "SAY",
+    "confidence": 0.999167799949646
+  },
+  {
+    "x": 4708,
+    "text": "71",
+    "confidence": 0.9999867677688599
+  },
+  {
+    "x": 4740,
+    "text": "PEOPLE",
+    "confidence": 0.9997320771217346
+  },
+  {
+    "x": 4831,
+    "text": "EMAIN",
+    "confidence": 0.5386896133422852
+  },
+  {
+    "x": 4901,
+    "text": "MISSING",
+    "confidence": 0.999369204044342
+  },
+  {
+    "x": 4995,
+    "text": "ATSEA",
+    "confidence": 0.8542529940605164
+  },
+  {
+    "x": 5077,
+    "text": "AFTER",
+    "confidence": 0.6490000486373901
+  },
+  {
+    "x": 5153,
+    "text": "32",
+    "confidence": 0.9974070191383362
+  },
+  {
+    "x": 5179,
+    "text": "RESCUED",
+    "confidence": 0.9926929473876953
+  },
+  {
+    "x": 5282,
+    "text": "NEARITALIAN",
+    "confidence": 0.8937711715698242
+  },
+  {
+    "x": 5425,
+    "text": "COAST",
+    "confidence": 0.9026446342468262
+  },
+  {
+    "x": 5551,
+    "text": "ARTEMIS",
+    "confidence": 0.9741209149360657
+  },
+  {
+    "x": 5554,
+    "text": "E",
+    "confidence": 0.3621322214603424
+  },
+  {
+    "x": 5648,
+    "text": "II",
+    "confidence": 0.49942922592163086
+  },
+  {
+    "x": 5666,
+    "text": "ASTRONAUTS",
+    "confidence": 0.9992389678955078
+  },
+  {
+    "x": 5812,
+    "text": "GLIMPSE",
+    "confidence": 0.9989271759986877
+  },
+  {
+    "x": 5912,
+    "text": "MOON'",
+    "confidence": 0.9150594472885132
+  },
+  {
+    "x": 5976,
+    "text": "'S",
+    "confidence": 0.9462960362434387
+  },
+  {
+    "x": 6000,
+    "text": "'GRAND",
+    "confidence": 0.9926292896270752
+  },
+  {
+    "x": 6082,
+    "text": "CANYON\"",
+    "confidence": 0.6160843968391418
+  },
+  {
+    "x": 6178,
+    "text": "AHEADOF",
+    "confidence": 0.6813773512840271
+  },
+  {
+    "x": 6284,
+    "text": "HISTORICL",
+    "confidence": 0.5046103596687317
+  },
+  {
+    "x": 6386,
+    "text": "LUNAR",
+    "confidence": 0.9679378271102905
+  },
+  {
+    "x": 6474,
+    "text": "FLYBY",
+    "confidence": 0.9998804330825806
+  },
+  {
+    "x": 6585,
+    "text": "FOR",
+    "confidence": 0.9999699592590332
+  },
+  {
+    "x": 6629,
+    "text": "MORE",
+    "confidence": 0.9998471736907959
+  },
+  {
+    "x": 6694,
+    "text": "GOOALJAZEERA.COM",
+    "confidence": 0.5278670191764832
+  },
+  {
+    "x": 6884,
+    "text": "44",
+    "confidence": 0.70558762550354
+  },
+  {
+    "x": 6969,
+    "text": "TRUMP",
+    "confidence": 0.9820119142532349
+  },
+  {
+    "x": 7048,
+    "text": "NSDN",
+    "confidence": 0.604944109916687
+  },
+  {
+    "x": 7072,
+    "text": "-",
+    "confidence": 0.7911089658737183
+  },
+  {
+    "x": 7089,
+    "text": "N",
+    "confidence": 0.8031241297721863
+  },
+  {
+    "x": 7098,
+    "text": "NNNN",
+    "confidence": 0.49372750520706177
+  },
+  {
+    "x": 7116,
+    "text": "IRAN'SPOWER",
+    "confidence": 0.7219721674919128
+  },
+  {
+    "x": 7271,
+    "text": "PLA5",
+    "confidence": 0.5748733878135681
+  },
+  {
+    "x": 7330,
+    "text": "IF",
+    "confidence": 0.9983758926391602
+  },
+  {
+    "x": 7356,
+    "text": "HORMUZ",
+    "confidence": 0.9891170859336853
+  },
+  {
+    "x": 7453,
+    "text": "IS",
+    "confidence": 0.9958510398864746
+  },
+  {
+    "x": 7479,
+    "text": "NOT",
+    "confidence": 0.9999966621398926
+  },
+  {
+    "x": 7526,
+    "text": "OPENED",
+    "confidence": 0.9996179342269897
+  },
+  {
+    "x": 7620,
+    "text": "BY",
+    "confidence": 0.999969482421875
+  },
+  {
+    "x": 7652,
+    "text": "0000",
+    "confidence": 0.5200092196464539
+  },
+  {
+    "x": 7708,
+    "text": "GMT",
+    "confidence": 0.9999982118606567
+  },
+  {
+    "x": 7751,
+    "text": "WEDNESDAY",
+    "confidence": 0.9998536109924316
+  },
+  {
+    "x": 7910,
+    "text": "-",
+    "confidence": 0.8702725172042847
+  },
+  {
+    "x": 7936,
+    "text": "IRAN'S",
+    "confidence": 0.9896469712257385
+  },
+  {
+    "x": 8006,
+    "text": "PARLIAMENT",
+    "confidence": 0.945219874382019
+  },
+  {
+    "x": 8153,
+    "text": "SPEAKER",
+    "confidence": 0.9317125678062439
+  },
+  {
+    "x": 8252,
+    "text": "WARNS",
+    "confidence": 0.99936443567276
+  },
+  {
+    "x": 8337,
+    "text": "TRUMP'",
+    "confidence": 0.9256700277328491
+  },
+  {
+    "x": 8422,
+    "text": "S",
+    "confidence": 0.8735949993133545
+  },
+  {
+    "x": 8440,
+    "text": "'RECKLESS",
+    "confidence": 0.9821349382400513
+  },
+  {
+    "x": 8551,
+    "text": "MOVES'",
+    "confidence": 0.9800967574119568
+  },
+  {
+    "x": 8642,
+    "text": "MEAN",
+    "confidence": 0.8424830436706543
+  },
+  {
+    "x": 8709,
+    "text": "WHOLE",
+    "confidence": 0.790219783782959
+  },
+  {
+    "x": 8791,
+    "text": "REGION",
+    "confidence": 0.9641214609146118
+  },
+  {
+    "x": 8876,
+    "text": "GOING",
+    "confidence": 0.9907931685447693
+  },
+  {
+    "x": 8947,
+    "text": "TO",
+    "confidence": 0.9351018667221069
+  },
+  {
+    "x": 8982,
+    "text": "BURN'",
+    "confidence": 0.9651654362678528
+  },
+  {
+    "x": 9090,
+    "text": "MORE",
+    "confidence": 0.997678816318512
+  },
+  {
+    "x": 9158,
+    "text": "THAN",
+    "confidence": 0.9995394945144653
+  },
+  {
+    "x": 9219,
+    "text": "A",
+    "confidence": 0.9998260140419006
+  },
+  {
+    "x": 9240,
+    "text": "DOZEN",
+    "confidence": 0.9983239769935608
+  },
+  {
+    "x": 9310,
+    "text": "IRANIAN",
+    "confidence": 0.9997686743736267
+  },
+  {
+    "x": 9401,
+    "text": "CITIES",
+    "confidence": 0.9990070462226868
+  },
+  {
+    "x": 9477,
+    "text": "BOMBED",
+    "confidence": 0.9884704351425171
+  },
+  {
+    "x": 9571,
+    "text": "BY",
+    "confidence": 0.9999159574508667
+  },
+  {
+    "x": 9603,
+    "text": "U.S.",
+    "confidence": 0.989329993724823
+  },
+  {
+    "x": 9650,
+    "text": "AND",
+    "confidence": 0.9891968369483948
+  },
+  {
+    "x": 9700,
+    "text": "ISRAEL",
+    "confidence": 0.9989973902702332
+  },
+  {
+    "x": 9782,
+    "text": "OVERNIGHT",
+    "confidence": 0.9818692803382874
+  },
+  {
+    "x": 9922,
+    "text": "-",
+    "confidence": 0.934050440788269
+  },
+  {
+    "x": 9946,
+    "text": "IRAN",
+    "confidence": 0.9983977675437927
+  },
+  {
+    "x": 10004,
+    "text": "SAYS",
+    "confidence": 0.6246663331985474
+  },
+  {
+    "x": 10060,
+    "text": "U.S.",
+    "confidence": 0.5424431562423706
+  },
+  {
+    "x": 10104,
+    "text": "-ISRAELI",
+    "confidence": 0.965498149394989
+  },
+  {
+    "x": 10201,
+    "text": "STRIKE",
+    "confidence": 0.9990033507347107
+  },
+  {
+    "x": 10274,
+    "text": "ES",
+    "confidence": 0.8308261036872864
+  },
+  {
+    "x": 10294,
+    "text": "KILLATLEAS",
+    "confidence": 0.8436314463615417
+  },
+  {
+    "x": 10438,
+    "text": "34",
+    "confidence": 0.9989663362503052
+  },
+  {
+    "x": 10467,
+    "text": "PEOPLE",
+    "confidence": 0.9998980760574341
+  },
+  {
+    "x": 10555,
+    "text": "ACROSS",
+    "confidence": 0.9874235987663269
+  },
+  {
+    "x": 10643,
+    "text": "COUNTRY",
+    "confidence": 0.9992839694023132
+  },
+  {
+    "x": 10751,
+    "text": "OVER",
+    "confidence": 0.9999679327011108
+  },
+  {
+    "x": 10813,
+    "text": "PAST",
+    "confidence": 0.9996157884597778
+  },
+  {
+    "x": 10872,
+    "text": "24",
+    "confidence": 0.9999933242797852
+  },
+  {
+    "x": 10901,
+    "text": "HOURS,",
+    "confidence": 0.9994096755981445
+  },
+  {
+    "x": 10986,
+    "text": "INCLUDING",
+    "confidence": 0.9944033622741699
+  },
+  {
+    "x": 11106,
+    "text": "SIX",
+    "confidence": 0.9938365817070007
+  },
+  {
+    "x": 11144,
+    "text": "CHILDREN",
+    "confidence": 0.9992140531539917
+  },
+  {
+    "x": 11299,
+    "text": "IRAN'S",
+    "confidence": 0.5857977271080017
+  },
+  {
+    "x": 11364,
+    "text": "MISSION",
+    "confidence": 0.9948700666427612
+  },
+  {
+    "x": 11466,
+    "text": "TO",
+    "confidence": 0.999146580696106
+  },
+  {
+    "x": 11496,
+    "text": "UN",
+    "confidence": 0.9955124258995056
+  },
+  {
+    "x": 11531,
+    "text": "URGES",
+    "confidence": 0.9991381168365479
+  },
+  {
+    "x": 11607,
+    "text": "WORLD",
+    "confidence": 0.9963257908821106
+  },
+  {
+    "x": 11689,
+    "text": "TO",
+    "confidence": 0.9999361038208008
+  },
+  {
+    "x": 11721,
+    "text": "PREVENT",
+    "confidence": 0.9999611377716064
+  },
+  {
+    "x": 11830,
+    "text": "ATROCIOUS",
+    "confidence": 0.992906928062439
+  },
+  {
+    "x": 11956,
+    "text": "ACTS'",
+    "confidence": 0.9801865220069885
+  },
+  {
+    "x": 12020,
+    "text": "MP5",
+    "confidence": 0.678206741809845
+  },
+  {
+    "x": 12114,
+    "text": "MULTIPLE",
+    "confidence": 0.999937891960144
+  },
+  {
+    "x": 12222,
+    "text": "INJURIES",
+    "confidence": 0.9956672191619873
+  },
+  {
+    "x": 12325,
+    "text": "REPORTED",
+    "confidence": 0.9903490543365479
+  },
+  {
+    "x": 12448,
+    "text": "AFTER",
+    "confidence": 0.9999521970748901
+  },
+  {
+    "x": 12515,
+    "text": "IRASSILE",
+    "confidence": 0.680136501789093
+  },
+  {
+    "x": 12612,
+    "text": "ATTACKI",
+    "confidence": 0.6219667196273804
+  },
+  {
+    "x": 12703,
+    "text": "HITSCENTRAL",
+    "confidence": 0.9675278663635254
+  },
+  {
+    "x": 12861,
+    "text": "ISRAEL,IN/",
+    "confidence": 0.4445708394050598
+  },
+  {
+    "x": 12972,
+    "text": "AVIV",
+    "confidence": 0.9996637105941772
+  },
+  {
+    "x": 13031,
+    "text": "AREA",
+    "confidence": 0.9998356103897095
+  },
+  {
+    "x": 13130,
+    "text": "TWO",
+    "confidence": 0.9950256943702698
+  },
+  {
+    "x": 13177,
+    "text": "PEPLE",
+    "confidence": 0.9995049238204956
+  },
+  {
+    "x": 13256,
+    "text": "KILLED,",
+    "confidence": 0.994256317615509
+  },
+  {
+    "x": 13347,
+    "text": "TWO",
+    "confidence": 0.9704958200454712
+  },
+  {
+    "x": 13397,
+    "text": "REMAIN",
+    "confidence": 0.9653780460357666
+  },
+  {
+    "x": 13485,
+    "text": "MISSING",
+    "confidence": 0.9981061220169067
+  },
+  {
+    "x": 13582,
+    "text": "AFTER",
+    "confidence": 0.9998577833175659
+  },
+  {
+    "x": 13652,
+    "text": "IRANIAN",
+    "confidence": 0.9955847859382629
+  },
+  {
+    "x": 13746,
+    "text": "MISSILE",
+    "confidence": 0.9992258548736572
+  },
+  {
+    "x": 13833,
+    "text": "HITS",
+    "confidence": 0.9995380640029907
+  },
+  {
+    "x": 13889,
+    "text": "BUILDING",
+    "confidence": 0.9990589022636414
+  },
+  {
+    "x": 13995,
+    "text": "IN",
+    "confidence": 0.9963836669921875
+  },
+  {
+    "x": 14021,
+    "text": "ISRAELICITY",
+    "confidence": 0.5925101637840271
+  },
+  {
+    "x": 14162,
+    "text": "OF",
+    "confidence": 0.9997114539146423
+  },
+  {
+    "x": 14194,
+    "text": "HAIFA",
+    "confidence": 0.9992451667785645
+  },
+  {
+    "x": 14305,
+    "text": "U.S.",
+    "confidence": 0.965129554271698
+  },
+  {
+    "x": 14349,
+    "text": "FORCES",
+    "confidence": 0.9873777031898499
+  },
+  {
+    "x": 14437,
+    "text": "RESCUE",
+    "confidence": 0.9940165281295776
+  },
+  {
+    "x": 14525,
+    "text": "MISSING",
+    "confidence": 0.9995322227478027
+  },
+  {
+    "x": 14619,
+    "text": "AIRMAN",
+    "confidence": 0.9915968775749207
+  },
+  {
+    "x": 14709,
+    "text": "IN",
+    "confidence": 0.9969987869262695
+  },
+  {
+    "x": 14739,
+    "text": "IRAN",
+    "confidence": 0.9337336421012878
+  },
+  {
+    "x": 14794,
+    "text": "TWO",
+    "confidence": 0.9974411725997925
+  },
+  {
+    "x": 14838,
+    "text": "DAYSA",
+    "confidence": 0.9724360704421997
+  },
+  {
+    "x": 14906,
+    "text": "AFTER",
+    "confidence": 0.9983589053153992
+  },
+  {
+    "x": 14979,
+    "text": "AMERICANF",
+    "confidence": 0.499811053276062
+  },
+  {
+    "x": 15096,
+    "text": "FIGHTER",
+    "confidence": 0.8020063638687134
+  },
+  {
+    "x": 15193,
+    "text": "JET",
+    "confidence": 0.9948782920837402
+  },
+  {
+    "x": 15237,
+    "text": "WENT",
+    "confidence": 0.9988160133361816
+  },
+  {
+    "x": 15298,
+    "text": "DOWN",
+    "confidence": 0.9929400682449341
+  },
+  {
+    "x": 15383,
+    "text": ".",
+    "confidence": 0.746155321598053
+  },
+  {
+    "x": 15410,
+    "text": "IRANIAN",
+    "confidence": 0.9988375306129456
+  },
+  {
+    "x": 15500,
+    "text": "MEDIA",
+    "confidence": 0.9840903878211975
+  },
+  {
+    "x": 15577,
+    "text": "SAY",
+    "confidence": 0.9994128942489624
+  },
+  {
+    "x": 15624,
+    "text": "SENIOR",
+    "confidence": 0.9987457990646362
+  },
+  {
+    "x": 15703,
+    "text": "IRANIAN",
+    "confidence": 0.9982996582984924
+  },
+  {
+    "x": 15796,
+    "text": "MILITARY",
+    "confidence": 0.9768068194389343
+  },
+  {
+    "x": 15902,
+    "text": "COMMANDER",
+    "confidence": 0.9519469738006592
+  },
+  {
+    "x": 16045,
+    "text": "HAS",
+    "confidence": 0.9994850158691406
+  },
+  {
+    "x": 16095,
+    "text": "BEEN",
+    "confidence": 0.999472439289093
+  },
+  {
+    "x": 16154,
+    "text": "KILLED",
+    "confidence": 0.9999557733535767
+  },
+  {
+    "x": 16265,
+    "text": "U.",
+    "confidence": 0.9772933125495911
+  },
+  {
+    "x": 16280,
+    "text": "S-15RAELIATTACKS",
+    "confidence": 0.5334689617156982
+  },
+  {
+    "x": 16910,
+    "text": "MI",
+    "confidence": 0.31874996423721313
+  },
+  {
+    "x": 17000,
+    "text": "500",
+    "confidence": 0.9997538924217224
+  },
+  {
+    "x": 17044,
+    "text": "INJURED",
+    "confidence": 0.9825711846351624
+  },
+  {
+    "x": 17074,
+    "text": "-",
+    "confidence": 0.7812926769256592
+  },
+  {
+    "x": 17083,
+    "text": "w",
+    "confidence": 0.8131834864616394
+  },
+  {
+    "x": 17138,
+    "text": "IN",
+    "confidence": 0.9958505630493164
+  },
+  {
+    "x": 17170,
+    "text": "U.S",
+    "confidence": 0.9949408769607544
+  },
+  {
+    "x": 17206,
+    "text": "-ISRAELI",
+    "confidence": 0.9643304944038391
+  },
+  {
+    "x": 17305,
+    "text": "STRIKES",
+    "confidence": 0.9997727274894714
+  },
+  {
+    "x": 17402,
+    "text": "SINCE",
+    "confidence": 0.9888912439346313
+  },
+  {
+    "x": 17466,
+    "text": "FEBRUARY",
+    "confidence": 0.7629444599151611
+  },
+  {
+    "x": 17519,
+    "text": "-",
+    "confidence": 0.8748001456260681
+  },
+  {
+    "x": 17581,
+    "text": "28",
+    "confidence": 0.9970964193344116
+  },
+  {
+    "x": 17660,
+    "text": "IRANIAN",
+    "confidence": 0.8072567582130432
+  },
+  {
+    "x": 17745,
+    "text": "PRESIDENT'S",
+    "confidence": 0.9590045213699341
+  },
+  {
+    "x": 17885,
+    "text": "OFFICE:",
+    "confidence": 0.9933392405509949
+  },
+  {
+    "x": 17976,
+    "text": "HORMUZ",
+    "confidence": 0.9997857213020325
+  },
+  {
+    "x": 18073,
+    "text": "WILL",
+    "confidence": 0.9998950958251953
+  },
+  {
+    "x": 18128,
+    "text": "REOPEN",
+    "confidence": 0.999497652053833
+  },
+  {
+    "x": 18219,
+    "text": "ONLY",
+    "confidence": 0.9999637603759766
+  },
+  {
+    "x": 18281,
+    "text": "WHEN",
+    "confidence": 0.951335608959198
+  },
+  {
+    "x": 18348,
+    "text": "TRANSIT",
+    "confidence": 0.996138870716095
+  },
+  {
+    "x": 18439,
+    "text": "REVENUESCOMPENSATE",
+    "confidence": 0.5439208149909973
+  },
+  {
+    "x": 18711,
+    "text": "WAR",
+    "confidence": 0.9913083910942078
+  },
+  {
+    "x": 18764,
+    "text": "DAMAGES",
+    "confidence": 0.9998410940170288
+  },
+  {
+    "x": 18914,
+    "text": "IRAN'S",
+    "confidence": 0.8288666009902954
+  },
+  {
+    "x": 18987,
+    "text": "REVOLUTIONARY",
+    "confidence": 0.999947190284729
+  },
+  {
+    "x": 19168,
+    "text": "GSAYS",
+    "confidence": 0.9938918352127075
+  },
+  {
+    "x": 19236,
+    "text": "IT",
+    "confidence": 0.9936330318450928
+  },
+  {
+    "x": 19259,
+    "text": "HS",
+    "confidence": 0.8616155385971069
+  },
+  {
+    "x": 19294,
+    "text": "TARGETED",
+    "confidence": 0.9977155923843384
+  },
+  {
+    "x": 19409,
+    "text": "PETROCHEMICAL",
+    "confidence": 0.9752238392829895
+  },
+  {
+    "x": 19587,
+    "text": "PLANTS",
+    "confidence": 0.9996508359909058
+  },
+  {
+    "x": 19678,
+    "text": "IN",
+    "confidence": 0.9556822776794434
+  },
+  {
+    "x": 19705,
+    "text": "UAE,",
+    "confidence": 0.9937841892242432
+  },
+  {
+    "x": 19760,
+    "text": "KUWAIT",
+    "confidence": 0.6051827073097229
+  },
+  {
+    "x": 19854,
+    "text": "AND",
+    "confidence": 0.9999661445617676
+  },
+  {
+    "x": 19901,
+    "text": "BAHRAIN",
+    "confidence": 0.9962081909179688
+  },
+  {
+    "x": 20009,
+    "text": "-",
+    "confidence": 0.8038747906684875
+  },
+  {
+    "x": 20039,
+    "text": "OATAR'SFOREIGN",
+    "confidence": 0.6222368478775024
+  },
+  {
+    "x": 20229,
+    "text": "MINISTER",
+    "confidence": 0.996232807636261
+  },
+  {
+    "x": 20337,
+    "text": "EXPRESSES",
+    "confidence": 0.8238381743431091
+  },
+  {
+    "x": 20463,
+    "text": "SOLIDARITY",
+    "confidence": 0.9670146107673645
+  },
+  {
+    "x": 20592,
+    "text": "WITH",
+    "confidence": 0.9559988379478455
+  },
+  {
+    "x": 20654,
+    "text": "KUWAIT",
+    "confidence": 0.9998741149902344
+  },
+  {
+    "x": 20745,
+    "text": "AFTEN",
+    "confidence": 0.9692760109901428
+  },
+  {
+    "x": 20824,
+    "text": "ATTACKS",
+    "confidence": 0.998054027557373
+  },
+  {
+    "x": 20923,
+    "text": "ON",
+    "confidence": 0.9974683523178101
+  },
+  {
+    "x": 20961,
+    "text": "ENERGY",
+    "confidence": 0.9996670484542847
+  },
+  {
+    "x": 21049,
+    "text": "FACILITIES",
+    "confidence": 0.9991481304168701
+  },
+  {
+    "x": 21213,
+    "text": "EIGHT",
+    "confidence": 0.999845027923584
+  },
+  {
+    "x": 21275,
+    "text": "OPEC+",
+    "confidence": 0.9956241250038147
+  },
+  {
+    "x": 21345,
+    "text": "COUNTRIES",
+    "confidence": 0.9781313538551331
+  },
+  {
+    "x": 21468,
+    "text": "AGREE",
+    "confidence": 0.9989563226699829
+  },
+  {
+    "x": 21544,
+    "text": "TO",
+    "confidence": 0.9998793601989746
+  },
+  {
+    "x": 21580,
+    "text": "INCREASE",
+    "confidence": 0.9976193308830261
+  },
+  {
+    "x": 21691,
+    "text": "OIL",
+    "confidence": 0.999861478805542
+  },
+  {
+    "x": 21726,
+    "text": "PRODUCTION",
+    "confidence": 0.9365562796592712
+  },
+  {
+    "x": 21873,
+    "text": "QUOTAS",
+    "confidence": 0.5711427330970764
+  },
+  {
+    "x": 21963,
+    "text": "BY",
+    "confidence": 0.9974006414413452
+  },
+  {
+    "x": 21996,
+    "text": "206,000",
+    "confidence": 0.9795347452163696
+  },
+  {
+    "x": 22086,
+    "text": "BARRELS",
+    "confidence": 0.9991803765296936
+  },
+  {
+    "x": 22189,
+    "text": "PER",
+    "confidence": 0.9999693632125854
+  },
+  {
+    "x": 22236,
+    "text": "DAY",
+    "confidence": 0.9999747276306152
+  },
+  {
+    "x": 22286,
+    "text": "FROM",
+    "confidence": 0.9999831914901733
+  },
+  {
+    "x": 22347,
+    "text": "MAY",
+    "confidence": 0.9726606011390686
+  },
+  {
+    "x": 22441,
+    "text": "LEBANESE",
+    "confidence": 0.6207260489463806
+  },
+  {
+    "x": 22555,
+    "text": "ARMY",
+    "confidence": 0.9999927282333374
+  },
+  {
+    "x": 22620,
+    "text": "SAYS",
+    "confidence": 0.9987831711769104
+  },
+  {
+    "x": 22681,
+    "text": "ONE",
+    "confidence": 0.9998739957809448
+  },
+  {
+    "x": 22708,
+    "text": "-",
+    "confidence": 0.9137365818023682
+  },
+  {
+    "x": 22728,
+    "text": "SOLDIER",
+    "confidence": 0.996015727519989
+  },
+  {
+    "x": 22822,
+    "text": "KILLED",
+    "confidence": 0.9998979568481445
+  },
+  {
+    "x": 22904,
+    "text": "IN",
+    "confidence": 0.9921990036964417
+  },
+  {
+    "x": 22930,
+    "text": "ISRAELI",
+    "confidence": 0.999369204044342
+  },
+  {
+    "x": 23018,
+    "text": "ATTACK",
+    "confidence": 0.9964834451675415
+  },
+  {
+    "x": 23109,
+    "text": "IN",
+    "confidence": 0.997218132019043
+  },
+  {
+    "x": 23135,
+    "text": "SOUTHERN",
+    "confidence": 0.9212925434112549
+  },
+  {
+    "x": 23252,
+    "text": "LEBANO",
+    "confidence": 0.9913350939750671
+  },
+  {
+    "x": 23361,
+    "text": "-",
+    "confidence": 0.796190619468689
+  },
+  {
+    "x": 23384,
+    "text": "ISRAELI",
+    "confidence": 0.9000722765922546
+  },
+  {
+    "x": 23475,
+    "text": "AIR",
+    "confidence": 0.9998741149902344
+  },
+  {
+    "x": 23513,
+    "text": "STRIKE",
+    "confidence": 0.9999316930770874
+  },
+  {
+    "x": 23592,
+    "text": "ON",
+    "confidence": 0.9053784012794495
+  },
+  {
+    "x": 23630,
+    "text": "SOUTHERN",
+    "confidence": 0.8948349356651306
+  },
+  {
+    "x": 23745,
+    "text": "LEBANN",
+    "confidence": 0.9849591851234436
+  },
+  {
+    "x": 23841,
+    "text": "KILLS",
+    "confidence": 0.9676100015640259
+  },
+  {
+    "x": 23897,
+    "text": "SEVEN",
+    "confidence": 0.9997228980064392
+  },
+  {
+    "x": 23979,
+    "text": "PEOPLE,",
+    "confidence": 0.9980625510215759
+  },
+  {
+    "x": 24070,
+    "text": "INCLUDING",
+    "confidence": 0.8518046736717224
+  },
+  {
+    "x": 24193,
+    "text": "FOUR-",
+    "confidence": 0.990517795085907
+  },
+  {
+    "x": 24251,
+    "text": "-YEAR-OLD",
+    "confidence": 0.989654004573822
+  },
+  {
+    "x": 24369,
+    "text": "GIL",
+    "confidence": 0.9907801747322083
+  },
+  {
+    "x": 24416,
+    "text": "-",
+    "confidence": 0.7087488174438477
+  },
+  {
+    "x": 24448,
+    "text": "LEBANESE",
+    "confidence": 0.9989908337593079
+  },
+  {
+    "x": 24562,
+    "text": "HEALTH",
+    "confidence": 0.9968342185020447
+  },
+  {
+    "x": 24650,
+    "text": "MINISTRY:",
+    "confidence": 0.8080458641052246
+  },
+  {
+    "x": 24767,
+    "text": "FOUR",
+    "confidence": 0.9995085000991821
+  },
+  {
+    "x": 24826,
+    "text": "PEOPLE",
+    "confidence": 0.9999779462814331
+  },
+  {
+    "x": 24914,
+    "text": "KILLEDAND",
+    "confidence": 0.623696506023407
+  },
+  {
+    "x": 25031,
+    "text": "39",
+    "confidence": 0.999991774559021
+  },
+  {
+    "x": 25060,
+    "text": "INJURED",
+    "confidence": 0.9740375280380249
+  },
+  {
+    "x": 25157,
+    "text": "IN",
+    "confidence": 0.9862463474273682
+  },
+  {
+    "x": 25183,
+    "text": "ISRAELI",
+    "confidence": 0.9978554844856262
+  },
+  {
+    "x": 25277,
+    "text": "RAID",
+    "confidence": 0.9999794960021973
+  },
+  {
+    "x": 25330,
+    "text": "ON",
+    "confidence": 0.9990436434745789
+  },
+  {
+    "x": 25368,
+    "text": "JNAH",
+    "confidence": 0.9992756247520447
+  },
+  {
+    "x": 25429,
+    "text": "AREA",
+    "confidence": 0.9997312426567078
+  },
+  {
+    "x": 25488,
+    "text": "SOUTH",
+    "confidence": 0.996579110622406
+  },
+  {
+    "x": 25567,
+    "text": "FBEIRUT",
+    "confidence": 0.9997631907463074
+  },
+  {
+    "x": 25684,
+    "text": "-",
+    "confidence": 0.9846240282058716
+  },
+  {
+    "x": 25708,
+    "text": "LEBANON'",
+    "confidence": 0.7018528580665588
+  },
+  {
+    "x": 25831,
+    "text": "HEAL1",
+    "confidence": 0.6993310451507568
+  },
+  {
+    "x": 25889,
+    "text": "TH",
+    "confidence": 0.9997805953025818
+  },
+  {
+    "x": 25924,
+    "text": "MINISY:",
+    "confidence": 0.9929439425468445
+  },
+  {
+    "x": 26012,
+    "text": "1,461",
+    "confidence": 0.67948317527771
+  },
+  {
+    "x": 26065,
+    "text": "PEOPLE",
+    "confidence": 0.9998780488967896
+  },
+  {
+    "x": 26150,
+    "text": "KILLED",
+    "confidence": 0.7324514389038086
+  },
+  {
+    "x": 26232,
+    "text": "AND",
+    "confidence": 0.9999655485153198
+  },
+  {
+    "x": 26288,
+    "text": "4,430",
+    "confidence": 0.9983939528465271
+  },
+  {
+    "x": 26346,
+    "text": "WOUNDED",
+    "confidence": 0.553938090801239
+  },
+  {
+    "x": 26449,
+    "text": "-",
+    "confidence": 0.34456682205200195
+  },
+  {
+    "x": 26460,
+    "text": "IN",
+    "confidence": 0.9960107803344727
+  },
+  {
+    "x": 26487,
+    "text": "ISLI",
+    "confidence": 0.9990326166152954
+  },
+  {
+    "x": 26525,
+    "text": "ATTACKS",
+    "confidence": 0.9955959916114807
+  },
+  {
+    "x": 26630,
+    "text": "SINCE",
+    "confidence": 0.9868786931037903
+  },
+  {
+    "x": 26698,
+    "text": "SDFWAR",
+    "confidence": 0.8916279673576355
+  },
+  {
+    "x": 26806,
+    "text": "-",
+    "confidence": 0.6434018015861511
+  },
+  {
+    "x": 26838,
+    "text": "MEDICS",
+    "confidence": 0.9529268145561218
+  },
+  {
+    "x": 26923,
+    "text": "SAY",
+    "confidence": 0.999029278755188
+  },
+  {
+    "x": 26964,
+    "text": "ISRAELI",
+    "confidence": 0.9790562987327576
+  },
+  {
+    "x": 27058,
+    "text": "AIR",
+    "confidence": 0.7106304168701172
+  },
+  {
+    "x": 27099,
+    "text": "STRIKE",
+    "confidence": 0.9998884201049805
+  },
+  {
+    "x": 27181,
+    "text": "KILLED",
+    "confidence": 0.9721862077713013
+  },
+  {
+    "x": 27266,
+    "text": "FOURNIANS",
+    "confidence": 0.9304022192955017
+  },
+  {
+    "x": 27383,
+    "text": "IN",
+    "confidence": 0.9815062284469604
+  },
+  {
+    "x": 27413,
+    "text": "NORTHERN",
+    "confidence": 0.8931452035903931
+  },
+  {
+    "x": 27533,
+    "text": "GAZA",
+    "confidence": 0.993894636631012
+  },
+  {
+    "x": 27603,
+    "text": "STRIP",
+    "confidence": 0.9992030262947083
+  },
+  {
+    "x": 27662,
+    "text": "DESPITE",
+    "confidence": 0.8371517658233643
+  },
+  {
+    "x": 27752,
+    "text": "CEASEFIRE",
+    "confidence": 0.9864190220832825
+  },
+  {
+    "x": 27890,
+    "text": "-",
+    "confidence": 0.6364235877990723
+  },
+  {
+    "x": 27916,
+    "text": "HAMAS",
+    "confidence": 0.9994497895240784
+  },
+  {
+    "x": 28001,
+    "text": "SAYS",
+    "confidence": 0.9991616010665894
+  },
+  {
+    "x": 28057,
+    "text": "IT",
+    "confidence": 0.9988962411880493
+  },
+  {
+    "x": 28083,
+    "text": "WILL",
+    "confidence": 0.9999842643737793
+  },
+  {
+    "x": 28142,
+    "text": "NOT",
+    "confidence": 0.9999611377716064
+  },
+  {
+    "x": 28189,
+    "text": "DISARM",
+    "confidence": 0.9988149404525757
+  },
+  {
+    "x": 28277,
+    "text": "BECAUSE",
+    "confidence": 0.9768434762954712
+  },
+  {
+    "x": 28376,
+    "text": "PALESTINIANS",
+    "confidence": 0.6854537129402161
+  },
+  {
+    "x": 28535,
+    "text": "CONTINUE",
+    "confidence": 0.9662373661994934
+  },
+  {
+    "x": 28646,
+    "text": "TO",
+    "confidence": 0.9932339787483215
+  },
+  {
+    "x": 28675,
+    "text": "BE",
+    "confidence": 0.9998970031738281
+  },
+  {
+    "x": 28710,
+    "text": "TARGETED",
+    "confidence": 0.9945456981658936
+  },
+  {
+    "x": 28828,
+    "text": "BY",
+    "confidence": 0.9998718500137329
+  },
+  {
+    "x": 28851,
+    "text": "ISRAEL",
+    "confidence": 0.9985527396202087
+  },
+  {
+    "x": 28939,
+    "text": "IN",
+    "confidence": 0.8274741172790527
+  },
+  {
+    "x": 28962,
+    "text": "THE",
+    "confidence": 0.999553382396698
+  },
+  {
+    "x": 29012,
+    "text": "GAZA",
+    "confidence": 0.9496673345565796
+  },
+  {
+    "x": 29077,
+    "text": "STRIP",
+    "confidence": 0.999868631362915
+  },
+  {
+    "x": 29150,
+    "text": "-",
+    "confidence": 0.43453896045684814
+  },
+  {
+    "x": 29185,
+    "text": "GAZA",
+    "confidence": 0.9996764659881592
+  },
+  {
+    "x": 29241,
+    "text": "MEALTHMINISTRY:.716",
+    "confidence": 0.4129026532173157
+  },
+  {
+    "x": 29487,
+    "text": "PALESTINIANS",
+    "confidence": 0.9573863744735718
+  },
+  {
+    "x": 29648,
+    "text": "KILLED",
+    "confidence": 0.999870777130127
+  },
+  {
+    "x": 29727,
+    "text": "IN",
+    "confidence": 0.8225839734077454
+  },
+  {
+    "x": 29753,
+    "text": "ISRAELI",
+    "confidence": 0.9745392799377441
+  },
+  {
+    "x": 29838,
+    "text": "ATTACKS",
+    "confidence": 0.9976033568382263
+  },
+  {
+    "x": 29947,
+    "text": "SINCE",
+    "confidence": 0.9744354486465454
+  },
+  {
+    "x": 30011,
+    "text": "CEASEFIRE",
+    "confidence": 0.9894391894340515
+  },
+  {
+    "x": 30128,
+    "text": "STARTED",
+    "confidence": 0.9999587535858154
+  },
+  {
+    "x": 30231,
+    "text": "IN",
+    "confidence": 0.9943298101425171
+  },
+  {
+    "x": 30257,
+    "text": "OCTOBER",
+    "confidence": 0.8306418657302856
+  },
+  {
+    "x": 30404,
+    "text": "GAZA",
+    "confidence": 0.9987439513206482
+  },
+  {
+    "x": 30462,
+    "text": "HEAL",
+    "confidence": 0.996914267539978
+  },
+  {
+    "x": 30518,
+    "text": "TH",
+    "confidence": 0.9998522996902466
+  },
+  {
+    "x": 30550,
+    "text": "MINISTRY:72.",
+    "confidence": 0.9281634092330933
+  },
+  {
+    "x": 30697,
+    "text": "292",
+    "confidence": 0.9964473843574524
+  },
+  {
+    "x": 30738,
+    "text": "PALESTINIANS",
+    "confidence": 0.997742772102356
+  },
+  {
+    "x": 30896,
+    "text": "KILLED",
+    "confidence": 0.9983596205711365
+  },
+  {
+    "x": 30981,
+    "text": "IN",
+    "confidence": 0.831592857837677
+  },
+  {
+    "x": 31001,
+    "text": "ISRAELI",
+    "confidence": 0.9915307760238647
+  },
+  {
+    "x": 31081,
+    "text": "TATTACKS",
+    "confidence": 0.37651824951171875
+  },
+  {
+    "x": 31195,
+    "text": "SINCE",
+    "confidence": 0.9659990072250366
+  },
+  {
+    "x": 31256,
+    "text": "OCTOBER",
+    "confidence": 0.9829651713371277
+  },
+  {
+    "x": 31362,
+    "text": "2023",
+    "confidence": 0.9754482507705688
+  },
+  {
+    "x": 31456,
+    "text": "ISRAELIFORCES",
+    "confidence": 0.996340274810791
+  },
+  {
+    "x": 31628,
+    "text": "AND",
+    "confidence": 0.9999802112579346
+  },
+  {
+    "x": 31678,
+    "text": "SETTLERS",
+    "confidence": 0.9960589408874512
+  },
+  {
+    "x": 31792,
+    "text": "HAVE",
+    "confidence": 0.999881386756897
+  },
+  {
+    "x": 31851,
+    "text": "KILLED",
+    "confidence": 0.9999674558639526
+  },
+  {
+    "x": 31939,
+    "text": "1,138",
+    "confidence": 0.999176561832428
+  },
+  {
+    "x": 31995,
+    "text": "PALESTINIANS",
+    "confidence": 0.9598650336265564
+  },
+  {
+    "x": 32153,
+    "text": "IN",
+    "confidence": 0.9946134686470032
+  },
+  {
+    "x": 32182,
+    "text": "OCCUPIED",
+    "confidence": 0.9961672425270081
+  },
+  {
+    "x": 32291,
+    "text": "WEST",
+    "confidence": 0.999466598033905
+  },
+  {
+    "x": 32361,
+    "text": "BANK",
+    "confidence": 0.9999206066131592
+  },
+  {
+    "x": 32422,
+    "text": "DER2023",
+    "confidence": 0.8543244004249573
+  },
+  {
+    "x": 32537,
+    "text": "-",
+    "confidence": 0.6242691278457642
+  },
+  {
+    "x": 32566,
+    "text": "D.R.",
+    "confidence": 0.9987993240356445
+  },
+  {
+    "x": 32613,
+    "text": "CONGO",
+    "confidence": 0.998768150806427
+  },
+  {
+    "x": 32692,
+    "text": "TO",
+    "confidence": 0.9998965263366699
+  },
+  {
+    "x": 32721,
+    "text": "TEMPORARILYACEPT",
+    "confidence": 0.8577295541763306
+  },
+  {
+    "x": 32950,
+    "text": "DEPORTED",
+    "confidence": 0.9999592304229736
+  },
+  {
+    "x": 33067,
+    "text": "MIGRANTS",
+    "confidence": 0.9990724325180054
+  },
+  {
+    "x": 33181,
+    "text": "UNDER",
+    "confidence": 0.9857082366943359
+  },
+  {
+    "x": 33263,
+    "text": "NEW",
+    "confidence": 0.9983916878700256
+  },
+  {
+    "x": 33316,
+    "text": "DEAL",
+    "confidence": 0.999823272228241
+  },
+  {
+    "x": 33380,
+    "text": "WITH",
+    "confidence": 0.991524875164032
+  },
+  {
+    "x": 33439,
+    "text": "THE",
+    "confidence": 0.9996583461761475
+  },
+  {
+    "x": 33480,
+    "text": "U.S.",
+    "confidence": 0.938010573387146
+  },
+  {
+    "x": 33568,
+    "text": "RESCUE",
+    "confidence": 0.9897711277008057
+  },
+  {
+    "x": 33659,
+    "text": "CHARITIESSAY71",
+    "confidence": 0.8444022536277771
+  },
+  {
+    "x": 33849,
+    "text": "PEOPLE",
+    "confidence": 0.9999490976333618
+  },
+  {
+    "x": 33940,
+    "text": "REMAIN",
+    "confidence": 0.9973980188369751
+  },
+  {
+    "x": 34025,
+    "text": "MISSING",
+    "confidence": 0.994868278503418
+  },
+  {
+    "x": 34119,
+    "text": "AT",
+    "confidence": 0.9999915361404419
+  },
+  {
+    "x": 34154,
+    "text": "SEA",
+    "confidence": 0.9990164041519165
+  },
+  {
+    "x": 34201,
+    "text": "ESCUED",
+    "confidence": 0.9758898019790649
+  },
+  {
+    "x": 34291,
+    "text": "NEAR",
+    "confidence": 0.9830118417739868
+  },
+  {
+    "x": 34353,
+    "text": "ITALIAN",
+    "confidence": 0.997334361076355
+  },
+  {
+    "x": 34447,
+    "text": "COAST",
+    "confidence": 0.9991412162780762
+  },
+  {
+    "x": 34552,
+    "text": "ARTEMISIIASTROMAUTS",
+    "confidence": 0.6595072746276855
+  },
+  {
+    "x": 34819,
+    "text": "GLIMPSE",
+    "confidence": 0.9930526614189148
+  },
+  {
+    "x": 34916,
+    "text": "MOON'S",
+    "confidence": 0.9414857625961304
+  },
+  {
+    "x": 35006,
+    "text": "'GRAND",
+    "confidence": 0.9907416105270386
+  },
+  {
+    "x": 35088,
+    "text": "CANYON\"",
+    "confidence": 0.5701812505722046
+  },
+  {
+    "x": 35185,
+    "text": "AHEAD",
+    "confidence": 0.9999240636825562
+  },
+  {
+    "x": 35267,
+    "text": "OF",
+    "confidence": 0.9991433620452881
+  },
+  {
+    "x": 35293,
+    "text": "WISTORICLUARFLYEY",
+    "confidence": 0.6831888556480408
+  },
+  {
+    "x": 35425,
+    "text": "=",
+    "confidence": 0.39512985944747925
+  },
+  {
+    "x": 35578,
+    "text": "FOR",
+    "confidence": 0.99997878074646
+  },
+  {
+    "x": 35619,
+    "text": "MORE",
+    "confidence": 0.9992324113845825
+  },
+  {
+    "x": 35683,
+    "text": "GO",
+    "confidence": 0.5650157928466797
+  },
+  {
+    "x": 35715,
+    "text": "TO",
+    "confidence": 0.9586783647537231
+  },
+  {
+    "x": 35748,
+    "text": "ALJAZEERA.",
+    "confidence": 0.9528489708900452
+  },
+  {
+    "x": 35876,
+    "text": ".COM",
+    "confidence": 0.998793363571167
+  },
+  {
+    "x": 35970,
+    "text": "TRUMP",
+    "confidence": 0.9996089339256287
+  },
+  {
+    "x": 36049,
+    "text": "THREATENS",
+    "confidence": 0.9995654225349426
+  },
+  {
+    "x": 36181,
+    "text": "STRIKES",
+    "confidence": 0.9994895458221436
+  },
+  {
+    "x": 36275,
+    "text": "ON",
+    "confidence": 0.9967341423034668
+  },
+  {
+    "x": 36310,
+    "text": "IRAN'S",
+    "confidence": 0.582065999507904
+  },
+  {
+    "x": 36386,
+    "text": "POWER",
+    "confidence": 0.9981235861778259
+  },
+  {
+    "x": 36471,
+    "text": "PLANTS",
+    "confidence": 0.9998154044151306
+  },
+  {
+    "x": 36556,
+    "text": "IF",
+    "confidence": 0.999819815158844
+  },
+  {
+    "x": 36580,
+    "text": "HORMUZ",
+    "confidence": 0.9160731434822083
+  },
+  {
+    "x": 36679,
+    "text": "IS",
+    "confidence": 0.9745885133743286
+  },
+  {
+    "x": 36703,
+    "text": "NOT",
+    "confidence": 0.9999983310699463
+  },
+  {
+    "x": 36752,
+    "text": "OPENED",
+    "confidence": 0.9984353184700012
+  },
+  {
+    "x": 36843,
+    "text": "BY",
+    "confidence": 0.9998672008514404
+  },
+  {
+    "x": 36873,
+    "text": "0000",
+    "confidence": 0.9998937845230103
+  },
+  {
+    "x": 36931,
+    "text": "GMT",
+    "confidence": 0.9999932050704956
+  },
+  {
+    "x": 36978,
+    "text": "WEDNESDAY",
+    "confidence": 0.9992467164993286
+  },
+  {
+    "x": 37133,
+    "text": "-",
+    "confidence": 0.7855635285377502
+  },
+  {
+    "x": 37163,
+    "text": "IRAN'",
+    "confidence": 0.9500000476837158
+  },
+  {
+    "x": 37215,
+    "text": "S",
+    "confidence": 0.5372191071510315
+  },
+  {
+    "x": 37233,
+    "text": "PARLIAMENT",
+    "confidence": 0.9980369210243225
+  },
+  {
+    "x": 37376,
+    "text": "SPEAKER",
+    "confidence": 0.9989546537399292
+  },
+  {
+    "x": 37479,
+    "text": "WARNS",
+    "confidence": 0.9988576173782349
+  },
+  {
+    "x": 37564,
+    "text": "TRUMP'",
+    "confidence": 0.7951980829238892
+  },
+  {
+    "x": 37643,
+    "text": "5",
+    "confidence": 0.7062324285507202
+  },
+  {
+    "x": 37666,
+    "text": "'RECKLESS",
+    "confidence": 0.4996154308319092
+  },
+  {
+    "x": 37781,
+    "text": "MOVES'",
+    "confidence": 0.9935508966445923
+  },
+  {
+    "x": 37869,
+    "text": "MEAN",
+    "confidence": 0.9528219103813171
+  },
+  {
+    "x": 37939,
+    "text": "WHOLI",
+    "confidence": 0.9509338736534119
+  },
+  {
+    "x": 38018,
+    "text": "REGION",
+    "confidence": 0.9947755336761475
+  },
+  {
+    "x": 38103,
+    "text": "GOING",
+    "confidence": 0.9618286490440369
+  },
+  {
+    "x": 38170,
+    "text": "TOE",
+    "confidence": 0.6048572659492493
+  },
+  {
+    "x": 38208,
+    "text": "BURN'",
+    "confidence": 0.9414457082748413
+  },
+  {
+    "x": 38314,
+    "text": "MORE",
+    "confidence": 0.9997947812080383
+  },
+  {
+    "x": 38384,
+    "text": "THAN",
+    "confidence": 0.9994242191314697
+  },
+  {
+    "x": 38446,
+    "text": "A",
+    "confidence": 0.999751627445221
+  },
+  {
+    "x": 38466,
+    "text": "DOZEN",
+    "confidence": 0.9952223896980286
+  },
+  {
+    "x": 38537,
+    "text": "IRANIAN",
+    "confidence": 0.9971229434013367
+  },
+  {
+    "x": 38627,
+    "text": "CITIES",
+    "confidence": 0.9988601207733154
+  },
+  {
+    "x": 38704,
+    "text": "BOMBED",
+    "confidence": 0.998068630695343
+  },
+  {
+    "x": 38800,
+    "text": "BY",
+    "confidence": 0.9774855375289917
+  },
+  {
+    "x": 38827,
+    "text": "U.S.",
+    "confidence": 0.977016270160675
+  },
+  {
+    "x": 38876,
+    "text": "AND",
+    "confidence": 0.999919056892395
+  },
+  {
+    "x": 38926,
+    "text": "ISRAEL",
+    "confidence": 0.9989423155784607
+  },
+  {
+    "x": 39002,
+    "text": "OVRANS",
+    "confidence": 0.9185357689857483
+  },
+  {
+    "x": 39082,
+    "text": "SAYSUS-15RAELIS",
+    "confidence": 0.6179590225219727
+  },
+  {
+    "x": 39275,
+    "text": "STRIKESK",
+    "confidence": 0.994070827960968
+  },
+  {
+    "x": 39375,
+    "text": "KILLATLEAST",
+    "confidence": 0.6767907738685608
+  },
+  {
+    "x": 39539,
+    "text": "34",
+    "confidence": 0.9973384737968445
+  },
+  {
+    "x": 39565,
+    "text": "PEOPLE",
+    "confidence": 0.9997991919517517
+  },
+  {
+    "x": 39656,
+    "text": "ACROSS",
+    "confidence": 0.9989758729934692
+  },
+  {
+    "x": 39744,
+    "text": "COUNTRY",
+    "confidence": 0.9893339276313782
+  },
+  {
+    "x": 39846,
+    "text": "OVER",
+    "confidence": 0.9998863935470581
+  },
+  {
+    "x": 39905,
+    "text": "PAS7S,",
+    "confidence": 0.5597611665725708
+  },
+  {
+    "x": 39984,
+    "text": "INCLUDING",
+    "confidence": 0.9984241724014282
+  },
+  {
+    "x": 40107,
+    "text": "SIX",
+    "confidence": 0.9927229285240173
+  },
+  {
+    "x": 40145,
+    "text": "CHILDREN",
+    "confidence": 0.9991126656532288
+  },
+  {
+    "x": 40274,
+    "text": "IRAN'S",
+    "confidence": 0.9330799579620361
+  },
+  {
+    "x": 40350,
+    "text": "MISSION",
+    "confidence": 0.9866209030151367
+  },
+  {
+    "x": 40447,
+    "text": "TO",
+    "confidence": 0.9999711513519287
+  },
+  {
+    "x": 40479,
+    "text": "UN",
+    "confidence": 0.997462272644043
+  },
+  {
+    "x": 40511,
+    "text": "URGES",
+    "confidence": 0.9994152784347534
+  },
+  {
+    "x": 40587,
+    "text": "WORLD1",
+    "confidence": 0.5523473024368286
+  },
+  {
+    "x": 40672,
+    "text": "TO",
+    "confidence": 0.9990112781524658
+  },
+  {
+    "x": 40702,
+    "text": "PREVENT",
+    "confidence": 0.9995937943458557
+  },
+  {
+    "x": 40807,
+    "text": "'ATROCIOUS",
+    "confidence": 0.9818271994590759
+  },
+  {
+    "x": 40939,
+    "text": "ACTS'",
+    "confidence": 0.7940701842308044
+  },
+  {
+    "x": 41000,
+    "text": "AFTERRUMP",
+    "confidence": 0.8805962204933167
+  },
+  {
+    "x": 41141,
+    "text": "THREATS",
+    "confidence": 0.9996019005775452
+  },
+  {
+    "x": 41279,
+    "text": "MULTIPLE",
+    "confidence": 0.9940872192382812
+  },
+  {
+    "x": 41384,
+    "text": "INJURIES",
+    "confidence": 0.9969255328178406
+  },
+  {
+    "x": 41496,
+    "text": "REPORTED",
+    "confidence": 0.985104501247406
+  },
+  {
+    "x": 41607,
+    "text": "AFTER",
+    "confidence": 0.9999072551727295
+  },
+  {
+    "x": 41683,
+    "text": "IRANIAN",
+    "confidence": 0.6375271081924438
+  },
+  {
+    "x": 41777,
+    "text": "MISSILE",
+    "confidence": 0.62099689245224
+  },
+  {
+    "x": 41862,
+    "text": "ATTACK",
+    "confidence": 0.9951199889183044
+  },
+  {
+    "x": 41958,
+    "text": "HITS",
+    "confidence": 0.9998252987861633
+  },
+  {
+    "x": 42002,
+    "text": "CENTRAL",
+    "confidence": 0.997018575668335
+  },
+  {
+    "x": 42108,
+    "text": "ISRAEL,",
+    "confidence": 0.9974206686019897
+  },
+  {
+    "x": 42199,
+    "text": "INCLUDING",
+    "confidence": 0.9078280329704285
+  },
+  {
+    "x": 42319,
+    "text": "REA",
+    "confidence": 0.9993770718574524
+  },
+  {
+    "x": 42401,
+    "text": "TWOPEOPLE",
+    "confidence": 0.9998431205749512
+  },
+  {
+    "x": 42541,
+    "text": "KILLED,",
+    "confidence": 0.9945487380027771
+  },
+  {
+    "x": 42629,
+    "text": "TWO",
+    "confidence": 0.997648298740387
+  },
+  {
+    "x": 42676,
+    "text": "MISSING",
+    "confidence": 0.9990760087966919
+  },
+  {
+    "x": 42776,
+    "text": "AFTER",
+    "confidence": 0.9977574944496155
+  },
+  {
+    "x": 42846,
+    "text": "IRANIAN",
+    "confidence": 0.9870296716690063
+  },
+  {
+    "x": 42937,
+    "text": "MISSILE",
+    "confidence": 0.9996851682662964
+  },
+  {
+    "x": 43028,
+    "text": "HITS",
+    "confidence": 0.8040614128112793
+  },
+  {
+    "x": 43083,
+    "text": "BUILDING",
+    "confidence": 0.9957619309425354
+  },
+  {
+    "x": 43189,
+    "text": "IN",
+    "confidence": 0.9948549270629883
+  },
+  {
+    "x": 43212,
+    "text": "ISRAELICITY",
+    "confidence": 0.9967922568321228
+  },
+  {
+    "x": 43350,
+    "text": "OF",
+    "confidence": 0.997843861579895
+  },
+  {
+    "x": 43388,
+    "text": "HAIFA",
+    "confidence": 0.9988577365875244
+  },
+  {
+    "x": 43505,
+    "text": "U.",
+    "confidence": 0.9833419322967529
+  },
+  {
+    "x": 43514,
+    "text": ".S.",
+    "confidence": 0.8897985816001892
+  },
+  {
+    "x": 43549,
+    "text": "FORCES",
+    "confidence": 0.9968680739402771
+  },
+  {
+    "x": 43631,
+    "text": "RESCUE",
+    "confidence": 0.9906778335571289
+  },
+  {
+    "x": 43719,
+    "text": "MISSING",
+    "confidence": 0.9991149306297302
+  },
+  {
+    "x": 43813,
+    "text": "AIRMAN",
+    "confidence": 0.9866961240768433
+  },
+  {
+    "x": 43904,
+    "text": "IN",
+    "confidence": 0.9989266991615295
+  },
+  {
+    "x": 43930,
+    "text": "IRAN",
+    "confidence": 0.988179087638855
+  },
+  {
+    "x": 43986,
+    "text": "TWODAYS",
+    "confidence": 0.9788070321083069
+  },
+  {
+    "x": 44103,
+    "text": "AFTER",
+    "confidence": 0.9915164709091187
+  },
+  {
+    "x": 44173,
+    "text": "AMERICAN",
+    "confidence": 0.8195005059242249
+  },
+  {
+    "x": 44288,
+    "text": "FIGHTER",
+    "confidence": 0.9846813678741455
+  },
+  {
+    "x": 44387,
+    "text": "JETWENT",
+    "confidence": 0.9965309500694275
+  },
+  {
+    "x": 44499,
+    "text": "DOWN",
+    "confidence": 0.9989019632339478
+  },
+  {
+    "x": 44572,
+    "text": "-",
+    "confidence": 0.7782421708106995
+  },
+  {
+    "x": 44604,
+    "text": "IRANIAN",
+    "confidence": 0.9967213273048401
+  },
+  {
+    "x": 44695,
+    "text": "MEDIA",
+    "confidence": 0.9829559326171875
+  },
+  {
+    "x": 44771,
+    "text": "SAY",
+    "confidence": 0.9996116757392883
+  },
+  {
+    "x": 44815,
+    "text": "SENIOR",
+    "confidence": 0.998536229133606
+  },
+  {
+    "x": 44900,
+    "text": "IRANIAN",
+    "confidence": 0.9947652816772461
+  },
+  {
+    "x": 44994,
+    "text": "MILITARY",
+    "confidence": 0.9978430271148682
+  },
+  {
+    "x": 45096,
+    "text": "COMMANIBEENI",
+    "confidence": 0.37721318006515503
+  },
+  {
+    "x": 45257,
+    "text": "KILLED",
+    "confidence": 0.969331681728363
+  },
+  {
+    "x": 45333,
+    "text": "IN",
+    "confidence": 0.9941277503967285
+  },
+  {
+    "x": 45354,
+    "text": "1US-ISRAELIATTACKS",
+    "confidence": 0.46993792057037354
+  },
+  {
+    "x": 45624,
+    "text": "-",
+    "confidence": 0.9899694323539734
+  },
+  {
+    "x": 45647,
+    "text": "IRANIAN",
+    "confidence": 0.9980229139328003
+  },
+  {
+    "x": 45735,
+    "text": "TTII",
+    "confidence": 0.4723532795906067
+  },
+  {
+    "x": 45741,
+    "text": "AUTHORITIES:",
+    "confidence": 0.5123311877250671
+  },
+  {
+    "x": 45896,
+    "text": "2,076",
+    "confidence": 0.999829888343811
+  },
+  {
+    "x": 45955,
+    "text": "PEOPLE",
+    "confidence": 0.6688600778579712
+  },
+  {
+    "x": 46042,
+    "text": "KILLED",
+    "confidence": 0.9999057054519653
+  },
+  {
+    "x": 46127,
+    "text": "AND",
+    "confidence": 0.9999898672103882
+  },
+  {
+    "x": 46177,
+    "text": "26,",
+    "confidence": 0.9970117807388306
+  },
+  {
+    "x": 46204,
+    "text": "500",
+    "confidence": 0.9556044936180115
+  },
+  {
+    "x": 46248,
+    "text": "INJUREDI",
+    "confidence": 0.5002420544624329
+  },
+  {
+    "x": 46344,
+    "text": "IN",
+    "confidence": 0.9979884624481201
+  },
+  {
+    "x": 46371,
+    "text": "U.S.-ISRAELI",
+    "confidence": 0.6569334864616394
+  },
+  {
+    "x": 46514,
+    "text": "STRIKES",
+    "confidence": 0.9957122802734375
+  },
+  {
+    "x": 46611,
+    "text": "SINCE",
+    "confidence": 0.9806994795799255
+  },
+  {
+    "x": 46669,
+    "text": "FI",
+    "confidence": 0.9912593960762024
+  },
+  {
+    "x": 46708,
+    "text": ".",
+    "confidence": 0.5266329050064087
+  },
+  {
+    "x": 46734,
+    "text": "IRANIAN",
+    "confidence": 0.9948087930679321
+  },
+  {
+    "x": 46831,
+    "text": "PRESIDENT'S",
+    "confidence": 0.9738785624504089
+  },
+  {
+    "x": 46968,
+    "text": "OFFICE:",
+    "confidence": 0.9963575005531311
+  },
+  {
+    "x": 47056,
+    "text": "HORMUZ",
+    "confidence": 0.9980898499488831
+  },
+  {
+    "x": 47153,
+    "text": "WILL",
+    "confidence": 0.9995362758636475
+  },
+  {
+    "x": 47206,
+    "text": "REOPEN",
+    "confidence": 0.994006872177124
+  },
+  {
+    "x": 47299,
+    "text": "ONL",
+    "confidence": 0.9347032308578491
+  },
+  {
+    "x": 47361,
+    "text": "WHEN",
+    "confidence": 0.9988045692443848
+  },
+  {
+    "x": 47428,
+    "text": "TRANSIT",
+    "confidence": 0.9971063733100891
+  },
+  {
+    "x": 47522,
+    "text": "REVENUES",
+    "confidence": 0.9944339394569397
+  },
+  {
+    "x": 47636,
+    "text": "COMPENSATE",
+    "confidence": 0.9993329644203186
+  },
+  {
+    "x": 47786,
+    "text": "WAR",
+    "confidence": 0.9987502098083496
+  },
+  {
+    "x": 47838,
+    "text": "DAMAGES",
+    "confidence": 0.9996788501739502
+  },
+  {
+    "x": 47991,
+    "text": "IRAN'S",
+    "confidence": 0.744037389755249
+  },
+  {
+    "x": 48049,
+    "text": "REVOLUTIONARY",
+    "confidence": 0.9908751249313354
+  },
+  {
+    "x": 48240,
+    "text": "GUARD",
+    "confidence": 0.9999614953994751
+  },
+  {
+    "x": 48322,
+    "text": "SAYS",
+    "confidence": 0.9992461204528809
+  },
+  {
+    "x": 48380,
+    "text": "IT",
+    "confidence": 0.9998553991317749
+  },
+  {
+    "x": 48407,
+    "text": "HAS",
+    "confidence": 0.9991996884346008
+  },
+  {
+    "x": 48454,
+    "text": "TARGETED",
+    "confidence": 0.9946534633636475
+  },
+  {
+    "x": 48568,
+    "text": "PETROCHEMICAL",
+    "confidence": 0.9424073100090027
+  },
+  {
+    "x": 48597,
+    "text": "$",
+    "confidence": 0.7538591623306274
+  },
+  {
+    "x": 48717,
+    "text": "AA",
+    "confidence": 0.5209143161773682
+  },
+  {
+    "x": 48747,
+    "text": "PLANTS",
+    "confidence": 0.9996470212936401
+  },
+  {
+    "x": 48837,
+    "text": "IN",
+    "confidence": 0.9912765026092529
+  },
+  {
+    "x": 48864,
+    "text": "UAE,",
+    "confidence": 0.9961916208267212
+  },
+  {
+    "x": 48922,
+    "text": "HRAIN",
+    "confidence": 0.4475960433483124
+  },
+  {
+    "x": 49001,
+    "text": "-",
+    "confidence": 0.9664672613143921
+  },
+  {
+    "x": 49025,
+    "text": "QATAR'",
+    "confidence": 0.7546786069869995
+  },
+  {
+    "x": 49104,
+    "text": "FOREIGN",
+    "confidence": 0.999446451663971
+  },
+  {
+    "x": 49201,
+    "text": "MINISTER",
+    "confidence": 0.9980635046958923
+  },
+  {
+    "x": 49309,
+    "text": "EXPRESSES",
+    "confidence": 0.9989239573478699
+  },
+  {
+    "x": 49435,
+    "text": "SOLIDARITY",
+    "confidence": 0.9990155696868896
+  },
+  {
+    "x": 49561,
+    "text": "WHKUWAIT",
+    "confidence": 0.6560702323913574
+  },
+  {
+    "x": 49690,
+    "text": "AFTERIE",
+    "confidence": 0.4605076313018799
+  },
+  {
+    "x": 49769,
+    "text": "IRANIAN",
+    "confidence": 0.9992189407348633
+  },
+  {
+    "x": 49866,
+    "text": "ATTACKS",
+    "confidence": 0.8725543022155762
+  },
+  {
+    "x": 49968,
+    "text": "ONANIANA",
+    "confidence": 0.9760200381278992
+  },
+  {
+    "x": 50062,
+    "text": "ATTACKSON",
+    "confidence": 0.6754806041717529
+  },
+  {
+    "x": 50206,
+    "text": "ENERGY",
+    "confidence": 0.9947305917739868
+  },
+  {
+    "x": 50288,
+    "text": "FACILITIES",
+    "confidence": 0.872570276260376
+  },
+  {
+    "x": 50422,
+    "text": "-",
+    "confidence": 0.9835410714149475
+  },
+  {
+    "x": 50452,
+    "text": "EIGHT",
+    "confidence": 0.6178480982780457
+  },
+  {
+    "x": 50513,
+    "text": "OPEC+",
+    "confidence": 0.9970197081565857
+  },
+  {
+    "x": 50589,
+    "text": "COUNTRIE",
+    "confidence": 0.9931226372718811
+  },
+  {
+    "x": 50686,
+    "text": "ES",
+    "confidence": 0.9993201494216919
+  },
+  {
+    "x": 50712,
+    "text": "AGREE",
+    "confidence": 0.9965324401855469
+  },
+  {
+    "x": 50791,
+    "text": "TO",
+    "confidence": 0.999303936958313
+  },
+  {
+    "x": 50818,
+    "text": "INCREASE",
+    "confidence": 0.9991586208343506
+  },
+  {
+    "x": 50929,
+    "text": "OIL",
+    "confidence": 0.9950193166732788
+  },
+  {
+    "x": 50967,
+    "text": "PRODUCTION",
+    "confidence": 0.9966520667076111
+  },
+  {
+    "x": 51108,
+    "text": "QUOTAS",
+    "confidence": 0.9994192123413086
+  },
+  {
+    "x": 51205,
+    "text": "BY",
+    "confidence": 0.8317170143127441
+  },
+  {
+    "x": 51234,
+    "text": "206,000",
+    "confidence": 0.9983806610107422
+  },
+  {
+    "x": 51322,
+    "text": "BARRELS",
+    "confidence": 0.999234676361084
+  },
+  {
+    "x": 51427,
+    "text": "PER",
+    "confidence": 0.9999723434448242
+  },
+  {
+    "x": 51474,
+    "text": "DAY",
+    "confidence": 0.9999802112579346
+  },
+  {
+    "x": 51524,
+    "text": "FROM",
+    "confidence": 0.9999608993530273
+  },
+  {
+    "x": 51588,
+    "text": "MAY",
+    "confidence": 0.999962568283081
+  },
+  {
+    "x": 51679,
+    "text": "LEBANE",
+    "confidence": 0.994038462638855
+  },
+  {
+    "x": 51758,
+    "text": "SE",
+    "confidence": 0.9258790612220764
+  },
+  {
+    "x": 51796,
+    "text": "ARMY",
+    "confidence": 0.9998703002929688
+  },
+  {
+    "x": 51861,
+    "text": "SAYS",
+    "confidence": 0.9989019632339478
+  },
+  {
+    "x": 51919,
+    "text": "ONE",
+    "confidence": 0.9998805522918701
+  },
+  {
+    "x": 51969,
+    "text": "SOLDIER",
+    "confidence": 0.9989006519317627
+  },
+  {
+    "x": 52063,
+    "text": "KILLED",
+    "confidence": 0.9998350143432617
+  },
+  {
+    "x": 52142,
+    "text": "IN",
+    "confidence": 0.9972244501113892
+  },
+  {
+    "x": 52171,
+    "text": "ISRAELI",
+    "confidence": 0.9924806356430054
+  },
+  {
+    "x": 52262,
+    "text": "ATTACK",
+    "confidence": 0.9968279004096985
+  },
+  {
+    "x": 52347,
+    "text": "IN",
+    "confidence": 0.9060582518577576
+  },
+  {
+    "x": 52376,
+    "text": "SOUTHERN",
+    "confidence": 0.9971166849136353
+  },
+  {
+    "x": 52497,
+    "text": "LEBANON",
+    "confidence": 0.9944568872451782
+  },
+  {
+    "x": 52608,
+    "text": "-IR",
+    "confidence": 0.9919890761375427
+  },
+  {
+    "x": 52649,
+    "text": "STRIKE",
+    "confidence": 0.6924159526824951
+  },
+  {
+    "x": 52728,
+    "text": "ON",
+    "confidence": 0.9980676770210266
+  },
+  {
+    "x": 52766,
+    "text": "SOUTHERN",
+    "confidence": 0.9019425511360168
+  },
+  {
+    "x": 52886,
+    "text": "LEBANON",
+    "confidence": 0.9994915723800659
+  },
+  {
+    "x": 52995,
+    "text": "KILLS",
+    "confidence": 0.999232292175293
+  },
+  {
+    "x": 53053,
+    "text": "SEVEN",
+    "confidence": 0.9980514049530029
+  },
+  {
+    "x": 53126,
+    "text": "PEOPLE,",
+    "confidence": 0.9993294477462769
+  },
+  {
+    "x": 53226,
+    "text": "INCLU",
+    "confidence": 0.9997407793998718
+  },
+  {
+    "x": 53252,
+    "text": "CLU",
+    "confidence": 0.9884677529335022
+  },
+  {
+    "x": 53276,
+    "text": "UDING",
+    "confidence": 0.9999397993087769
+  },
+  {
+    "x": 53346,
+    "text": "FOUR-",
+    "confidence": 0.9221971035003662
+  },
+  {
+    "x": 53408,
+    "text": "YEAR-",
+    "confidence": 0.9704350829124451
+  },
+  {
+    "x": 53472,
+    "text": "OLD",
+    "confidence": 0.9679868817329407
+  },
+  {
+    "x": 53525,
+    "text": "GIRL",
+    "confidence": 0.7713344693183899
+  },
+  {
+    "x": 53616,
+    "text": "LEBANE",
+    "confidence": 0.9497417211532593
+  },
+  {
+    "x": 53698,
+    "text": "HEALTH",
+    "confidence": 0.9994076490402222
+  },
+  {
+    "x": 53789,
+    "text": "MINISTRY:",
+    "confidence": 0.8960274457931519
+  },
+  {
+    "x": 53909,
+    "text": "FOUR",
+    "confidence": 0.9999864101409912
+  },
+  {
+    "x": 53964,
+    "text": "PEOPLE",
+    "confidence": 0.9999114274978638
+  },
+  {
+    "x": 54049,
+    "text": "KILLED",
+    "confidence": 0.9989550113677979
+  },
+  {
+    "x": 54134,
+    "text": "AND",
+    "confidence": 0.9974426031112671
+  },
+  {
+    "x": 54181,
+    "text": "39",
+    "confidence": 0.9999860525131226
+  },
+  {
+    "x": 54210,
+    "text": "INJURED",
+    "confidence": 0.6133434772491455
+  },
+  {
+    "x": 54310,
+    "text": "IN",
+    "confidence": 0.7113698720932007
+  },
+  {
+    "x": 54333,
+    "text": "ISRAELIRAID",
+    "confidence": 0.9972372055053711
+  },
+  {
+    "x": 54480,
+    "text": "ON",
+    "confidence": 0.6744473576545715
+  },
+  {
+    "x": 54521,
+    "text": "JNAH",
+    "confidence": 0.9957749247550964
+  },
+  {
+    "x": 54580,
+    "text": "AREA",
+    "confidence": 0.999320387840271
+  },
+  {
+    "x": 54594,
+    "text": "-",
+    "confidence": 0.8157508373260498
+  },
+  {
+    "x": 54638,
+    "text": "SOUTHO",
+    "confidence": 0.7677268385887146
+  },
+  {
+    "x": 54714,
+    "text": "OF",
+    "confidence": 0.99713134765625
+  },
+  {
+    "x": 54752,
+    "text": "BEIRUT",
+    "confidence": 0.9998050332069397
+  },
+  {
+    "x": 54837,
+    "text": "-",
+    "confidence": 0.7396347522735596
+  },
+  {
+    "x": 54873,
+    "text": "LEBANON'S",
+    "confidence": 0.7786164283752441
+  },
+  {
+    "x": 54990,
+    "text": "HEALTH",
+    "confidence": 0.9951954483985901
+  },
+  {
+    "x": 55081,
+    "text": "MINISTRY:1",
+    "confidence": 0.9966993927955627
+  },
+  {
+    "x": 55209,
+    "text": ",461",
+    "confidence": 0.9844602942466736
+  },
+  {
+    "x": 55259,
+    "text": "PEOPLE",
+    "confidence": 0.999955415725708
+  },
+  {
+    "x": 55347,
+    "text": "KILLED",
+    "confidence": 0.995448648929596
+  },
+  {
+    "x": 55432,
+    "text": "AND",
+    "confidence": 0.9999881982803345
+  },
+  {
+    "x": 55482,
+    "text": "4,430",
+    "confidence": 0.9999074935913086
+  },
+  {
+    "x": 55543,
+    "text": "WOUNDED",
+    "confidence": 0.9978623986244202
+  },
+  {
+    "x": 55655,
+    "text": "IN",
+    "confidence": 0.9928317070007324
+  },
+  {
+    "x": 55678,
+    "text": "ISRAELI",
+    "confidence": 0.9975053668022156
+  },
+  {
+    "x": 55769,
+    "text": "ATTACKS",
+    "confidence": 0.9943854808807373
+  },
+  {
+    "x": 55875,
+    "text": "SINCE",
+    "confidence": 0.9924637079238892
+  },
+  {
+    "x": 55942,
+    "text": "START",
+    "confidence": 0.9998551607131958
+  },
+  {
+    "x": 56009,
+    "text": "OF",
+    "confidence": 0.9997043013572693
+  },
+  {
+    "x": 56044,
+    "text": "WAR",
+    "confidence": 0.9987152814865112
+  },
+  {
+    "x": 56138,
+    "text": "MEDICS",
+    "confidence": 0.9974446296691895
+  },
+  {
+    "x": 56223,
+    "text": "SAY",
+    "confidence": 0.9990745782852173
+  },
+  {
+    "x": 56264,
+    "text": "ISRAELI",
+    "confidence": 0.9843718409538269
+  },
+  {
+    "x": 56361,
+    "text": "AIR",
+    "confidence": 0.9999898672103882
+  },
+  {
+    "x": 56402,
+    "text": "STRIKE",
+    "confidence": 0.9138961434364319
+  },
+  {
+    "x": 56481,
+    "text": "KILLED",
+    "confidence": 0.9994514584541321
+  },
+  {
+    "x": 56563,
+    "text": "FOUR",
+    "confidence": 0.9999951124191284
+  },
+  {
+    "x": 56622,
+    "text": "PALESTINIANS",
+    "confidence": 0.9854094982147217
+  },
+  {
+    "x": 56783,
+    "text": "IN",
+    "confidence": 0.9929514527320862
+  },
+  {
+    "x": 56812,
+    "text": "NORTHERN",
+    "confidence": 0.9732962846755981
+  },
+  {
+    "x": 56932,
+    "text": "GAZASASEFIRE",
+    "confidence": 0.959236204624176
+  },
+  {
+    "x": 57102,
+    "text": "-",
+    "confidence": 0.8399044871330261
+  },
+  {
+    "x": 57128,
+    "text": "HAMAS",
+    "confidence": 0.8151495456695557
+  },
+  {
+    "x": 57210,
+    "text": "SAYSITWILLNOT",
+    "confidence": 0.6999753713607788
+  },
+  {
+    "x": 57398,
+    "text": "DISARM",
+    "confidence": 0.9972646236419678
+  },
+  {
+    "x": 57489,
+    "text": "BECAUSE",
+    "confidence": 0.956671416759491
+  },
+  {
+    "x": 57588,
+    "text": "PALESTINIANS",
+    "confidence": 0.5649157762527466
+  },
+  {
+    "x": 57861,
+    "text": "TO",
+    "confidence": 0.9997430443763733
+  },
+  {
+    "x": 57893,
+    "text": "BE",
+    "confidence": 0.9996227025985718
+  },
+  {
+    "x": 57919,
+    "text": "TARGETEDBYISRELNT",
+    "confidence": 0.6311873197555542
+  },
+  {
+    "x": 58174,
+    "text": "THE",
+    "confidence": 0.999940037727356
+  },
+  {
+    "x": 58212,
+    "text": "GAZA",
+    "confidence": 0.9925123453140259
+  },
+  {
+    "x": 58283,
+    "text": "STRIP",
+    "confidence": 0.9990419745445251
+  },
+  {
+    "x": 58353,
+    "text": "-",
+    "confidence": 0.5585507750511169
+  },
+  {
+    "x": 58388,
+    "text": "GAZA",
+    "confidence": 0.9972702860832214
+  },
+  {
+    "x": 58444,
+    "text": "HEALTH",
+    "confidence": 0.6303402781486511
+  },
+  {
+    "x": 58538,
+    "text": "MINISTRY",
+    "confidence": 0.9516969323158264
+  },
+  {
+    "x": 60805,
+    "text": "MENT",
+    "confidence": 0.9991697072982788
+  },
+  {
+    "x": 60870,
+    "text": "SPEAKER",
+    "confidence": 0.9999147653579712
+  },
+  {
+    "x": 60969,
+    "text": "WARNS",
+    "confidence": 0.9995291233062744
+  },
+  {
+    "x": 61048,
+    "text": "TRUMP'",
+    "confidence": 0.880313515663147
+  },
+  {
+    "x": 61154,
+    "text": "'RECKLE",
+    "confidence": 0.6074866652488708
+  },
+  {
+    "x": 61233,
+    "text": "ESS",
+    "confidence": 0.9968121647834778
+  },
+  {
+    "x": 61271,
+    "text": "MOVES'",
+    "confidence": 0.5503777861595154
+  },
+  {
+    "x": 61356,
+    "text": "MEAN",
+    "confidence": 0.992559552192688
+  },
+  {
+    "x": 61426,
+    "text": "'WHOLE",
+    "confidence": 0.5589472055435181
+  },
+  {
+    "x": 61505,
+    "text": "REGION",
+    "confidence": 0.9718874096870422
+  },
+  {
+    "x": 61593,
+    "text": "GURN'",
+    "confidence": 0.9087591171264648
+  },
+  {
+    "x": 61705,
+    "text": "AMADOZENRAEISRIST",
+    "confidence": 0.6938027143478394
+  },
+  {
+    "x": 61959,
+    "text": "TEF2LIG",
+    "confidence": 0.6244103908538818
+  },
+  {
+    "x": 62056,
+    "text": "SIXITROCIOUER",
+    "confidence": 0.9254569411277771
+  },
+  {
+    "x": 62211,
+    "text": "TRATS",
+    "confidence": 0.8948816657066345
+  },
+  {
+    "x": 62323,
+    "text": "MUNJURIESREPORTEO,",
+    "confidence": 0.3399104177951813
+  },
+  {
+    "x": 62583,
+    "text": "AFTER",
+    "confidence": 0.999921441078186
+  },
+  {
+    "x": 62654,
+    "text": "IRANIAN",
+    "confidence": 0.9973159432411194
+  },
+  {
+    "x": 62748,
+    "text": "MISSILE",
+    "confidence": 0.9995991587638855
+  },
+  {
+    "x": 62838,
+    "text": "ATTACK",
+    "confidence": 0.9975088834762573
+  },
+  {
+    "x": 62929,
+    "text": "HITS",
+    "confidence": 0.9998461008071899
+  },
+  {
+    "x": 62976,
+    "text": "CENTRAL",
+    "confidence": 0.9386738538742065
+  },
+  {
+    "x": 63079,
+    "text": "ISRAEL,",
+    "confidence": 0.9990851879119873
+  },
+  {
+    "x": 63169,
+    "text": "INCLUDING",
+    "confidence": 0.8488773107528687
+  },
+  {
+    "x": 63284,
+    "text": "TELAVIV",
+    "confidence": 0.9586209058761597
+  },
+  {
+    "x": 63389,
+    "text": "AREA",
+    "confidence": 0.9997696280479431
+  },
+  {
+    "x": 63451,
+    "text": "PEOPLE",
+    "confidence": 0.8010007739067078
+  },
+  {
+    "x": 63541,
+    "text": "KILLED,",
+    "confidence": 0.998030960559845
+  },
+  {
+    "x": 63624,
+    "text": "TWO",
+    "confidence": 0.996800422668457
+  },
+  {
+    "x": 63682,
+    "text": "MISFEIIAN",
+    "confidence": 0.8069087266921997
+  },
+  {
+    "x": 63793,
+    "text": "MISSI",
+    "confidence": 0.9993228912353516
+  },
+  {
+    "x": 63878,
+    "text": "HITS",
+    "confidence": 0.9997660517692566
+  },
+  {
+    "x": 63931,
+    "text": "BUILDING",
+    "confidence": 0.9997031092643738
+  },
+  {
+    "x": 64034,
+    "text": "IN",
+    "confidence": 0.992749810218811
+  },
+  {
+    "x": 64060,
+    "text": "ISRAELI",
+    "confidence": 0.9969717264175415
+  },
+  {
+    "x": 64148,
+    "text": "CITY",
+    "confidence": 0.9975270628929138
+  },
+  {
+    "x": 64201,
+    "text": "OF",
+    "confidence": 0.9986434578895569
+  },
+  {
+    "x": 64233,
+    "text": "HAIFA",
+    "confidence": 0.9995520710945129
+  },
+  {
+    "x": 64347,
+    "text": "U.S.",
+    "confidence": 0.9884287714958191
+  },
+  {
+    "x": 64388,
+    "text": "FORCES",
+    "confidence": 0.9942712783813477
+  },
+  {
+    "x": 64476,
+    "text": "RESCUE",
+    "confidence": 0.9906094074249268
+  },
+  {
+    "x": 64567,
+    "text": "MISSING",
+    "confidence": 0.9851733446121216
+  },
+  {
+    "x": 64661,
+    "text": "AIRMAN",
+    "confidence": 0.9929797053337097
+  },
+  {
+    "x": 64751,
+    "text": "IN",
+    "confidence": 0.9981313347816467
+  },
+  {
+    "x": 64778,
+    "text": "IRAN",
+    "confidence": 0.998344898223877
+  },
+  {
+    "x": 64836,
+    "text": "TWO",
+    "confidence": 0.82649827003479
+  },
+  {
+    "x": 64889,
+    "text": "DAYS",
+    "confidence": 0.9995259046554565
+  },
+  {
+    "x": 64951,
+    "text": "AFTER",
+    "confidence": 0.9995433688163757
+  },
+  {
+    "x": 65021,
+    "text": "AMERICAN",
+    "confidence": 0.9487370848655701
+  },
+  {
+    "x": 65135,
+    "text": "FIGHTER",
+    "confidence": 0.9434543251991272
+  },
+  {
+    "x": 65235,
+    "text": "JET",
+    "confidence": 0.9999003410339355
+  },
+  {
+    "x": 65276,
+    "text": "WENT",
+    "confidence": 0.9998428821563721
+  },
+  {
+    "x": 65340,
+    "text": "DOWN",
+    "confidence": 0.988745391368866
+  },
+  {
+    "x": 65419,
+    "text": "-",
+    "confidence": 0.7743052244186401
+  },
+  {
+    "x": 65449,
+    "text": "IRANIAN",
+    "confidence": 0.9857813715934753
+  },
+  {
+    "x": 65542,
+    "text": "MEDIA",
+    "confidence": 0.7040269374847412
+  },
+  {
+    "x": 65619,
+    "text": "SAY",
+    "confidence": 0.9989125728607178
+  },
+  {
+    "x": 65663,
+    "text": "SENIOR",
+    "confidence": 0.9995206594467163
+  },
+  {
+    "x": 65745,
+    "text": "IRANIAN",
+    "confidence": 0.9983522891998291
+  },
+  {
+    "x": 65838,
+    "text": "MILITARY",
+    "confidence": 0.9989901185035706
+  },
+  {
+    "x": 65944,
+    "text": "COMMANDER",
+    "confidence": 0.9986854195594788
+  },
+  {
+    "x": 66082,
+    "text": "HAS",
+    "confidence": 0.9992384910583496
+  },
+  {
+    "x": 66134,
+    "text": "BEEN",
+    "confidence": 0.9994749426841736
+  },
+  {
+    "x": 66190,
+    "text": "KILLED",
+    "confidence": 0.7721419930458069
+  },
+  {
+    "x": 66275,
+    "text": "IN",
+    "confidence": 0.9878495335578918
+  },
+  {
+    "x": 66298,
+    "text": "U.",
+    "confidence": 0.9800509810447693
+  },
+  {
+    "x": 66319,
+    "text": ".S.",
+    "confidence": 0.9220331907272339
+  },
+  {
+    "x": 66342,
+    "text": "-ISRAELI",
+    "confidence": 0.9969668984413147
+  },
+  {
+    "x": 66436,
+    "text": "ATTACKS",
+    "confidence": 0.9950154423713684
+  },
+  {
+    "x": 66588,
+    "text": "IRANIAN",
+    "confidence": 0.9954238533973694
+  },
+  {
+    "x": 66682,
+    "text": "AUTHORITIES:",
+    "confidence": 0.8511810302734375
+  },
+  {
+    "x": 66837,
+    "text": "Z,",
+    "confidence": 0.7870790362358093
+  },
+  {
+    "x": 66849,
+    "text": ",076",
+    "confidence": 0.5323953628540039
+  },
+  {
+    "x": 66893,
+    "text": "PEOPLE",
+    "confidence": 0.9987427592277527
+  },
+  {
+    "x": 66984,
+    "text": "KILLED",
+    "confidence": 0.9995325803756714
+  },
+  {
+    "x": 67063,
+    "text": "AND",
+    "confidence": 0.9999784231185913
+  },
+  {
+    "x": 67116,
+    "text": "26,",
+    "confidence": 0.8529446125030518
+  },
+  {
+    "x": 67142,
+    "text": ",500",
+    "confidence": 0.7035909295082092
+  },
+  {
+    "x": 67189,
+    "text": "INJURED",
+    "confidence": 0.9952190518379211
+  },
+  {
+    "x": 67286,
+    "text": "IN",
+    "confidence": 0.9947913885116577
+  },
+  {
+    "x": 67318,
+    "text": "U.",
+    "confidence": 0.9828317761421204
+  },
+  {
+    "x": 67335,
+    "text": "S.-ISRAELI",
+    "confidence": 0.7946628928184509
+  },
+  {
+    "x": 67453,
+    "text": "STRIKES",
+    "confidence": 0.9996602535247803
+  },
+  {
+    "x": 67549,
+    "text": "SINCE",
+    "confidence": 0.9793834090232849
+  },
+  {
+    "x": 67611,
+    "text": "FEBRUARY",
+    "confidence": 0.9994920492172241
+  },
+  {
+    "x": 67728,
+    "text": "28",
+    "confidence": 0.9901459813117981
+  },
+  {
+    "x": 67801,
+    "text": "IRANIAN",
+    "confidence": 0.9969046711921692
+  },
+  {
+    "x": 67892,
+    "text": "PRESIDENT",
+    "confidence": 0.9891610741615295
+  },
+  {
+    "x": 68012,
+    "text": "S",
+    "confidence": 0.7133902311325073
+  },
+  {
+    "x": 68033,
+    "text": "OFFICE:",
+    "confidence": 0.9908711314201355
+  },
+  {
+    "x": 68121,
+    "text": "HORMUZ",
+    "confidence": 0.9217017889022827
+  },
+  {
+    "x": 68217,
+    "text": "WILL",
+    "confidence": 0.6136587858200073
+  },
+  {
+    "x": 68276,
+    "text": "REOPEN",
+    "confidence": 0.9997238516807556
+  },
+  {
+    "x": 68364,
+    "text": "ONLY",
+    "confidence": 0.9999358654022217
+  },
+  {
+    "x": 68428,
+    "text": "WHEN",
+    "confidence": 0.999136745929718
+  },
+  {
+    "x": 68496,
+    "text": "TRANSIT",
+    "confidence": 0.9989702701568604
+  },
+  {
+    "x": 68589,
+    "text": "REVENUES",
+    "confidence": 0.9980762004852295
+  },
+  {
+    "x": 68707,
+    "text": "COMPENSATE",
+    "confidence": 0.9990618824958801
+  },
+  {
+    "x": 68856,
+    "text": "WAR",
+    "confidence": 0.9997001886367798
+  },
+  {
+    "x": 68909,
+    "text": "DAMAGES",
+    "confidence": 0.9995130300521851
+  },
+  {
+    "x": 69058,
+    "text": "IRAN",
+    "confidence": 0.9991160035133362
+  },
+  {
+    "x": 69117,
+    "text": "SAS",
+    "confidence": 0.9993022680282593
+  },
+  {
+    "x": 69158,
+    "text": "TA",
+    "confidence": 0.5599053502082825
+  },
+  {
+    "x": 69196,
+    "text": "PETROCHEMICAL",
+    "confidence": 0.944686233997345
+  },
+  {
+    "x": 69377,
+    "text": "PLANTS",
+    "confidence": 0.9997161030769348
+  },
+  {
+    "x": 69465,
+    "text": "IN",
+    "confidence": 0.9960636496543884
+  },
+  {
+    "x": 69495,
+    "text": "UAEKUWAITANDI",
+    "confidence": 0.46415260434150696
+  },
+  {
+    "x": 69673,
+    "text": "BAHRAIN",
+    "confidence": 0.999154806137085
+  },
+  {
+    "x": 69779,
+    "text": "-",
+    "confidence": 0.798492431640625
+  },
+  {
+    "x": 69811,
+    "text": "QATAR'SF",
+    "confidence": 0.5545847415924072
+  },
+  {
+    "x": 69902,
+    "text": "FOREIGN",
+    "confidence": 0.9964304566383362
+  },
+  {
+    "x": 70001,
+    "text": "MINISTER",
+    "confidence": 0.9820687174797058
+  },
+  {
+    "x": 70113,
+    "text": "EXPRESSES",
+    "confidence": 0.9990691542625427
+  },
+  {
+    "x": 70236,
+    "text": "SOLIDARITY",
+    "confidence": 0.9984000325202942
+  },
+  {
+    "x": 70368,
+    "text": "WITH",
+    "confidence": 0.9996997117996216
+  },
+  {
+    "x": 70429,
+    "text": "KUWAIT",
+    "confidence": 0.996853768825531
+  },
+  {
+    "x": 70520,
+    "text": "AFTER",
+    "confidence": 0.999935507774353
+  },
+  {
+    "x": 70593,
+    "text": "IRANIAN",
+    "confidence": 0.9970171451568604
+  },
+  {
+    "x": 70684,
+    "text": "ATTACKS",
+    "confidence": 0.99647057056427
+  },
+  {
+    "x": 70787,
+    "text": "ON",
+    "confidence": 0.998670220375061
+  },
+  {
+    "x": 70822,
+    "text": "ENERGY",
+    "confidence": 0.9998646974563599
+  },
+  {
+    "x": 70910,
+    "text": "FACILITIES",
+    "confidence": 0.9549947381019592
+  },
+  {
+    "x": 71074,
+    "text": "EIGHT",
+    "confidence": 0.976901113986969
+  },
+  {
+    "x": 71141,
+    "text": "OPEC+",
+    "confidence": 0.9981389045715332
+  },
+  {
+    "x": 71211,
+    "text": "COUNTRIES",
+    "confidence": 0.9868209958076477
+  },
+  {
+    "x": 71329,
+    "text": "AGREE",
+    "confidence": 0.9981992840766907
+  },
+  {
+    "x": 71405,
+    "text": "TOINCREASE",
+    "confidence": 0.9977642297744751
+  },
+  {
+    "x": 71554,
+    "text": "OIL",
+    "confidence": 0.9998784065246582
+  },
+  {
+    "x": 71589,
+    "text": "PRODUCTION",
+    "confidence": 0.9783719182014465
+  },
+  {
+    "x": 71733,
+    "text": "QUOTASBY",
+    "confidence": 0.9251796007156372
+  },
+  {
+    "x": 71856,
+    "text": "206,000ED/MAY",
+    "confidence": 0.7173845767974854
+  },
+  {
+    "x": 72082,
+    "text": "ISRAEL/MILITARY",
+    "confidence": 0.4690783619880676
+  },
+  {
+    "x": 72272,
+    "text": "CONTINUESTO",
+    "confidence": 0.9574911594390869
+  },
+  {
+    "x": 72430,
+    "text": "STRIKE",
+    "confidence": 0.9998158812522888
+  },
+  {
+    "x": 72512,
+    "text": "BEIRUT,KILLING",
+    "confidence": 0.6298379302024841
+  },
+  {
+    "x": 72688,
+    "text": "ATLEASTFIVE",
+    "confidence": 0.9997325539588928
+  },
+  {
+    "x": 72843,
+    "text": "PEOPLEANDI",
+    "confidence": 0.9553074240684509
+  },
+  {
+    "x": 72975,
+    "text": "INJURING",
+    "confidence": 0.9715155363082886
+  },
+  {
+    "x": 73086,
+    "text": "DOZENS",
+    "confidence": 0.9998613595962524
+  },
+  {
+    "x": 73186,
+    "text": ".",
+    "confidence": 0.519237220287323
+  },
+  {
+    "x": 73215,
+    "text": "ISRAELI",
+    "confidence": 0.9613333344459534
+  },
+  {
+    "x": 73303,
+    "text": "AIR",
+    "confidence": 0.9792593717575073
+  },
+  {
+    "x": 73344,
+    "text": "STRIKE",
+    "confidence": 0.9999046325683594
+  },
+  {
+    "x": 73420,
+    "text": "ON",
+    "confidence": 0.9027760624885559
+  },
+  {
+    "x": 73458,
+    "text": "SOUTHERNLEBANON:",
+    "confidence": 0.7749186158180237
+  },
+  {
+    "x": 73678,
+    "text": "KILLSSEVENPEOPLE.",
+    "confidence": 0.6046397686004639
+  },
+  {
+    "x": 73913,
+    "text": "INUDING",
+    "confidence": 0.999131977558136
+  },
+  {
+    "x": 74006,
+    "text": "DUR.YEAR-OLDGIRL",
+    "confidence": 0.6769728064537048
+  },
+  {
+    "x": 74264,
+    "text": "LEBANON'S",
+    "confidence": 0.8630865216255188
+  },
+  {
+    "x": 74378,
+    "text": "HEALTH",
+    "confidence": 0.997258186340332
+  },
+  {
+    "x": 74475,
+    "text": "MINISTRY:1,461",
+    "confidence": 0.9006540179252625
+  },
+  {
+    "x": 74648,
+    "text": "PEOPLE",
+    "confidence": 0.9999511241912842
+  },
+  {
+    "x": 74736,
+    "text": "KILLED",
+    "confidence": 0.9925540089607239
+  },
+  {
+    "x": 74821,
+    "text": "AND",
+    "confidence": 0.9999486207962036
+  },
+  {
+    "x": 74871,
+    "text": "4,430",
+    "confidence": 0.9997288584709167
+  },
+  {
+    "x": 74932,
+    "text": "WOUNDED",
+    "confidence": 0.8227165341377258
+  },
+  {
+    "x": 75043,
+    "text": "IN",
+    "confidence": 0.9957094192504883
+  },
+  {
+    "x": 75073,
+    "text": "ISRAELI",
+    "confidence": 0.9987432360649109
+  },
+  {
+    "x": 75155,
+    "text": "ATTACKS",
+    "confidence": 0.9977204203605652
+  },
+  {
+    "x": 75263,
+    "text": "SINCE",
+    "confidence": 0.9973127245903015
+  },
+  {
+    "x": 75331,
+    "text": "START",
+    "confidence": 0.999325156211853
+  },
+  {
+    "x": 75404,
+    "text": "OF",
+    "confidence": 0.9998013377189636
+  },
+  {
+    "x": 75436,
+    "text": "WAR",
+    "confidence": 0.9994901418685913
+  },
+  {
+    "x": 75503,
+    "text": "-",
+    "confidence": 0.4957346022129059
+  },
+  {
+    "x": 75533,
+    "text": "MEDICSSA/ISBAELAR",
+    "confidence": 0.4233345687389374
+  },
+  {
+    "x": 75791,
+    "text": "STRIKE",
+    "confidence": 0.9998401403427124
+  },
+  {
+    "x": 75870,
+    "text": "KILLEDFOUR",
+    "confidence": 0.5953835844993591
+  },
+  {
+    "x": 76010,
+    "text": "PALESTINIANS",
+    "confidence": 0.9981909394264221
+  },
+  {
+    "x": 76171,
+    "text": "IN",
+    "confidence": 0.9893903136253357
+  },
+  {
+    "x": 76201,
+    "text": "NORTHERN",
+    "confidence": 0.9982776641845703
+  },
+  {
+    "x": 76318,
+    "text": "GAZASTRIP",
+    "confidence": 0.8458284139633179
+  },
+  {
+    "x": 76447,
+    "text": "DESPITE",
+    "confidence": 0.998728334903717
+  },
+  {
+    "x": 76541,
+    "text": "CEAS",
+    "confidence": 0.9964789748191833
+  },
+  {
+    "x": 76605,
+    "text": "WILLNOT",
+    "confidence": 0.9994327425956726
+  },
+  {
+    "x": 76708,
+    "text": "DISARM",
+    "confidence": 0.9889264106750488
+  },
+  {
+    "x": 76795,
+    "text": "BECAUSE",
+    "confidence": 0.9547257423400879
+  },
+  {
+    "x": 76898,
+    "text": "PALESTINIANS",
+    "confidence": 0.9990767240524292
+  },
+  {
+    "x": 77056,
+    "text": "CONTINUE",
+    "confidence": 0.9615038633346558
+  },
+  {
+    "x": 77170,
+    "text": "TOBE",
+    "confidence": 0.9800800681114197
+  },
+  {
+    "x": 77238,
+    "text": "TARGETED",
+    "confidence": 0.9586203694343567
+  },
+  {
+    "x": 77349,
+    "text": "BY",
+    "confidence": 0.9995498061180115
+  },
+  {
+    "x": 77381,
+    "text": "ISRAELIN",
+    "confidence": 0.9562119245529175
+  },
+  {
+    "x": 77493,
+    "text": "THE",
+    "confidence": 0.9998753070831299
+  },
+  {
+    "x": 77537,
+    "text": "GAZASTRIP",
+    "confidence": 0.8582258820533752
+  },
+  {
+    "x": 77707,
+    "text": "CALAMEALTAMMISTRLANS",
+    "confidence": 0.3309233486652374
+  },
+  {
+    "x": 78002,
+    "text": "KILLD",
+    "confidence": 0.9954947233200073
+  },
+  {
+    "x": 78067,
+    "text": "IN",
+    "confidence": 0.9793500304222107
+  },
+  {
+    "x": 78096,
+    "text": "ISRAELI",
+    "confidence": 0.998040497303009
+  },
+  {
+    "x": 78187,
+    "text": "ATTACKS",
+    "confidence": 0.9945751428604126
+  },
+  {
+    "x": 78292,
+    "text": "SINCE",
+    "confidence": 0.9875378012657166
+  },
+  {
+    "x": 78354,
+    "text": "CEASEFIRE",
+    "confidence": 0.9938629865646362
+  },
+  {
+    "x": 78480,
+    "text": "STARTEDINOCTOBER",
+    "confidence": 0.8402462005615234
+  },
+  {
+    "x": 78723,
+    "text": "-",
+    "confidence": 0.4333919584751129
+  },
+  {
+    "x": 78750,
+    "text": "GAZAHEALTHI",
+    "confidence": 0.7603418231010437
+  },
+  {
+    "x": 78896,
+    "text": "MINISTRY:72.2921",
+    "confidence": 0.788419783115387
+  },
+  {
+    "x": 79086,
+    "text": "PALESTINIANS",
+    "confidence": 0.9984272718429565
+  },
+  {
+    "x": 79248,
+    "text": "KILLED",
+    "confidence": 0.9999741315841675
+  },
+  {
+    "x": 79271,
+    "text": "(",
+    "confidence": 0.5216982364654541
+  },
+  {
+    "x": 79330,
+    "text": "IN",
+    "confidence": 0.9946331977844238
+  },
+  {
+    "x": 79359,
+    "text": "ISRAELI",
+    "confidence": 0.9908820390701294
+  },
+  {
+    "x": 79444,
+    "text": "ATTACKS",
+    "confidence": 0.9967269897460938
+  },
+  {
+    "x": 79552,
+    "text": "SBE",
+    "confidence": 0.9955329895019531
+  },
+  {
+    "x": 79596,
+    "text": "ISRAELIE",
+    "confidence": 0.39190641045570374
+  },
+  {
+    "x": 79678,
+    "text": "FORCES",
+    "confidence": 0.9949736595153809
+  },
+  {
+    "x": 79754,
+    "text": "-",
+    "confidence": 0.8465935587882996
+  },
+  {
+    "x": 79772,
+    "text": "AND",
+    "confidence": 0.9999914169311523
+  },
+  {
+    "x": 79825,
+    "text": "STTLERSHAVE",
+    "confidence": 0.9842491745948792
+  },
+  {
+    "x": 79980,
+    "text": "KILLED1",
+    "confidence": 0.9998112320899963
+  },
+  {
+    "x": 80065,
+    "text": "1,138",
+    "confidence": 0.9995185136795044
+  },
+  {
+    "x": 80124,
+    "text": "PALESTINIANS",
+    "confidence": 0.9461848139762878
+  },
+  {
+    "x": 80279,
+    "text": "IN",
+    "confidence": 0.9755119681358337
+  },
+  {
+    "x": 80308,
+    "text": "OCCUPIED",
+    "confidence": 0.9946172833442688
+  },
+  {
+    "x": 80422,
+    "text": "WEST",
+    "confidence": 0.9999852180480957
+  },
+  {
+    "x": 80487,
+    "text": "BANK",
+    "confidence": 0.9998574256896973
+  },
+  {
+    "x": 80551,
+    "text": "SINCE",
+    "confidence": 0.9886797070503235
+  },
+  {
+    "x": 80613,
+    "text": "OCTOBER",
+    "confidence": 0.986769437789917
+  },
+  {
+    "x": 80721,
+    "text": "2023",
+    "confidence": 0.9999825954437256
+  },
+  {
+    "x": 80812,
+    "text": "D.R.",
+    "confidence": 0.9983868598937988
+  },
+  {
+    "x": 80859,
+    "text": "CONGO",
+    "confidence": 0.9907676577568054
+  },
+  {
+    "x": 80938,
+    "text": "TO",
+    "confidence": 0.9996693134307861
+  },
+  {
+    "x": 80970,
+    "text": "TEMPORARIL",
+    "confidence": 0.8692553639411926
+  },
+  {
+    "x": 81105,
+    "text": "Y",
+    "confidence": 0.7118255496025085
+  },
+  {
+    "x": 81125,
+    "text": "ACCEPT",
+    "confidence": 0.9348622560501099
+  },
+  {
+    "x": 81210,
+    "text": "DEPORTED",
+    "confidence": 0.999910831451416
+  },
+  {
+    "x": 81328,
+    "text": "MIGRANTS",
+    "confidence": 0.9903795719146729
+  },
+  {
+    "x": 81442,
+    "text": "UNDER",
+    "confidence": 0.9993140697479248
+  },
+  {
+    "x": 81521,
+    "text": "NEW",
+    "confidence": 0.9994114637374878
+  },
+  {
+    "x": 81577,
+    "text": "DEAL",
+    "confidence": 0.9995991587638855
+  },
+  {
+    "x": 81635,
+    "text": "WITH",
+    "confidence": 0.9999287128448486
+  },
+  {
+    "x": 81697,
+    "text": "THE",
+    "confidence": 0.9968079924583435
+  },
+  {
+    "x": 81747,
+    "text": "U.",
+    "confidence": 0.9826897382736206
+  },
+  {
+    "x": 81764,
+    "text": "S.",
+    "confidence": 0.9302405714988708
+  },
+  {
+    "x": 81802,
+    "text": "-",
+    "confidence": 0.970720112323761
+  },
+  {
+    "x": 81826,
+    "text": "RESCUE",
+    "confidence": 0.9971502423286438
+  },
+  {
+    "x": 81914,
+    "text": "CHARITIES",
+    "confidence": 0.9171884059906006
+  },
+  {
+    "x": 82034,
+    "text": "SAY",
+    "confidence": 0.9988880753517151
+  },
+  {
+    "x": 82086,
+    "text": "71",
+    "confidence": 0.9387252926826477
+  },
+  {
+    "x": 82116,
+    "text": "PEOPL",
+    "confidence": 0.9999871253967285
+  },
+  {
+    "x": 82198,
+    "text": "REMAIN",
+    "confidence": 0.994193971157074
+  },
+  {
+    "x": 82283,
+    "text": "MISING",
+    "confidence": 0.9963557720184326
+  },
+  {
+    "x": 82371,
+    "text": "AT",
+    "confidence": 0.9999755620956421
+  },
+  {
+    "x": 82403,
+    "text": "SEA",
+    "confidence": 0.9910888671875
+  },
+  {
+    "x": 82447,
+    "text": "AFTER",
+    "confidence": 0.9999696016311646
+  },
+  {
+    "x": 82520,
+    "text": "32",
+    "confidence": 0.9997004270553589
+  },
+  {
+    "x": 82549,
+    "text": "RESCUEDNEAR",
+    "confidence": 0.9932165741920471
+  },
+  {
+    "x": 82713,
+    "text": "ITALIAN",
+    "confidence": 0.690744936466217
+  },
+  {
+    "x": 82804,
+    "text": "COAST",
+    "confidence": 0.9948773980140686
+  },
+  {
+    "x": 82918,
+    "text": "ARTEMISIASTRONAUTS",
+    "confidence": 0.5821232199668884
+  },
+  {
+    "x": 83179,
+    "text": "GLIMPSE",
+    "confidence": 0.9997336268424988
+  },
+  {
+    "x": 83273,
+    "text": "MOON'S",
+    "confidence": 0.8443616628646851
+  },
+  {
+    "x": 83361,
+    "text": "'GRAND",
+    "confidence": 0.5767955780029297
+  },
+  {
+    "x": 83443,
+    "text": "CANYON'",
+    "confidence": 0.7742605209350586
+  },
+  {
+    "x": 83540,
+    "text": "AHEAD",
+    "confidence": 0.999945878982544
+  },
+  {
+    "x": 83619,
+    "text": "OF",
+    "confidence": 0.9994786381721497
+  },
+  {
+    "x": 83648,
+    "text": "HISTORIC",
+    "confidence": 0.9958904385566711
+  },
+  {
+    "x": 83750,
+    "text": "LUNAR",
+    "confidence": 0.9998664855957031
+  },
+  {
+    "x": 83830,
+    "text": "FLYBY",
+    "confidence": 0.9999150037765503
+  },
+  {
+    "x": 83944,
+    "text": "FORMORE",
+    "confidence": 0.9459632039070129
+  },
+  {
+    "x": 84046,
+    "text": "COTOALJAZERA.COM",
+    "confidence": 0.9405257105827332
+  },
+  {
+    "x": 84328,
+    "text": "TRUMP",
+    "confidence": 0.9998892545700073
+  },
+  {
+    "x": 84404,
+    "text": "THREATENS",
+    "confidence": 0.9997640252113342
+  },
+  {
+    "x": 84533,
+    "text": "STRIKES",
+    "confidence": 0.9996635913848877
+  },
+  {
+    "x": 84626,
+    "text": "ON",
+    "confidence": 0.9932494163513184
+  },
+  {
+    "x": 84662,
+    "text": "IRAN'SPOWER",
+    "confidence": 0.9922188520431519
+  },
+  {
+    "x": 84820,
+    "text": "PLANTS",
+    "confidence": 0.9996523857116699
+  },
+  {
+    "x": 84905,
+    "text": "IF",
+    "confidence": 0.9728373289108276
+  },
+  {
+    "x": 84934,
+    "text": "HORMUZIS",
+    "confidence": 0.9138107299804688
+  },
+  {
+    "x": 85051,
+    "text": "NOT",
+    "confidence": 0.9999988079071045
+  },
+  {
+    "x": 85101,
+    "text": "OPENED",
+    "confidence": 0.9948877692222595
+  },
+  {
+    "x": 85189,
+    "text": "BY",
+    "confidence": 0.9996731281280518
+  },
+  {
+    "x": 85224,
+    "text": "0000",
+    "confidence": 0.9999037981033325
+  },
+  {
+    "x": 85283,
+    "text": "GMT",
+    "confidence": 0.9999911785125732
+  },
+  {
+    "x": 85330,
+    "text": "WEDNESDAY",
+    "confidence": 0.9979825019836426
+  },
+  {
+    "x": 85514,
+    "text": "IRAN'S",
+    "confidence": 0.5675597786903381
+  },
+  {
+    "x": 85584,
+    "text": "PARLIAMENT",
+    "confidence": 0.998051643371582
+  },
+  {
+    "x": 85725,
+    "text": "SPEAKER",
+    "confidence": 0.9997472167015076
+  },
+  {
+    "x": 85831,
+    "text": "WARNS",
+    "confidence": 0.9993464350700378
+  },
+  {
+    "x": 85913,
+    "text": "TRUMP'S",
+    "confidence": 0.9847886562347412
+  },
+  {
+    "x": 86015,
+    "text": "RECKLESS",
+    "confidence": 0.6007993221282959
+  },
+  {
+    "x": 86129,
+    "text": "MOVES'",
+    "confidence": 0.9933779835700989
+  },
+  {
+    "x": 86162,
+    "text": "A",
+    "confidence": 0.6158388257026672
+  },
+  {
+    "x": 86217,
+    "text": "MEAN",
+    "confidence": 0.9993170499801636
+  },
+  {
+    "x": 86282,
+    "text": "'WHOLE",
+    "confidence": 0.7135545611381531
+  },
+  {
+    "x": 86364,
+    "text": "REGION",
+    "confidence": 0.9965470433235168
+  },
+  {
+    "x": 86449,
+    "text": "GOING",
+    "confidence": 0.9995427131652832
+  },
+  {
+    "x": 86516,
+    "text": "TOBURN'",
+    "confidence": 0.9380158185958862
+  },
+  {
+    "x": 86663,
+    "text": "MORE",
+    "confidence": 0.9964534044265747
+  },
+  {
+    "x": 86721,
+    "text": "THAN/ADOZENI",
+    "confidence": 0.7755982875823975
+  },
+  {
+    "x": 86882,
+    "text": "IRANIAN_CITIES",
+    "confidence": 0.9037771224975586
+  },
+  {
+    "x": 87049,
+    "text": "BOMBED",
+    "confidence": 0.983353853225708
+  },
+  {
+    "x": 87146,
+    "text": "BY",
+    "confidence": 0.9993769526481628
+  },
+  {
+    "x": 87178,
+    "text": "U.S.",
+    "confidence": 0.919045627117157
+  },
+  {
+    "x": 87225,
+    "text": "AND",
+    "confidence": 0.9999362230300903
+  },
+  {
+    "x": 87275,
+    "text": "IRAEL",
+    "confidence": 0.9994845390319824
+  },
+  {
+    "x": 87336,
+    "text": "OVERNIGHT",
+    "confidence": 0.9999454021453857
+  },
+  {
+    "x": 87846,
+    "text": "KILLATLEAST:",
+    "confidence": 0.9910902976989746
+  },
+  {
+    "x": 88007,
+    "text": "34PEOPLE",
+    "confidence": 0.890281617641449
+  },
+  {
+    "x": 88127,
+    "text": "ACROSSCOUNTRY",
+    "confidence": 0.9667233228683472
+  },
+  {
+    "x": 88321,
+    "text": "OVER",
+    "confidence": 0.9998328685760498
+  },
+  {
+    "x": 88379,
+    "text": "PAST24HOURS,",
+    "confidence": 0.636821985244751
+  },
+  {
+    "x": 88555,
+    "text": "INCLUDINHILDREN",
+    "confidence": 0.711751401424408
+  },
+  {
+    "x": 88763,
+    "text": "-",
+    "confidence": 0.6563736796379089
+  },
+  {
+    "x": 88790,
+    "text": "IRANSMISSIONOUN:",
+    "confidence": 0.5216461420059204
+  },
+  {
+    "x": 89009,
+    "text": "URGESWORLDTOPREVANT",
+    "confidence": 0.42172932624816895
+  },
+  {
+    "x": 89308,
+    "text": "ATROCIOUSACTS'",
+    "confidence": 0.5329118967056274
+  },
+  {
+    "x": 89496,
+    "text": "AFTER",
+    "confidence": 0.997732400894165
+  },
+  {
+    "x": 89569,
+    "text": "TRUMP",
+    "confidence": 0.9948379397392273
+  },
+  {
+    "x": 89648,
+    "text": "THREATS",
+    "confidence": 0.9992398023605347
+  },
+  {
+    "x": 89762,
+    "text": ".",
+    "confidence": 0.461536705493927
+  },
+  {
+    "x": 89789,
+    "text": "MULTIPLEINJURIB",
+    "confidence": 0.6673917770385742
+  },
+  {
+    "x": 89994,
+    "text": "AFTER",
+    "confidence": 0.9976953864097595
+  },
+  {
+    "x": 90058,
+    "text": "IRNIAN",
+    "confidence": 0.8325971961021423
+  },
+  {
+    "x": 90143,
+    "text": "MISSILEATTACK",
+    "confidence": 0.9509594440460205
+  },
+  {
+    "x": 90322,
+    "text": "HITSCENTRAL",
+    "confidence": 0.7509204745292664
+  },
+  {
+    "x": 90474,
+    "text": "ISRAEL,",
+    "confidence": 0.9989385008811951
+  },
+  {
+    "x": 90565,
+    "text": "INCLUDING",
+    "confidence": 0.9871163964271545
+  },
+  {
+    "x": 90682,
+    "text": "TELAVIV",
+    "confidence": 0.9461629390716553
+  },
+  {
+    "x": 90785,
+    "text": "AREA",
+    "confidence": 0.9996954202651978
+  },
+  {
+    "x": 90890,
+    "text": "TWOPEOPLE",
+    "confidence": 0.9913911819458008
+  },
+  {
+    "x": 91019,
+    "text": "KILLED,",
+    "confidence": 0.9925020933151245
+  },
+  {
+    "x": 91116,
+    "text": "TWO",
+    "confidence": 0.9980254173278809
+  },
+  {
+    "x": 91163,
+    "text": "MISSINGAFTER",
+    "confidence": 0.9502119421958923
+  },
+  {
+    "x": 91333,
+    "text": "IRANIAN",
+    "confidence": 0.9992534518241882
+  },
+  {
+    "x": 91423,
+    "text": "MISSILEHITS",
+    "confidence": 0.6592360734939575
+  },
+  {
+    "x": 91567,
+    "text": "BUILDING",
+    "confidence": 0.9843577146530151
+  },
+  {
+    "x": 91675,
+    "text": "IN",
+    "confidence": 0.9898421168327332
+  },
+  {
+    "x": 91702,
+    "text": "ISRAELICITYOF",
+    "confidence": 0.9139847755432129
+  },
+  {
+    "x": 91872,
+    "text": "HAIFA",
+    "confidence": 0.9271304607391357
+  },
+  {
+    "x": 91957,
+    "text": "-",
+    "confidence": 0.474626749753952
+  },
+  {
+    "x": 91986,
+    "text": "US.FORCESRESCUE",
+    "confidence": 0.7041558027267456
+  },
+  {
+    "x": 92206,
+    "text": "MISSING",
+    "confidence": 0.9805898666381836
+  },
+  {
+    "x": 92299,
+    "text": "AIRMANINI",
+    "confidence": 0.8051910400390625
+  },
+  {
+    "x": 92416,
+    "text": "IRAN",
+    "confidence": 0.9426900744438171
+  },
+  {
+    "x": 92478,
+    "text": "TWO",
+    "confidence": 0.9971237778663635
+  },
+  {
+    "x": 92522,
+    "text": "DAYSAFTER.",
+    "confidence": 0.4806551933288574
+  },
+  {
+    "x": 92666,
+    "text": "AMERICANFIGHTER.",
+    "confidence": 0.5662314891815186
+  },
+  {
+    "x": 92874,
+    "text": "JET",
+    "confidence": 0.9999233484268188
+  },
+  {
+    "x": 92915,
+    "text": "WENT",
+    "confidence": 0.9999810457229614
+  },
+  {
+    "x": 92982,
+    "text": "DOWN",
+    "confidence": 0.9972639083862305
+  },
+  {
+    "x": 93067,
+    "text": "-",
+    "confidence": 0.8566962480545044
+  },
+  {
+    "x": 93090,
+    "text": "IRANIAN",
+    "confidence": 0.9319996237754822
+  },
+  {
+    "x": 93181,
+    "text": "MEDIA",
+    "confidence": 0.9964002370834351
+  },
+  {
+    "x": 93257,
+    "text": "SAY",
+    "confidence": 0.9971844553947449
+  },
+  {
+    "x": 93298,
+    "text": "SENIOR",
+    "confidence": 0.9994862079620361
+  },
+  {
+    "x": 93386,
+    "text": "IRANIAN",
+    "confidence": 0.9959995746612549
+  },
+  {
+    "x": 93477,
+    "text": "MILITARY",
+    "confidence": 0.9977381229400635
+  },
+  {
+    "x": 93580,
+    "text": "COMMANDER",
+    "confidence": 0.9978468418121338
+  },
+  {
+    "x": 93723,
+    "text": "HAS_BEEN",
+    "confidence": 0.537325918674469
+  },
+  {
+    "x": 94227,
+    "text": "RAMANAVTHOMITIES2074",
+    "confidence": 0.4104102849960327
+  },
+  {
+    "x": 94529,
+    "text": "PEOPLE",
+    "confidence": 0.9995515942573547
+  },
+  {
+    "x": 94617,
+    "text": "KILLED",
+    "confidence": 0.8228645324707031
+  },
+  {
+    "x": 94702,
+    "text": "AND",
+    "confidence": 0.9999760389328003
+  },
+  {
+    "x": 95085,
+    "text": "STRIKES",
+    "confidence": 0.9987670183181763
+  },
+  {
+    "x": 95182,
+    "text": "SINCEFEBRUARY28",
+    "confidence": 0.7471358776092529
+  },
+  {
+    "x": 95437,
+    "text": "MANMAPACSOCNTSOITCE:",
+    "confidence": 0.32878977060317993
+  },
+  {
+    "x": 95756,
+    "text": "HORMUZ",
+    "confidence": 0.999403715133667
+  },
+  {
+    "x": 95853,
+    "text": "WILL",
+    "confidence": 0.9998700618743896
+  },
+  {
+    "x": 95906,
+    "text": "REOPEN",
+    "confidence": 0.9988883137702942
+  },
+  {
+    "x": 96000,
+    "text": "ONLYWMENTRANSIT",
+    "confidence": 0.3955676555633545
+  },
+  {
+    "x": 96225,
+    "text": "REVENUESCOMPENSATE",
+    "confidence": 0.5305184125900269
+  },
+  {
+    "x": 96489,
+    "text": "WAR",
+    "confidence": 0.9979798197746277
+  },
+  {
+    "x": 96539,
+    "text": "DAMAGES",
+    "confidence": 0.9833630323410034
+  },
+  {
+    "x": 96691,
+    "text": "IRAN",
+    "confidence": 0.9989731311798096
+  },
+  {
+    "x": 96744,
+    "text": "SA/SITMASTARGETEDPETROCHEMICAL",
+    "confidence": 0.3695787489414215
+  },
+  {
+    "x": 97177,
+    "text": "PLANTSIN",
+    "confidence": 0.8872911930084229
+  },
+  {
+    "x": 97294,
+    "text": "UAE,",
+    "confidence": 0.9770688414573669
+  },
+  {
+    "x": 97347,
+    "text": "KUWAIT",
+    "confidence": 0.9661241769790649
+  },
+  {
+    "x": 97438,
+    "text": "AND",
+    "confidence": 0.9999945163726807
+  },
+  {
+    "x": 97488,
+    "text": "BAHRAIN",
+    "confidence": 0.5255305171012878
+  },
+  {
+    "x": 97599,
+    "text": "-",
+    "confidence": 0.4199475944042206
+  },
+  {
+    "x": 97625,
+    "text": "QATAR'SFOREIGN",
+    "confidence": 0.7048083543777466
+  },
+  {
+    "x": 97816,
+    "text": "MINISTERES",
+    "confidence": 0.5226088762283325
+  },
+  {
+    "x": 97939,
+    "text": "OLIDARITY",
+    "confidence": 0.999517560005188
+  },
+  {
+    "x": 98059,
+    "text": "WITH",
+    "confidence": 0.9998732805252075
+  },
+  {
+    "x": 98115,
+    "text": "KUWAIT",
+    "confidence": 0.9813593626022339
+  },
+  {
+    "x": 98206,
+    "text": "AFTER",
+    "confidence": 0.9975230097770691
+  },
+  {
+    "x": 98279,
+    "text": "IRANIANATTACKS",
+    "confidence": 0.961063027381897
+  },
+  {
+    "x": 98478,
+    "text": "ON",
+    "confidence": 0.997946560382843
+  },
+  {
+    "x": 98510,
+    "text": "ENERGYFACILITIES",
+    "confidence": 0.6910164952278137
+  },
+  {
+    "x": 98765,
+    "text": "EIGHT",
+    "confidence": 0.9998487234115601
+  },
+  {
+    "x": 98827,
+    "text": "ORESAGREE",
+    "confidence": 0.9191389679908752
+  },
+  {
+    "x": 98956,
+    "text": "TOINCREASE",
+    "confidence": 0.9877201914787292
+  },
+  {
+    "x": 99105,
+    "text": "OIL",
+    "confidence": 0.9998830556869507
+  },
+  {
+    "x": 99137,
+    "text": "PRODUCTION",
+    "confidence": 0.9495006799697876
+  },
+  {
+    "x": 99281,
+    "text": "QUOTASBY206,000",
+    "confidence": 0.6903643608093262
+  },
+  {
+    "x": 99495,
+    "text": "BARRELSPER",
+    "confidence": 0.8940566182136536
+  },
+  {
+    "x": 99641,
+    "text": "DAYFROM",
+    "confidence": 0.7673381567001343
+  },
+  {
+    "x": 99755,
+    "text": "MAY",
+    "confidence": 0.9999417066574097
+  },
+  {
+    "x": 99849,
+    "text": "ISRAELIMILITY",
+    "confidence": 0.9561711549758911
+  },
+  {
+    "x": 100051,
+    "text": "ISRAELIMILITARY",
+    "confidence": 0.965191662311554
+  },
+  {
+    "x": 100233,
+    "text": "CONTINUESTO",
+    "confidence": 0.9270545840263367
+  },
+  {
+    "x": 100397,
+    "text": "STRIKE",
+    "confidence": 0.9994269609451294
+  },
+  {
+    "x": 100479,
+    "text": "BEIRUT,",
+    "confidence": 0.9385547637939453
+  },
+  {
+    "x": 100567,
+    "text": "KILLINGA",
+    "confidence": 0.8770805597305298
+  },
+  {
+    "x": 100655,
+    "text": "ATLEAST",
+    "confidence": 0.9937435984611511
+  },
+  {
+    "x": 100766,
+    "text": "FIVE",
+    "confidence": 0.978793203830719
+  },
+  {
+    "x": 100813,
+    "text": "PEOPLE",
+    "confidence": 0.9975293278694153
+  },
+  {
+    "x": 100904,
+    "text": "AND",
+    "confidence": 0.9999852180480957
+  },
+  {
+    "x": 100948,
+    "text": "INJURING",
+    "confidence": 0.8736593723297119
+  },
+  {
+    "x": 101053,
+    "text": "DOZENS",
+    "confidence": 0.998989999294281
+  },
+  {
+    "x": 101156,
+    "text": "-",
+    "confidence": 0.5159137845039368
+  },
+  {
+    "x": 101182,
+    "text": "ISRAELIAIR",
+    "confidence": 0.9755747318267822
+  },
+  {
+    "x": 101311,
+    "text": "STRIKE",
+    "confidence": 0.9410059452056885
+  },
+  {
+    "x": 101396,
+    "text": "ON",
+    "confidence": 0.9973266124725342
+  },
+  {
+    "x": 101428,
+    "text": "SOUTHERN",
+    "confidence": 0.9349733591079712
+  },
+  {
+    "x": 101545,
+    "text": "LEBANON",
+    "confidence": 0.9981560111045837
+  },
+  {
+    "x": 101654,
+    "text": "KILLSSEVENPEOPLE.",
+    "confidence": 0.5621930956840515
+  },
+  {
+    "x": 102278,
+    "text": "LEBANON'SHEALTHI",
+    "confidence": 0.5874156951904297
+  },
+  {
+    "x": 102486,
+    "text": "MINISTRY:1,461",
+    "confidence": 0.5158671736717224
+  },
+  {
+    "x": 102659,
+    "text": "PEOPLE!",
+    "confidence": 0.6764257550239563
+  },
+  {
+    "x": 102752,
+    "text": "KILLED",
+    "confidence": 0.9921174645423889
+  },
+  {
+    "x": 102832,
+    "text": "AND4,430",
+    "confidence": 0.9955145716667175
+  },
+  {
+    "x": 102946,
+    "text": "WOUNDED",
+    "confidence": 0.9997308850288391
+  },
+  {
+    "x": 103057,
+    "text": "IN",
+    "confidence": 0.989522397518158
+  },
+  {
+    "x": 103081,
+    "text": "ISRAELI",
+    "confidence": 0.9341490268707275
+  },
+  {
+    "x": 103171,
+    "text": "ATTACKS",
+    "confidence": 0.9928240776062012
+  },
+  {
+    "x": 103277,
+    "text": "SINCE",
+    "confidence": 0.9829704761505127
+  },
+  {
+    "x": 103338,
+    "text": "START",
+    "confidence": 0.9998352527618408
+  },
+  {
+    "x": 103415,
+    "text": "OF",
+    "confidence": 0.9998537302017212
+  },
+  {
+    "x": 103450,
+    "text": "WAR",
+    "confidence": 0.995721697807312
+  },
+  {
+    "x": 103517,
+    "text": "-",
+    "confidence": 0.611231803894043
+  },
+  {
+    "x": 103543,
+    "text": "MEDICSSA/ISBAELIAIR",
+    "confidence": 0.5413391590118408
+  },
+  {
+    "x": 103804,
+    "text": "STRIKE",
+    "confidence": 0.9811200499534607
+  },
+  {
+    "x": 103883,
+    "text": "KILLEDFOUR",
+    "confidence": 0.9972139000892639
+  },
+  {
+    "x": 104027,
+    "text": "PALESINIANS",
+    "confidence": 0.7651431560516357
+  },
+  {
+    "x": 104173,
+    "text": "IN",
+    "confidence": 0.8969751000404358
+  },
+  {
+    "x": 104194,
+    "text": "NORTHERN",
+    "confidence": 0.9992784857749939
+  },
+  {
+    "x": 104317,
+    "text": "-",
+    "confidence": 0.9405496120452881
+  },
+  {
+    "x": 104323,
+    "text": "GAZA",
+    "confidence": 0.9848396182060242
+  },
+  {
+    "x": 104367,
+    "text": "CS",
+    "confidence": 0.571160078048706
+  },
+  {
+    "x": 104384,
+    "text": "STRIP",
+    "confidence": 0.9998918771743774
+  },
+  {
+    "x": 104449,
+    "text": "DESPITE",
+    "confidence": 0.9998123049736023
+  },
+  {
+    "x": 104545,
+    "text": "CEASE",
+    "confidence": 0.5192091464996338
+  },
+  {
+    "x": 104622,
+    "text": "-",
+    "confidence": 0.8729347586631775
+  },
+  {
+    "x": 104648,
+    "text": "HAMAS",
+    "confidence": 0.999657392501831
+  },
+  {
+    "x": 104730,
+    "text": "SAYSIT",
+    "confidence": 0.990903913974762
+  },
+  {
+    "x": 104818,
+    "text": "WILL",
+    "confidence": 0.997925877571106
+  },
+  {
+    "x": 104871,
+    "text": "NOT",
+    "confidence": 0.9999843835830688
+  },
+  {
+    "x": 104920,
+    "text": "DISARM",
+    "confidence": 0.9941873550415039
+  },
+  {
+    "x": 105011,
+    "text": "BECAUSE",
+    "confidence": 0.9808005690574646
+  },
+  {
+    "x": 105111,
+    "text": "PALESTINIANS",
+    "confidence": 0.9756435751914978
+  },
+  {
+    "x": 105269,
+    "text": "CONTINUE",
+    "confidence": 0.9917505383491516
+  },
+  {
+    "x": 105377,
+    "text": "TO",
+    "confidence": 0.5544118881225586
+  },
+  {
+    "x": 105413,
+    "text": "BE",
+    "confidence": 0.9964556694030762
+  },
+  {
+    "x": 105445,
+    "text": "TARGETED",
+    "confidence": 0.8457956314086914
+  },
+  {
+    "x": 105565,
+    "text": "BYISRAEL",
+    "confidence": 0.9975008368492126
+  },
+  {
+    "x": 105676,
+    "text": "IN",
+    "confidence": 0.9043184518814087
+  },
+  {
+    "x": 105703,
+    "text": "THE",
+    "confidence": 0.999354898929596
+  },
+  {
+    "x": 105752,
+    "text": "GAZA",
+    "confidence": 0.999559223651886
+  },
+  {
+    "x": 105814,
+    "text": "STRIP",
+    "confidence": 0.9998636245727539
+  },
+  {
+    "x": 105896,
+    "text": "-",
+    "confidence": 0.9658037424087524
+  },
+  {
+    "x": 105919,
+    "text": "GAZA",
+    "confidence": 0.9818347692489624
+  },
+  {
+    "x": 105984,
+    "text": "HEALTH",
+    "confidence": 0.9575199484825134
+  },
+  {
+    "x": 106072,
+    "text": "MINISTRY:",
+    "confidence": 0.6402418613433838
+  },
+  {
+    "x": 106189,
+    "text": "716",
+    "confidence": 0.9999963045120239
+  },
+  {
+    "x": 106221,
+    "text": "PALESTINIANS",
+    "confidence": 0.5464516878128052
+  },
+  {
+    "x": 106385,
+    "text": "KILLED",
+    "confidence": 0.9999498128890991
+  },
+  {
+    "x": 106467,
+    "text": "IN",
+    "confidence": 0.977073609828949
+  },
+  {
+    "x": 106497,
+    "text": "ISRAELI",
+    "confidence": 0.9985993504524231
+  },
+  {
+    "x": 106573,
+    "text": "IATTACKS",
+    "confidence": 0.4834294021129608
+  },
+  {
+    "x": 106687,
+    "text": "SINCE",
+    "confidence": 0.9165006875991821
+  },
+  {
+    "x": 106749,
+    "text": "CEASEFIRE",
+    "confidence": 0.9878020882606506
+  },
+  {
+    "x": 106875,
+    "text": "STARTED",
+    "confidence": 0.998379111289978
+  },
+  {
+    "x": 106974,
+    "text": "IN",
+    "confidence": 0.9923781156539917
+  },
+  {
+    "x": 107003,
+    "text": "OCTOB!A",
+    "confidence": 0.5655612945556641
+  },
+  {
+    "x": 107097,
+    "text": "HEALTH",
+    "confidence": 0.9991562366485596
+  },
+  {
+    "x": 107188,
+    "text": "MINISTE",
+    "confidence": 0.494579017162323
+  },
+  {
+    "x": 107276,
+    "text": "PALESTINIANS",
+    "confidence": 0.6121309399604797
+  },
+  {
+    "x": 107437,
+    "text": "KILLED",
+    "confidence": 0.9999439716339111
+  },
+  {
+    "x": 107516,
+    "text": "IN",
+    "confidence": 0.9960415363311768
+  },
+  {
+    "x": 107542,
+    "text": "ISRAELI",
+    "confidence": 0.9991193413734436
+  },
+  {
+    "x": 107633,
+    "text": "ATTACKS",
+    "confidence": 0.9984449744224548
+  },
+  {
+    "x": 107736,
+    "text": "SINCE",
+    "confidence": 0.9916163086891174
+  },
+  {
+    "x": 107800,
+    "text": "OCTOBER",
+    "confidence": 0.9971054196357727
+  },
+  {
+    "x": 107903,
+    "text": "2023",
+    "confidence": 0.9999908208847046
+  },
+  {
+    "x": 107973,
+    "text": "-",
+    "confidence": 0.80089271068573
+  },
+  {
+    "x": 108000,
+    "text": "ISRAELIFOS",
+    "confidence": 0.9917649626731873
+  },
+  {
+    "x": 108134,
+    "text": "AND",
+    "confidence": 0.9999927282333374
+  },
+  {
+    "x": 108184,
+    "text": "STTLERS",
+    "confidence": 0.9571688771247864
+  },
+  {
+    "x": 108284,
+    "text": "HAVE",
+    "confidence": 0.9999055862426758
+  },
+  {
+    "x": 108342,
+    "text": "KILIDPALESTINIANS",
+    "confidence": 0.5887381434440613
+  },
+  {
+    "x": 108568,
+    "text": "IN",
+    "confidence": 0.9871534705162048
+  },
+  {
+    "x": 108597,
+    "text": "OCCUPIED",
+    "confidence": 0.9908736944198608
+  },
+  {
+    "x": 108708,
+    "text": "WEST",
+    "confidence": 0.9999581575393677
+  },
+  {
+    "x": 108773,
+    "text": "BANK",
+    "confidence": 0.9998276233673096
+  },
+  {
+    "x": 108840,
+    "text": "SINCE",
+    "confidence": 0.8613797426223755
+  },
+  {
+    "x": 108902,
+    "text": "OCTOBER",
+    "confidence": 0.9929620623588562
+  },
+  {
+    "x": 109010,
+    "text": "2023",
+    "confidence": 0.999993085861206
+  },
+  {
+    "x": 109098,
+    "text": "D.F-",
+    "confidence": 0.8953221440315247
+  },
+  {
+    "x": 109166,
+    "text": "D.R.",
+    "confidence": 0.999845027923584
+  },
+  {
+    "x": 109224,
+    "text": "D.R.",
+    "confidence": 0.9998477697372437
+  },
+  {
+    "x": 109271,
+    "text": "CONGO",
+    "confidence": 0.9971840977668762
+  },
+  {
+    "x": 109350,
+    "text": "TO",
+    "confidence": 0.9989205598831177
+  },
+  {
+    "x": 109382,
+    "text": "TEMPORARIL",
+    "confidence": 0.971331000328064
+  },
+  {
+    "x": 109538,
+    "text": "ACCEPT",
+    "confidence": 0.9991550445556641
+  },
+  {
+    "x": 109623,
+    "text": "DEPORTED",
+    "confidence": 0.9991471767425537
+  },
+  {
+    "x": 109743,
+    "text": "MIGRANTS",
+    "confidence": 0.999778687953949
+  },
+  {
+    "x": 109854,
+    "text": "UNDER",
+    "confidence": 0.9999574422836304
+  },
+  {
+    "x": 109933,
+    "text": "NEW",
+    "confidence": 0.9994053840637207
+  },
+  {
+    "x": 109989,
+    "text": "DEAL",
+    "confidence": 0.9999597072601318
+  },
+  {
+    "x": 110050,
+    "text": "WITH",
+    "confidence": 0.9990184307098389
+  },
+  {
+    "x": 110112,
+    "text": "THE",
+    "confidence": 0.9998230338096619
+  },
+  {
+    "x": 110159,
+    "text": "U.",
+    "confidence": 0.9917417764663696
+  },
+  {
+    "x": 110173,
+    "text": ".S.",
+    "confidence": 0.7094995379447937
+  },
+  {
+    "x": 110238,
+    "text": "RESCUE",
+    "confidence": 0.9986885190010071
+  },
+  {
+    "x": 110323,
+    "text": "CHARITIES",
+    "confidence": 0.9390627145767212
+  },
+  {
+    "x": 110440,
+    "text": "SAY71",
+    "confidence": 0.9964905381202698
+  },
+  {
+    "x": 110516,
+    "text": "PEOPLE",
+    "confidence": 0.9999030828475952
+  },
+  {
+    "x": 110604,
+    "text": "REMAIN",
+    "confidence": 0.9979384541511536
+  },
+  {
+    "x": 110692,
+    "text": "MISSING",
+    "confidence": 0.957718014717102
+  },
+  {
+    "x": 110789,
+    "text": "ATSEA",
+    "confidence": 0.6781706809997559
+  },
+  {
+    "x": 110868,
+    "text": "AFTERDN",
+    "confidence": 0.8795108199119568
+  },
+  {
+    "x": 110958,
+    "text": "NEAR",
+    "confidence": 0.9997327923774719
+  },
+  {
+    "x": 111017,
+    "text": "ITALIANCOAST",
+    "confidence": 0.9917313456535339
+  },
+  {
+    "x": 111196,
+    "text": "-",
+    "confidence": 0.6177569627761841
+  },
+  {
+    "x": 111225,
+    "text": "ARTEMISIIASTRONAUTS",
+    "confidence": 0.8046718239784241
+  },
+  {
+    "x": 111486,
+    "text": "GLIMPSE",
+    "confidence": 0.9994994401931763
+  },
+  {
+    "x": 111583,
+    "text": "MOON'S",
+    "confidence": 0.9867691993713379
+  },
+  {
+    "x": 111673,
+    "text": "GRANDCANYON",
+    "confidence": 0.6184167861938477
+  },
+  {
+    "x": 111852,
+    "text": "AHEAD",
+    "confidence": 0.9994837045669556
+  },
+  {
+    "x": 111928,
+    "text": "ORICLUNAR",
+    "confidence": 0.5141844153404236
+  },
+  {
+    "x": 112054,
+    "text": "FLYBYORE",
+    "confidence": 0.7008064985275269
+  },
+  {
+    "x": 112166,
+    "text": "GO",
+    "confidence": 0.6511728167533875
+  },
+  {
+    "x": 112198,
+    "text": "TO",
+    "confidence": 0.9989803433418274
+  },
+  {
+    "x": 112230,
+    "text": "ALJAZEERA.COM",
+    "confidence": 0.9612892270088196
+  },
+  {
+    "x": 112423,
+    "text": "-",
+    "confidence": 0.5500787496566772
+  },
+  {
+    "x": 112450,
+    "text": "TRUMP",
+    "confidence": 0.9994738698005676
+  },
+  {
+    "x": 112529,
+    "text": "THREATENS",
+    "confidence": 0.9985969662666321
+  },
+  {
+    "x": 112661,
+    "text": "STRIKES",
+    "confidence": 0.9994547963142395
+  },
+  {
+    "x": 112754,
+    "text": "ON",
+    "confidence": 0.9985230565071106
+  },
+  {
+    "x": 112792,
+    "text": "IRANANTIUZ",
+    "confidence": 0.9599928855895996
+  },
+  {
+    "x": 112918,
+    "text": "IS",
+    "confidence": 0.9978381991386414
+  },
+  {
+    "x": 112945,
+    "text": "NOT",
+    "confidence": 0.9999963045120239
+  },
+  {
+    "x": 112992,
+    "text": "OPENED",
+    "confidence": 0.969245195388794
+  },
+  {
+    "x": 113062,
+    "text": "-",
+    "confidence": 0.8839176297187805
+  },
+  {
+    "x": 113083,
+    "text": "BY",
+    "confidence": 0.9995684027671814
+  },
+  {
+    "x": 113118,
+    "text": "0000",
+    "confidence": 0.9920184016227722
+  },
+  {
+    "x": 113173,
+    "text": "GMT",
+    "confidence": 0.9999984502792358
+  },
+  {
+    "x": 113220,
+    "text": "WEDNESDAY",
+    "confidence": 0.9997462630271912
+  },
+  {
+    "x": 113250,
+    "text": "1",
+    "confidence": 0.5211635231971741
+  },
+  {
+    "x": 113408,
+    "text": "IRAN'",
+    "confidence": 0.49682748317718506
+  },
+  {
+    "x": 113481,
+    "text": "PARLIAMENT",
+    "confidence": 0.999879002571106
+  },
+  {
+    "x": 113534,
+    "text": "a",
+    "confidence": 0.4210851490497589
+  },
+  {
+    "x": 113619,
+    "text": "SPEAKER",
+    "confidence": 0.9986122846603394
+  },
+  {
+    "x": 113721,
+    "text": "WARNS",
+    "confidence": 0.9988251328468323
+  },
+  {
+    "x": 113806,
+    "text": "TRUMP'S",
+    "confidence": 0.9783141016960144
+  },
+  {
+    "x": 113906,
+    "text": "'RECKLESS",
+    "confidence": 0.9217196106910706
+  },
+  {
+    "x": 114020,
+    "text": "MOVES'",
+    "confidence": 0.9557519555091858
+  },
+  {
+    "x": 114108,
+    "text": "MEAN",
+    "confidence": 0.8930810689926147
+  },
+  {
+    "x": 114175,
+    "text": "WHOLE",
+    "confidence": 0.6120327115058899
+  },
+  {
+    "x": 114260,
+    "text": "REGION",
+    "confidence": 0.9976866245269775
+  },
+  {
+    "x": 114345,
+    "text": "GOING",
+    "confidence": 0.999995231628418
+  },
+  {
+    "x": 114416,
+    "text": "TO",
+    "confidence": 0.9997852444648743
+  },
+  {
+    "x": 114448,
+    "text": "BURN'",
+    "confidence": 0.917412519454956
+  },
+  {
+    "x": 114556,
+    "text": "MORE",
+    "confidence": 0.9974395036697388
+  },
+  {
+    "x": 114624,
+    "text": "THAN",
+    "confidence": 0.9995076656341553
+  },
+  {
+    "x": 114688,
+    "text": "A",
+    "confidence": 0.9997434020042419
+  },
+  {
+    "x": 114706,
+    "text": "DOZEN",
+    "confidence": 0.9983471632003784
+  },
+  {
+    "x": 114779,
+    "text": "IRANIAN",
+    "confidence": 0.91232830286026
+  },
+  {
+    "x": 114875,
+    "text": "CITIES",
+    "confidence": 0.9994223117828369
+  },
+  {
+    "x": 114943,
+    "text": "BOMBED",
+    "confidence": 0.9972007274627686
+  },
+  {
+    "x": 115037,
+    "text": "BY",
+    "confidence": 0.9985645413398743
+  },
+  {
+    "x": 115072,
+    "text": "U.S.",
+    "confidence": 0.9920176267623901
+  },
+  {
+    "x": 115119,
+    "text": "AND",
+    "confidence": 0.6562765836715698
+  },
+  {
+    "x": 115166,
+    "text": "ISRAEL",
+    "confidence": 0.9775410294532776
+  },
+  {
+    "x": 115245,
+    "text": "OVERNIGHT",
+    "confidence": 0.9993853569030762
+  },
+  {
+    "x": 115415,
+    "text": "IRAN",
+    "confidence": 0.9471409916877747
+  },
+  {
+    "x": 115473,
+    "text": "SAYS",
+    "confidence": 0.9880092740058899
+  },
+  {
+    "x": 115532,
+    "text": "U.",
+    "confidence": 0.997156023979187
+  },
+  {
+    "x": 115552,
+    "text": "S",
+    "confidence": 0.5308451652526855
+  },
+  {
+    "x": 115582,
+    "text": "ISF",
+    "confidence": 0.47349777817726135
+  },
+  {
+    "x": 115599,
+    "text": "RAE",
+    "confidence": 0.9983566403388977
+  },
+  {
+    "x": 115669,
+    "text": "STF",
+    "confidence": 0.9366337656974792
+  },
+  {
+    "x": 115693,
+    "text": "RIKE",
+    "confidence": 0.9641291499137878
+  },
+  {
+    "x": 115740,
+    "text": "S",
+    "confidence": 0.4059155583381653
+  },
+  {
+    "x": 115763,
+    "text": "KILL",
+    "confidence": 0.9986979961395264
+  },
+  {
+    "x": 115819,
+    "text": "AT",
+    "confidence": 0.9999922513961792
+  },
+  {
+    "x": 115851,
+    "text": "LEAST",
+    "confidence": 0.999792754650116
+  },
+  {
+    "x": 115921,
+    "text": "34",
+    "confidence": 0.9999833106994629
+  },
+  {
+    "x": 115951,
+    "text": "PEOPLE",
+    "confidence": 0.9995806813240051
+  },
+  {
+    "x": 116039,
+    "text": "ACROSS",
+    "confidence": 0.9971797466278076
+  },
+  {
+    "x": 116077,
+    "text": "-",
+    "confidence": 0.4701543152332306
+  },
+  {
+    "x": 116126,
+    "text": "COUNTRY",
+    "confidence": 0.998136043548584
+  },
+  {
+    "x": 116235,
+    "text": "OVER",
+    "confidence": 0.9999759197235107
+  },
+  {
+    "x": 116299,
+    "text": "PAST",
+    "confidence": 0.9999896287918091
+  },
+  {
+    "x": 116355,
+    "text": "24",
+    "confidence": 0.9999785423278809
+  },
+  {
+    "x": 116390,
+    "text": "HOUL",
+    "confidence": 0.9983680844306946
+  },
+  {
+    "x": 116437,
+    "text": "LUDING",
+    "confidence": 0.9874370098114014
+  },
+  {
+    "x": 116504,
+    "text": "-",
+    "confidence": 0.5116736888885498
+  },
+  {
+    "x": 116513,
+    "text": "SIX",
+    "confidence": 0.9987963438034058
+  },
+  {
+    "x": 116551,
+    "text": "CHILDREN",
+    "confidence": 0.9349358081817627
+  },
+  {
+    "x": 116707,
+    "text": "IRAN'",
+    "confidence": 0.5420690178871155
+  },
+  {
+    "x": 116774,
+    "text": "MISSION",
+    "confidence": 0.9988352656364441
+  },
+  {
+    "x": 116874,
+    "text": "TO",
+    "confidence": 0.9999881982803345
+  },
+  {
+    "x": 116906,
+    "text": "UN",
+    "confidence": 0.9233401417732239
+  },
+  {
+    "x": 116941,
+    "text": "URGES",
+    "confidence": 0.999645471572876
+  },
+  {
+    "x": 117017,
+    "text": "WORLD",
+    "confidence": 0.9989643096923828
+  },
+  {
+    "x": 117102,
+    "text": "TO",
+    "confidence": 0.9999821186065674
+  },
+  {
+    "x": 117131,
+    "text": "PREVENT",
+    "confidence": 0.9999322891235352
+  },
+  {
+    "x": 117240,
+    "text": "ATROCIOUS",
+    "confidence": 0.9974032044410706
+  },
+  {
+    "x": 117369,
+    "text": "ACTS",
+    "confidence": 0.6458272933959961
+  },
+  {
+    "x": 117433,
+    "text": "AFTER",
+    "confidence": 0.9998447895050049
+  },
+  {
+    "x": 117503,
+    "text": "TRUMP",
+    "confidence": 0.9992256164550781
+  },
+  {
+    "x": 117583,
+    "text": "THREATS",
+    "confidence": 0.9991936087608337
+  },
+  {
+    "x": 117723,
+    "text": "MULTIPLE",
+    "confidence": 0.7232401371002197
+  },
+  {
+    "x": 117837,
+    "text": "IN.",
+    "confidence": 0.9627804756164551
+  },
+  {
+    "x": 117858,
+    "text": "JURIES",
+    "confidence": 0.9998520612716675
+  },
+  {
+    "x": 117937,
+    "text": "REPORTED",
+    "confidence": 0.995992124080658
+  },
+  {
+    "x": 118057,
+    "text": "AFTER",
+    "confidence": 0.9999788999557495
+  },
+  {
+    "x": 118127,
+    "text": "IRANIAN",
+    "confidence": 0.9981960654258728
+  },
+  {
+    "x": 118218,
+    "text": "MISSILE",
+    "confidence": 0.9998977184295654
+  },
+  {
+    "x": 118312,
+    "text": "ATTACK",
+    "confidence": 0.9983142614364624
+  },
+  {
+    "x": 118397,
+    "text": "HITS",
+    "confidence": 0.9997896552085876
+  },
+  {
+    "x": 118450,
+    "text": "CENTRAI",
+    "confidence": 0.9906251430511475
+  },
+  {
+    "x": 118532,
+    "text": "AL",
+    "confidence": 0.9959208965301514
+  },
+  {
+    "x": 118552,
+    "text": "ISRAEL,",
+    "confidence": 0.9983274340629578
+  },
+  {
+    "x": 118643,
+    "text": "INCLUDING",
+    "confidence": 0.9972347617149353
+  },
+  {
+    "x": 118763,
+    "text": "TEL",
+    "confidence": 0.9996121525764465
+  },
+  {
+    "x": 118807,
+    "text": "AVIV",
+    "confidence": 0.9998546838760376
+  },
+  {
+    "x": 118860,
+    "text": "AREA",
+    "confidence": 0.6396589875221252
+  },
+  {
+    "x": 118965,
+    "text": "TWO",
+    "confidence": 0.9968519806861877
+  },
+  {
+    "x": 119012,
+    "text": "PEOPLE",
+    "confidence": 0.997510552406311
+  },
+  {
+    "x": 119100,
+    "text": "KILLED,",
+    "confidence": 0.9960389137268066
+  },
+  {
+    "x": 119191,
+    "text": "TWO",
+    "confidence": 0.9986196756362915
+  },
+  {
+    "x": 119241,
+    "text": "MISSINIAFTER",
+    "confidence": 0.9985553622245789
+  },
+  {
+    "x": 119396,
+    "text": "IRANIAN",
+    "confidence": 0.9899868369102478
+  },
+  {
+    "x": 119487,
+    "text": "MISSILE",
+    "confidence": 0.9994843006134033
+  },
+  {
+    "x": 119581,
+    "text": "HITS",
+    "confidence": 0.9993818998336792
+  },
+  {
+    "x": 119633,
+    "text": "BUILDING",
+    "confidence": 0.9997069239616394
+  },
+  {
+    "x": 119736,
+    "text": "INISRAELICITY",
+    "confidence": 0.9288649559020996
+  },
+  {
+    "x": 119900,
+    "text": "OF",
+    "confidence": 0.9998555183410645
+  },
+  {
+    "x": 119935,
+    "text": "HAIF",
+    "confidence": 0.9998342990875244
+  },
+  {
+    "x": 120038,
+    "text": "U.S.",
+    "confidence": 0.6167140603065491
+  },
+  {
+    "x": 120082,
+    "text": "FORCES",
+    "confidence": 0.9873666763305664
+  },
+  {
+    "x": 120166,
+    "text": "RESCUE",
+    "confidence": 0.9963867664337158
+  },
+  {
+    "x": 120254,
+    "text": "MISSING",
+    "confidence": 0.9971489310264587
+  },
+  {
+    "x": 120348,
+    "text": "AIRN",
+    "confidence": 0.7067205905914307
+  },
+  {
+    "x": 120413,
+    "text": "IN",
+    "confidence": 0.9975823163986206
+  },
+  {
+    "x": 120439,
+    "text": "IRAN",
+    "confidence": 0.95179283618927
+  },
+  {
+    "x": 120498,
+    "text": "TWO",
+    "confidence": 0.9960477948188782
+  },
+  {
+    "x": 120547,
+    "text": "DAYS",
+    "confidence": 0.9993820190429688
+  },
+  {
+    "x": 120609,
+    "text": "AFTER",
+    "confidence": 0.9974445104598999
+  },
+  {
+    "x": 120682,
+    "text": "AMERICAN",
+    "confidence": 0.9837266206741333
+  },
+  {
+    "x": 120799,
+    "text": "FIGHTER.",
+    "confidence": 0.5034114718437195
+  },
+  {
+    "x": 120896,
+    "text": "JET",
+    "confidence": 0.954707682132721
+  },
+  {
+    "x": 120937,
+    "text": "WENT",
+    "confidence": 0.9982054233551025
+  },
+  {
+    "x": 121001,
+    "text": "DOWN",
+    "confidence": 0.9992774128913879
+  },
+  {
+    "x": 121110,
+    "text": "IRANIAN",
+    "confidence": 0.9950777292251587
+  },
+  {
+    "x": 121204,
+    "text": "MEDIA",
+    "confidence": 0.9999532699584961
+  },
+  {
+    "x": 121271,
+    "text": "SAY_SENIOR",
+    "confidence": 0.6587691903114319
+  },
+  {
+    "x": 121403,
+    "text": "IRANIAN",
+    "confidence": 0.9967149496078491
+  },
+  {
+    "x": 121494,
+    "text": "MILITARY",
+    "confidence": 0.9823001027107239
+  },
+  {
+    "x": 121599,
+    "text": "COMMANDER",
+    "confidence": 0.966579020023346
+  },
+  {
+    "x": 121740,
+    "text": "HAS",
+    "confidence": 0.9988548755645752
+  },
+  {
+    "x": 121790,
+    "text": "BEEN",
+    "confidence": 0.9993399977684021
+  },
+  {
+    "x": 121851,
+    "text": "KILLED",
+    "confidence": 0.6030353903770447
+  },
+  {
+    "x": 121927,
+    "text": "IN",
+    "confidence": 0.6732632517814636
+  },
+  {
+    "x": 121962,
+    "text": "U.",
+    "confidence": 0.7434434294700623
+  },
+  {
+    "x": 121986,
+    "text": ".",
+    "confidence": 0.9106512665748596
+  },
+  {
+    "x": 121995,
+    "text": "-ISACKS",
+    "confidence": 0.7931007146835327
+  },
+  {
+    "x": 122124,
+    "text": "NAUTHORITIES:",
+    "confidence": 0.48535892367362976
+  },
+  {
+    "x": 122276,
+    "text": "NN",
+    "confidence": 0.6416500210762024
+  },
+  {
+    "x": 122296,
+    "text": "2,076",
+    "confidence": 0.9995442032814026
+  },
+  {
+    "x": 122296,
+    "text": "-",
+    "confidence": 0.5660607814788818
+  },
+  {
+    "x": 122358,
+    "text": "PEOPLE",
+    "confidence": 0.9999239444732666
+  },
+  {
+    "x": 122419,
+    "text": "NAM",
+    "confidence": 0.573343813419342
+  },
+  {
+    "x": 122446,
+    "text": "KILLED",
+    "confidence": 0.9992977380752563
+  },
+  {
+    "x": 122507,
+    "text": "AA",
+    "confidence": 0.36731165647506714
+  },
+  {
+    "x": 122528,
+    "text": "AND",
+    "confidence": 0.9999825954437256
+  },
+  {
+    "x": 122581,
+    "text": "26,",
+    "confidence": 0.949633002281189
+  },
+  {
+    "x": 122610,
+    "text": "500",
+    "confidence": 0.9160952568054199
+  },
+  {
+    "x": 122627,
+    "text": "AAN",
+    "confidence": 0.6317253112792969
+  },
+  {
+    "x": 122654,
+    "text": "IN.",
+    "confidence": 0.9827647805213928
+  },
+  {
+    "x": 122674,
+    "text": "JURED",
+    "confidence": 0.9417059421539307
+  },
+  {
+    "x": 122753,
+    "text": "N",
+    "confidence": 0.9691187143325806
+  },
+  {
+    "x": 122771,
+    "text": "U.S.",
+    "confidence": 0.9944416880607605
+  },
+  {
+    "x": 122783,
+    "text": "N",
+    "confidence": 0.7069976925849915
+  },
+  {
+    "x": 122812,
+    "text": "-ISRAELI",
+    "confidence": 0.9412618279457092
+  },
+  {
+    "x": 122909,
+    "text": "STRIKES",
+    "confidence": 0.9997169375419617
+  },
+  {
+    "x": 123005,
+    "text": "SINCE",
+    "confidence": 0.9893025755882263
+  },
+  {
+    "x": 123076,
+    "text": "FEBRUARY",
+    "confidence": 0.9980631470680237
+  },
+  {
+    "x": 123193,
+    "text": "28",
+    "confidence": 0.9956543445587158
+  },
+  {
+    "x": 123234,
+    "text": ".",
+    "confidence": 0.42901748418807983
+  },
+  {
+    "x": 123260,
+    "text": "IRANIAN",
+    "confidence": 0.9929476976394653
+  },
+  {
+    "x": 123354,
+    "text": "PRESIDENT'S",
+    "confidence": 0.6661617159843445
+  },
+  {
+    "x": 123495,
+    "text": "OFFICE:",
+    "confidence": 0.9961426854133606
+  },
+  {
+    "x": 123583,
+    "text": "HORMUZ",
+    "confidence": 0.9998561143875122
+  },
+  {
+    "x": 123679,
+    "text": "WILL",
+    "confidence": 0.9994381070137024
+  },
+  {
+    "x": 123732,
+    "text": "REOPEN",
+    "confidence": 0.9979386925697327
+  },
+  {
+    "x": 123826,
+    "text": "ONLY",
+    "confidence": 0.9990915060043335
+  },
+  {
+    "x": 123881,
+    "text": "WHEN",
+    "confidence": 0.997668445110321
+  },
+  {
+    "x": 123931,
+    "text": "-",
+    "confidence": 0.5009198188781738
+  },
+  {
+    "x": 123937,
+    "text": "AA",
+    "confidence": 0.5544965863227844
+  },
+  {
+    "x": 123949,
+    "text": "S",
+    "confidence": 0.5843227505683899
+  },
+  {
+    "x": 123955,
+    "text": "TRANSIT",
+    "confidence": 0.9997029900550842
+  },
+  {
+    "x": 123963,
+    "text": "-",
+    "confidence": 0.8417555689811707
+  },
+  {
+    "x": 124048,
+    "text": "REVENUES",
+    "confidence": 0.9793623685836792
+  },
+  {
+    "x": 124086,
+    "text": "-",
+    "confidence": 0.37084099650382996
+  },
+  {
+    "x": 124110,
+    "text": "hhi",
+    "confidence": 0.4381776452064514
+  },
+  {
+    "x": 124119,
+    "text": "W",
+    "confidence": 0.40575170516967773
+  },
+  {
+    "x": 124163,
+    "text": "COMPENSATE",
+    "confidence": 0.9813263416290283
+  },
+  {
+    "x": 124315,
+    "text": "WAR",
+    "confidence": 0.5886921882629395
+  },
+  {
+    "x": 124368,
+    "text": "DAMAGES",
+    "confidence": 0.9997009038925171
+  },
+  {
+    "x": 124479,
+    "text": "IAS",
+    "confidence": 0.99908447265625
+  },
+  {
+    "x": 124517,
+    "text": "TARGETED",
+    "confidence": 0.9933286905288696
+  },
+  {
+    "x": 124631,
+    "text": "PETROCHEMICAL",
+    "confidence": 0.9988884329795837
+  },
+  {
+    "x": 124807,
+    "text": "PLANTS",
+    "confidence": 0.9701667428016663
+  },
+  {
+    "x": 124898,
+    "text": "IN",
+    "confidence": 0.9915341734886169
+  },
+  {
+    "x": 124927,
+    "text": "UAE,",
+    "confidence": 0.998205304145813
+  },
+  {
+    "x": 124980,
+    "text": "KUWAIT",
+    "confidence": 0.999739944934845
+  },
+  {
+    "x": 125071,
+    "text": "AND",
+    "confidence": 0.9999815225601196
+  },
+  {
+    "x": 125121,
+    "text": "BAHRAIN",
+    "confidence": 0.998695433139801
+  },
+  {
+    "x": 125232,
+    "text": "-",
+    "confidence": 0.6424704790115356
+  },
+  {
+    "x": 125255,
+    "text": "OATAR'SFOREIGN",
+    "confidence": 0.646935224533081
+  },
+  {
+    "x": 125446,
+    "text": "MINISTER",
+    "confidence": 0.9921112060546875
+  },
+  {
+    "x": 125560,
+    "text": "EXPRESSES",
+    "confidence": 0.7126877903938293
+  },
+  {
+    "x": 125686,
+    "text": "SOL",
+    "confidence": 0.9964383840560913
+  },
+  {
+    "x": 125721,
+    "text": "IDARITY",
+    "confidence": 0.9748896956443787
+  },
+  {
+    "x": 125815,
+    "text": "WITH",
+    "confidence": 0.9996880292892456
+  },
+  {
+    "x": 125874,
+    "text": "KUWAIT",
+    "confidence": 0.9996834993362427
+  },
+  {
+    "x": 125964,
+    "text": "AFER",
+    "confidence": 0.9999502897262573
+  },
+  {
+    "x": 126023,
+    "text": "IRANIAN",
+    "confidence": 0.9988481998443604
+  },
+  {
+    "x": 126114,
+    "text": "ATTACKS",
+    "confidence": 0.9983351826667786
+  },
+  {
+    "x": 126216,
+    "text": "ON",
+    "confidence": 0.9979402422904968
+  },
+  {
+    "x": 126251,
+    "text": "ENERGYFACILTIES",
+    "confidence": 0.5146526098251343
+  },
+  {
+    "x": 126325,
+    "text": "NS",
+    "confidence": 0.4778491258621216
+  },
+  {
+    "x": 126325,
+    "text": "y",
+    "confidence": 0.42643606662750244
+  },
+  {
+    "x": 126500,
+    "text": "EIGHT",
+    "confidence": 0.9995819926261902
+  },
+  {
+    "x": 126568,
+    "text": "OPEC+",
+    "confidence": 0.9860047698020935
+  },
+  {
+    "x": 126632,
+    "text": "-",
+    "confidence": 0.3966715931892395
+  },
+  {
+    "x": 126638,
+    "text": "COUNTRIES",
+    "confidence": 0.9570931196212769
+  },
+  {
+    "x": 126764,
+    "text": "AGREE",
+    "confidence": 0.999497652053833
+  },
+  {
+    "x": 126840,
+    "text": "TO",
+    "confidence": 0.9997984766960144
+  },
+  {
+    "x": 126873,
+    "text": "INCREASE",
+    "confidence": 0.9930417537689209
+  },
+  {
+    "x": 126984,
+    "text": "OIL",
+    "confidence": 0.9926117062568665
+  },
+  {
+    "x": 127022,
+    "text": "PRODUCTION",
+    "confidence": 0.9903193712234497
+  },
+  {
+    "x": 127163,
+    "text": "QUOTAS_BY",
+    "confidence": 0.8033061623573303
+  },
+  {
+    "x": 127286,
+    "text": "206,",
+    "confidence": 0.9940639138221741
+  },
+  {
+    "x": 127330,
+    "text": ",000",
+    "confidence": 0.999874472618103
+  },
+  {
+    "x": 127379,
+    "text": "BARRELS",
+    "confidence": 0.8432288765907288
+  },
+  {
+    "x": 127458,
+    "text": "3",
+    "confidence": 0.4533146321773529
+  },
+  {
+    "x": 127482,
+    "text": "PER",
+    "confidence": 0.9999839067459106
+  },
+  {
+    "x": 127526,
+    "text": "DAYFROMMAY",
+    "confidence": 0.970463752746582
+  },
+  {
+    "x": 128039,
+    "text": "TOSTRIKE",
+    "confidence": 0.8887662887573242
+  },
+  {
+    "x": 128156,
+    "text": "BERUT.MALLINCATLEAST",
+    "confidence": 0.3860504627227783
+  },
+  {
+    "x": 128443,
+    "text": "FIVE",
+    "confidence": 0.9986333250999451
+  },
+  {
+    "x": 128487,
+    "text": "PEOPLE",
+    "confidence": 0.9990636706352234
+  },
+  {
+    "x": 128581,
+    "text": "AND",
+    "confidence": 0.9053875803947449
+  },
+  {
+    "x": 128627,
+    "text": "INJURING",
+    "confidence": 0.993885338306427
+  },
+  {
+    "x": 128733,
+    "text": "DOZENS",
+    "confidence": 0.998651921749115
+  },
+  {
+    "x": 128833,
+    "text": "-",
+    "confidence": 0.6030665636062622
+  },
+  {
+    "x": 128859,
+    "text": "ISRAELKE",
+    "confidence": 0.8952631950378418
+  },
+  {
+    "x": 129210,
+    "text": "KILLSSEVENPEOPLE,",
+    "confidence": 0.38154587149620056
+  },
+  {
+    "x": 129445,
+    "text": "INCLUDING",
+    "confidence": 0.9553369283676147
+  },
+  {
+    "x": 129562,
+    "text": "FOUR.VEAR-OLDGIRL",
+    "confidence": 0.5041685104370117
+  },
+  {
+    "x": 129837,
+    "text": "LEBANON'SHEALTHI",
+    "confidence": 0.6134328246116638
+  },
+  {
+    "x": 130042,
+    "text": "MINISTRY:1.461PED,",
+    "confidence": 0.622282862663269
+  },
+  {
+    "x": 130277,
+    "text": "AND,430",
+    "confidence": 0.8535425066947937
+  },
+  {
+    "x": 130376,
+    "text": "MOUMOIONISRALUATTACAS",
+    "confidence": 0.3477536141872406
+  },
+  {
+    "x": 130708,
+    "text": "SINCE",
+    "confidence": 0.9943262934684753
+  },
+  {
+    "x": 130772,
+    "text": "START",
+    "confidence": 0.9989126920700073
+  },
+  {
+    "x": 130845,
+    "text": "OF",
+    "confidence": 0.9998155236244202
+  },
+  {
+    "x": 130880,
+    "text": "WAR",
+    "confidence": 0.9948487281799316
+  },
+  {
+    "x": 130936,
+    "text": "DICSSAYISRAELI,",
+    "confidence": 0.6006283760070801
+  },
+  {
+    "x": 131126,
+    "text": "AIR",
+    "confidence": 0.9999680519104004
+  },
+  {
+    "x": 131165,
+    "text": "STRIKE",
+    "confidence": 0.9773978590965271
+  },
+  {
+    "x": 131244,
+    "text": "KILLEDFOUR",
+    "confidence": 0.9899373054504395
+  },
+  {
+    "x": 131387,
+    "text": "PALESTINIANS",
+    "confidence": 0.9009831547737122
+  },
+  {
+    "x": 131545,
+    "text": "IN",
+    "confidence": 0.9962294697761536
+  },
+  {
+    "x": 131572,
+    "text": "NORTHERN",
+    "confidence": 0.9959266185760498
+  },
+  {
+    "x": 131689,
+    "text": "GAZASTRIP",
+    "confidence": 0.9863320589065552
+  },
+  {
+    "x": 131821,
+    "text": "DESPITE",
+    "confidence": 0.9999419450759888
+  },
+  {
+    "x": 131912,
+    "text": "CEASEFIRE",
+    "confidence": 0.98715740442276
+  },
+  {
+    "x": 132046,
+    "text": "-",
+    "confidence": 0.7135512828826904
+  },
+  {
+    "x": 132076,
+    "text": "HAMAS",
+    "confidence": 0.9982537627220154
+  },
+  {
+    "x": 132155,
+    "text": "SAYSIT",
+    "confidence": 0.9865509271621704
+  },
+  {
+    "x": 132240,
+    "text": "WILLBECAUSE",
+    "confidence": 0.9765667915344238
+  },
+  {
+    "x": 132392,
+    "text": "PALESTINIANS",
+    "confidence": 0.8624942898750305
+  },
+  {
+    "x": 132547,
+    "text": "CONTINUE",
+    "confidence": 0.9589993357658386
+  },
+  {
+    "x": 132659,
+    "text": "TO",
+    "confidence": 0.737419605255127
+  },
+  {
+    "x": 132697,
+    "text": "BE",
+    "confidence": 0.9997515082359314
+  },
+  {
+    "x": 132726,
+    "text": "TARGETEDBY!",
+    "confidence": 0.8674495816230774
+  },
+  {
+    "x": 132873,
+    "text": "ISRAEL",
+    "confidence": 0.9995840191841125
+  },
+  {
+    "x": 132955,
+    "text": "IN",
+    "confidence": 0.994976282119751
+  },
+  {
+    "x": 132984,
+    "text": "THE",
+    "confidence": 0.9997738003730774
+  },
+  {
+    "x": 133028,
+    "text": "GAZASTRIP",
+    "confidence": 0.6844701766967773
+  },
+  {
+    "x": 133204,
+    "text": "GAZA",
+    "confidence": 0.9967294931411743
+  },
+  {
+    "x": 133262,
+    "text": "HEALTH",
+    "confidence": 0.9992521405220032
+  },
+  {
+    "x": 133350,
+    "text": "MINISTRY:716",
+    "confidence": 0.9944925308227539
+  },
+  {
+    "x": 133502,
+    "text": "PALESTINIANS.LED:",
+    "confidence": 0.8565713763237
+  },
+  {
+    "x": 133716,
+    "text": "IN",
+    "confidence": 0.9923946857452393
+  },
+  {
+    "x": 133746,
+    "text": "ISRAEIATTACKS",
+    "confidence": 0.9409877061843872
+  },
+  {
+    "x": 133927,
+    "text": "SINCE",
+    "confidence": 0.9939087629318237
+  },
+  {
+    "x": 133983,
+    "text": "CEASEFIRE",
+    "confidence": 0.6989443302154541
+  },
+  {
+    "x": 134112,
+    "text": "STARTED/INOCTOBER",
+    "confidence": 0.4957004487514496
+  },
+  {
+    "x": 134387,
+    "text": "OAAMAETMMMSTR.Z232",
+    "confidence": 0.36361151933670044
+  },
+  {
+    "x": 134724,
+    "text": "PALESTINIANS",
+    "confidence": 0.9780476689338684
+  },
+  {
+    "x": 134882,
+    "text": "KILLEDIN",
+    "confidence": 0.7825415134429932
+  },
+  {
+    "x": 134991,
+    "text": "ISRAELIATTACKS",
+    "confidence": 0.8144528865814209
+  },
+  {
+    "x": 135184,
+    "text": "SINCE",
+    "confidence": 0.9780580401420593
+  },
+  {
+    "x": 135249,
+    "text": "OCTOBER:2023",
+    "confidence": 0.9727881550788879
+  },
+  {
+    "x": 135448,
+    "text": "ISRAELIFORCESAND:",
+    "confidence": 0.5014331340789795
+  },
+  {
+    "x": 135673,
+    "text": "SETTLERSHAVE",
+    "confidence": 0.9866055846214294
+  },
+  {
+    "x": 135846,
+    "text": "KILLED",
+    "confidence": 0.8417533040046692
+  },
+  {
+    "x": 135931,
+    "text": "1.138PALESTINIANS",
+    "confidence": 0.4954146146774292
+  },
+  {
+    "x": 136151,
+    "text": "IN",
+    "confidence": 0.9984142780303955
+  },
+  {
+    "x": 136177,
+    "text": "OCCUPIEDWEST",
+    "confidence": 0.6289446949958801
+  },
+  {
+    "x": 136356,
+    "text": "BANK",
+    "confidence": 0.916540265083313
+  },
+  {
+    "x": 136420,
+    "text": "SINCE",
+    "confidence": 0.9879974126815796
+  },
+  {
+    "x": 136482,
+    "text": "OCTOBER2023",
+    "confidence": 0.8327902555465698
+  },
+  {
+    "x": 136655,
+    "text": ".",
+    "confidence": 0.5388893485069275
+  },
+  {
+    "x": 136684,
+    "text": "D.R.",
+    "confidence": 0.998742401599884
+  },
+  {
+    "x": 136725,
+    "text": "CONCOTOTEMPORARILY",
+    "confidence": 0.4444374740123749
+  },
+  {
+    "x": 136989,
+    "text": "ACCEPT",
+    "confidence": 0.992428719997406
+  },
+  {
+    "x": 137077,
+    "text": "DEPORTEDI",
+    "confidence": 0.47273334860801697
+  },
+  {
+    "x": 137188,
+    "text": "NGRANTS",
+    "confidence": 0.7980141043663025
+  },
+  {
+    "x": 137291,
+    "text": "UNDER",
+    "confidence": 0.9995229244232178
+  },
+  {
+    "x": 137373,
+    "text": "NEW",
+    "confidence": 0.9980637431144714
+  },
+  {
+    "x": 137425,
+    "text": "DEAL",
+    "confidence": 0.9998941421508789
+  },
+  {
+    "x": 137487,
+    "text": "WITH",
+    "confidence": 0.9996733665466309
+  },
+  {
+    "x": 137548,
+    "text": "THE",
+    "confidence": 0.9990785121917725
+  },
+  {
+    "x": 137595,
+    "text": "U.S.",
+    "confidence": 0.9526302814483643
+  },
+  {
+    "x": 137677,
+    "text": "RESCUE",
+    "confidence": 0.9966149926185608
+  },
+  {
+    "x": 138134,
+    "text": "MISSINGAT",
+    "confidence": 0.987683117389679
+  },
+  {
+    "x": 138260,
+    "text": "SEAAFTER",
+    "confidence": 0.9781658053398132
+  },
+  {
+    "x": 138386,
+    "text": "32",
+    "confidence": 0.9998321533203125
+  },
+  {
+    "x": 138413,
+    "text": "RESCUED",
+    "confidence": 0.9952611327171326
+  },
+  {
+    "x": 138518,
+    "text": "NEARITALIANCOAST",
+    "confidence": 0.7226978540420532
+  },
+  {
+    "x": 138785,
+    "text": "ARTEMISIIASTRONAUTS",
+    "confidence": 0.7184550762176514
+  },
+  {
+    "x": 139045,
+    "text": "GLIMPSE",
+    "confidence": 0.6178470253944397
+  },
+  {
+    "x": 139145,
+    "text": "MOON'S",
+    "confidence": 0.8698204159736633
+  },
+  {
+    "x": 139236,
+    "text": "GRANDCANYON",
+    "confidence": 0.8414655327796936
+  },
+  {
+    "x": 139415,
+    "text": "AHEAD",
+    "confidence": 0.9999570846557617
+  },
+  {
+    "x": 139494,
+    "text": "OF",
+    "confidence": 0.9994638562202454
+  },
+  {
+    "x": 139523,
+    "text": "MISTORICLUNARFAVBY",
+    "confidence": 0.31325823068618774
+  },
+  {
+    "x": 139819,
+    "text": "FOMORE",
+    "confidence": 0.984351396560669
+  },
+  {
+    "x": 139913,
+    "text": "GOTOALJAZEERA.COM",
+    "confidence": 0.5282544493675232
+  },
+  {
+    "x": 140173,
+    "text": "-",
+    "confidence": 0.5250308513641357
+  },
+  {
+    "x": 140200,
+    "text": "TRUMP",
+    "confidence": 0.9340124726295471
+  },
+  {
+    "x": 140280,
+    "text": "THREATENS",
+    "confidence": 0.9995331764221191
+  },
+  {
+    "x": 140410,
+    "text": "STRIKESON",
+    "confidence": 0.9607976675033569
+  },
+  {
+    "x": 140541,
+    "text": "IRAN'S",
+    "confidence": 0.9278882145881653
+  },
+  {
+    "x": 140616,
+    "text": "POWER",
+    "confidence": 0.9998562335968018
+  },
+  {
+    "x": 140699,
+    "text": "PLANTS",
+    "confidence": 0.999372661113739
+  },
+  {
+    "x": 140785,
+    "text": "IF",
+    "confidence": 0.9997449517250061
+  },
+  {
+    "x": 140811,
+    "text": "HORMUZIS",
+    "confidence": 0.9145859479904175
+  },
+  {
+    "x": 140933,
+    "text": "NOT",
+    "confidence": 0.997490644454956
+  },
+  {
+    "x": 140983,
+    "text": "OPENED",
+    "confidence": 0.9038426876068115
+  },
+  {
+    "x": 141074,
+    "text": "BY",
+    "confidence": 0.999876856803894
+  },
+  {
+    "x": 141105,
+    "text": "0000",
+    "confidence": 0.9947874546051025
+  },
+  {
+    "x": 141165,
+    "text": "GMT",
+    "confidence": 0.9852485060691833
+  },
+  {
+    "x": 141215,
+    "text": "WEDNESDAY",
+    "confidence": 0.9999217987060547
+  },
+  {
+    "x": 141360,
+    "text": "-",
+    "confidence": 0.9732764959335327
+  },
+  {
+    "x": 141392,
+    "text": "IRANSPARLIAMENT",
+    "confidence": 0.5140680074691772
+  },
+  {
+    "x": 141610,
+    "text": "SPEAKER",
+    "confidence": 0.9998088479042053
+  },
+  {
+    "x": 141712,
+    "text": "WARNS",
+    "confidence": 0.9941869974136353
+  },
+  {
+    "x": 141792,
+    "text": "TRUMP'S",
+    "confidence": 0.9839135408401489
+  },
+  {
+    "x": 141797,
+    "text": "TRUMP'S",
+    "confidence": 0.6146608591079712
+  },
+  {
+    "x": 141896,
+    "text": "RECKLESS",
+    "confidence": 0.8142328858375549
+  },
+  {
+    "x": 141898,
+    "text": "RECKLESS",
+    "confidence": 0.9526999592781067
+  },
+  {
+    "x": 142011,
+    "text": "MOVES'",
+    "confidence": 0.750298798084259
+  },
+  {
+    "x": 142018,
+    "text": "MOVES",
+    "confidence": 0.9912958145141602
+  },
+  {
+    "x": 142094,
+    "text": "MEAN",
+    "confidence": 0.9998438358306885
+  },
+  {
+    "x": 142100,
+    "text": "MEAN",
+    "confidence": 0.999889612197876
+  }
+]

@@ -1,5 +1,6 @@
 # ── Large media / data (too big for git) ─────────────
-videos/
+videos/*
+!videos/extract_demo_clip.py
 *.mp4
 *.wav
 *.mp3
@@ -51,6 +52,20 @@ webapp/jobs/*
 !webapp/jobs/.gitkeep
 webapp/frontend/node_modules/
 webapp/frontend/dist/
+
+# ── Defense site (site/) ─────────────────────────────
+site/node_modules/
+site/dist/
+site/.astro/
+site/public/data/
+site/public/video/
+
+# ── Demo clip extracted by videos/extract_demo_clip.py
+videos/demo_clip_30s.mp4
+videos/demo_clip_30s.wav
+
+# ── Thesis poster assets (kept locally only)
+poster/
 
 # ── Logs ─────────────────────────────────────────────
 logs/

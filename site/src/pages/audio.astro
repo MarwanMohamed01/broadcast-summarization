@@ -1,0 +1,42 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SourceVideoStage         from "../../../design-system/components/visual/SourceVideoStage.jsx";
+import AudioExtractStage        from "../../../design-system/components/audio/AudioExtractStage.jsx";
+import ASRStage                 from "../../../design-system/components/audio/ASRStage.jsx";
+import ChunkingStage            from "../../../design-system/components/audio/ChunkingStage.jsx";
+import HierarchicalSummaryStage from "../../../design-system/components/audio/HierarchicalSummaryStage.jsx";
+import LLMFanoutStage           from "../../../design-system/components/visual/LLMFanoutStage.jsx";
+import EvalStage                from "../../../design-system/components/visual/EvalStage.jsx";
+---
+
+<BaseLayout
+  title="Audio pipeline · TV news multimodal extraction"
+  description="Whisper transcription of the spoken broadcast, animated stage by stage."
+>
+  <section class="border-b border-border">
+    <div class="max-w-content mx-auto px-6 pt-20 pb-12">
+      <span class="pill pill-audio mb-4">Audio path</span>
+      <h1 class="text-4xl lg:text-5xl font-semibold tracking-tight">
+        From the soundtrack to a hierarchical summary
+      </h1>
+      <p class="prose-thesis mt-4 max-w-2xl">
+        Five stages on the same broadcast — but only the spoken track.
+        The transcript is too long to summarise in one shot, so the pipeline
+        runs Whisper, splits the result into 15-minute chunks, summarises
+        each chunk, then summarises the summaries.
+      </p>
+    </div>
+  </section>
+
+  <SourceVideoStage           client:load videoSrc="/video/demo_clip_30s.mp4" />
+  <AudioExtractStage          client:load />
+  <ASRStage                   client:load
+                              peaksUrl="/data/audio/peaks.json"
+                              transcriptUrl="/data/transcript/transcript_slice_A.json" />
+  <ChunkingStage              client:load />
+  <HierarchicalSummaryStage   client:load />
+  <LLMFanoutStage             client:load accent="audio" />
+  <EvalStage                  client:load accent="audio"
+                              scoresUrl="/data/stats/eval_scores.json"
+                              variant="asr_final" />
+</BaseLayout>
