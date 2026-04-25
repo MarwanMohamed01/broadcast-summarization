@@ -1,0 +1,58 @@
+{
+  "mode": "chunked",
+  "chunk_minutes": 30,
+  "num_chunks": 30,
+  "total_items_before_merge": 2137,
+  "final_unique_items": 47,
+  "per_chunk_items": [
+    22,
+    12,
+    21,
+    13,
+    19,
+    13,
+    11,
+    16,
+    13,
+    16,
+    12,
+    24,
+    99,
+    116,
+    109,
+    113,
+    122,
+    135,
+    103,
+    100,
+    144,
+    113,
+    121,
+    104,
+    73,
+    85,
+    128,
+    118,
+    145,
+    17
+  ],
+  "video": {
+    "filename": "AlJazeera_14hrs_without_edits.mp4",
+    "duration_seconds": 52392.9,
+    "total_frames": 1571786,
+    "fps": 30.0
+  },
+  "timing": {
+    "total_seconds": 35012.7,
+    "total_formatted": "583m 32s"
+  },
+  "config": {
+    "frame_sample_rate": 5,
+    "ocr_engine": "easyocr",
+    "quality_threshold": 0.86,
+    "max_news_length": 150,
+    "dedup_similarity_threshold": 60,
+    "dedup_partial_threshold": 80,
+    "min_news_length": 20
+  }
+}

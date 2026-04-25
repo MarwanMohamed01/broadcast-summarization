@@ -1,0 +1,293 @@
+{
+  "panorama_segment": "slice_A/segment_000.webp",
+  "segment_size_px": [
+    3000,
+    87
+  ],
+  "engine": "EasyOCR (CRAFT + CRNN, en, CPU)",
+  "preprocessing": "3x cubic upscale before recognition",
+  "confidence_threshold": 0.3,
+  "word_count": 35,
+  "words": [
+    {
+      "x": 0,
+      "y": 33,
+      "w": 53,
+      "h": 25,
+      "text": "TRIP",
+      "confidence": 0.666
+    },
+    {
+      "x": 89,
+      "y": 33,
+      "w": 65,
+      "h": 25,
+      "text": "GAZA",
+      "confidence": 1.0
+    },
+    {
+      "x": 152,
+      "y": 33,
+      "w": 91,
+      "h": 25,
+      "text": "HEALTH",
+      "confidence": 0.995
+    },
+    {
+      "x": 241,
+      "y": 33,
+      "w": 114,
+      "h": 25,
+      "text": "MINISTRY:",
+      "confidence": 0.994
+    },
+    {
+      "x": 354,
+      "y": 33,
+      "w": 46,
+      "h": 25,
+      "text": "716",
+      "confidence": 1.0
+    },
+    {
+      "x": 398,
+      "y": 33,
+      "w": 161,
+      "h": 25,
+      "text": "PALESTINIANS",
+      "confidence": 0.768
+    },
+    {
+      "x": 558,
+      "y": 33,
+      "w": 81,
+      "h": 25,
+      "text": "KILLED",
+      "confidence": 0.911
+    },
+    {
+      "x": 635,
+      "y": 35,
+      "w": 32,
+      "h": 22,
+      "text": "IN",
+      "confidence": 0.999
+    },
+    {
+      "x": 663,
+      "y": 33,
+      "w": 91,
+      "h": 25,
+      "text": "ISRAELI",
+      "confidence": 0.999
+    },
+    {
+      "x": 755,
+      "y": 33,
+      "w": 102,
+      "h": 25,
+      "text": "ATTACKS",
+      "confidence": 0.946
+    },
+    {
+      "x": 855,
+      "y": 33,
+      "w": 70,
+      "h": 25,
+      "text": "SINCE",
+      "confidence": 0.995
+    },
+    {
+      "x": 923,
+      "y": 33,
+      "w": 121,
+      "h": 25,
+      "text": "CEASEFIRE",
+      "confidence": 0.989
+    },
+    {
+      "x": 1045,
+      "y": 33,
+      "w": 103,
+      "h": 25,
+      "text": "STARTED",
+      "confidence": 0.999
+    },
+    {
+      "x": 1146,
+      "y": 35,
+      "w": 29,
+      "h": 22,
+      "text": "IN",
+      "confidence": 1.0
+    },
+    {
+      "x": 1174,
+      "y": 33,
+      "w": 103,
+      "h": 25,
+      "text": "OCTOBER",
+      "confidence": 0.987
+    },
+    {
+      "x": 1301,
+      "y": 33,
+      "w": 62,
+      "h": 25,
+      "text": "GAZA",
+      "confidence": 0.975
+    },
+    {
+      "x": 1362,
+      "y": 33,
+      "w": 90,
+      "h": 25,
+      "text": "HEALTH",
+      "confidence": 0.993
+    },
+    {
+      "x": 1451,
+      "y": 33,
+      "w": 114,
+      "h": 25,
+      "text": "MINISTRY:",
+      "confidence": 0.971
+    },
+    {
+      "x": 1563,
+      "y": 32,
+      "w": 79,
+      "h": 28,
+      "text": "72,292",
+      "confidence": 0.997
+    },
+    {
+      "x": 1638,
+      "y": 32,
+      "w": 164,
+      "h": 28,
+      "text": "PALESTINIANS",
+      "confidence": 1.0
+    },
+    {
+      "x": 1798,
+      "y": 33,
+      "w": 83,
+      "h": 25,
+      "text": "KILLED",
+      "confidence": 0.983
+    },
+    {
+      "x": 1877,
+      "y": 33,
+      "w": 32,
+      "h": 25,
+      "text": "IN",
+      "confidence": 0.999
+    },
+    {
+      "x": 1905,
+      "y": 32,
+      "w": 94,
+      "h": 28,
+      "text": "ISRAELI",
+      "confidence": 0.999
+    },
+    {
+      "x": 1994,
+      "y": 33,
+      "w": 105,
+      "h": 25,
+      "text": "ATTACKS",
+      "confidence": 0.914
+    },
+    {
+      "x": 2097,
+      "y": 32,
+      "w": 68,
+      "h": 28,
+      "text": "SINCE",
+      "confidence": 0.995
+    },
+    {
+      "x": 2165,
+      "y": 33,
+      "w": 103,
+      "h": 25,
+      "text": "OCTOBER",
+      "confidence": 0.871
+    },
+    {
+      "x": 2268,
+      "y": 32,
+      "w": 59,
+      "h": 28,
+      "text": "2023",
+      "confidence": 1.0
+    },
+    {
+      "x": 2360,
+      "y": 33,
+      "w": 93,
+      "h": 25,
+      "text": "ISRAELI",
+      "confidence": 0.998
+    },
+    {
+      "x": 2449,
+      "y": 33,
+      "w": 60,
+      "h": 25,
+      "text": "RCES",
+      "confidence": 0.996
+    },
+    {
+      "x": 2510,
+      "y": 33,
+      "w": 49,
+      "h": 25,
+      "text": "AND",
+      "confidence": 1.0
+    },
+    {
+      "x": 2557,
+      "y": 33,
+      "w": 114,
+      "h": 25,
+      "text": "SETTLERS",
+      "confidence": 0.999
+    },
+    {
+      "x": 2669,
+      "y": 33,
+      "w": 65,
+      "h": 25,
+      "text": "HAVE",
+      "confidence": 0.999
+    },
+    {
+      "x": 2733,
+      "y": 33,
+      "w": 81,
+      "h": 25,
+      "text": "KILLED",
+      "confidence": 0.779
+    },
+    {
+      "x": 2812,
+      "y": 32,
+      "w": 68,
+      "h": 28,
+      "text": "1,138",
+      "confidence": 1.0
+    },
+    {
+      "x": 2876,
+      "y": 33,
+      "w": 123,
+      "h": 25,
+      "text": "PALESTINIA",
+      "confidence": 0.913
+    }
+  ]
+}

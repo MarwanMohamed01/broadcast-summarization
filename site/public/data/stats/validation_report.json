@@ -1,0 +1,362 @@
+{
+  "validation_timestamp": "2026-04-11T22:42:17.023554",
+  "ground_truth": {
+    "slice_A": {
+      "file": "C:\\Users\\lenovo\\Desktop\\GIU Berlin\\Masters\\ticker_extraction\\validation\\ground_truth\\slice_A_headlines.txt",
+      "count": 27
+    },
+    "slice_B": {
+      "file": "C:\\Users\\lenovo\\Desktop\\GIU Berlin\\Masters\\ticker_extraction\\validation\\ground_truth\\slice_B_headlines.txt",
+      "count": 28
+    },
+    "combined_unique": 39
+  },
+  "stages": {
+    "raw_v6": {
+      "file": "C:\\Users\\lenovo\\Desktop\\GIU Berlin\\Masters\\ticker_extraction\\ticker_extraction_v6\\output\\final\\news_items.json",
+      "item_count": 48
+    },
+    "llm_cleaned": {
+      "file": "C:\\Users\\lenovo\\Desktop\\GIU Berlin\\Masters\\ticker_extraction\\ticker_extraction_v6\\output\\final\\news_items_cleaned.json",
+      "item_count": 38
+    }
+  },
+  "thresholds": [
+    60,
+    70,
+    80
+  ],
+  "results": [
+    {
+      "stage": "raw_v6",
+      "slice": "slice_A",
+      "gt_count": 27,
+      "extracted_count": 48,
+      "thresholds": {
+        "60": {
+          "tp_gt": 27,
+          "tp_ext": 32,
+          "fn": 0,
+          "fp": 16,
+          "precision": 0.6667,
+          "recall": 1.0,
+          "f1": 0.8
+        },
+        "70": {
+          "tp_gt": 26,
+          "tp_ext": 28,
+          "fn": 1,
+          "fp": 20,
+          "precision": 0.5833,
+          "recall": 0.963,
+          "f1": 0.7265
+        },
+        "80": {
+          "tp_gt": 23,
+          "tp_ext": 23,
+          "fn": 4,
+          "fp": 25,
+          "precision": 0.4792,
+          "recall": 0.8519,
+          "f1": 0.6133
+        }
+      },
+      "exact_matches": 7,
+      "coverage_at_50_pct": 27,
+      "avg_cer_at_70": 0.2026,
+      "avg_wer_at_70": 0.3104,
+      "missed_headlines": [
+        "LEBANESE HEALTH MINISTRY: FOUR PEOPLE KILLED AND 39 INJURED IN ISRAELI RAID ON JNAH AREA SOUTH OF BEIRUT"
+      ],
+      "false_positive_count": 20,
+      "false_positives_sample": [
+        "PRESIDENT TRUMP TELLS U.S. MEDIA THAT DEAL IS POSSIBLE BY MONDAY AS IRAN 'NEGOTIATING NOW'",
+        "IRAMN FOREIGN MINISTRY SPOKESMAN SAYS U.S. HAS DESTROYED DIFROCEUS IS ON DEFENCE OF NATION",
+        "IRAN SAYS U.S.-ISRAELI STRIKE HASLLED 13 PEOPLE IN A RESIDENTIAL AREA SOUTHWEST OF TEHRAN",
+        "SIXEOPLE INJURED BY MISSILE INTERCEPTION DEBRIS IN RESIDENTIAL AREA OF NORI : HEALTH MINIST",
+        "IAADMRHIEISS WCLEMDOGJF INACTI WANRISK FROM ATTACKS ON BUSF 1 ATTACKS ON BUSHEHR POWER PLANTS",
+        "FOR MORE GO TO / IRAN'S REVOLUTIONARY GUARD ANNOUNCESEATH OF INTELLIGENCE CHIEF NADEMI",
+        "IRAN SAYS STRUCK U.S. FORCES RELOCATED ON KUWAIT'S BUBIYAN ISLANDOPLE INJURED BY MISSILE INTERCE",
+        "ISRAELI ARMY ATTACK KiLLS WORLD HEALTH ORGANIZATION DRIVER IN GAZA",
+        "IRAN'S Re ATTACK ON ISRAELI-Linked Ship Off COAST Of UAE",
+        "QATARI PRIME MINISTER PRESSES FOR 'PEACEFUL MEANS' TO RESOLVE MIDDLE EAST CON E MIDDLE EAST CONFLICT"
+      ]
+    },
+    {
+      "stage": "raw_v6",
+      "slice": "slice_B",
+      "gt_count": 28,
+      "extracted_count": 48,
+      "thresholds": {
+        "60": {
+          "tp_gt": 28,
+          "tp_ext": 33,
+          "fn": 0,
+          "fp": 15,
+          "precision": 0.6875,
+          "recall": 1.0,
+          "f1": 0.8148
+        },
+        "70": {
+          "tp_gt": 28,
+          "tp_ext": 29,
+          "fn": 0,
+          "fp": 19,
+          "precision": 0.6042,
+          "recall": 1.0,
+          "f1": 0.7532
+        },
+        "80": {
+          "tp_gt": 24,
+          "tp_ext": 22,
+          "fn": 4,
+          "fp": 26,
+          "precision": 0.4583,
+          "recall": 0.8571,
+          "f1": 0.5973
+        }
+      },
+      "exact_matches": 5,
+      "coverage_at_50_pct": 28,
+      "avg_cer_at_70": 0.2525,
+      "avg_wer_at_70": 0.371,
+      "missed_headlines": [],
+      "false_positive_count": 19,
+      "false_positives_sample": [
+        "PRESIDENT TRUMP TELLS U.S. MEDIA THAT DEAL IS POSSIBLE BY MONDAY AS IRAN 'NEGOTIATING NOW'",
+        "IRAN'S PARLIAMENT SPEAKER WARNS TRUMP'S 'RECKLESS MOVES' MEAN 'WHOLE REGION GOING TO BURN'",
+        "IRANIAN MEDIA SAY SENIOR IRANIAN MILITARY COMMANDER HAS BEEN KILLED IN U.S-ISRAELI ATTACKS",
+        "QATAR'S FOREIGN MINISTERS OLIDARITY With KUWAiT AfteR IRANIAN ATTACKS ON ENERGY FACILITIES",
+        "IRANIAN PRESIDENT'S OFFICE: HORMUZ WILL RILY WHEN TRANSIT REVENUES COMPENSATE WAR DAMAGES",
+        "IRAN SAYS U.S.-ISRAELI STRIKE HASLLED 13 PEOPLE IN A RESIDENTIAL AREA SOUTHWEST OF TEHRAN",
+        "FOR MORE GCERA.CON SAY: To UN URGES WORLD To PREVENT 'ATROcIOUS AcTS' AFTER TRUMP THREATS",
+        "MEDICS SAYSAY ISAY ISMAY ISRa ISRAELKKE KILLED FOUR PALESN NORTHERN GAZA Strip DESPITE CEASEI",
+        "IAADMRHIEISS WCLEMDOGJF INACTI WANRISK FROM ATTACKS ON BUSF 1 ATTACKS ON BUSHEHR POWER PLANTS",
+        "LEBANESE ARMY SAYS ONE SOLDIER KILLED IN ISRAESORN LEBANON"
+      ]
+    },
+    {
+      "stage": "raw_v6",
+      "slice": "combined",
+      "gt_count": 39,
+      "extracted_count": 48,
+      "thresholds": {
+        "60": {
+          "tp_gt": 39,
+          "tp_ext": 41,
+          "fn": 0,
+          "fp": 7,
+          "precision": 0.8542,
+          "recall": 1.0,
+          "f1": 0.9213
+        },
+        "70": {
+          "tp_gt": 38,
+          "tp_ext": 36,
+          "fn": 1,
+          "fp": 12,
+          "precision": 0.75,
+          "recall": 0.9744,
+          "f1": 0.8476
+        },
+        "80": {
+          "tp_gt": 33,
+          "tp_ext": 29,
+          "fn": 6,
+          "fp": 19,
+          "precision": 0.6042,
+          "recall": 0.8462,
+          "f1": 0.705
+        }
+      },
+      "exact_matches": 7,
+      "coverage_at_50_pct": 39,
+      "avg_cer_at_70": 0.234,
+      "avg_wer_at_70": 0.3587,
+      "missed_headlines": [
+        "LEBANESE HEALTH MINISTRY: FOUR PEOPLE KILLED AND 39 INJURED IN ISRAELI RAID ON JNAH AREA SOUTH OF BEIRUT"
+      ],
+      "false_positive_count": 12,
+      "false_positives_sample": [
+        "PRESIDENT TRUMP TELLS U.S. MEDIA THAT DEAL IS POSSIBLE BY MONDAY AS IRAN 'NEGOTIATING NOW'",
+        "IRAN SAYS U.S.-ISRAELI STRIKE HASLLED 13 PEOPLE IN A RESIDENTIAL AREA SOUTHWEST OF TEHRAN",
+        "IAADMRHIEISS WCLEMDOGJF INACTI WANRISK FROM ATTACKS ON BUSF 1 ATTACKS ON BUSHEHR POWER PLANTS",
+        "IRAN'S Re ATTACK ON ISRAELI-Linked Ship Off COAST Of UAE",
+        "5 INFRASTRUCTURE SECUNDPHASE IN JANUARY BUiPRUGRESSSIALLED",
+        "IRAN'S REVOLUTIONARY GUARD SAYS It HAS TARGETEDCHEMIcES SOLIDAF 4 T NEIC; 4# IOUNTRIES AGREE OIL PQUOTAS BY 206,000 BAF MAYIFE SOLDIER KILLED IN ISRAELI ATTACK IN SOUTHERN LEBANON",
+        "RILCUETREASADIBEIR , KI FIPN(IRAIFEU EION KILLISEVIEI AR-OBAH MINI: PEIN) WIERTTSIIART OF WWORLHIOGANIZATION DRIVER SHOT & KILLED BY ISRAELI ARMN CA",
+        "D.R, CONGO To TEMPORARILY AccEPT DEPORTED MIGRAEVIT HARITIES SAY 14 AT SEA AFTER 32 RESCUED NEAR ITALIAN COAST; Il ASTRONAUTS GLIMION'S 'GRANDI OF LUNAR FLYBY",
+        "IRAN'S MISSION TO UN URGES WORLD TO PRE",
+        "AT LEAST Fr D After IRANIAII F HAIFA"
+      ]
+    },
+    {
+      "stage": "llm_cleaned",
+      "slice": "slice_A",
+      "gt_count": 27,
+      "extracted_count": 38,
+      "thresholds": {
+        "60": {
+          "tp_gt": 25,
+          "tp_ext": 28,
+          "fn": 2,
+          "fp": 10,
+          "precision": 0.7368,
+          "recall": 0.9259,
+          "f1": 0.8206
+        },
+        "70": {
+          "tp_gt": 24,
+          "tp_ext": 24,
+          "fn": 3,
+          "fp": 14,
+          "precision": 0.6316,
+          "recall": 0.8889,
+          "f1": 0.7385
+        },
+        "80": {
+          "tp_gt": 23,
+          "tp_ext": 22,
+          "fn": 4,
+          "fp": 16,
+          "precision": 0.5789,
+          "recall": 0.8519,
+          "f1": 0.6894
+        }
+      },
+      "exact_matches": 12,
+      "coverage_at_50_pct": 26,
+      "avg_cer_at_70": 0.1115,
+      "avg_wer_at_70": 0.1622,
+      "missed_headlines": [
+        "D.R. CONGO TO TEMPORARILY ACCEPT DEPORTED MIGRANTS UNDER NEW DEAL WITH THE U.S.",
+        "IRANIAN AUTHORITIES: 2,076 PEOPLE KILLED AND 26,500 INJURED IN U.S.-ISRAELI STRIKES SINCE FEBRUARY 28",
+        "ISRAELI AIR STRIKE ON SOUTHERN LEBANON KILLS SEVEN PEOPLE, INCLUDING FOUR-YEAR-OLD GIRL"
+      ],
+      "false_positive_count": 14,
+      "false_positives_sample": [
+        "PRESIDENT TRUMP TELLS U.S. MEDIA THAT DEAL IS POSSIBLE BY MONDAY AS IRAN 'NEGOTIATING NOW'",
+        "IRAN FOREIGN MINISTRY SPOKESMAN SAYS U.S. HAS DESTROYED DIPLOMATIC PROCESSES ON DEFENCE OF NATION",
+        "IRAN SAYS U.S.-ISRAELI STRIKE HAS KILLED 13 PEOPLE IN A RESIDENTIAL AREA SOUTHWEST OF TEHRAN",
+        "SIX PEOPLE INJURED BY MISSILE INTERCEPTION DEBRIS IN RESIDENTIAL AREA OF NORI: HEALTH MINISTRY",
+        "IRAN'S REVOLUTIONARY GUARD ANNOUNCES DEATH OF INTELLIGENCE CHIEF NADEMI",
+        "IRAN SAYS STRUCK U.S. FORCES RELOCATED ON KUWAIT'S BUBIYAN ISLAND",
+        "ISRAELI ARMY ATTACK KILLS WORLD HEALTH ORGANIZATION DRIVER IN GAZA",
+        "IRAN'S REPORTED ATTACK ON ISRAELI-LINKED SHIP OFF COAST OF UAE",
+        "QATARI PRIME MINISTER PRESSES FOR 'PEACEFUL MEANS' TO RESOLVE MIDDLE EAST CONFLICT",
+        "IRAN'S ATOMIC ENERGY CHIEF ACCUSES UN NUCLEAR WATCHDOG OF INACTION; WARNS OF RISK FROM ATTACK"
+      ]
+    },
+    {
+      "stage": "llm_cleaned",
+      "slice": "slice_B",
+      "gt_count": 28,
+      "extracted_count": 38,
+      "thresholds": {
+        "60": {
+          "tp_gt": 26,
+          "tp_ext": 29,
+          "fn": 2,
+          "fp": 9,
+          "precision": 0.7632,
+          "recall": 0.9286,
+          "f1": 0.8378
+        },
+        "70": {
+          "tp_gt": 25,
+          "tp_ext": 25,
+          "fn": 3,
+          "fp": 13,
+          "precision": 0.6579,
+          "recall": 0.8929,
+          "f1": 0.7576
+        },
+        "80": {
+          "tp_gt": 25,
+          "tp_ext": 23,
+          "fn": 3,
+          "fp": 15,
+          "precision": 0.6053,
+          "recall": 0.8929,
+          "f1": 0.7215
+        }
+      },
+      "exact_matches": 11,
+      "coverage_at_50_pct": 27,
+      "avg_cer_at_70": 0.1363,
+      "avg_wer_at_70": 0.1799,
+      "missed_headlines": [
+        "IRANIAN AUTHORITIES: 2,076 PEOPLE KILLED AND 26,500 INJURED IN U.S.-ISRAELI STRIKES SINCE FEBRUARY 28",
+        "ISRAELI AIR STRIKE ON SOUTHERN LEBANON KILLS SEVEN PEOPLE, INCLUDING FOUR-YEAR-OLD GIRL",
+        "D.R. CONGO TO TEMPORARILY ACCEPT DEPORTED MIGRANTS UNDER NEW DEAL WITH THE U.S."
+      ],
+      "false_positive_count": 13,
+      "false_positives_sample": [
+        "PRESIDENT TRUMP TELLS U.S. MEDIA THAT DEAL IS POSSIBLE BY MONDAY AS IRAN 'NEGOTIATING NOW'",
+        "IRAN'S PARLIAMENT SPEAKER WARNS TRUMP'S 'RECKLESS MOVES' MEAN 'WHOLE REGION GOING TO BURN'",
+        "IRANIAN MEDIA SAY SENIOR IRANIAN MILITARY COMMANDER HAS BEEN KILLED IN U.S-ISRAELI ATTACKS",
+        "QATAR'S FOREIGN MINISTER'S SOLIDARITY WITH KUWAIT AFTER IRANIAN ATTACKS ON ENERGY FACILITIES",
+        "IRANIAN PRESIDENT'S OFFICE: HORMUZ WILL REOPEN WHEN TRANSIT REVENUES COMPENSATE WAR DAMAGES",
+        "IRAN SAYS U.S.-ISRAELI STRIKE HAS KILLED 13 PEOPLE IN A RESIDENTIAL AREA SOUTHWEST OF TEHRAN",
+        "UN URGES WORLD TO PREVENT 'ATROCIOUS ACTS' AFTER TRUMP THREATS",
+        "MEDICS SAY ISRAEL KILLED FOUR PALESTINIANS IN NORTHERN GAZA STRIP DESPITE CEASEFIRE",
+        "LEBANESE ARMY SAYS ONE SOLDIER KILLED IN ISRAELI ATTACK IN SOUTHERN LEBANON",
+        "IRAN'S REPORTED ATTACK ON ISRAELI-LINKED SHIP OFF COAST OF UAE"
+      ]
+    },
+    {
+      "stage": "llm_cleaned",
+      "slice": "combined",
+      "gt_count": 39,
+      "extracted_count": 38,
+      "thresholds": {
+        "60": {
+          "tp_gt": 37,
+          "tp_ext": 35,
+          "fn": 2,
+          "fp": 3,
+          "precision": 0.9211,
+          "recall": 0.9487,
+          "f1": 0.9347
+        },
+        "70": {
+          "tp_gt": 36,
+          "tp_ext": 32,
+          "fn": 3,
+          "fp": 6,
+          "precision": 0.8421,
+          "recall": 0.9231,
+          "f1": 0.8807
+        },
+        "80": {
+          "tp_gt": 35,
+          "tp_ext": 30,
+          "fn": 4,
+          "fp": 8,
+          "precision": 0.7895,
+          "recall": 0.8974,
+          "f1": 0.84
+        }
+      },
+      "exact_matches": 14,
+      "coverage_at_50_pct": 38,
+      "avg_cer_at_70": 0.1387,
+      "avg_wer_at_70": 0.1958,
+      "missed_headlines": [
+        "D.R. CONGO TO TEMPORARILY ACCEPT DEPORTED MIGRANTS UNDER NEW DEAL WITH THE U.S.",
+        "IRANIAN AUTHORITIES: 2,076 PEOPLE KILLED AND 26,500 INJURED IN U.S.-ISRAELI STRIKES SINCE FEBRUARY 28",
+        "ISRAELI AIR STRIKE ON SOUTHERN LEBANON KILLS SEVEN PEOPLE, INCLUDING FOUR-YEAR-OLD GIRL"
+      ],
+      "false_positive_count": 6,
+      "false_positives_sample": [
+        "PRESIDENT TRUMP TELLS U.S. MEDIA THAT DEAL IS POSSIBLE BY MONDAY AS IRAN 'NEGOTIATING NOW'",
+        "IRAN SAYS U.S.-ISRAELI STRIKE HAS KILLED 13 PEOPLE IN A RESIDENTIAL AREA SOUTHWEST OF TEHRAN",
+        "IRAN'S REPORTED ATTACK ON ISRAELI-LINKED SHIP OFF COAST OF UAE",
+        "AUTHORITIES: 2,076 PEOPLE KILLED AND 26,500 INJURED",
+        "5 INFRASTRUCTURE SECOND PHASE IN JANUARY BUT PROGRESS STALLED",
+        "4 COUNTRIES AGREE OIL QUOTAS BY 206,000 BARRELS"
+      ]
+    }
+  ],
+  "notes": "Precision is computed against the combined GT (union of both slices). Some 'false positives' may be legitimate headlines that appeared in parts of the 14-hour video outside the two sampled 30-minute slices; the FP count is therefore an upper bound. Recall is the primary metric for each slice independently. CER and WER are computed on pairs that matched at the 70% fuzzy-similarity threshold."
+}

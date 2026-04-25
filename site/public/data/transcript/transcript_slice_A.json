@@ -1,0 +1,4833 @@
+{
+  "audio_file": "asr\\output\\audio_slice_30600_1800.wav",
+  "duration_seconds": 1800.0,
+  "language": "en",
+  "model": "small",
+  "segment_count": 603,
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 9.12,
+      "text": "9-11. I mean, we did of course see the destruction of Al Qaeda, we saw the killing of Osama bin",
+      "avg_logprob": -0.2256,
+      "no_speech_prob": 0.2549
+    },
+    {
+      "id": 2,
+      "start": 9.12,
+      "end": 14.84,
+      "text": "Laden, we saw the US pull out of Afghanistan, but in your mind is what we are seeing now",
+      "avg_logprob": -0.2256,
+      "no_speech_prob": 0.2549
+    },
+    {
+      "id": 3,
+      "start": 14.84,
+      "end": 21.36,
+      "text": "in the Middle East some way of a continuation of that war on terror or is it something",
+      "avg_logprob": -0.2256,
+      "no_speech_prob": 0.2549
+    },
+    {
+      "id": 4,
+      "start": 21.36,
+      "end": 23.4,
+      "text": "else? Is it something new?",
+      "avg_logprob": -0.2256,
+      "no_speech_prob": 0.2549
+    },
+    {
+      "id": 5,
+      "start": 23.68,
+      "end": 32.4,
+      "text": "Well, I think it is partly a continuation of it. Yeah. We saw, as you say, the defeat of Al",
+      "avg_logprob": -0.1506,
+      "no_speech_prob": 0.0142
+    },
+    {
+      "id": 6,
+      "start": 32.4,
+      "end": 39.28,
+      "text": "Qaeda, but then of course we had Al Qaeda in Iraq, which kind of grew out of it. There was",
+      "avg_logprob": -0.1506,
+      "no_speech_prob": 0.0142
+    },
+    {
+      "id": 7,
+      "start": 39.28,
+      "end": 45.64,
+      "text": "a claim of victory against Al Qaeda in Iraq. But then we had ISIS, which which grew",
+      "avg_logprob": -0.1506,
+      "no_speech_prob": 0.0142
+    },
+    {
+      "id": 8,
+      "start": 45.64,
+      "end": 53.04,
+      "text": "to a large extent out of Al Qaeda in Iraq. So you have this sort of serial declaration",
+      "avg_logprob": -0.1506,
+      "no_speech_prob": 0.0142
+    },
+    {
+      "id": 9,
+      "start": 53.08,
+      "end": 58.8,
+      "text": "of victories. And then people can relax for a little bit. But then something else happens.",
+      "avg_logprob": -0.1457,
+      "no_speech_prob": 0.0166
+    },
+    {
+      "id": 10,
+      "start": 59.16,
+      "end": 63.56,
+      "text": "And a lot of times these threats are feeding into each other. There's a continuity",
+      "avg_logprob": -0.1457,
+      "no_speech_prob": 0.0166
+    },
+    {
+      "id": 11,
+      "start": 63.56,
+      "end": 71.04,
+      "text": "between these organizations. I think, you know, the destruction of Gaza, you know,",
+      "avg_logprob": -0.1457,
+      "no_speech_prob": 0.0166
+    },
+    {
+      "id": 12,
+      "start": 71.04,
+      "end": 76.88,
+      "text": "that is in a way a very distinct problem. But it was an action that was presented by",
+      "avg_logprob": -0.1457,
+      "no_speech_prob": 0.0166
+    },
+    {
+      "id": 13,
+      "start": 76.88,
+      "end": 85.52,
+      "text": "Israel within the framework of a war on terror. In Sri Lanka, where I was in 2009,",
+      "avg_logprob": -0.1228,
+      "no_speech_prob": 0.1926
+    },
+    {
+      "id": 14,
+      "start": 85.84,
+      "end": 91.48,
+      "text": "you know, the government wreaked horrible destruction on the Tamil population in the",
+      "avg_logprob": -0.1228,
+      "no_speech_prob": 0.1926
+    },
+    {
+      "id": 15,
+      "start": 91.48,
+      "end": 96.6,
+      "text": "name of an international war on terror. And it was actually difficult for Britain or",
+      "avg_logprob": -0.1228,
+      "no_speech_prob": 0.1926
+    },
+    {
+      "id": 16,
+      "start": 96.6,
+      "end": 102.16,
+      "text": "the United States to criticize that. You know, when they themselves were detaining",
+      "avg_logprob": -0.1228,
+      "no_speech_prob": 0.1926
+    },
+    {
+      "id": 17,
+      "start": 102.2,
+      "end": 108.16,
+      "text": "people indefinitely, they themselves had the language of the war on terror. And we need",
+      "avg_logprob": -0.1425,
+      "no_speech_prob": 0.0119
+    },
+    {
+      "id": 18,
+      "start": 108.16,
+      "end": 112.88,
+      "text": "to be ruthless. We need to suspend liberty to a certain extent in the interest of",
+      "avg_logprob": -0.1425,
+      "no_speech_prob": 0.0119
+    },
+    {
+      "id": 19,
+      "start": 112.88,
+      "end": 113.72,
+      "text": "security.",
+      "avg_logprob": -0.1425,
+      "no_speech_prob": 0.0119
+    },
+    {
+      "id": 20,
+      "start": 113.88,
+      "end": 118.72,
+      "text": "Specifically on the language used around the war on terror, I guess a very seismic",
+      "avg_logprob": -0.1425,
+      "no_speech_prob": 0.0119
+    },
+    {
+      "id": 21,
+      "start": 118.72,
+      "end": 125.04,
+      "text": "symbolic shift at least came with the rebranding of the Secretary of Defense to",
+      "avg_logprob": -0.1425,
+      "no_speech_prob": 0.0119
+    },
+    {
+      "id": 22,
+      "start": 125.04,
+      "end": 130.52,
+      "text": "the Secretary of War, the Defense Department to the War Department. Because I mean,",
+      "avg_logprob": -0.1425,
+      "no_speech_prob": 0.0119
+    },
+    {
+      "id": 23,
+      "start": 130.52,
+      "end": 136.84,
+      "text": "that signaled almost a kind of move away from more of a reactive war on terror to a US",
+      "avg_logprob": -0.1554,
+      "no_speech_prob": 0.0052
+    },
+    {
+      "id": 24,
+      "start": 136.84,
+      "end": 142.44,
+      "text": "administration that sought to project power to pursue a peace through strength, I think",
+      "avg_logprob": -0.1554,
+      "no_speech_prob": 0.0052
+    },
+    {
+      "id": 25,
+      "start": 142.44,
+      "end": 148.24,
+      "text": "is the words used by by Pete Hegseth. So do you see that as a rebranding of what's",
+      "avg_logprob": -0.1554,
+      "no_speech_prob": 0.0052
+    },
+    {
+      "id": 26,
+      "start": 148.24,
+      "end": 153.12,
+      "text": "gone before? Or is that really a defining departure from what we've seen in the",
+      "avg_logprob": -0.1554,
+      "no_speech_prob": 0.0052
+    },
+    {
+      "id": 27,
+      "start": 153.12,
+      "end": 153.52,
+      "text": "past?",
+      "avg_logprob": -0.1554,
+      "no_speech_prob": 0.0052
+    },
+    {
+      "id": 28,
+      "start": 154.3,
+      "end": 160.6,
+      "text": "I think it's a great question. I think it is partly rebranding. But it's partly",
+      "avg_logprob": -0.1554,
+      "no_speech_prob": 0.0052
+    },
+    {
+      "id": 29,
+      "start": 161.12,
+      "end": 169.92,
+      "text": "an indication that violence and the assertion of America's right in particular",
+      "avg_logprob": -0.12,
+      "no_speech_prob": 0.0053
+    },
+    {
+      "id": 30,
+      "start": 169.92,
+      "end": 175.16,
+      "text": "to do what it's like to do what it likes has become sort of incredibly",
+      "avg_logprob": -0.12,
+      "no_speech_prob": 0.0053
+    },
+    {
+      "id": 31,
+      "start": 175.16,
+      "end": 181.76,
+      "text": "shameless under Trump. And Trump is somebody really who has systematically",
+      "avg_logprob": -0.12,
+      "no_speech_prob": 0.0053
+    },
+    {
+      "id": 32,
+      "start": 181.76,
+      "end": 188.24,
+      "text": "rejected shame and indeed made a lot of political capital, in my opinion, out",
+      "avg_logprob": -0.12,
+      "no_speech_prob": 0.0053
+    },
+    {
+      "id": 33,
+      "start": 188.24,
+      "end": 195.8,
+      "text": "of offering people a kind of vicarious shamelessness through his abuses and",
+      "avg_logprob": -0.1181,
+      "no_speech_prob": 0.0092
+    },
+    {
+      "id": 34,
+      "start": 195.8,
+      "end": 201.84,
+      "text": "through his spectacular demonstrations of freedom, as I say, freedom for for",
+      "avg_logprob": -0.1181,
+      "no_speech_prob": 0.0092
+    },
+    {
+      "id": 35,
+      "start": 201.88,
+      "end": 206.92,
+      "text": "himself. So I think, you know, there are some significant differences. For",
+      "avg_logprob": -0.1181,
+      "no_speech_prob": 0.0092
+    },
+    {
+      "id": 36,
+      "start": 206.92,
+      "end": 212.08,
+      "text": "example, George W. Bush and Tony Blair, you know, they did make some efforts to",
+      "avg_logprob": -0.1181,
+      "no_speech_prob": 0.0092
+    },
+    {
+      "id": 37,
+      "start": 212.08,
+      "end": 217.8,
+      "text": "try to create some sense of international legitimacy for what they",
+      "avg_logprob": -0.1181,
+      "no_speech_prob": 0.0092
+    },
+    {
+      "id": 38,
+      "start": 217.8,
+      "end": 224.08,
+      "text": "wanted to do in Iraq, and to try and get the UN on board to a certain extent.",
+      "avg_logprob": -0.1309,
+      "no_speech_prob": 0.0066
+    },
+    {
+      "id": 39,
+      "start": 224.52,
+      "end": 230.0,
+      "text": "We're not seeing that now with Trump and Netanyahu. We're just seeing a kind of",
+      "avg_logprob": -0.1309,
+      "no_speech_prob": 0.0066
+    },
+    {
+      "id": 40,
+      "start": 230.0,
+      "end": 236.52,
+      "text": "go it alone spirit, which I think is incredibly dangerous and incredibly",
+      "avg_logprob": -0.1309,
+      "no_speech_prob": 0.0066
+    },
+    {
+      "id": 41,
+      "start": 236.52,
+      "end": 241.8,
+      "text": "destructive. So I do think there's a shamelessness about what's going on.",
+      "avg_logprob": -0.1309,
+      "no_speech_prob": 0.0066
+    },
+    {
+      "id": 42,
+      "start": 241.8,
+      "end": 246.68,
+      "text": "And that thing you mentioned about relabeling as a department of war,",
+      "avg_logprob": -0.1309,
+      "no_speech_prob": 0.0066
+    },
+    {
+      "id": 43,
+      "start": 247.52,
+      "end": 250.68,
+      "text": "you know, Trump would say, well, this is, you know, this is honesty. You know,",
+      "avg_logprob": -0.1179,
+      "no_speech_prob": 0.0005
+    },
+    {
+      "id": 44,
+      "start": 250.68,
+      "end": 255.08,
+      "text": "he projects this image of honesty. I'm not a hypocrite. The liberals are",
+      "avg_logprob": -0.1179,
+      "no_speech_prob": 0.0005
+    },
+    {
+      "id": 45,
+      "start": 255.08,
+      "end": 260.36,
+      "text": "hypocrites. I tell you the truth as it is. And he's made some considerable",
+      "avg_logprob": -0.1179,
+      "no_speech_prob": 0.0005
+    },
+    {
+      "id": 46,
+      "start": 260.36,
+      "end": 265.52,
+      "text": "political capital out of that, in my opinion. But it's also a very frightening",
+      "avg_logprob": -0.1179,
+      "no_speech_prob": 0.0005
+    },
+    {
+      "id": 47,
+      "start": 265.56,
+      "end": 266.12,
+      "text": "turn.",
+      "avg_logprob": -0.1179,
+      "no_speech_prob": 0.0005
+    },
+    {
+      "id": 48,
+      "start": 266.16,
+      "end": 269.44,
+      "text": "David, talking about political capital, we've talked about the big powers.",
+      "avg_logprob": -0.1179,
+      "no_speech_prob": 0.0005
+    },
+    {
+      "id": 49,
+      "start": 269.44,
+      "end": 273.4,
+      "text": "I'd like to talk about the small powers, if I may, because I wonder if the",
+      "avg_logprob": -0.1179,
+      "no_speech_prob": 0.0005
+    },
+    {
+      "id": 50,
+      "start": 273.4,
+      "end": 279.16,
+      "text": "rise of non-state actors, Hezbollah in Lebanon, the Houthis in Yemen,",
+      "avg_logprob": -0.129,
+      "no_speech_prob": 0.0883
+    },
+    {
+      "id": 51,
+      "start": 279.16,
+      "end": 284.28,
+      "text": "whether they fit into this into this frame as well, because I want to know if",
+      "avg_logprob": -0.129,
+      "no_speech_prob": 0.0883
+    },
+    {
+      "id": 52,
+      "start": 284.28,
+      "end": 290.16,
+      "text": "they are motivated by the same impulses that perhaps Iran or the United",
+      "avg_logprob": -0.129,
+      "no_speech_prob": 0.0883
+    },
+    {
+      "id": 53,
+      "start": 290.16,
+      "end": 295.8,
+      "text": "States may be for their own ends. I mean, how does your approach to",
+      "avg_logprob": -0.129,
+      "no_speech_prob": 0.0883
+    },
+    {
+      "id": 54,
+      "start": 295.8,
+      "end": 301.6,
+      "text": "this work when war is being waged by smaller paramilitary networks? Okay,",
+      "avg_logprob": -0.129,
+      "no_speech_prob": 0.0883
+    },
+    {
+      "id": 55,
+      "start": 301.64,
+      "end": 307.24,
+      "text": "some see Hezbollah as being almost a kind of mini-franchise of Iran in the same",
+      "avg_logprob": -0.1316,
+      "no_speech_prob": 0.0045
+    },
+    {
+      "id": 56,
+      "start": 307.24,
+      "end": 313.32,
+      "text": "way that you would view the branch of a bank internationally. But is that a",
+      "avg_logprob": -0.1316,
+      "no_speech_prob": 0.0045
+    },
+    {
+      "id": 57,
+      "start": 313.32,
+      "end": 314.68,
+      "text": "wrong way of looking at this?",
+      "avg_logprob": -0.1316,
+      "no_speech_prob": 0.0045
+    },
+    {
+      "id": 58,
+      "start": 315.44,
+      "end": 323.27,
+      "text": "Well, I think a lot of these non-state actors, you know, they do very often",
+      "avg_logprob": -0.1316,
+      "no_speech_prob": 0.0045
+    },
+    {
+      "id": 59,
+      "start": 323.27,
+      "end": 329.39,
+      "text": "have state backers, you know, and we've seen it with Hezbollah. We've",
+      "avg_logprob": -0.1316,
+      "no_speech_prob": 0.0045
+    },
+    {
+      "id": 60,
+      "start": 329.39,
+      "end": 339.03,
+      "text": "seen it with the rapid support forces and the UAE in Sudan. So we can't sort",
+      "avg_logprob": -0.1145,
+      "no_speech_prob": 0.0132
+    },
+    {
+      "id": 61,
+      "start": 339.03,
+      "end": 345.43,
+      "text": "of regard them simply as non-state actors. I think that, you know, in the case",
+      "avg_logprob": -0.1145,
+      "no_speech_prob": 0.0132
+    },
+    {
+      "id": 62,
+      "start": 345.43,
+      "end": 351.83,
+      "text": "of Hezbollah in Lebanon, you know, there has been quite a strong effort",
+      "avg_logprob": -0.1145,
+      "no_speech_prob": 0.0132
+    },
+    {
+      "id": 63,
+      "start": 352.11,
+      "end": 357.67,
+      "text": "from the Lebanese government to weaken Hezbollah. And that's something",
+      "avg_logprob": -0.1145,
+      "no_speech_prob": 0.0132
+    },
+    {
+      "id": 64,
+      "start": 357.67,
+      "end": 363.99,
+      "text": "that can potentially, I think, bear a lot of fruit. And then when Israel comes",
+      "avg_logprob": -0.1051,
+      "no_speech_prob": 0.0044
+    },
+    {
+      "id": 65,
+      "start": 363.99,
+      "end": 370.27,
+      "text": "in and starts bombing Lebanon and displacing, you know, as I understand",
+      "avg_logprob": -0.1051,
+      "no_speech_prob": 0.0044
+    },
+    {
+      "id": 66,
+      "start": 370.27,
+      "end": 378.78,
+      "text": "it, a million people, you know, this can easily set things back. So the",
+      "avg_logprob": -0.1051,
+      "no_speech_prob": 0.0044
+    },
+    {
+      "id": 67,
+      "start": 378.86,
+      "end": 383.38,
+      "text": "states tend to sort of weigh in on these struggles, these local",
+      "avg_logprob": -0.1051,
+      "no_speech_prob": 0.0044
+    },
+    {
+      "id": 68,
+      "start": 383.38,
+      "end": 389.38,
+      "text": "struggles, often in extremely counterproductive ways. I think Sudan, you",
+      "avg_logprob": -0.1117,
+      "no_speech_prob": 0.01
+    },
+    {
+      "id": 69,
+      "start": 389.38,
+      "end": 395.06,
+      "text": "know, is an interesting case of a government that, you know, going back",
+      "avg_logprob": -0.1117,
+      "no_speech_prob": 0.01
+    },
+    {
+      "id": 70,
+      "start": 395.06,
+      "end": 402.47,
+      "text": "to the 1980s, tried to mobilize militias, mobilize his own militias for the",
+      "avg_logprob": -0.1117,
+      "no_speech_prob": 0.01
+    },
+    {
+      "id": 71,
+      "start": 402.47,
+      "end": 407.15,
+      "text": "purposes of counterinsurgency. But then the government, in a way, lost",
+      "avg_logprob": -0.1117,
+      "no_speech_prob": 0.01
+    },
+    {
+      "id": 72,
+      "start": 407.15,
+      "end": 412.35,
+      "text": "control of the violence because the militias were economically motivated to",
+      "avg_logprob": -0.1117,
+      "no_speech_prob": 0.01
+    },
+    {
+      "id": 73,
+      "start": 412.35,
+      "end": 417.51,
+      "text": "a large extent. They spread rebellion to new areas. And on the whole, they",
+      "avg_logprob": -0.1498,
+      "no_speech_prob": 0.01
+    },
+    {
+      "id": 74,
+      "start": 417.51,
+      "end": 422.99,
+      "text": "refused to disband after particular military campaigns. And they became, as",
+      "avg_logprob": -0.1498,
+      "no_speech_prob": 0.01
+    },
+    {
+      "id": 75,
+      "start": 422.99,
+      "end": 429.11,
+      "text": "were, a political factor in their own right. And we know that the RSF, you",
+      "avg_logprob": -0.1498,
+      "no_speech_prob": 0.01
+    },
+    {
+      "id": 76,
+      "start": 429.11,
+      "end": 435.59,
+      "text": "know, is a successor to the Janjaweed militias that created the Darfur",
+      "avg_logprob": -0.1498,
+      "no_speech_prob": 0.01
+    },
+    {
+      "id": 77,
+      "start": 435.83,
+      "end": 442.43,
+      "text": "genocide. And it's been a huge factor in Sudan politics ever since, you",
+      "avg_logprob": -0.1065,
+      "no_speech_prob": 0.1292
+    },
+    {
+      "id": 78,
+      "start": 442.43,
+      "end": 448.19,
+      "text": "know, basically extorting the government, using gold in particular to",
+      "avg_logprob": -0.1065,
+      "no_speech_prob": 0.1292
+    },
+    {
+      "id": 79,
+      "start": 448.19,
+      "end": 453.03,
+      "text": "build up its strength, and eventually turning against the army with the",
+      "avg_logprob": -0.1065,
+      "no_speech_prob": 0.1292
+    },
+    {
+      "id": 80,
+      "start": 453.03,
+      "end": 457.19,
+      "text": "result of this horrific civil war that we have at the moment. So",
+      "avg_logprob": -0.1065,
+      "no_speech_prob": 0.1292
+    },
+    {
+      "id": 81,
+      "start": 457.19,
+      "end": 464.43,
+      "text": "militias don't always obey what their puppet masters tell them to do. And",
+      "avg_logprob": -0.1065,
+      "no_speech_prob": 0.1292
+    },
+    {
+      "id": 82,
+      "start": 464.43,
+      "end": 467.79,
+      "text": "that can be very destructive in itself.",
+      "avg_logprob": -0.1489,
+      "no_speech_prob": 0.0035
+    },
+    {
+      "id": 83,
+      "start": 468.31,
+      "end": 473.31,
+      "text": "David, can a conflict like the Iran-Israel rivalry ever truly end, taking",
+      "avg_logprob": -0.1489,
+      "no_speech_prob": 0.0035
+    },
+    {
+      "id": 84,
+      "start": 473.31,
+      "end": 476.71,
+      "text": "in everything you've discussed? Or does that system, does that system",
+      "avg_logprob": -0.1489,
+      "no_speech_prob": 0.0035
+    },
+    {
+      "id": 85,
+      "start": 476.71,
+      "end": 481.23,
+      "text": "simply evolve into new forms of hybrid warfare, or to protect",
+      "avg_logprob": -0.1489,
+      "no_speech_prob": 0.0035
+    },
+    {
+      "id": 86,
+      "start": 481.23,
+      "end": 485.75,
+      "text": "essentially underlying profit margins and existing power structures?",
+      "avg_logprob": -0.1489,
+      "no_speech_prob": 0.0035
+    },
+    {
+      "id": 87,
+      "start": 486.63,
+      "end": 493.35,
+      "text": "Well, I think conflicts can come to an end. I think a lot of people",
+      "avg_logprob": -0.1489,
+      "no_speech_prob": 0.0035
+    },
+    {
+      "id": 88,
+      "start": 493.35,
+      "end": 498.55,
+      "text": "thought that the Cold War would never end, because partly of the vested",
+      "avg_logprob": -0.1337,
+      "no_speech_prob": 0.0093
+    },
+    {
+      "id": 89,
+      "start": 498.55,
+      "end": 504.31,
+      "text": "interests enfold. But it did actually surprise us by ending. Of",
+      "avg_logprob": -0.1337,
+      "no_speech_prob": 0.0093
+    },
+    {
+      "id": 90,
+      "start": 504.31,
+      "end": 508.43,
+      "text": "course, people who were making the argument that it will never end",
+      "avg_logprob": -0.1337,
+      "no_speech_prob": 0.0093
+    },
+    {
+      "id": 91,
+      "start": 509.11,
+      "end": 514.63,
+      "text": "will now point to various aspects of a revival of the Cold War, you",
+      "avg_logprob": -0.1337,
+      "no_speech_prob": 0.0093
+    },
+    {
+      "id": 92,
+      "start": 514.63,
+      "end": 520.11,
+      "text": "know, in terms of Russia, and even China, and so on. So I do",
+      "avg_logprob": -0.1337,
+      "no_speech_prob": 0.0093
+    },
+    {
+      "id": 93,
+      "start": 520.11,
+      "end": 524.55,
+      "text": "think sometimes that violence is a little bit like energy, you know, in",
+      "avg_logprob": -0.0977,
+      "no_speech_prob": 0.0189
+    },
+    {
+      "id": 94,
+      "start": 524.55,
+      "end": 529.58,
+      "text": "the sense that it can change from one form to another. But it very",
+      "avg_logprob": -0.0977,
+      "no_speech_prob": 0.0189
+    },
+    {
+      "id": 95,
+      "start": 529.58,
+      "end": 533.82,
+      "text": "rarely disappears entirely. In practice, I think, you know, one of",
+      "avg_logprob": -0.0977,
+      "no_speech_prob": 0.0189
+    },
+    {
+      "id": 96,
+      "start": 533.82,
+      "end": 539.46,
+      "text": "the things you can do is to make peace more profitable and more",
+      "avg_logprob": -0.0977,
+      "no_speech_prob": 0.0189
+    },
+    {
+      "id": 97,
+      "start": 539.46,
+      "end": 544.66,
+      "text": "attractive for various warring parties than war itself, you",
+      "avg_logprob": -0.0977,
+      "no_speech_prob": 0.0189
+    },
+    {
+      "id": 98,
+      "start": 544.66,
+      "end": 548.5,
+      "text": "know, can offer them a stake in a political settlement in a",
+      "avg_logprob": -0.0977,
+      "no_speech_prob": 0.0189
+    },
+    {
+      "id": 99,
+      "start": 548.5,
+      "end": 553.22,
+      "text": "peace process, you can buy them off if you like. One of the",
+      "avg_logprob": -0.1388,
+      "no_speech_prob": 0.0036
+    },
+    {
+      "id": 100,
+      "start": 553.22,
+      "end": 556.42,
+      "text": "problems with that, of course, is that you are you tend to",
+      "avg_logprob": -0.1388,
+      "no_speech_prob": 0.0036
+    },
+    {
+      "id": 101,
+      "start": 556.42,
+      "end": 561.74,
+      "text": "entrench corruption and indeed violence within the peace",
+      "avg_logprob": -0.1388,
+      "no_speech_prob": 0.0036
+    },
+    {
+      "id": 102,
+      "start": 561.78,
+      "end": 566.3,
+      "text": "settlement that you're actually creating or offering.",
+      "avg_logprob": -0.1388,
+      "no_speech_prob": 0.0036
+    },
+    {
+      "id": 103,
+      "start": 567.02,
+      "end": 571.82,
+      "text": "David, in a fragmented global economy, I mean, how does the",
+      "avg_logprob": -0.1388,
+      "no_speech_prob": 0.0036
+    },
+    {
+      "id": 104,
+      "start": 572.14,
+      "end": 576.1,
+      "text": "political conflict of those big powers, the political conflict",
+      "avg_logprob": -0.1388,
+      "no_speech_prob": 0.0036
+    },
+    {
+      "id": 105,
+      "start": 576.1,
+      "end": 579.22,
+      "text": "that we are seeing play out in the Middle East? I mean, how does",
+      "avg_logprob": -0.1468,
+      "no_speech_prob": 0.0034
+    },
+    {
+      "id": 106,
+      "start": 579.22,
+      "end": 584.22,
+      "text": "that affect the global south? How does that affect nations that",
+      "avg_logprob": -0.1468,
+      "no_speech_prob": 0.0034
+    },
+    {
+      "id": 107,
+      "start": 584.22,
+      "end": 586.9,
+      "text": "are watching from the sidelines or simultaneously protecting the",
+      "avg_logprob": -0.1468,
+      "no_speech_prob": 0.0034
+    },
+    {
+      "id": 108,
+      "start": 586.9,
+      "end": 592.06,
+      "text": "big powers and Washington DC in Beijing or Moscow, for instance?",
+      "avg_logprob": -0.1468,
+      "no_speech_prob": 0.0034
+    },
+    {
+      "id": 109,
+      "start": 593.28,
+      "end": 598.6,
+      "text": "I think there are a lot of economic impacts as well. You",
+      "avg_logprob": -0.1468,
+      "no_speech_prob": 0.0034
+    },
+    {
+      "id": 110,
+      "start": 598.6,
+      "end": 602.84,
+      "text": "know, for example, the World Food Programme now is talking",
+      "avg_logprob": -0.1468,
+      "no_speech_prob": 0.0034
+    },
+    {
+      "id": 111,
+      "start": 602.84,
+      "end": 609.96,
+      "text": "about perhaps 45 million people facing severe food shortages and",
+      "avg_logprob": -0.0848,
+      "no_speech_prob": 0.0091
+    },
+    {
+      "id": 112,
+      "start": 609.96,
+      "end": 614.52,
+      "text": "starvation as a result of the war that's currently going on",
+      "avg_logprob": -0.0848,
+      "no_speech_prob": 0.0091
+    },
+    {
+      "id": 113,
+      "start": 614.52,
+      "end": 620.28,
+      "text": "with Iran and Israel and the United States. So, you know, we",
+      "avg_logprob": -0.0848,
+      "no_speech_prob": 0.0091
+    },
+    {
+      "id": 114,
+      "start": 620.28,
+      "end": 624.68,
+      "text": "know that oil prices are going up. We know that fertilizer",
+      "avg_logprob": -0.0848,
+      "no_speech_prob": 0.0091
+    },
+    {
+      "id": 115,
+      "start": 625.04,
+      "end": 629.44,
+      "text": "prices have been drastically affected. This affects food",
+      "avg_logprob": -0.0848,
+      "no_speech_prob": 0.0091
+    },
+    {
+      "id": 116,
+      "start": 629.44,
+      "end": 633.68,
+      "text": "production and it affects people's food security. And I think,",
+      "avg_logprob": -0.0983,
+      "no_speech_prob": 0.0063
+    },
+    {
+      "id": 117,
+      "start": 633.8,
+      "end": 636.92,
+      "text": "you know, if we go back in history just a little bit to, for",
+      "avg_logprob": -0.0983,
+      "no_speech_prob": 0.0063
+    },
+    {
+      "id": 118,
+      "start": 636.92,
+      "end": 643.63,
+      "text": "example, 2011, you know, you had a huge increase in global food",
+      "avg_logprob": -0.0983,
+      "no_speech_prob": 0.0063
+    },
+    {
+      "id": 119,
+      "start": 643.63,
+      "end": 648.47,
+      "text": "prices for various reasons. And that fed rather directly into",
+      "avg_logprob": -0.0983,
+      "no_speech_prob": 0.0063
+    },
+    {
+      "id": 120,
+      "start": 648.47,
+      "end": 653.83,
+      "text": "famine in places like Yemen and Somalia. And it also fed",
+      "avg_logprob": -0.0983,
+      "no_speech_prob": 0.0063
+    },
+    {
+      "id": 121,
+      "start": 653.83,
+      "end": 658.35,
+      "text": "into the so-called Arab Spring and the Civil War in Syria,",
+      "avg_logprob": -0.0983,
+      "no_speech_prob": 0.0063
+    },
+    {
+      "id": 122,
+      "start": 658.39,
+      "end": 662.11,
+      "text": "for example. So these kind of knock-on effects, you know,",
+      "avg_logprob": -0.1955,
+      "no_speech_prob": 0.0027
+    },
+    {
+      "id": 123,
+      "start": 662.11,
+      "end": 665.71,
+      "text": "that they're not always predictable, but I think you can predict",
+      "avg_logprob": -0.1955,
+      "no_speech_prob": 0.0027
+    },
+    {
+      "id": 124,
+      "start": 666.11,
+      "end": 669.59,
+      "text": "that many of them are going to be extremely bad and the people",
+      "avg_logprob": -0.1955,
+      "no_speech_prob": 0.0027
+    },
+    {
+      "id": 125,
+      "start": 669.59,
+      "end": 673.87,
+      "text": "that are going to suffer are going to be, you know, very far",
+      "avg_logprob": -0.1955,
+      "no_speech_prob": 0.0027
+    },
+    {
+      "id": 126,
+      "start": 673.87,
+      "end": 679.87,
+      "text": "from from Washington or Jerusalem. David King, thank you",
+      "avg_logprob": -0.1955,
+      "no_speech_prob": 0.0027
+    },
+    {
+      "id": 127,
+      "start": 679.87,
+      "end": 680.87,
+      "text": "for talking to Al Jazeera.",
+      "avg_logprob": -0.1955,
+      "no_speech_prob": 0.0027
+    },
+    {
+      "id": 128,
+      "start": 682.07,
+      "end": 683.51,
+      "text": "Yeah, pleasure to talk to you.",
+      "avg_logprob": -0.1955,
+      "no_speech_prob": 0.0027
+    },
+    {
+      "id": 129,
+      "start": 694.98,
+      "end": 698.42,
+      "text": "As the war on Iran escalates, Al Jazeera correspondence",
+      "avg_logprob": -0.1955,
+      "no_speech_prob": 0.0027
+    },
+    {
+      "id": 130,
+      "start": 698.5,
+      "end": 701.54,
+      "text": "are on the ground. Donald Trump says he intends to speak to the",
+      "avg_logprob": -0.1283,
+      "no_speech_prob": 0.0097
+    },
+    {
+      "id": 131,
+      "start": 701.54,
+      "end": 704.66,
+      "text": "Iranians in the next couple of days, but added he has no idea",
+      "avg_logprob": -0.1283,
+      "no_speech_prob": 0.0097
+    },
+    {
+      "id": 132,
+      "start": 704.66,
+      "end": 706.78,
+      "text": "who will be on the other end of the call. Well, most of the",
+      "avg_logprob": -0.1283,
+      "no_speech_prob": 0.0097
+    },
+    {
+      "id": 133,
+      "start": 706.78,
+      "end": 709.74,
+      "text": "people we had in mind are dead. A lot of signs, people saying",
+      "avg_logprob": -0.1283,
+      "no_speech_prob": 0.0097
+    },
+    {
+      "id": 134,
+      "start": 709.74,
+      "end": 713.3,
+      "text": "that the U.S. should not be attacking Iran, calling on",
+      "avg_logprob": -0.1283,
+      "no_speech_prob": 0.0097
+    },
+    {
+      "id": 135,
+      "start": 713.3,
+      "end": 716.82,
+      "text": "Congress to act. Members of Congress are away from Washington",
+      "avg_logprob": -0.1283,
+      "no_speech_prob": 0.0097
+    },
+    {
+      "id": 136,
+      "start": 716.82,
+      "end": 720.38,
+      "text": "this weekend. There needs to be the proof of an imminent",
+      "avg_logprob": -0.1283,
+      "no_speech_prob": 0.0097
+    },
+    {
+      "id": 137,
+      "start": 720.74,
+      "end": 724.18,
+      "text": "threat to American interest. This was our last best",
+      "avg_logprob": -0.1283,
+      "no_speech_prob": 0.0097
+    },
+    {
+      "id": 138,
+      "start": 724.18,
+      "end": 727.5,
+      "text": "chance to strike. The U.S. Senate has decided they're",
+      "avg_logprob": -0.1283,
+      "no_speech_prob": 0.0097
+    },
+    {
+      "id": 139,
+      "start": 727.5,
+      "end": 730.82,
+      "text": "not going to step in and stop this ever expanding war.",
+      "avg_logprob": -0.1604,
+      "no_speech_prob": 0.0051
+    },
+    {
+      "id": 140,
+      "start": 731.02,
+      "end": 734.14,
+      "text": "Stay with Al Jazeera for the latest developments.",
+      "avg_logprob": -0.1604,
+      "no_speech_prob": 0.0051
+    },
+    {
+      "id": 141,
+      "start": 734.62,
+      "end": 738.26,
+      "text": "Tehran, a city where centuries of history rise from its",
+      "avg_logprob": -0.1604,
+      "no_speech_prob": 0.0051
+    },
+    {
+      "id": 142,
+      "start": 738.26,
+      "end": 742.18,
+      "text": "histories and monuments, now coming under assault. At the",
+      "avg_logprob": -0.1604,
+      "no_speech_prob": 0.0051
+    },
+    {
+      "id": 143,
+      "start": 742.18,
+      "end": 745.86,
+      "text": "heart of the city stands Kolesan Palace, more than four",
+      "avg_logprob": -0.1604,
+      "no_speech_prob": 0.0051
+    },
+    {
+      "id": 144,
+      "start": 745.86,
+      "end": 749.38,
+      "text": "centuries old, a witness to coronations and major",
+      "avg_logprob": -0.1604,
+      "no_speech_prob": 0.0051
+    },
+    {
+      "id": 145,
+      "start": 749.38,
+      "end": 752.74,
+      "text": "political decisions, but now damaged by American and",
+      "avg_logprob": -0.1604,
+      "no_speech_prob": 0.0051
+    },
+    {
+      "id": 146,
+      "start": 752.74,
+      "end": 755.7,
+      "text": "Israeli airstrikes. International organizations",
+      "avg_logprob": -0.1604,
+      "no_speech_prob": 0.0051
+    },
+    {
+      "id": 147,
+      "start": 755.7,
+      "end": 759.22,
+      "text": "like UNESCO warn about the impact of these attacks on our",
+      "avg_logprob": -0.1415,
+      "no_speech_prob": 0.0079
+    },
+    {
+      "id": 148,
+      "start": 759.22,
+      "end": 762.9,
+      "text": "collective heritage. They are UNESCO World Heritage",
+      "avg_logprob": -0.1415,
+      "no_speech_prob": 0.0079
+    },
+    {
+      "id": 149,
+      "start": 762.9,
+      "end": 768.34,
+      "text": "sites, priceless treasures that belong to all of humanity.",
+      "avg_logprob": -0.1415,
+      "no_speech_prob": 0.0079
+    },
+    {
+      "id": 150,
+      "start": 768.38,
+      "end": 771.9,
+      "text": "Many now fear that centuries of history could become",
+      "avg_logprob": -0.1415,
+      "no_speech_prob": 0.0079
+    },
+    {
+      "id": 151,
+      "start": 771.9,
+      "end": 794.08,
+      "text": "another casualty of war. Hello, this is Al Jazeera live",
+      "avg_logprob": -0.1415,
+      "no_speech_prob": 0.0079
+    },
+    {
+      "id": 152,
+      "start": 794.08,
+      "end": 796.52,
+      "text": "from Doha with our continuing coverage of the war",
+      "avg_logprob": -0.1415,
+      "no_speech_prob": 0.0079
+    },
+    {
+      "id": 153,
+      "start": 796.52,
+      "end": 800.0,
+      "text": "between the U.S., Israel and Iran. I'm Riley Carlson.",
+      "avg_logprob": -0.1415,
+      "no_speech_prob": 0.0079
+    },
+    {
+      "id": 154,
+      "start": 800.0,
+      "end": 803.3,
+      "text": "Here's what's coming up. Donald Trump sets a Tuesday",
+      "avg_logprob": -0.1415,
+      "no_speech_prob": 0.0079
+    },
+    {
+      "id": 155,
+      "start": 803.3,
+      "end": 807.1,
+      "text": "deadline for Iran to reopen the Strait of Hormuz or the U.S.",
+      "avg_logprob": -0.1731,
+      "no_speech_prob": 0.0851
+    },
+    {
+      "id": 156,
+      "start": 807.1,
+      "end": 811.02,
+      "text": "will bomb its power plants, bridges and quote, unleash hell.",
+      "avg_logprob": -0.1731,
+      "no_speech_prob": 0.0851
+    },
+    {
+      "id": 157,
+      "start": 812.38,
+      "end": 817.02,
+      "text": "We are determined to defend Iran's foreign ministry",
+      "avg_logprob": -0.1731,
+      "no_speech_prob": 0.0851
+    },
+    {
+      "id": 158,
+      "start": 817.02,
+      "end": 820.06,
+      "text": "dismisses the U.S. president's warning and vows a swift",
+      "avg_logprob": -0.1731,
+      "no_speech_prob": 0.0851
+    },
+    {
+      "id": 159,
+      "start": 820.06,
+      "end": 825.1,
+      "text": "retaliation to any U.S. attacks. That is airstrike",
+      "avg_logprob": -0.1731,
+      "no_speech_prob": 0.0851
+    },
+    {
+      "id": 160,
+      "start": 825.1,
+      "end": 828.7,
+      "text": "slam into Tehran province. At least 23 people have been",
+      "avg_logprob": -0.1731,
+      "no_speech_prob": 0.0851
+    },
+    {
+      "id": 161,
+      "start": 828.7,
+      "end": 833.39,
+      "text": "killed, including six children. At least five people",
+      "avg_logprob": -0.1731,
+      "no_speech_prob": 0.0851
+    },
+    {
+      "id": 162,
+      "start": 833.43,
+      "end": 836.19,
+      "text": "have been killed in an Israeli strike on Lebanon's",
+      "avg_logprob": -0.1415,
+      "no_speech_prob": 0.0149
+    },
+    {
+      "id": 163,
+      "start": 836.19,
+      "end": 844.63,
+      "text": "capital. We're live in Beirut's southern suburb and",
+      "avg_logprob": -0.1415,
+      "no_speech_prob": 0.0149
+    },
+    {
+      "id": 164,
+      "start": 844.63,
+      "end": 848.43,
+      "text": "more Iranian attacks target Israeli cities. Two bodies",
+      "avg_logprob": -0.1415,
+      "no_speech_prob": 0.0149
+    },
+    {
+      "id": 165,
+      "start": 848.43,
+      "end": 850.51,
+      "text": "have been recovered from the rubble of a destroyed",
+      "avg_logprob": -0.1415,
+      "no_speech_prob": 0.0149
+    },
+    {
+      "id": 166,
+      "start": 850.51,
+      "end": 862.78,
+      "text": "apartment building in Haifa. U.S. president Donald",
+      "avg_logprob": -0.1415,
+      "no_speech_prob": 0.0149
+    },
+    {
+      "id": 167,
+      "start": 862.78,
+      "end": 865.86,
+      "text": "Trump has renewed threats to destroy Iranian power",
+      "avg_logprob": -0.1415,
+      "no_speech_prob": 0.0149
+    },
+    {
+      "id": 168,
+      "start": 865.86,
+      "end": 868.26,
+      "text": "plants and bridges if it doesn't reopen the",
+      "avg_logprob": -0.1415,
+      "no_speech_prob": 0.0149
+    },
+    {
+      "id": 169,
+      "start": 868.26,
+      "end": 871.1,
+      "text": "Strait of Hormuz. He shared what appears to be",
+      "avg_logprob": -0.1415,
+      "no_speech_prob": 0.0149
+    },
+    {
+      "id": 170,
+      "start": 871.1,
+      "end": 875.02,
+      "text": "a deadline on social media Tuesday, 8 p.m. Eastern",
+      "avg_logprob": -0.1415,
+      "no_speech_prob": 0.0149
+    },
+    {
+      "id": 171,
+      "start": 875.02,
+      "end": 878.78,
+      "text": "time. Earlier, Trump posted an expletive laden threat",
+      "avg_logprob": -0.15,
+      "no_speech_prob": 0.0025
+    },
+    {
+      "id": 172,
+      "start": 878.78,
+      "end": 882.22,
+      "text": "to his true social account. It promised that Iranians",
+      "avg_logprob": -0.15,
+      "no_speech_prob": 0.0025
+    },
+    {
+      "id": 173,
+      "start": 882.22,
+      "end": 885.1,
+      "text": "would be quote living in hell if the Strait isn't",
+      "avg_logprob": -0.15,
+      "no_speech_prob": 0.0025
+    },
+    {
+      "id": 174,
+      "start": 885.1,
+      "end": 888.19,
+      "text": "reopened. Tehran has emphasized that it will",
+      "avg_logprob": -0.15,
+      "no_speech_prob": 0.0025
+    },
+    {
+      "id": 175,
+      "start": 888.19,
+      "end": 891.19,
+      "text": "retaliate if struck. Foreign ministry spokesman",
+      "avg_logprob": -0.15,
+      "no_speech_prob": 0.0025
+    },
+    {
+      "id": 176,
+      "start": 891.19,
+      "end": 894.67,
+      "text": "Ismail Bagai says any U.S. related location in the",
+      "avg_logprob": -0.15,
+      "no_speech_prob": 0.0025
+    },
+    {
+      "id": 177,
+      "start": 894.67,
+      "end": 898.65,
+      "text": "Middle East would be a target. Our armed forces",
+      "avg_logprob": -0.15,
+      "no_speech_prob": 0.0025
+    },
+    {
+      "id": 178,
+      "start": 898.65,
+      "end": 901.49,
+      "text": "have made it clear that in case Iran's",
+      "avg_logprob": -0.15,
+      "no_speech_prob": 0.0025
+    },
+    {
+      "id": 179,
+      "start": 901.53,
+      "end": 907.65,
+      "text": "infrastructure is attacked, we would react in",
+      "avg_logprob": -0.1936,
+      "no_speech_prob": 0.0018
+    },
+    {
+      "id": 180,
+      "start": 907.65,
+      "end": 914.25,
+      "text": "kind. Our armed forces would target any similar",
+      "avg_logprob": -0.1936,
+      "no_speech_prob": 0.0018
+    },
+    {
+      "id": 181,
+      "start": 914.25,
+      "end": 917.97,
+      "text": "infrastructure that is owned or in any way or",
+      "avg_logprob": -0.1936,
+      "no_speech_prob": 0.0018
+    },
+    {
+      "id": 182,
+      "start": 917.97,
+      "end": 921.65,
+      "text": "manner related to the United States or",
+      "avg_logprob": -0.1936,
+      "no_speech_prob": 0.0018
+    },
+    {
+      "id": 183,
+      "start": 921.65,
+      "end": 924.89,
+      "text": "contributes to their act of aggression against",
+      "avg_logprob": -0.1936,
+      "no_speech_prob": 0.0018
+    },
+    {
+      "id": 184,
+      "start": 924.89,
+      "end": 927.72,
+      "text": "Iran. We will be live from Tehran in just a",
+      "avg_logprob": -0.1936,
+      "no_speech_prob": 0.0018
+    },
+    {
+      "id": 185,
+      "start": 927.72,
+      "end": 929.96,
+      "text": "moment, but first, Al Jazeera's Mike Hanna",
+      "avg_logprob": -0.1936,
+      "no_speech_prob": 0.0018
+    },
+    {
+      "id": 186,
+      "start": 930.0,
+      "end": 932.0,
+      "text": "has more on the president's comments from",
+      "avg_logprob": -0.1356,
+      "no_speech_prob": 0.0144
+    },
+    {
+      "id": 187,
+      "start": 932.0,
+      "end": 933.0,
+      "text": "Washington, D.C.",
+      "avg_logprob": -0.1356,
+      "no_speech_prob": 0.0144
+    },
+    {
+      "id": 188,
+      "start": 934.42,
+      "end": 937.82,
+      "text": "The unusual use of an expletive by a national",
+      "avg_logprob": -0.1356,
+      "no_speech_prob": 0.0144
+    },
+    {
+      "id": 189,
+      "start": 937.82,
+      "end": 941.06,
+      "text": "leader, perhaps a symbol of President Trump's",
+      "avg_logprob": -0.1356,
+      "no_speech_prob": 0.0144
+    },
+    {
+      "id": 190,
+      "start": 941.06,
+      "end": 943.86,
+      "text": "frustration with the Iranian government and",
+      "avg_logprob": -0.1356,
+      "no_speech_prob": 0.0144
+    },
+    {
+      "id": 191,
+      "start": 943.86,
+      "end": 946.54,
+      "text": "their refusal to concede to the demands that he",
+      "avg_logprob": -0.1356,
+      "no_speech_prob": 0.0144
+    },
+    {
+      "id": 192,
+      "start": 946.54,
+      "end": 948.98,
+      "text": "is making. That reference as well was to the",
+      "avg_logprob": -0.1356,
+      "no_speech_prob": 0.0144
+    },
+    {
+      "id": 193,
+      "start": 948.98,
+      "end": 951.42,
+      "text": "Strait of Hormuz, which in recent days,",
+      "avg_logprob": -0.1356,
+      "no_speech_prob": 0.0144
+    },
+    {
+      "id": 194,
+      "start": 951.42,
+      "end": 953.98,
+      "text": "President Trump had insisted he did not care",
+      "avg_logprob": -0.1356,
+      "no_speech_prob": 0.0144
+    },
+    {
+      "id": 195,
+      "start": 953.98,
+      "end": 956.26,
+      "text": "about saying the U.S. did not need the oil",
+      "avg_logprob": -0.1356,
+      "no_speech_prob": 0.0144
+    },
+    {
+      "id": 196,
+      "start": 956.26,
+      "end": 958.46,
+      "text": "passing through the Strait and it was up to",
+      "avg_logprob": -0.1356,
+      "no_speech_prob": 0.0144
+    },
+    {
+      "id": 197,
+      "start": 958.46,
+      "end": 960.94,
+      "text": "the countries who are reliant on that oil to",
+      "avg_logprob": -0.1404,
+      "no_speech_prob": 0.0143
+    },
+    {
+      "id": 198,
+      "start": 960.94,
+      "end": 963.46,
+      "text": "deal with the situation. But now the demand",
+      "avg_logprob": -0.1404,
+      "no_speech_prob": 0.0143
+    },
+    {
+      "id": 199,
+      "start": 963.46,
+      "end": 965.82,
+      "text": "about opening the Strait of Hormuz appears",
+      "avg_logprob": -0.1404,
+      "no_speech_prob": 0.0143
+    },
+    {
+      "id": 200,
+      "start": 965.82,
+      "end": 968.46,
+      "text": "front and center of the president's new",
+      "avg_logprob": -0.1404,
+      "no_speech_prob": 0.0143
+    },
+    {
+      "id": 201,
+      "start": 968.46,
+      "end": 970.9,
+      "text": "demands of the Iranian government.",
+      "avg_logprob": -0.1404,
+      "no_speech_prob": 0.0143
+    },
+    {
+      "id": 202,
+      "start": 971.42,
+      "end": 973.9,
+      "text": "President Trump threatening to, and I use",
+      "avg_logprob": -0.1404,
+      "no_speech_prob": 0.0143
+    },
+    {
+      "id": 203,
+      "start": 973.9,
+      "end": 977.14,
+      "text": "his words, blowing everything and taking",
+      "avg_logprob": -0.1404,
+      "no_speech_prob": 0.0143
+    },
+    {
+      "id": 204,
+      "start": 977.18,
+      "end": 980.34,
+      "text": "the oil if Iran does not meet his new",
+      "avg_logprob": -0.1404,
+      "no_speech_prob": 0.0143
+    },
+    {
+      "id": 205,
+      "start": 980.34,
+      "end": 983.14,
+      "text": "deadline, which has now been set at 8 p.m.",
+      "avg_logprob": -0.1404,
+      "no_speech_prob": 0.0143
+    },
+    {
+      "id": 206,
+      "start": 983.18,
+      "end": 986.46,
+      "text": "Eastern time on Tuesday evening. He says",
+      "avg_logprob": -0.1404,
+      "no_speech_prob": 0.0143
+    },
+    {
+      "id": 207,
+      "start": 986.46,
+      "end": 989.5,
+      "text": "in an earlier media post that a power plant",
+      "avg_logprob": -0.1395,
+      "no_speech_prob": 0.0497
+    },
+    {
+      "id": 208,
+      "start": 989.5,
+      "end": 992.7,
+      "text": "day and bridge day all wrapped up on",
+      "avg_logprob": -0.1395,
+      "no_speech_prob": 0.0497
+    },
+    {
+      "id": 209,
+      "start": 992.7,
+      "end": 995.14,
+      "text": "Tuesday. But on the other hand, in addition",
+      "avg_logprob": -0.1395,
+      "no_speech_prob": 0.0497
+    },
+    {
+      "id": 210,
+      "start": 995.14,
+      "end": 997.42,
+      "text": "to these threats, President Trump is sending",
+      "avg_logprob": -0.1395,
+      "no_speech_prob": 0.0497
+    },
+    {
+      "id": 211,
+      "start": 997.42,
+      "end": 999.9,
+      "text": "signals that there's some kind of negotiation",
+      "avg_logprob": -0.1395,
+      "no_speech_prob": 0.0497
+    },
+    {
+      "id": 212,
+      "start": 999.9,
+      "end": 1002.94,
+      "text": "process underway. He's indicated that his",
+      "avg_logprob": -0.1395,
+      "no_speech_prob": 0.0497
+    },
+    {
+      "id": 213,
+      "start": 1002.94,
+      "end": 1005.74,
+      "text": "close confidants, Jared Kushner and Stephen",
+      "avg_logprob": -0.1395,
+      "no_speech_prob": 0.0497
+    },
+    {
+      "id": 214,
+      "start": 1005.74,
+      "end": 1008.62,
+      "text": "Whitcoff, are in consultation with either",
+      "avg_logprob": -0.1395,
+      "no_speech_prob": 0.0497
+    },
+    {
+      "id": 215,
+      "start": 1008.62,
+      "end": 1010.98,
+      "text": "the Iranian government and identified figures",
+      "avg_logprob": -0.1395,
+      "no_speech_prob": 0.0497
+    },
+    {
+      "id": 216,
+      "start": 1010.98,
+      "end": 1013.98,
+      "text": "or some form of intermediary. And speaking",
+      "avg_logprob": -0.1395,
+      "no_speech_prob": 0.0497
+    },
+    {
+      "id": 217,
+      "start": 1013.98,
+      "end": 1016.94,
+      "text": "to US news outlets, President Trump says",
+      "avg_logprob": -0.1252,
+      "no_speech_prob": 0.0156
+    },
+    {
+      "id": 218,
+      "start": 1016.94,
+      "end": 1019.42,
+      "text": "that he is optimistic that there can be an",
+      "avg_logprob": -0.1252,
+      "no_speech_prob": 0.0156
+    },
+    {
+      "id": 219,
+      "start": 1019.42,
+      "end": 1022.54,
+      "text": "agreement very soon. He says the agreement",
+      "avg_logprob": -0.1252,
+      "no_speech_prob": 0.0156
+    },
+    {
+      "id": 220,
+      "start": 1022.54,
+      "end": 1025.58,
+      "text": "could come within a matter of days rather",
+      "avg_logprob": -0.1252,
+      "no_speech_prob": 0.0156
+    },
+    {
+      "id": 221,
+      "start": 1025.62,
+      "end": 1028.54,
+      "text": "than a matter of weeks. So you've got this",
+      "avg_logprob": -0.1252,
+      "no_speech_prob": 0.0156
+    },
+    {
+      "id": 222,
+      "start": 1028.54,
+      "end": 1030.86,
+      "text": "dichotomous approach from the president on",
+      "avg_logprob": -0.1252,
+      "no_speech_prob": 0.0156
+    },
+    {
+      "id": 223,
+      "start": 1030.86,
+      "end": 1033.78,
+      "text": "the one hand threatening obliteration to",
+      "avg_logprob": -0.1252,
+      "no_speech_prob": 0.0156
+    },
+    {
+      "id": 224,
+      "start": 1033.94,
+      "end": 1036.98,
+      "text": "civilian targets within Iran, which some",
+      "avg_logprob": -0.1252,
+      "no_speech_prob": 0.0156
+    },
+    {
+      "id": 225,
+      "start": 1036.98,
+      "end": 1039.5,
+      "text": "observers would contend to be a war crime.",
+      "avg_logprob": -0.1252,
+      "no_speech_prob": 0.0156
+    },
+    {
+      "id": 226,
+      "start": 1039.7,
+      "end": 1041.66,
+      "text": "But on the other hand, what he is saying",
+      "avg_logprob": -0.1252,
+      "no_speech_prob": 0.0156
+    },
+    {
+      "id": 227,
+      "start": 1041.66,
+      "end": 1044.42,
+      "text": "is, yes, we are talking, the talks are going",
+      "avg_logprob": -0.2175,
+      "no_speech_prob": 0.0071
+    },
+    {
+      "id": 228,
+      "start": 1044.42,
+      "end": 1047.02,
+      "text": "well, and they could come to fruition",
+      "avg_logprob": -0.2175,
+      "no_speech_prob": 0.0071
+    },
+    {
+      "id": 229,
+      "start": 1047.1,
+      "end": 1049.54,
+      "text": "before that new deadline I set, which is",
+      "avg_logprob": -0.2175,
+      "no_speech_prob": 0.0071
+    },
+    {
+      "id": 230,
+      "start": 1049.54,
+      "end": 1051.82,
+      "text": "8 p.m. Eastern time on Tuesday.",
+      "avg_logprob": -0.2175,
+      "no_speech_prob": 0.0071
+    },
+    {
+      "id": 231,
+      "start": 1052.5,
+      "end": 1054.58,
+      "text": "Mike Hanna, Al Jazeera, Washington.",
+      "avg_logprob": -0.2175,
+      "no_speech_prob": 0.0071
+    },
+    {
+      "id": 232,
+      "start": 1055.64,
+      "end": 1057.68,
+      "text": "The speaker of Iran's parliament has also",
+      "avg_logprob": -0.2175,
+      "no_speech_prob": 0.0071
+    },
+    {
+      "id": 233,
+      "start": 1057.68,
+      "end": 1059.96,
+      "text": "responded to Trump. In a social media",
+      "avg_logprob": -0.2175,
+      "no_speech_prob": 0.0071
+    },
+    {
+      "id": 234,
+      "start": 1059.96,
+      "end": 1062.24,
+      "text": "post, Mohamed Begur Ghalibov wrote,",
+      "avg_logprob": -0.2175,
+      "no_speech_prob": 0.0071
+    },
+    {
+      "id": 235,
+      "start": 1062.56,
+      "end": 1064.68,
+      "text": "Your reckless moves are dragging the United",
+      "avg_logprob": -0.2175,
+      "no_speech_prob": 0.0071
+    },
+    {
+      "id": 236,
+      "start": 1064.68,
+      "end": 1066.76,
+      "text": "States into a living hell for every",
+      "avg_logprob": -0.2175,
+      "no_speech_prob": 0.0071
+    },
+    {
+      "id": 237,
+      "start": 1066.76,
+      "end": 1069.28,
+      "text": "single family. And our whole region is",
+      "avg_logprob": -0.2175,
+      "no_speech_prob": 0.0071
+    },
+    {
+      "id": 238,
+      "start": 1069.28,
+      "end": 1071.28,
+      "text": "going to burn because you insist on",
+      "avg_logprob": -0.2175,
+      "no_speech_prob": 0.0071
+    },
+    {
+      "id": 239,
+      "start": 1071.32,
+      "end": 1073.92,
+      "text": "following Netanyahu's commands, make no",
+      "avg_logprob": -0.1554,
+      "no_speech_prob": 0.0108
+    },
+    {
+      "id": 240,
+      "start": 1073.92,
+      "end": 1076.24,
+      "text": "mistake, you won't gain anything through",
+      "avg_logprob": -0.1554,
+      "no_speech_prob": 0.0108
+    },
+    {
+      "id": 241,
+      "start": 1076.24,
+      "end": 1079.5,
+      "text": "war crimes. Meanwhile, overnight and",
+      "avg_logprob": -0.1554,
+      "no_speech_prob": 0.0108
+    },
+    {
+      "id": 242,
+      "start": 1079.5,
+      "end": 1081.7,
+      "text": "early morning, U.S. Israeli attacks on",
+      "avg_logprob": -0.1554,
+      "no_speech_prob": 0.0108
+    },
+    {
+      "id": 243,
+      "start": 1081.7,
+      "end": 1083.86,
+      "text": "Iran have killed at least 34 people.",
+      "avg_logprob": -0.1554,
+      "no_speech_prob": 0.0108
+    },
+    {
+      "id": 244,
+      "start": 1084.3,
+      "end": 1086.38,
+      "text": "Strikes across Tehran province have left",
+      "avg_logprob": -0.1554,
+      "no_speech_prob": 0.0108
+    },
+    {
+      "id": 245,
+      "start": 1086.38,
+      "end": 1088.94,
+      "text": "at least 23 people dead, including half",
+      "avg_logprob": -0.1554,
+      "no_speech_prob": 0.0108
+    },
+    {
+      "id": 246,
+      "start": 1088.94,
+      "end": 1091.66,
+      "text": "a dozen children. The capital itself has",
+      "avg_logprob": -0.1554,
+      "no_speech_prob": 0.0108
+    },
+    {
+      "id": 247,
+      "start": 1091.66,
+      "end": 1093.94,
+      "text": "also been hit. A separate attack on a",
+      "avg_logprob": -0.1554,
+      "no_speech_prob": 0.0108
+    },
+    {
+      "id": 248,
+      "start": 1093.94,
+      "end": 1095.98,
+      "text": "residential area in the city of Qom,",
+      "avg_logprob": -0.1554,
+      "no_speech_prob": 0.0108
+    },
+    {
+      "id": 249,
+      "start": 1096.26,
+      "end": 1098.54,
+      "text": "south of Tehran, killed five people.",
+      "avg_logprob": -0.1554,
+      "no_speech_prob": 0.0108
+    },
+    {
+      "id": 250,
+      "start": 1098.9,
+      "end": 1100.7,
+      "text": "And in southern Iran, a strike on the",
+      "avg_logprob": -0.1554,
+      "no_speech_prob": 0.0108
+    },
+    {
+      "id": 251,
+      "start": 1100.7,
+      "end": 1103.7,
+      "text": "city of Bandar Leng has killed another",
+      "avg_logprob": -0.2042,
+      "no_speech_prob": 0.0071
+    },
+    {
+      "id": 252,
+      "start": 1103.7,
+      "end": 1106.93,
+      "text": "six. Let's bring in Tohira Sadina, who",
+      "avg_logprob": -0.2042,
+      "no_speech_prob": 0.0071
+    },
+    {
+      "id": 253,
+      "start": 1106.93,
+      "end": 1108.65,
+      "text": "joins us live from Tehran.",
+      "avg_logprob": -0.2042,
+      "no_speech_prob": 0.0071
+    },
+    {
+      "id": 254,
+      "start": 1108.97,
+      "end": 1110.57,
+      "text": "Tohe, the Israeli military, says the",
+      "avg_logprob": -0.2042,
+      "no_speech_prob": 0.0071
+    },
+    {
+      "id": 255,
+      "start": 1110.57,
+      "end": 1112.33,
+      "text": "waves of strikes against government",
+      "avg_logprob": -0.2042,
+      "no_speech_prob": 0.0071
+    },
+    {
+      "id": 256,
+      "start": 1112.33,
+      "end": 1114.17,
+      "text": "infrastructure in Tehran was completed",
+      "avg_logprob": -0.2042,
+      "no_speech_prob": 0.0071
+    },
+    {
+      "id": 257,
+      "start": 1114.17,
+      "end": 1116.01,
+      "text": "just a short time ago. What more can",
+      "avg_logprob": -0.2042,
+      "no_speech_prob": 0.0071
+    },
+    {
+      "id": 258,
+      "start": 1116.01,
+      "end": 1117.41,
+      "text": "you tell us about the attacks that",
+      "avg_logprob": -0.2042,
+      "no_speech_prob": 0.0071
+    },
+    {
+      "id": 259,
+      "start": 1117.41,
+      "end": 1118.81,
+      "text": "took place overnight and into this",
+      "avg_logprob": -0.2042,
+      "no_speech_prob": 0.0071
+    },
+    {
+      "id": 260,
+      "start": 1118.81,
+      "end": 1119.33,
+      "text": "morning?",
+      "avg_logprob": -0.2042,
+      "no_speech_prob": 0.0071
+    },
+    {
+      "id": 261,
+      "start": 1121.74,
+      "end": 1123.5,
+      "text": "Well, actually, Tehran had another",
+      "avg_logprob": -0.2042,
+      "no_speech_prob": 0.0071
+    },
+    {
+      "id": 262,
+      "start": 1123.5,
+      "end": 1125.86,
+      "text": "night of heavy bombardment last night",
+      "avg_logprob": -0.2042,
+      "no_speech_prob": 0.0071
+    },
+    {
+      "id": 263,
+      "start": 1125.9,
+      "end": 1128.02,
+      "text": "in the eastern southern, as well as",
+      "avg_logprob": -0.2042,
+      "no_speech_prob": 0.0071
+    },
+    {
+      "id": 264,
+      "start": 1128.02,
+      "end": 1130.26,
+      "text": "the western parts of the capital, but",
+      "avg_logprob": -0.2042,
+      "no_speech_prob": 0.0071
+    },
+    {
+      "id": 265,
+      "start": 1130.26,
+      "end": 1133.06,
+      "text": "the most notable one, I think, happened",
+      "avg_logprob": -0.185,
+      "no_speech_prob": 0.0043
+    },
+    {
+      "id": 266,
+      "start": 1133.06,
+      "end": 1135.94,
+      "text": "in the Sharif University of Technology,",
+      "avg_logprob": -0.185,
+      "no_speech_prob": 0.0043
+    },
+    {
+      "id": 267,
+      "start": 1135.94,
+      "end": 1138.26,
+      "text": "the campus at which was targeted,",
+      "avg_logprob": -0.185,
+      "no_speech_prob": 0.0043
+    },
+    {
+      "id": 268,
+      "start": 1138.26,
+      "end": 1141.9,
+      "text": "leaving an unprecedentedly",
+      "avg_logprob": -0.185,
+      "no_speech_prob": 0.0043
+    },
+    {
+      "id": 269,
+      "start": 1142.26,
+      "end": 1145.1,
+      "text": "huge amount of damage to this building",
+      "avg_logprob": -0.185,
+      "no_speech_prob": 0.0043
+    },
+    {
+      "id": 270,
+      "start": 1145.1,
+      "end": 1147.62,
+      "text": "and the other buildings in the areas",
+      "avg_logprob": -0.185,
+      "no_speech_prob": 0.0043
+    },
+    {
+      "id": 271,
+      "start": 1147.62,
+      "end": 1149.94,
+      "text": "near the campus. And of course, we",
+      "avg_logprob": -0.185,
+      "no_speech_prob": 0.0043
+    },
+    {
+      "id": 272,
+      "start": 1149.94,
+      "end": 1152.3,
+      "text": "know that a gas facility was also",
+      "avg_logprob": -0.185,
+      "no_speech_prob": 0.0043
+    },
+    {
+      "id": 273,
+      "start": 1152.3,
+      "end": 1154.54,
+      "text": "targeted around the area.",
+      "avg_logprob": -0.185,
+      "no_speech_prob": 0.0043
+    },
+    {
+      "id": 274,
+      "start": 1154.54,
+      "end": 1157.26,
+      "text": "And we know that it is four major",
+      "avg_logprob": -0.185,
+      "no_speech_prob": 0.0043
+    },
+    {
+      "id": 275,
+      "start": 1157.26,
+      "end": 1159.78,
+      "text": "university that has been targeted",
+      "avg_logprob": -0.185,
+      "no_speech_prob": 0.0043
+    },
+    {
+      "id": 276,
+      "start": 1159.78,
+      "end": 1161.94,
+      "text": "over the past few weeks, showing the",
+      "avg_logprob": -0.1457,
+      "no_speech_prob": 0.0035
+    },
+    {
+      "id": 277,
+      "start": 1162.18,
+      "end": 1165.26,
+      "text": "extended scope of the Israeli",
+      "avg_logprob": -0.1457,
+      "no_speech_prob": 0.0035
+    },
+    {
+      "id": 278,
+      "start": 1165.26,
+      "end": 1167.7,
+      "text": "and American strikes now targeting",
+      "avg_logprob": -0.1457,
+      "no_speech_prob": 0.0035
+    },
+    {
+      "id": 279,
+      "start": 1167.7,
+      "end": 1170.26,
+      "text": "more infrastructural areas, including",
+      "avg_logprob": -0.1457,
+      "no_speech_prob": 0.0035
+    },
+    {
+      "id": 280,
+      "start": 1170.26,
+      "end": 1173.18,
+      "text": "universities, hospitals, schools, oil",
+      "avg_logprob": -0.1457,
+      "no_speech_prob": 0.0035
+    },
+    {
+      "id": 281,
+      "start": 1173.18,
+      "end": 1175.9,
+      "text": "related and still related",
+      "avg_logprob": -0.1457,
+      "no_speech_prob": 0.0035
+    },
+    {
+      "id": 282,
+      "start": 1175.9,
+      "end": 1177.82,
+      "text": "infrastructure, all putting a huge",
+      "avg_logprob": -0.1457,
+      "no_speech_prob": 0.0035
+    },
+    {
+      "id": 283,
+      "start": 1177.82,
+      "end": 1179.5,
+      "text": "amount of pressure on the economy of",
+      "avg_logprob": -0.1457,
+      "no_speech_prob": 0.0035
+    },
+    {
+      "id": 284,
+      "start": 1179.5,
+      "end": 1181.3,
+      "text": "the country. But beyond the capital,",
+      "avg_logprob": -0.1457,
+      "no_speech_prob": 0.0035
+    },
+    {
+      "id": 285,
+      "start": 1181.3,
+      "end": 1183.46,
+      "text": "we know that in other cities, we",
+      "avg_logprob": -0.1457,
+      "no_speech_prob": 0.0035
+    },
+    {
+      "id": 286,
+      "start": 1183.46,
+      "end": 1186.22,
+      "text": "had the continued campaign of",
+      "avg_logprob": -0.1457,
+      "no_speech_prob": 0.0035
+    },
+    {
+      "id": 287,
+      "start": 1186.22,
+      "end": 1188.06,
+      "text": "the air strikes by the Americans",
+      "avg_logprob": -0.1457,
+      "no_speech_prob": 0.0035
+    },
+    {
+      "id": 288,
+      "start": 1188.06,
+      "end": 1190.78,
+      "text": "and Israelis in the cities of Karaj, Tehran,",
+      "avg_logprob": -0.277,
+      "no_speech_prob": 0.0056
+    },
+    {
+      "id": 289,
+      "start": 1190.78,
+      "end": 1193.34,
+      "text": "Shiraz, Isfahan and Boushehr.",
+      "avg_logprob": -0.277,
+      "no_speech_prob": 0.0056
+    },
+    {
+      "id": 290,
+      "start": 1193.34,
+      "end": 1195.46,
+      "text": "We've got the reports and footages",
+      "avg_logprob": -0.277,
+      "no_speech_prob": 0.0056
+    },
+    {
+      "id": 291,
+      "start": 1195.46,
+      "end": 1197.62,
+      "text": "coming about, the severe damages",
+      "avg_logprob": -0.277,
+      "no_speech_prob": 0.0056
+    },
+    {
+      "id": 292,
+      "start": 1197.62,
+      "end": 1199.66,
+      "text": "to the areas as a result of these",
+      "avg_logprob": -0.277,
+      "no_speech_prob": 0.0056
+    },
+    {
+      "id": 293,
+      "start": 1199.66,
+      "end": 1201.42,
+      "text": "attacks in Bandar-e-Lingas.",
+      "avg_logprob": -0.277,
+      "no_speech_prob": 0.0056
+    },
+    {
+      "id": 294,
+      "start": 1201.42,
+      "end": 1204.02,
+      "text": "You mentioned six people in Wom five",
+      "avg_logprob": -0.277,
+      "no_speech_prob": 0.0056
+    },
+    {
+      "id": 295,
+      "start": 1204.02,
+      "end": 1206.54,
+      "text": "people and in the Baharistan,",
+      "avg_logprob": -0.277,
+      "no_speech_prob": 0.0056
+    },
+    {
+      "id": 296,
+      "start": 1206.54,
+      "end": 1208.7,
+      "text": "a small city located in the southern",
+      "avg_logprob": -0.277,
+      "no_speech_prob": 0.0056
+    },
+    {
+      "id": 297,
+      "start": 1208.7,
+      "end": 1211.7,
+      "text": "areas of the capital.",
+      "avg_logprob": -0.277,
+      "no_speech_prob": 0.0056
+    },
+    {
+      "id": 298,
+      "start": 1211.7,
+      "end": 1214.22,
+      "text": "At least 13 people, according to",
+      "avg_logprob": -0.277,
+      "no_speech_prob": 0.0056
+    },
+    {
+      "id": 299,
+      "start": 1214.22,
+      "end": 1216.34,
+      "text": "the local authorities, have been killed,",
+      "avg_logprob": -0.277,
+      "no_speech_prob": 0.0056
+    },
+    {
+      "id": 300,
+      "start": 1216.46,
+      "end": 1219.5,
+      "text": "among which, excuse me, six",
+      "avg_logprob": -0.2384,
+      "no_speech_prob": 0.0136
+    },
+    {
+      "id": 301,
+      "start": 1219.5,
+      "end": 1221.86,
+      "text": "were children. We're dealing with these",
+      "avg_logprob": -0.2384,
+      "no_speech_prob": 0.0136
+    },
+    {
+      "id": 302,
+      "start": 1221.86,
+      "end": 1224.78,
+      "text": "air strikes continuing and",
+      "avg_logprob": -0.2384,
+      "no_speech_prob": 0.0136
+    },
+    {
+      "id": 303,
+      "start": 1224.78,
+      "end": 1226.94,
+      "text": "impacting the very infrastructure of",
+      "avg_logprob": -0.2384,
+      "no_speech_prob": 0.0136
+    },
+    {
+      "id": 304,
+      "start": 1226.94,
+      "end": 1228.9,
+      "text": "the country following the recent",
+      "avg_logprob": -0.2384,
+      "no_speech_prob": 0.0136
+    },
+    {
+      "id": 305,
+      "start": 1228.9,
+      "end": 1231.34,
+      "text": "threats by the U.S. President Donald Trump.",
+      "avg_logprob": -0.2384,
+      "no_speech_prob": 0.0136
+    },
+    {
+      "id": 306,
+      "start": 1231.34,
+      "end": 1233.66,
+      "text": "Yeah, and, Toheed, on those threats",
+      "avg_logprob": -0.2384,
+      "no_speech_prob": 0.0136
+    },
+    {
+      "id": 307,
+      "start": 1233.66,
+      "end": 1235.3,
+      "text": "from the U.S. president, what else is",
+      "avg_logprob": -0.2384,
+      "no_speech_prob": 0.0136
+    },
+    {
+      "id": 308,
+      "start": 1235.3,
+      "end": 1237.22,
+      "text": "Iran saying about either those",
+      "avg_logprob": -0.2384,
+      "no_speech_prob": 0.0136
+    },
+    {
+      "id": 309,
+      "start": 1237.22,
+      "end": 1239.86,
+      "text": "threats or the prospect of any change",
+      "avg_logprob": -0.2384,
+      "no_speech_prob": 0.0136
+    },
+    {
+      "id": 310,
+      "start": 1239.86,
+      "end": 1241.18,
+      "text": "to the situation in the Strait of",
+      "avg_logprob": -0.2384,
+      "no_speech_prob": 0.0136
+    },
+    {
+      "id": 311,
+      "start": 1241.18,
+      "end": 1243.94,
+      "text": "Hormuz?",
+      "avg_logprob": -0.2384,
+      "no_speech_prob": 0.0136
+    },
+    {
+      "id": 312,
+      "start": 1243.94,
+      "end": 1246.38,
+      "text": "Yes, indeed. We're dealing with a",
+      "avg_logprob": -0.2384,
+      "no_speech_prob": 0.0136
+    },
+    {
+      "id": 313,
+      "start": 1246.38,
+      "end": 1248.5,
+      "text": "sort of high-stakes situation, but",
+      "avg_logprob": -0.1883,
+      "no_speech_prob": 0.036
+    },
+    {
+      "id": 314,
+      "start": 1248.5,
+      "end": 1250.14,
+      "text": "according to what we hear from the",
+      "avg_logprob": -0.1883,
+      "no_speech_prob": 0.036
+    },
+    {
+      "id": 315,
+      "start": 1250.14,
+      "end": 1252.74,
+      "text": "Iranian side, first, they're not that",
+      "avg_logprob": -0.1883,
+      "no_speech_prob": 0.036
+    },
+    {
+      "id": 316,
+      "start": 1252.74,
+      "end": 1254.98,
+      "text": "much unfamiliar with this threatening",
+      "avg_logprob": -0.1883,
+      "no_speech_prob": 0.036
+    },
+    {
+      "id": 317,
+      "start": 1254.98,
+      "end": 1256.86,
+      "text": "language. It's like dancing with the",
+      "avg_logprob": -0.1883,
+      "no_speech_prob": 0.036
+    },
+    {
+      "id": 318,
+      "start": 1256.86,
+      "end": 1258.9,
+      "text": "same old tune for them. Since the very",
+      "avg_logprob": -0.1883,
+      "no_speech_prob": 0.036
+    },
+    {
+      "id": 319,
+      "start": 1258.9,
+      "end": 1261.5,
+      "text": "beginning of this war, they're facing",
+      "avg_logprob": -0.1883,
+      "no_speech_prob": 0.036
+    },
+    {
+      "id": 320,
+      "start": 1261.5,
+      "end": 1263.74,
+      "text": "threats, but this is not just",
+      "avg_logprob": -0.1883,
+      "no_speech_prob": 0.036
+    },
+    {
+      "id": 321,
+      "start": 1263.74,
+      "end": 1265.9,
+      "text": "limited to this war, but earlier also",
+      "avg_logprob": -0.1883,
+      "no_speech_prob": 0.036
+    },
+    {
+      "id": 322,
+      "start": 1265.9,
+      "end": 1267.98,
+      "text": "they had this language experienced,",
+      "avg_logprob": -0.1883,
+      "no_speech_prob": 0.036
+    },
+    {
+      "id": 323,
+      "start": 1267.98,
+      "end": 1269.94,
+      "text": "but also we know that they're taking",
+      "avg_logprob": -0.1883,
+      "no_speech_prob": 0.036
+    },
+    {
+      "id": 324,
+      "start": 1269.94,
+      "end": 1272.62,
+      "text": "it quite seriously, seeing as I told",
+      "avg_logprob": -0.1883,
+      "no_speech_prob": 0.036
+    },
+    {
+      "id": 325,
+      "start": 1272.62,
+      "end": 1275.06,
+      "text": "you, the extended nature of the",
+      "avg_logprob": -0.1883,
+      "no_speech_prob": 0.036
+    },
+    {
+      "id": 326,
+      "start": 1275.06,
+      "end": 1277.46,
+      "text": "scope of the attacks over the past one",
+      "avg_logprob": -0.1912,
+      "no_speech_prob": 0.0323
+    },
+    {
+      "id": 327,
+      "start": 1277.46,
+      "end": 1279.34,
+      "text": "or two weeks, I would say, and the",
+      "avg_logprob": -0.1912,
+      "no_speech_prob": 0.0323
+    },
+    {
+      "id": 328,
+      "start": 1279.34,
+      "end": 1281.54,
+      "text": "message furthermore that is coming from",
+      "avg_logprob": -0.1912,
+      "no_speech_prob": 0.0323
+    },
+    {
+      "id": 329,
+      "start": 1281.54,
+      "end": 1283.74,
+      "text": "Tehran is that of defiance, the",
+      "avg_logprob": -0.1912,
+      "no_speech_prob": 0.0323
+    },
+    {
+      "id": 330,
+      "start": 1283.74,
+      "end": 1286.06,
+      "text": "resilience and deterrence, and, of",
+      "avg_logprob": -0.1912,
+      "no_speech_prob": 0.0323
+    },
+    {
+      "id": 331,
+      "start": 1286.06,
+      "end": 1287.86,
+      "text": "course, retaliation. They are saying",
+      "avg_logprob": -0.1912,
+      "no_speech_prob": 0.0323
+    },
+    {
+      "id": 332,
+      "start": 1287.86,
+      "end": 1290.3,
+      "text": "that in case of more attacks on the",
+      "avg_logprob": -0.1912,
+      "no_speech_prob": 0.0323
+    },
+    {
+      "id": 333,
+      "start": 1290.3,
+      "end": 1291.94,
+      "text": "infrastructure of the country, there is",
+      "avg_logprob": -0.1912,
+      "no_speech_prob": 0.0323
+    },
+    {
+      "id": 334,
+      "start": 1291.94,
+      "end": 1293.98,
+      "text": "going to be a tit for tat strategy",
+      "avg_logprob": -0.1912,
+      "no_speech_prob": 0.0323
+    },
+    {
+      "id": 335,
+      "start": 1293.98,
+      "end": 1296.14,
+      "text": "targeting the U.S. assets across the",
+      "avg_logprob": -0.1912,
+      "no_speech_prob": 0.0323
+    },
+    {
+      "id": 336,
+      "start": 1296.14,
+      "end": 1299.3,
+      "text": "region or any infrastructure in which",
+      "avg_logprob": -0.1912,
+      "no_speech_prob": 0.0323
+    },
+    {
+      "id": 337,
+      "start": 1299.3,
+      "end": 1301.7,
+      "text": "the United States has got a share or",
+      "avg_logprob": -0.1912,
+      "no_speech_prob": 0.0323
+    },
+    {
+      "id": 338,
+      "start": 1301.7,
+      "end": 1303.86,
+      "text": "in a sense associated with, and of",
+      "avg_logprob": -0.1912,
+      "no_speech_prob": 0.0323
+    },
+    {
+      "id": 339,
+      "start": 1303.86,
+      "end": 1305.62,
+      "text": "course, the Israeli territories, but",
+      "avg_logprob": -0.2561,
+      "no_speech_prob": 0.0063
+    },
+    {
+      "id": 340,
+      "start": 1305.62,
+      "end": 1307.98,
+      "text": "speaking of the strait of Hormuz, again",
+      "avg_logprob": -0.2561,
+      "no_speech_prob": 0.0063
+    },
+    {
+      "id": 341,
+      "start": 1307.98,
+      "end": 1310.86,
+      "text": "we are hearing a lot of statements from",
+      "avg_logprob": -0.2561,
+      "no_speech_prob": 0.0063
+    },
+    {
+      "id": 342,
+      "start": 1310.86,
+      "end": 1312.5,
+      "text": "the Iranian side. The gist of the",
+      "avg_logprob": -0.2561,
+      "no_speech_prob": 0.0063
+    },
+    {
+      "id": 343,
+      "start": 1312.5,
+      "end": 1314.14,
+      "text": "matter is that the country is trying",
+      "avg_logprob": -0.2561,
+      "no_speech_prob": 0.0063
+    },
+    {
+      "id": 344,
+      "start": 1314.14,
+      "end": 1316.7,
+      "text": "to use it as a leverage point in this",
+      "avg_logprob": -0.2561,
+      "no_speech_prob": 0.0063
+    },
+    {
+      "id": 345,
+      "start": 1316.7,
+      "end": 1320.06,
+      "text": "already actually intricate situation,",
+      "avg_logprob": -0.2561,
+      "no_speech_prob": 0.0063
+    },
+    {
+      "id": 346,
+      "start": 1320.06,
+      "end": 1321.86,
+      "text": "seeing the geostrategically",
+      "avg_logprob": -0.2561,
+      "no_speech_prob": 0.0063
+    },
+    {
+      "id": 347,
+      "start": 1321.86,
+      "end": 1324.18,
+      "text": "significant role of this chalk point,",
+      "avg_logprob": -0.2561,
+      "no_speech_prob": 0.0063
+    },
+    {
+      "id": 348,
+      "start": 1324.18,
+      "end": 1326.66,
+      "text": "and they're also trying to implement",
+      "avg_logprob": -0.2561,
+      "no_speech_prob": 0.0063
+    },
+    {
+      "id": 349,
+      "start": 1326.66,
+      "end": 1328.94,
+      "text": "plans to impose tariffs for the",
+      "avg_logprob": -0.2561,
+      "no_speech_prob": 0.0063
+    },
+    {
+      "id": 350,
+      "start": 1328.94,
+      "end": 1331.9,
+      "text": "ships which are planning to pass",
+      "avg_logprob": -0.2561,
+      "no_speech_prob": 0.0063
+    },
+    {
+      "id": 351,
+      "start": 1332.02,
+      "end": 1334.3,
+      "text": "through and last but not least, they",
+      "avg_logprob": -0.1904,
+      "no_speech_prob": 0.0412
+    },
+    {
+      "id": 352,
+      "start": 1334.3,
+      "end": 1336.7,
+      "text": "are saying that it's not open, it's not",
+      "avg_logprob": -0.1904,
+      "no_speech_prob": 0.0412
+    },
+    {
+      "id": 353,
+      "start": 1336.7,
+      "end": 1339.02,
+      "text": "close, it's open to everyone, it's close",
+      "avg_logprob": -0.1904,
+      "no_speech_prob": 0.0412
+    },
+    {
+      "id": 354,
+      "start": 1339.02,
+      "end": 1341.3,
+      "text": "to our adversaries. All right, Toheed",
+      "avg_logprob": -0.1904,
+      "no_speech_prob": 0.0412
+    },
+    {
+      "id": 355,
+      "start": 1341.3,
+      "end": 1343.74,
+      "text": "Asadi reporting live for us from Tehran.",
+      "avg_logprob": -0.1904,
+      "no_speech_prob": 0.0412
+    },
+    {
+      "id": 356,
+      "start": 1343.74,
+      "end": 1346.3,
+      "text": "Toheed, thanks. The threat of",
+      "avg_logprob": -0.1904,
+      "no_speech_prob": 0.0412
+    },
+    {
+      "id": 357,
+      "start": 1346.3,
+      "end": 1348.14,
+      "text": "escalation in Iran puts the Gulf",
+      "avg_logprob": -0.1904,
+      "no_speech_prob": 0.0412
+    },
+    {
+      "id": 358,
+      "start": 1348.14,
+      "end": 1350.3,
+      "text": "region squarely in the crossfire.",
+      "avg_logprob": -0.1904,
+      "no_speech_prob": 0.0412
+    },
+    {
+      "id": 359,
+      "start": 1350.3,
+      "end": 1352.02,
+      "text": "The sites Iran is threatening to hit",
+      "avg_logprob": -0.1904,
+      "no_speech_prob": 0.0412
+    },
+    {
+      "id": 360,
+      "start": 1352.02,
+      "end": 1354.7,
+      "text": "back at are almost entirely located in",
+      "avg_logprob": -0.1904,
+      "no_speech_prob": 0.0412
+    },
+    {
+      "id": 361,
+      "start": 1354.7,
+      "end": 1357.06,
+      "text": "GCC countries, which are already coping",
+      "avg_logprob": -0.1904,
+      "no_speech_prob": 0.0412
+    },
+    {
+      "id": 362,
+      "start": 1357.06,
+      "end": 1359.54,
+      "text": "with daily attacks. Kuwait says it",
+      "avg_logprob": -0.1904,
+      "no_speech_prob": 0.0412
+    },
+    {
+      "id": 363,
+      "start": 1359.54,
+      "end": 1361.42,
+      "text": "has been hit by a series of drone",
+      "avg_logprob": -0.1904,
+      "no_speech_prob": 0.0412
+    },
+    {
+      "id": 364,
+      "start": 1361.42,
+      "end": 1363.46,
+      "text": "attacks. Authorities report that two",
+      "avg_logprob": -0.1598,
+      "no_speech_prob": 0.0133
+    },
+    {
+      "id": 365,
+      "start": 1363.46,
+      "end": 1365.74,
+      "text": "major power and desalination plans",
+      "avg_logprob": -0.1598,
+      "no_speech_prob": 0.0133
+    },
+    {
+      "id": 366,
+      "start": 1365.74,
+      "end": 1367.94,
+      "text": "were targeted. One of those facilities",
+      "avg_logprob": -0.1598,
+      "no_speech_prob": 0.0133
+    },
+    {
+      "id": 367,
+      "start": 1367.94,
+      "end": 1370.26,
+      "text": "is in Al-Zor, nearly 90 kilometers",
+      "avg_logprob": -0.1598,
+      "no_speech_prob": 0.0133
+    },
+    {
+      "id": 368,
+      "start": 1370.26,
+      "end": 1372.58,
+      "text": "south of Kuwait City. Another attack",
+      "avg_logprob": -0.1598,
+      "no_speech_prob": 0.0133
+    },
+    {
+      "id": 369,
+      "start": 1372.58,
+      "end": 1374.42,
+      "text": "hit the finance ministry complex.",
+      "avg_logprob": -0.1598,
+      "no_speech_prob": 0.0133
+    },
+    {
+      "id": 370,
+      "start": 1374.42,
+      "end": 1376.5,
+      "text": "That building is in central Kuwait",
+      "avg_logprob": -0.1598,
+      "no_speech_prob": 0.0133
+    },
+    {
+      "id": 371,
+      "start": 1376.5,
+      "end": 1379.36,
+      "text": "city. In Bahrain, Iran targeted an",
+      "avg_logprob": -0.1598,
+      "no_speech_prob": 0.0133
+    },
+    {
+      "id": 372,
+      "start": 1379.36,
+      "end": 1382.24,
+      "text": "oil facility sparking several fires.",
+      "avg_logprob": -0.1598,
+      "no_speech_prob": 0.0133
+    },
+    {
+      "id": 373,
+      "start": 1382.24,
+      "end": 1383.84,
+      "text": "Emergency response teams said the",
+      "avg_logprob": -0.1598,
+      "no_speech_prob": 0.0133
+    },
+    {
+      "id": 374,
+      "start": 1383.84,
+      "end": 1386.12,
+      "text": "blaze has been fully extinguished.",
+      "avg_logprob": -0.1598,
+      "no_speech_prob": 0.0133
+    },
+    {
+      "id": 375,
+      "start": 1386.12,
+      "end": 1387.76,
+      "text": "Over the past few weeks, Minama has",
+      "avg_logprob": -0.1598,
+      "no_speech_prob": 0.0133
+    },
+    {
+      "id": 376,
+      "start": 1387.76,
+      "end": 1389.68,
+      "text": "come under repeated Iranian missile",
+      "avg_logprob": -0.1598,
+      "no_speech_prob": 0.0133
+    },
+    {
+      "id": 377,
+      "start": 1389.72,
+      "end": 1392.86,
+      "text": "and drone attacks. Malik Trena is live",
+      "avg_logprob": -0.245,
+      "no_speech_prob": 0.0088
+    },
+    {
+      "id": 378,
+      "start": 1392.86,
+      "end": 1394.98,
+      "text": "with us now from Kuwait City. Malik,",
+      "avg_logprob": -0.245,
+      "no_speech_prob": 0.0088
+    },
+    {
+      "id": 379,
+      "start": 1394.98,
+      "end": 1397.26,
+      "text": "how concerned are Gulf countries",
+      "avg_logprob": -0.245,
+      "no_speech_prob": 0.0088
+    },
+    {
+      "id": 380,
+      "start": 1397.26,
+      "end": 1398.78,
+      "text": "about the U.S. president's threats",
+      "avg_logprob": -0.245,
+      "no_speech_prob": 0.0088
+    },
+    {
+      "id": 381,
+      "start": 1398.78,
+      "end": 1404.98,
+      "text": "of escalation here? Extremely",
+      "avg_logprob": -0.245,
+      "no_speech_prob": 0.0088
+    },
+    {
+      "id": 382,
+      "start": 1404.98,
+      "end": 1407.54,
+      "text": "concerned, to say the least, Riley.",
+      "avg_logprob": -0.245,
+      "no_speech_prob": 0.0088
+    },
+    {
+      "id": 383,
+      "start": 1407.54,
+      "end": 1409.54,
+      "text": "I mean, you know, the secretary",
+      "avg_logprob": -0.245,
+      "no_speech_prob": 0.0088
+    },
+    {
+      "id": 384,
+      "start": 1409.54,
+      "end": 1411.7,
+      "text": "general of the GCC, Jassamid",
+      "avg_logprob": -0.245,
+      "no_speech_prob": 0.0088
+    },
+    {
+      "id": 385,
+      "start": 1411.7,
+      "end": 1414.18,
+      "text": "Abdaoui, earlier this week, said",
+      "avg_logprob": -0.245,
+      "no_speech_prob": 0.0088
+    },
+    {
+      "id": 386,
+      "start": 1414.18,
+      "end": 1416.9,
+      "text": "that 85 percent of the",
+      "avg_logprob": -0.245,
+      "no_speech_prob": 0.0088
+    },
+    {
+      "id": 387,
+      "start": 1416.9,
+      "end": 1419.42,
+      "text": "retaliation attacks coming from Iran",
+      "avg_logprob": -0.245,
+      "no_speech_prob": 0.0088
+    },
+    {
+      "id": 388,
+      "start": 1419.42,
+      "end": 1421.5,
+      "text": "have targeted the Gulf, you know,",
+      "avg_logprob": -0.245,
+      "no_speech_prob": 0.0088
+    },
+    {
+      "id": 389,
+      "start": 1421.54,
+      "end": 1424.5,
+      "text": "more than 6,000 now ballistic",
+      "avg_logprob": -0.1898,
+      "no_speech_prob": 0.0092
+    },
+    {
+      "id": 390,
+      "start": 1424.5,
+      "end": 1427.5,
+      "text": "missiles and drones have targeted",
+      "avg_logprob": -0.1898,
+      "no_speech_prob": 0.0092
+    },
+    {
+      "id": 391,
+      "start": 1427.5,
+      "end": 1429.78,
+      "text": "this entire region. So people become",
+      "avg_logprob": -0.1898,
+      "no_speech_prob": 0.0092
+    },
+    {
+      "id": 392,
+      "start": 1429.78,
+      "end": 1432.34,
+      "text": "extremely concerned, you know,",
+      "avg_logprob": -0.1898,
+      "no_speech_prob": 0.0092
+    },
+    {
+      "id": 393,
+      "start": 1432.34,
+      "end": 1434.54,
+      "text": "just in the last 30 to 40 minutes or",
+      "avg_logprob": -0.1898,
+      "no_speech_prob": 0.0092
+    },
+    {
+      "id": 394,
+      "start": 1434.54,
+      "end": 1437.38,
+      "text": "so. We heard about authorities",
+      "avg_logprob": -0.1898,
+      "no_speech_prob": 0.0092
+    },
+    {
+      "id": 395,
+      "start": 1437.38,
+      "end": 1439.42,
+      "text": "responding to an incident in Abu",
+      "avg_logprob": -0.1898,
+      "no_speech_prob": 0.0092
+    },
+    {
+      "id": 396,
+      "start": 1439.42,
+      "end": 1440.98,
+      "text": "Dhabi and the industrial city of",
+      "avg_logprob": -0.1898,
+      "no_speech_prob": 0.0092
+    },
+    {
+      "id": 397,
+      "start": 1440.98,
+      "end": 1443.58,
+      "text": "Abu Dhabi, where debris from a",
+      "avg_logprob": -0.1898,
+      "no_speech_prob": 0.0092
+    },
+    {
+      "id": 398,
+      "start": 1443.58,
+      "end": 1446.54,
+      "text": "interception injured one person.",
+      "avg_logprob": -0.1898,
+      "no_speech_prob": 0.0092
+    },
+    {
+      "id": 399,
+      "start": 1446.54,
+      "end": 1447.9,
+      "text": "In the last couple of hours, we've",
+      "avg_logprob": -0.1898,
+      "no_speech_prob": 0.0092
+    },
+    {
+      "id": 400,
+      "start": 1447.9,
+      "end": 1449.98,
+      "text": "seen alarms raised here in Kuwait",
+      "avg_logprob": -0.1898,
+      "no_speech_prob": 0.0092
+    },
+    {
+      "id": 401,
+      "start": 1450.02,
+      "end": 1452.78,
+      "text": "and also, more so, and a few",
+      "avg_logprob": -0.2339,
+      "no_speech_prob": 0.0035
+    },
+    {
+      "id": 402,
+      "start": 1452.78,
+      "end": 1454.54,
+      "text": "others in the UAE.",
+      "avg_logprob": -0.2339,
+      "no_speech_prob": 0.0035
+    },
+    {
+      "id": 403,
+      "start": 1454.54,
+      "end": 1456.86,
+      "text": "You know, yesterday was a really",
+      "avg_logprob": -0.2339,
+      "no_speech_prob": 0.0035
+    },
+    {
+      "id": 404,
+      "start": 1456.86,
+      "end": 1459.06,
+      "text": "devastating day for people here",
+      "avg_logprob": -0.2339,
+      "no_speech_prob": 0.0035
+    },
+    {
+      "id": 405,
+      "start": 1459.06,
+      "end": 1461.18,
+      "text": "in Kuwait. You know, we had two",
+      "avg_logprob": -0.2339,
+      "no_speech_prob": 0.0035
+    },
+    {
+      "id": 406,
+      "start": 1461.18,
+      "end": 1464.18,
+      "text": "water and power, water desalination",
+      "avg_logprob": -0.2339,
+      "no_speech_prob": 0.0035
+    },
+    {
+      "id": 407,
+      "start": 1464.18,
+      "end": 1466.62,
+      "text": "plants targeted the Azur plant",
+      "avg_logprob": -0.2339,
+      "no_speech_prob": 0.0035
+    },
+    {
+      "id": 408,
+      "start": 1466.62,
+      "end": 1467.86,
+      "text": "that you mentioned earlier. It's",
+      "avg_logprob": -0.2339,
+      "no_speech_prob": 0.0035
+    },
+    {
+      "id": 409,
+      "start": 1467.86,
+      "end": 1469.46,
+      "text": "one of the biggest in the Middle",
+      "avg_logprob": -0.2339,
+      "no_speech_prob": 0.0035
+    },
+    {
+      "id": 410,
+      "start": 1469.46,
+      "end": 1471.9,
+      "text": "East. So the Iranians have proven",
+      "avg_logprob": -0.2339,
+      "no_speech_prob": 0.0035
+    },
+    {
+      "id": 411,
+      "start": 1471.9,
+      "end": 1474.38,
+      "text": "that they can't target and",
+      "avg_logprob": -0.2339,
+      "no_speech_prob": 0.0035
+    },
+    {
+      "id": 412,
+      "start": 1474.38,
+      "end": 1478.66,
+      "text": "hit civil",
+      "avg_logprob": -0.2339,
+      "no_speech_prob": 0.0035
+    },
+    {
+      "id": 413,
+      "start": 1479.14,
+      "end": 1481.1,
+      "text": "civilian infrastructure here in the",
+      "avg_logprob": -0.2175,
+      "no_speech_prob": 0.0494
+    },
+    {
+      "id": 414,
+      "start": 1481.1,
+      "end": 1483.3,
+      "text": "Gulf. So that's extremely worrying.",
+      "avg_logprob": -0.2175,
+      "no_speech_prob": 0.0494
+    },
+    {
+      "id": 415,
+      "start": 1483.3,
+      "end": 1485.62,
+      "text": "You know, whenever President Trump",
+      "avg_logprob": -0.2175,
+      "no_speech_prob": 0.0494
+    },
+    {
+      "id": 416,
+      "start": 1485.62,
+      "end": 1488.34,
+      "text": "escalates, Iran retaliates.",
+      "avg_logprob": -0.2175,
+      "no_speech_prob": 0.0494
+    },
+    {
+      "id": 417,
+      "start": 1488.34,
+      "end": 1489.78,
+      "text": "And so, you know, people who what",
+      "avg_logprob": -0.2175,
+      "no_speech_prob": 0.0494
+    },
+    {
+      "id": 418,
+      "start": 1489.78,
+      "end": 1491.1,
+      "text": "I've seen in the last couple of",
+      "avg_logprob": -0.2175,
+      "no_speech_prob": 0.0494
+    },
+    {
+      "id": 419,
+      "start": 1491.1,
+      "end": 1493.06,
+      "text": "days, Riley is",
+      "avg_logprob": -0.2175,
+      "no_speech_prob": 0.0494
+    },
+    {
+      "id": 420,
+      "start": 1493.06,
+      "end": 1495.18,
+      "text": "authorities here in Kuwait have",
+      "avg_logprob": -0.2175,
+      "no_speech_prob": 0.0494
+    },
+    {
+      "id": 421,
+      "start": 1495.18,
+      "end": 1497.82,
+      "text": "been putting power generate huge",
+      "avg_logprob": -0.2175,
+      "no_speech_prob": 0.0494
+    },
+    {
+      "id": 422,
+      "start": 1497.82,
+      "end": 1499.58,
+      "text": "power generators next to",
+      "avg_logprob": -0.2175,
+      "no_speech_prob": 0.0494
+    },
+    {
+      "id": 423,
+      "start": 1499.58,
+      "end": 1500.9,
+      "text": "distribution, electricity",
+      "avg_logprob": -0.2175,
+      "no_speech_prob": 0.0494
+    },
+    {
+      "id": 424,
+      "start": 1500.9,
+      "end": 1502.82,
+      "text": "distribution centers that just goes",
+      "avg_logprob": -0.2175,
+      "no_speech_prob": 0.0494
+    },
+    {
+      "id": 425,
+      "start": 1502.82,
+      "end": 1504.86,
+      "text": "to show you that authorities here",
+      "avg_logprob": -0.2175,
+      "no_speech_prob": 0.0494
+    },
+    {
+      "id": 426,
+      "start": 1504.86,
+      "end": 1506.5,
+      "text": "are, you know, making",
+      "avg_logprob": -0.2175,
+      "no_speech_prob": 0.0494
+    },
+    {
+      "id": 427,
+      "start": 1506.54,
+      "end": 1509.94,
+      "text": "contingency plans for if this war",
+      "avg_logprob": -0.1945,
+      "no_speech_prob": 0.0078
+    },
+    {
+      "id": 428,
+      "start": 1509.94,
+      "end": 1511.82,
+      "text": "escalates. You know, I think the",
+      "avg_logprob": -0.1945,
+      "no_speech_prob": 0.0078
+    },
+    {
+      "id": 429,
+      "start": 1511.82,
+      "end": 1514.1,
+      "text": "call has been to de-escalate the",
+      "avg_logprob": -0.1945,
+      "no_speech_prob": 0.0078
+    },
+    {
+      "id": 430,
+      "start": 1514.1,
+      "end": 1516.62,
+      "text": "situation and try to bring this",
+      "avg_logprob": -0.1945,
+      "no_speech_prob": 0.0078
+    },
+    {
+      "id": 431,
+      "start": 1516.62,
+      "end": 1518.82,
+      "text": "war to an end. Nobody here",
+      "avg_logprob": -0.1945,
+      "no_speech_prob": 0.0078
+    },
+    {
+      "id": 432,
+      "start": 1518.82,
+      "end": 1520.42,
+      "text": "across the region wants to see",
+      "avg_logprob": -0.1945,
+      "no_speech_prob": 0.0078
+    },
+    {
+      "id": 433,
+      "start": 1520.42,
+      "end": 1523.46,
+      "text": "things increase, increase, you",
+      "avg_logprob": -0.1945,
+      "no_speech_prob": 0.0078
+    },
+    {
+      "id": 434,
+      "start": 1523.46,
+      "end": 1525.14,
+      "text": "know, increase and escalate.",
+      "avg_logprob": -0.1945,
+      "no_speech_prob": 0.0078
+    },
+    {
+      "id": 435,
+      "start": 1525.14,
+      "end": 1526.58,
+      "text": "They certainly do not. Malik",
+      "avg_logprob": -0.1945,
+      "no_speech_prob": 0.0078
+    },
+    {
+      "id": 436,
+      "start": 1526.58,
+      "end": 1528.14,
+      "text": "Trayna live for us in Kuwait",
+      "avg_logprob": -0.1945,
+      "no_speech_prob": 0.0078
+    },
+    {
+      "id": 437,
+      "start": 1528.14,
+      "end": 1530.53,
+      "text": "City. Malik, thank you.",
+      "avg_logprob": -0.1945,
+      "no_speech_prob": 0.0078
+    },
+    {
+      "id": 438,
+      "start": 1530.53,
+      "end": 1532.37,
+      "text": "In Lebanon, the Israeli army has",
+      "avg_logprob": -0.1945,
+      "no_speech_prob": 0.0078
+    },
+    {
+      "id": 439,
+      "start": 1532.37,
+      "end": 1534.41,
+      "text": "carried out new strikes on Beirut's",
+      "avg_logprob": -0.1945,
+      "no_speech_prob": 0.0078
+    },
+    {
+      "id": 440,
+      "start": 1534.41,
+      "end": 1536.17,
+      "text": "southern suburb in a densely",
+      "avg_logprob": -0.1945,
+      "no_speech_prob": 0.0078
+    },
+    {
+      "id": 441,
+      "start": 1536.17,
+      "end": 1538.25,
+      "text": "populated residential area.",
+      "avg_logprob": -0.1624,
+      "no_speech_prob": 0.0032
+    },
+    {
+      "id": 442,
+      "start": 1538.25,
+      "end": 1539.81,
+      "text": "The death toll has now risen to",
+      "avg_logprob": -0.1624,
+      "no_speech_prob": 0.0032
+    },
+    {
+      "id": 443,
+      "start": 1539.81,
+      "end": 1541.81,
+      "text": "at least five, including three",
+      "avg_logprob": -0.1624,
+      "no_speech_prob": 0.0032
+    },
+    {
+      "id": 444,
+      "start": 1541.81,
+      "end": 1543.41,
+      "text": "Sudanese nationals.",
+      "avg_logprob": -0.1624,
+      "no_speech_prob": 0.0032
+    },
+    {
+      "id": 445,
+      "start": 1543.41,
+      "end": 1545.17,
+      "text": "52 others were injured in those",
+      "avg_logprob": -0.1624,
+      "no_speech_prob": 0.0032
+    },
+    {
+      "id": 446,
+      "start": 1545.17,
+      "end": 1546.21,
+      "text": "strikes.",
+      "avg_logprob": -0.1624,
+      "no_speech_prob": 0.0032
+    },
+    {
+      "id": 447,
+      "start": 1546.21,
+      "end": 1547.53,
+      "text": "Three more people were killed",
+      "avg_logprob": -0.1624,
+      "no_speech_prob": 0.0032
+    },
+    {
+      "id": 448,
+      "start": 1547.53,
+      "end": 1548.93,
+      "text": "in an air strike in the hills",
+      "avg_logprob": -0.1624,
+      "no_speech_prob": 0.0032
+    },
+    {
+      "id": 449,
+      "start": 1548.93,
+      "end": 1550.41,
+      "text": "of Ainsade.",
+      "avg_logprob": -0.1624,
+      "no_speech_prob": 0.0032
+    },
+    {
+      "id": 450,
+      "start": 1550.41,
+      "end": 1551.81,
+      "text": "Israel says its continuing",
+      "avg_logprob": -0.1624,
+      "no_speech_prob": 0.0032
+    },
+    {
+      "id": 451,
+      "start": 1551.81,
+      "end": 1553.33,
+      "text": "attacks on Hezbollah military",
+      "avg_logprob": -0.1624,
+      "no_speech_prob": 0.0032
+    },
+    {
+      "id": 452,
+      "start": 1553.33,
+      "end": 1554.89,
+      "text": "infrastructure, more than a",
+      "avg_logprob": -0.1624,
+      "no_speech_prob": 0.0032
+    },
+    {
+      "id": 453,
+      "start": 1554.89,
+      "end": 1556.05,
+      "text": "million people have been",
+      "avg_logprob": -0.1624,
+      "no_speech_prob": 0.0032
+    },
+    {
+      "id": 454,
+      "start": 1556.05,
+      "end": 1557.77,
+      "text": "forcibly displaced across the",
+      "avg_logprob": -0.1624,
+      "no_speech_prob": 0.0032
+    },
+    {
+      "id": 455,
+      "start": 1557.77,
+      "end": 1559.3,
+      "text": "country.",
+      "avg_logprob": -0.1624,
+      "no_speech_prob": 0.0032
+    },
+    {
+      "id": 456,
+      "start": 1559.3,
+      "end": 1562.78,
+      "text": "They hit a completely",
+      "avg_logprob": -0.1624,
+      "no_speech_prob": 0.0032
+    },
+    {
+      "id": 457,
+      "start": 1562.78,
+      "end": 1563.9,
+      "text": "civilian area.",
+      "avg_logprob": -0.1624,
+      "no_speech_prob": 0.0032
+    },
+    {
+      "id": 458,
+      "start": 1563.9,
+      "end": 1565.18,
+      "text": "It's mostly migrants here,",
+      "avg_logprob": -0.1624,
+      "no_speech_prob": 0.0032
+    },
+    {
+      "id": 459,
+      "start": 1565.22,
+      "end": 1566.5,
+      "text": "Sudanese people.",
+      "avg_logprob": -0.1273,
+      "no_speech_prob": 0.0282
+    },
+    {
+      "id": 460,
+      "start": 1566.5,
+      "end": 1567.86,
+      "text": "People were at home and they",
+      "avg_logprob": -0.1273,
+      "no_speech_prob": 0.0282
+    },
+    {
+      "id": 461,
+      "start": 1567.86,
+      "end": 1568.82,
+      "text": "struck them.",
+      "avg_logprob": -0.1273,
+      "no_speech_prob": 0.0282
+    },
+    {
+      "id": 462,
+      "start": 1568.82,
+      "end": 1570.38,
+      "text": "Are those military objectives?",
+      "avg_logprob": -0.1273,
+      "no_speech_prob": 0.0282
+    },
+    {
+      "id": 463,
+      "start": 1570.38,
+      "end": 1571.26,
+      "text": "Where is the UN?",
+      "avg_logprob": -0.1273,
+      "no_speech_prob": 0.0282
+    },
+    {
+      "id": 464,
+      "start": 1571.26,
+      "end": 1572.86,
+      "text": "No one says anything.",
+      "avg_logprob": -0.1273,
+      "no_speech_prob": 0.0282
+    },
+    {
+      "id": 465,
+      "start": 1572.86,
+      "end": 1574.38,
+      "text": "Aren't they human too?",
+      "avg_logprob": -0.1273,
+      "no_speech_prob": 0.0282
+    },
+    {
+      "id": 466,
+      "start": 1574.38,
+      "end": 1575.42,
+      "text": "They're killing children and",
+      "avg_logprob": -0.1273,
+      "no_speech_prob": 0.0282
+    },
+    {
+      "id": 467,
+      "start": 1575.42,
+      "end": 1576.14,
+      "text": "women.",
+      "avg_logprob": -0.1273,
+      "no_speech_prob": 0.0282
+    },
+    {
+      "id": 468,
+      "start": 1576.14,
+      "end": 1577.42,
+      "text": "The whole world has to speak",
+      "avg_logprob": -0.1273,
+      "no_speech_prob": 0.0282
+    },
+    {
+      "id": 469,
+      "start": 1577.42,
+      "end": 1577.9,
+      "text": "up.",
+      "avg_logprob": -0.1273,
+      "no_speech_prob": 0.0282
+    },
+    {
+      "id": 470,
+      "start": 1577.9,
+      "end": 1579.06,
+      "text": "It has to see and say",
+      "avg_logprob": -0.1273,
+      "no_speech_prob": 0.0282
+    },
+    {
+      "id": 471,
+      "start": 1579.06,
+      "end": 1579.82,
+      "text": "something.",
+      "avg_logprob": -0.1273,
+      "no_speech_prob": 0.0282
+    },
+    {
+      "id": 472,
+      "start": 1579.82,
+      "end": 1580.9,
+      "text": "Have we become nothing but",
+      "avg_logprob": -0.1273,
+      "no_speech_prob": 0.0282
+    },
+    {
+      "id": 473,
+      "start": 1580.9,
+      "end": 1582.62,
+      "text": "numbers, a people of numbers?",
+      "avg_logprob": -0.1273,
+      "no_speech_prob": 0.0282
+    },
+    {
+      "id": 474,
+      "start": 1582.62,
+      "end": 1585.7,
+      "text": "How is that possible?",
+      "avg_logprob": -0.1273,
+      "no_speech_prob": 0.0282
+    },
+    {
+      "id": 475,
+      "start": 1585.7,
+      "end": 1586.9,
+      "text": "We are devastated.",
+      "avg_logprob": -0.1273,
+      "no_speech_prob": 0.0282
+    },
+    {
+      "id": 476,
+      "start": 1586.9,
+      "end": 1588.42,
+      "text": "Our morale is low.",
+      "avg_logprob": -0.1273,
+      "no_speech_prob": 0.0282
+    },
+    {
+      "id": 477,
+      "start": 1588.42,
+      "end": 1589.66,
+      "text": "When you see your friends and",
+      "avg_logprob": -0.1273,
+      "no_speech_prob": 0.0282
+    },
+    {
+      "id": 478,
+      "start": 1589.66,
+      "end": 1591.02,
+      "text": "neighbors in pieces on the",
+      "avg_logprob": -0.1273,
+      "no_speech_prob": 0.0282
+    },
+    {
+      "id": 479,
+      "start": 1591.02,
+      "end": 1592.78,
+      "text": "ground and blood everywhere and",
+      "avg_logprob": -0.1273,
+      "no_speech_prob": 0.0282
+    },
+    {
+      "id": 480,
+      "start": 1592.78,
+      "end": 1594.38,
+      "text": "the house destroyed, our",
+      "avg_logprob": -0.1273,
+      "no_speech_prob": 0.0282
+    },
+    {
+      "id": 481,
+      "start": 1594.42,
+      "end": 1595.82,
+      "text": "house was destroyed.",
+      "avg_logprob": -0.1741,
+      "no_speech_prob": 0.0038
+    },
+    {
+      "id": 482,
+      "start": 1595.82,
+      "end": 1597.18,
+      "text": "Where are we going to sleep?",
+      "avg_logprob": -0.1741,
+      "no_speech_prob": 0.0038
+    },
+    {
+      "id": 483,
+      "start": 1597.18,
+      "end": 1599.54,
+      "text": "Where do we go?",
+      "avg_logprob": -0.1741,
+      "no_speech_prob": 0.0038
+    },
+    {
+      "id": 484,
+      "start": 1599.54,
+      "end": 1601.38,
+      "text": "Zena Hodder joins us live now",
+      "avg_logprob": -0.1741,
+      "no_speech_prob": 0.0038
+    },
+    {
+      "id": 485,
+      "start": 1601.38,
+      "end": 1602.42,
+      "text": "from Beirut and Zena.",
+      "avg_logprob": -0.1741,
+      "no_speech_prob": 0.0038
+    },
+    {
+      "id": 486,
+      "start": 1602.42,
+      "end": 1604.3,
+      "text": "You can hear there in what",
+      "avg_logprob": -0.1741,
+      "no_speech_prob": 0.0038
+    },
+    {
+      "id": 487,
+      "start": 1604.3,
+      "end": 1605.22,
+      "text": "these people are saying,",
+      "avg_logprob": -0.1741,
+      "no_speech_prob": 0.0038
+    },
+    {
+      "id": 488,
+      "start": 1605.22,
+      "end": 1606.66,
+      "text": "how concerning it is for them",
+      "avg_logprob": -0.1741,
+      "no_speech_prob": 0.0038
+    },
+    {
+      "id": 489,
+      "start": 1606.66,
+      "end": 1607.98,
+      "text": "that the civilian death toll",
+      "avg_logprob": -0.1741,
+      "no_speech_prob": 0.0038
+    },
+    {
+      "id": 490,
+      "start": 1607.98,
+      "end": 1609.34,
+      "text": "in Lebanon continues to",
+      "avg_logprob": -0.1741,
+      "no_speech_prob": 0.0038
+    },
+    {
+      "id": 491,
+      "start": 1609.34,
+      "end": 1611.06,
+      "text": "climb ever higher.",
+      "avg_logprob": -0.1741,
+      "no_speech_prob": 0.0038
+    },
+    {
+      "id": 492,
+      "start": 1611.06,
+      "end": 1616.97,
+      "text": "What more can you tell us?",
+      "avg_logprob": -0.1741,
+      "no_speech_prob": 0.0038
+    },
+    {
+      "id": 493,
+      "start": 1616.97,
+      "end": 1617.89,
+      "text": "Well, civilians are",
+      "avg_logprob": -0.1741,
+      "no_speech_prob": 0.0038
+    },
+    {
+      "id": 494,
+      "start": 1617.89,
+      "end": 1619.45,
+      "text": "increasingly being caught",
+      "avg_logprob": -0.1741,
+      "no_speech_prob": 0.0038
+    },
+    {
+      "id": 495,
+      "start": 1619.45,
+      "end": 1620.81,
+      "text": "in this conflict.",
+      "avg_logprob": -0.1741,
+      "no_speech_prob": 0.0038
+    },
+    {
+      "id": 496,
+      "start": 1620.81,
+      "end": 1623.85,
+      "text": "1,461 people have been",
+      "avg_logprob": -0.1741,
+      "no_speech_prob": 0.0038
+    },
+    {
+      "id": 497,
+      "start": 1623.85,
+      "end": 1625.49,
+      "text": "killed in this conflict,",
+      "avg_logprob": -0.1741,
+      "no_speech_prob": 0.0038
+    },
+    {
+      "id": 498,
+      "start": 1625.49,
+      "end": 1626.89,
+      "text": "which has now entered its",
+      "avg_logprob": -0.1741,
+      "no_speech_prob": 0.0038
+    },
+    {
+      "id": 499,
+      "start": 1626.89,
+      "end": 1628.21,
+      "text": "sixth week with more than",
+      "avg_logprob": -0.1741,
+      "no_speech_prob": 0.0038
+    },
+    {
+      "id": 500,
+      "start": 1628.25,
+      "end": 1631.41,
+      "text": "4,000 people injured.",
+      "avg_logprob": -0.1895,
+      "no_speech_prob": 0.033
+    },
+    {
+      "id": 501,
+      "start": 1631.41,
+      "end": 1633.01,
+      "text": "Yesterday, in an Israeli",
+      "avg_logprob": -0.1895,
+      "no_speech_prob": 0.033
+    },
+    {
+      "id": 502,
+      "start": 1633.01,
+      "end": 1635.61,
+      "text": "strike in Znech, which is",
+      "avg_logprob": -0.1895,
+      "no_speech_prob": 0.033
+    },
+    {
+      "id": 503,
+      "start": 1635.61,
+      "end": 1637.89,
+      "text": "on the fringe of the Beirut",
+      "avg_logprob": -0.1895,
+      "no_speech_prob": 0.033
+    },
+    {
+      "id": 504,
+      "start": 1637.89,
+      "end": 1639.77,
+      "text": "Southern suburbs, it was",
+      "avg_logprob": -0.1895,
+      "no_speech_prob": 0.033
+    },
+    {
+      "id": 505,
+      "start": 1639.77,
+      "end": 1642.29,
+      "text": "a densely populated area.",
+      "avg_logprob": -0.1895,
+      "no_speech_prob": 0.033
+    },
+    {
+      "id": 506,
+      "start": 1642.29,
+      "end": 1643.73,
+      "text": "The apparent target was a",
+      "avg_logprob": -0.1895,
+      "no_speech_prob": 0.033
+    },
+    {
+      "id": 507,
+      "start": 1643.73,
+      "end": 1645.49,
+      "text": "Hezbollah military commander,",
+      "avg_logprob": -0.1895,
+      "no_speech_prob": 0.033
+    },
+    {
+      "id": 508,
+      "start": 1645.49,
+      "end": 1646.61,
+      "text": "but three Sudanese",
+      "avg_logprob": -0.1895,
+      "no_speech_prob": 0.033
+    },
+    {
+      "id": 509,
+      "start": 1646.61,
+      "end": 1647.81,
+      "text": "nationals were killed,",
+      "avg_logprob": -0.1895,
+      "no_speech_prob": 0.033
+    },
+    {
+      "id": 510,
+      "start": 1647.81,
+      "end": 1650.37,
+      "text": "along with a 15-year-old",
+      "avg_logprob": -0.1895,
+      "no_speech_prob": 0.033
+    },
+    {
+      "id": 511,
+      "start": 1650.37,
+      "end": 1651.17,
+      "text": "child.",
+      "avg_logprob": -0.1895,
+      "no_speech_prob": 0.033
+    },
+    {
+      "id": 512,
+      "start": 1651.17,
+      "end": 1652.73,
+      "text": "So even though the Israeli",
+      "avg_logprob": -0.1895,
+      "no_speech_prob": 0.033
+    },
+    {
+      "id": 513,
+      "start": 1652.73,
+      "end": 1654.09,
+      "text": "military may call these",
+      "avg_logprob": -0.1895,
+      "no_speech_prob": 0.033
+    },
+    {
+      "id": 514,
+      "start": 1654.09,
+      "end": 1655.65,
+      "text": "targeted strikes, pinpoint",
+      "avg_logprob": -0.1895,
+      "no_speech_prob": 0.033
+    },
+    {
+      "id": 515,
+      "start": 1655.65,
+      "end": 1657.13,
+      "text": "strikes, when they go",
+      "avg_logprob": -0.1895,
+      "no_speech_prob": 0.033
+    },
+    {
+      "id": 516,
+      "start": 1657.17,
+      "end": 1659.33,
+      "text": "after a certain individual",
+      "avg_logprob": -0.1437,
+      "no_speech_prob": 0.0113
+    },
+    {
+      "id": 517,
+      "start": 1659.33,
+      "end": 1661.77,
+      "text": "member of Hezbollah, at time",
+      "avg_logprob": -0.1437,
+      "no_speech_prob": 0.0113
+    },
+    {
+      "id": 518,
+      "start": 1661.77,
+      "end": 1663.41,
+      "text": "civilians are killed.",
+      "avg_logprob": -0.1437,
+      "no_speech_prob": 0.0113
+    },
+    {
+      "id": 519,
+      "start": 1663.41,
+      "end": 1664.69,
+      "text": "There was another incident",
+      "avg_logprob": -0.1437,
+      "no_speech_prob": 0.0113
+    },
+    {
+      "id": 520,
+      "start": 1664.69,
+      "end": 1666.41,
+      "text": "in Ain Saadi, that's north",
+      "avg_logprob": -0.1437,
+      "no_speech_prob": 0.0113
+    },
+    {
+      "id": 521,
+      "start": 1666.41,
+      "end": 1667.53,
+      "text": "of Beirut, where three",
+      "avg_logprob": -0.1437,
+      "no_speech_prob": 0.0113
+    },
+    {
+      "id": 522,
+      "start": 1667.53,
+      "end": 1668.93,
+      "text": "civilians were killed.",
+      "avg_logprob": -0.1437,
+      "no_speech_prob": 0.0113
+    },
+    {
+      "id": 523,
+      "start": 1668.93,
+      "end": 1670.21,
+      "text": "This is an area outside",
+      "avg_logprob": -0.1437,
+      "no_speech_prob": 0.0113
+    },
+    {
+      "id": 524,
+      "start": 1670.21,
+      "end": 1671.49,
+      "text": "Hezbollah's influence,",
+      "avg_logprob": -0.1437,
+      "no_speech_prob": 0.0113
+    },
+    {
+      "id": 525,
+      "start": 1671.49,
+      "end": 1672.81,
+      "text": "a predominantly Christian",
+      "avg_logprob": -0.1437,
+      "no_speech_prob": 0.0113
+    },
+    {
+      "id": 526,
+      "start": 1672.81,
+      "end": 1673.73,
+      "text": "neighborhood.",
+      "avg_logprob": -0.1437,
+      "no_speech_prob": 0.0113
+    },
+    {
+      "id": 527,
+      "start": 1673.73,
+      "end": 1674.85,
+      "text": "And those who were killed",
+      "avg_logprob": -0.1437,
+      "no_speech_prob": 0.0113
+    },
+    {
+      "id": 528,
+      "start": 1674.85,
+      "end": 1677.09,
+      "text": "are really not part of",
+      "avg_logprob": -0.1437,
+      "no_speech_prob": 0.0113
+    },
+    {
+      "id": 529,
+      "start": 1677.09,
+      "end": 1678.57,
+      "text": "this conflict, this ongoing",
+      "avg_logprob": -0.1437,
+      "no_speech_prob": 0.0113
+    },
+    {
+      "id": 530,
+      "start": 1678.57,
+      "end": 1680.17,
+      "text": "conflict, and it's raising",
+      "avg_logprob": -0.1437,
+      "no_speech_prob": 0.0113
+    },
+    {
+      "id": 531,
+      "start": 1680.17,
+      "end": 1681.69,
+      "text": "and heightening tensions",
+      "avg_logprob": -0.1437,
+      "no_speech_prob": 0.0113
+    },
+    {
+      "id": 532,
+      "start": 1681.69,
+      "end": 1683.33,
+      "text": "in those regions",
+      "avg_logprob": -0.1437,
+      "no_speech_prob": 0.0113
+    },
+    {
+      "id": 533,
+      "start": 1683.33,
+      "end": 1684.93,
+      "text": "because people there",
+      "avg_logprob": -0.1437,
+      "no_speech_prob": 0.0113
+    },
+    {
+      "id": 534,
+      "start": 1684.93,
+      "end": 1686.17,
+      "text": "are blaming Hezbollah",
+      "avg_logprob": -0.1437,
+      "no_speech_prob": 0.0113
+    },
+    {
+      "id": 535,
+      "start": 1686.21,
+      "end": 1687.81,
+      "text": "and Hezbollah supporters",
+      "avg_logprob": -0.1681,
+      "no_speech_prob": 0.0261
+    },
+    {
+      "id": 536,
+      "start": 1687.81,
+      "end": 1688.97,
+      "text": "for seeking shelter",
+      "avg_logprob": -0.1681,
+      "no_speech_prob": 0.0261
+    },
+    {
+      "id": 537,
+      "start": 1688.97,
+      "end": 1690.33,
+      "text": "in those areas.",
+      "avg_logprob": -0.1681,
+      "no_speech_prob": 0.0261
+    },
+    {
+      "id": 538,
+      "start": 1690.33,
+      "end": 1691.61,
+      "text": "And then you have strikes",
+      "avg_logprob": -0.1681,
+      "no_speech_prob": 0.0261
+    },
+    {
+      "id": 539,
+      "start": 1691.61,
+      "end": 1692.69,
+      "text": "in the south of the country,",
+      "avg_logprob": -0.1681,
+      "no_speech_prob": 0.0261
+    },
+    {
+      "id": 540,
+      "start": 1692.69,
+      "end": 1693.93,
+      "text": "for example, in the village",
+      "avg_logprob": -0.1681,
+      "no_speech_prob": 0.0261
+    },
+    {
+      "id": 541,
+      "start": 1693.93,
+      "end": 1695.61,
+      "text": "of Toul, in Nabatiyeh,",
+      "avg_logprob": -0.1681,
+      "no_speech_prob": 0.0261
+    },
+    {
+      "id": 542,
+      "start": 1695.61,
+      "end": 1696.81,
+      "text": "where a father and a mother",
+      "avg_logprob": -0.1681,
+      "no_speech_prob": 0.0261
+    },
+    {
+      "id": 543,
+      "start": 1696.81,
+      "end": 1697.61,
+      "text": "were killed.",
+      "avg_logprob": -0.1681,
+      "no_speech_prob": 0.0261
+    },
+    {
+      "id": 544,
+      "start": 1697.61,
+      "end": 1699.73,
+      "text": "And their 15-year-old",
+      "avg_logprob": -0.1681,
+      "no_speech_prob": 0.0261
+    },
+    {
+      "id": 545,
+      "start": 1699.73,
+      "end": 1701.25,
+      "text": "and nine-year-old child",
+      "avg_logprob": -0.1681,
+      "no_speech_prob": 0.0261
+    },
+    {
+      "id": 546,
+      "start": 1701.25,
+      "end": 1702.25,
+      "text": "were wounded.",
+      "avg_logprob": -0.1681,
+      "no_speech_prob": 0.0261
+    },
+    {
+      "id": 547,
+      "start": 1702.25,
+      "end": 1703.37,
+      "text": "And there have been",
+      "avg_logprob": -0.1681,
+      "no_speech_prob": 0.0261
+    },
+    {
+      "id": 548,
+      "start": 1703.37,
+      "end": 1704.77,
+      "text": "several instances where",
+      "avg_logprob": -0.1681,
+      "no_speech_prob": 0.0261
+    },
+    {
+      "id": 549,
+      "start": 1704.77,
+      "end": 1706.45,
+      "text": "whole families are killed",
+      "avg_logprob": -0.1681,
+      "no_speech_prob": 0.0261
+    },
+    {
+      "id": 550,
+      "start": 1706.45,
+      "end": 1707.61,
+      "text": "in a single strike.",
+      "avg_logprob": -0.1681,
+      "no_speech_prob": 0.0261
+    },
+    {
+      "id": 551,
+      "start": 1707.61,
+      "end": 1709.81,
+      "text": "So the civilian death toll",
+      "avg_logprob": -0.1681,
+      "no_speech_prob": 0.0261
+    },
+    {
+      "id": 552,
+      "start": 1709.81,
+      "end": 1711.85,
+      "text": "is rising according",
+      "avg_logprob": -0.1681,
+      "no_speech_prob": 0.0261
+    },
+    {
+      "id": 553,
+      "start": 1711.85,
+      "end": 1712.85,
+      "text": "to the statistics",
+      "avg_logprob": -0.1681,
+      "no_speech_prob": 0.0261
+    },
+    {
+      "id": 554,
+      "start": 1712.85,
+      "end": 1713.77,
+      "text": "that are being provided",
+      "avg_logprob": -0.1681,
+      "no_speech_prob": 0.0261
+    },
+    {
+      "id": 555,
+      "start": 1713.77,
+      "end": 1714.57,
+      "text": "by the Lebanese Health",
+      "avg_logprob": -0.1681,
+      "no_speech_prob": 0.0261
+    },
+    {
+      "id": 556,
+      "start": 1714.57,
+      "end": 1715.53,
+      "text": "Ministry, because they don't",
+      "avg_logprob": -0.1681,
+      "no_speech_prob": 0.0261
+    },
+    {
+      "id": 557,
+      "start": 1715.53,
+      "end": 1716.37,
+      "text": "really distinguish",
+      "avg_logprob": -0.1621,
+      "no_speech_prob": 0.0135
+    },
+    {
+      "id": 558,
+      "start": 1716.37,
+      "end": 1718.41,
+      "text": "between combatants and civilians.",
+      "avg_logprob": -0.1621,
+      "no_speech_prob": 0.0135
+    },
+    {
+      "id": 559,
+      "start": 1718.41,
+      "end": 1719.69,
+      "text": "But among the women,",
+      "avg_logprob": -0.1621,
+      "no_speech_prob": 0.0135
+    },
+    {
+      "id": 560,
+      "start": 1719.69,
+      "end": 1721.33,
+      "text": "children, and the paramedics",
+      "avg_logprob": -0.1621,
+      "no_speech_prob": 0.0135
+    },
+    {
+      "id": 561,
+      "start": 1721.33,
+      "end": 1722.37,
+      "text": "who have been killed,",
+      "avg_logprob": -0.1621,
+      "no_speech_prob": 0.0135
+    },
+    {
+      "id": 562,
+      "start": 1722.37,
+      "end": 1723.29,
+      "text": "we are talking about",
+      "avg_logprob": -0.1621,
+      "no_speech_prob": 0.0135
+    },
+    {
+      "id": 563,
+      "start": 1723.29,
+      "end": 1724.97,
+      "text": "roughly 25 percent",
+      "avg_logprob": -0.1621,
+      "no_speech_prob": 0.0135
+    },
+    {
+      "id": 564,
+      "start": 1724.97,
+      "end": 1727.01,
+      "text": "of the casualty toll.",
+      "avg_logprob": -0.1621,
+      "no_speech_prob": 0.0135
+    },
+    {
+      "id": 565,
+      "start": 1727.01,
+      "end": 1727.97,
+      "text": "All right, Zayna.",
+      "avg_logprob": -0.1621,
+      "no_speech_prob": 0.0135
+    },
+    {
+      "id": 566,
+      "start": 1727.97,
+      "end": 1730.09,
+      "text": "And while we have you,",
+      "avg_logprob": -0.1621,
+      "no_speech_prob": 0.0135
+    },
+    {
+      "id": 567,
+      "start": 1730.09,
+      "end": 1731.61,
+      "text": "let's talk about where Israel",
+      "avg_logprob": -0.1621,
+      "no_speech_prob": 0.0135
+    },
+    {
+      "id": 568,
+      "start": 1731.61,
+      "end": 1733.01,
+      "text": "is in terms of its ground",
+      "avg_logprob": -0.1621,
+      "no_speech_prob": 0.0135
+    },
+    {
+      "id": 569,
+      "start": 1733.01,
+      "end": 1735.09,
+      "text": "invasion in southern Lebanon.",
+      "avg_logprob": -0.1621,
+      "no_speech_prob": 0.0135
+    },
+    {
+      "id": 570,
+      "start": 1735.09,
+      "end": 1735.77,
+      "text": "What are they saying",
+      "avg_logprob": -0.1621,
+      "no_speech_prob": 0.0135
+    },
+    {
+      "id": 571,
+      "start": 1735.77,
+      "end": 1737.01,
+      "text": "right now about it?",
+      "avg_logprob": -0.1621,
+      "no_speech_prob": 0.0135
+    },
+    {
+      "id": 572,
+      "start": 1741.52,
+      "end": 1743.52,
+      "text": "Well, the Israeli military",
+      "avg_logprob": -0.1621,
+      "no_speech_prob": 0.0135
+    },
+    {
+      "id": 573,
+      "start": 1743.52,
+      "end": 1745.52,
+      "text": "is operating in southern Lebanon.",
+      "avg_logprob": -0.1621,
+      "no_speech_prob": 0.0135
+    },
+    {
+      "id": 574,
+      "start": 1745.52,
+      "end": 1747.8,
+      "text": "But in the past 24, 48 hours,",
+      "avg_logprob": -0.1621,
+      "no_speech_prob": 0.0135
+    },
+    {
+      "id": 575,
+      "start": 1747.8,
+      "end": 1749.16,
+      "text": "they haven't made any",
+      "avg_logprob": -0.1621,
+      "no_speech_prob": 0.0135
+    },
+    {
+      "id": 576,
+      "start": 1749.2,
+      "end": 1751.08,
+      "text": "significant military gains",
+      "avg_logprob": -0.1172,
+      "no_speech_prob": 0.0153
+    },
+    {
+      "id": 577,
+      "start": 1751.08,
+      "end": 1752.08,
+      "text": "on the ground.",
+      "avg_logprob": -0.1172,
+      "no_speech_prob": 0.0153
+    },
+    {
+      "id": 578,
+      "start": 1752.08,
+      "end": 1754.56,
+      "text": "Yes, they have territorial control",
+      "avg_logprob": -0.1172,
+      "no_speech_prob": 0.0153
+    },
+    {
+      "id": 579,
+      "start": 1754.56,
+      "end": 1757.16,
+      "text": "of some areas along that border.",
+      "avg_logprob": -0.1172,
+      "no_speech_prob": 0.0153
+    },
+    {
+      "id": 580,
+      "start": 1757.16,
+      "end": 1758.28,
+      "text": "But territorial control",
+      "avg_logprob": -0.1172,
+      "no_speech_prob": 0.0153
+    },
+    {
+      "id": 581,
+      "start": 1758.28,
+      "end": 1760.16,
+      "text": "does not mean operational control",
+      "avg_logprob": -0.1172,
+      "no_speech_prob": 0.0153
+    },
+    {
+      "id": 582,
+      "start": 1760.16,
+      "end": 1762.08,
+      "text": "because Hezbollah continues",
+      "avg_logprob": -0.1172,
+      "no_speech_prob": 0.0153
+    },
+    {
+      "id": 583,
+      "start": 1762.08,
+      "end": 1762.8,
+      "text": "to fight back.",
+      "avg_logprob": -0.1172,
+      "no_speech_prob": 0.0153
+    },
+    {
+      "id": 584,
+      "start": 1762.8,
+      "end": 1764.68,
+      "text": "It is putting up resistance.",
+      "avg_logprob": -0.1172,
+      "no_speech_prob": 0.0153
+    },
+    {
+      "id": 585,
+      "start": 1764.68,
+      "end": 1765.6,
+      "text": "And then we heard from",
+      "avg_logprob": -0.1172,
+      "no_speech_prob": 0.0153
+    },
+    {
+      "id": 586,
+      "start": 1765.6,
+      "end": 1767.08,
+      "text": "the Israeli Chief of Staff",
+      "avg_logprob": -0.1172,
+      "no_speech_prob": 0.0153
+    },
+    {
+      "id": 587,
+      "start": 1767.08,
+      "end": 1768.84,
+      "text": "on Sunday, where he said,",
+      "avg_logprob": -0.1172,
+      "no_speech_prob": 0.0153
+    },
+    {
+      "id": 588,
+      "start": 1768.84,
+      "end": 1771.12,
+      "text": "yes, Israel's ultimate goal",
+      "avg_logprob": -0.1172,
+      "no_speech_prob": 0.0153
+    },
+    {
+      "id": 589,
+      "start": 1771.12,
+      "end": 1772.84,
+      "text": "is to disarm Hezbollah.",
+      "avg_logprob": -0.1172,
+      "no_speech_prob": 0.0153
+    },
+    {
+      "id": 590,
+      "start": 1772.84,
+      "end": 1775.04,
+      "text": "But the goal of the current campaign",
+      "avg_logprob": -0.1172,
+      "no_speech_prob": 0.0153
+    },
+    {
+      "id": 591,
+      "start": 1775.04,
+      "end": 1777.24,
+      "text": "is about advancing this goal.",
+      "avg_logprob": -0.1172,
+      "no_speech_prob": 0.0153
+    },
+    {
+      "id": 592,
+      "start": 1777.24,
+      "end": 1779.16,
+      "text": "He does not use the word achieve.",
+      "avg_logprob": -0.1649,
+      "no_speech_prob": 0.0769
+    },
+    {
+      "id": 593,
+      "start": 1779.16,
+      "end": 1781.2,
+      "text": "He uses the word advance.",
+      "avg_logprob": -0.1649,
+      "no_speech_prob": 0.0769
+    },
+    {
+      "id": 594,
+      "start": 1781.2,
+      "end": 1784.2,
+      "text": "And he also calls on the political leadership",
+      "avg_logprob": -0.1649,
+      "no_speech_prob": 0.0769
+    },
+    {
+      "id": 595,
+      "start": 1784.2,
+      "end": 1785.56,
+      "text": "to play a part.",
+      "avg_logprob": -0.1649,
+      "no_speech_prob": 0.0769
+    },
+    {
+      "id": 596,
+      "start": 1785.56,
+      "end": 1787.36,
+      "text": "So this is the Israeli army saying",
+      "avg_logprob": -0.1649,
+      "no_speech_prob": 0.0769
+    },
+    {
+      "id": 597,
+      "start": 1787.36,
+      "end": 1789.04,
+      "text": "that even though they reach up",
+      "avg_logprob": -0.1649,
+      "no_speech_prob": 0.0769
+    },
+    {
+      "id": 598,
+      "start": 1789.04,
+      "end": 1790.4,
+      "text": "until the Letani River,",
+      "avg_logprob": -0.1649,
+      "no_speech_prob": 0.0769
+    },
+    {
+      "id": 599,
+      "start": 1790.4,
+      "end": 1792.48,
+      "text": "the stated goal of this invasion,",
+      "avg_logprob": -0.1649,
+      "no_speech_prob": 0.0769
+    },
+    {
+      "id": 600,
+      "start": 1792.48,
+      "end": 1795.0,
+      "text": "it's not going to achieve Hezbollah's disarmament.",
+      "avg_logprob": -0.1649,
+      "no_speech_prob": 0.0769
+    },
+    {
+      "id": 601,
+      "start": 1795.0,
+      "end": 1796.76,
+      "text": "The Israeli military knows very well",
+      "avg_logprob": -0.1649,
+      "no_speech_prob": 0.0769
+    },
+    {
+      "id": 602,
+      "start": 1796.76,
+      "end": 1799.2,
+      "text": "that Hezbollah's strategic infrastructure",
+      "avg_logprob": -0.1649,
+      "no_speech_prob": 0.0769
+    },
+    {
+      "id": 603,
+      "start": 1799.2,
+      "end": 1800.04,
+      "text": "and strategic weapons",
+      "avg_logprob": -0.1649,
+      "no_speech_prob": 0.0769
+    }
+  ]
+}

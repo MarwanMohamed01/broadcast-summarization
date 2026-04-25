@@ -57,8 +57,13 @@ webapp/frontend/dist/
 site/node_modules/
 site/dist/
 site/.astro/
-site/public/data/
-site/public/video/
+# Note: site/public/data/ and site/public/video/ are NOT ignored — they
+# are the prebuilt asset bundle (~2.8 MB total) so anyone who clones the
+# repo can run `cd site && npm install && npm run dev` without needing
+# the multi-GB source video. Regenerate with:
+#   python videos/extract_demo_clip.py
+#   python site/scripts/instrument_slice_A.py
+#   python site/scripts/build_assets.py
 
 # ── Demo clip extracted by videos/extract_demo_clip.py
 videos/demo_clip_30s.mp4

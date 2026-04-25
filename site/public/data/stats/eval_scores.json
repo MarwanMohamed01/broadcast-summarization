@@ -1,0 +1,87 @@
+{
+  "visual_27min": [
+    {
+      "model": "Llama 3.3 70B (Groq)",
+      "provider": "groq",
+      "rougeL": 0.1508,
+      "rouge1": 0.3741,
+      "rouge2": 0.0864,
+      "bertscore": 0.8243,
+      "latency_seconds": 2.24
+    },
+    {
+      "model": "Llama 3.1 8B (Ollama local)",
+      "provider": "ollama",
+      "rougeL": 0.1512,
+      "rouge1": 0.3432,
+      "rouge2": 0.0901,
+      "bertscore": 0.8234,
+      "latency_seconds": 242.95
+    },
+    {
+      "model": "Gemini 2.5 Flash",
+      "provider": "gemini",
+      "rougeL": 0.1455,
+      "rouge1": 0.3697,
+      "rouge2": 0.0828,
+      "bertscore": 0.8215,
+      "latency_seconds": 12.64
+    },
+    {
+      "model": "Llama 3.2 3B (Ollama local)",
+      "provider": "ollama",
+      "rougeL": 0.1256,
+      "rouge1": 0.2863,
+      "rouge2": 0.0552,
+      "bertscore": 0.8206,
+      "latency_seconds": 99.97
+    },
+    {
+      "model": "Llama 4 Scout 17B (Groq)",
+      "provider": "groq",
+      "rougeL": 0.1456,
+      "rouge1": 0.3539,
+      "rouge2": 0.0729,
+      "bertscore": 0.8201,
+      "latency_seconds": 0.98
+    },
+    {
+      "model": "Llama 3 8B (HuggingFace)",
+      "provider": "huggingface",
+      "rougeL": 0.1431,
+      "rouge1": 0.3436,
+      "rouge2": 0.0697,
+      "bertscore": 0.8201,
+      "latency_seconds": 5.23
+    },
+    {
+      "model": "Command-R (Cohere)",
+      "provider": "cohere",
+      "rougeL": 0.1268,
+      "rouge1": 0.3056,
+      "rouge2": 0.0562,
+      "bertscore": 0.818,
+      "latency_seconds": 131.38
+    },
+    {
+      "model": "Llama 3.1 8B (Groq)",
+      "provider": "groq",
+      "rougeL": 0.1423,
+      "rouge1": 0.3243,
+      "rouge2": 0.0797,
+      "bertscore": 0.8176,
+      "latency_seconds": 0.59
+    },
+    {
+      "model": "Qwen3 32B (Groq)",
+      "provider": "groq",
+      "rougeL": 0.1194,
+      "rouge1": 0.2974,
+      "rouge2": 0.0609,
+      "bertscore": 0.8157,
+      "latency_seconds": 1.95
+    }
+  ],
+  "visual_14h_cleaned": [],
+  "asr_final": []
+}
