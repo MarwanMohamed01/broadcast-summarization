@@ -1,0 +1,221 @@
+{
+  "model": "ministral-14b-2512",
+  "vlm_key": "mistral",
+  "per_run": [
+    {
+      "stage": "mistral",
+      "slice": "full_video",
+      "gt_count": 27,
+      "extracted_count": 3214,
+      "thresholds": {
+        "60": {
+          "tp_gt": 27,
+          "tp_ext": 2285,
+          "fn": 0,
+          "fp": 929,
+          "precision": 0.711,
+          "recall": 1.0,
+          "f1": 0.8311
+        },
+        "70": {
+          "tp_gt": 27,
+          "tp_ext": 1998,
+          "fn": 0,
+          "fp": 1216,
+          "precision": 0.6217,
+          "recall": 1.0,
+          "f1": 0.7667
+        },
+        "80": {
+          "tp_gt": 27,
+          "tp_ext": 1564,
+          "fn": 0,
+          "fp": 1650,
+          "precision": 0.4866,
+          "recall": 1.0,
+          "f1": 0.6547
+        }
+      },
+      "exact_matches": 27,
+      "coverage_at_50_pct": 27,
+      "avg_cer_at_70": 0.0072,
+      "avg_wer_at_70": 0.0244,
+      "missed_headlines": [],
+      "false_positive_count": 1216,
+      "false_positives_sample": [
+        "U.S. PRESIDENT SAYS GAZA BOARD OF PEACE WILL INCLUDE REPS FROM 'MOST MAJOR COUNTRIES'",
+        "ISRAELI ARMY WARNS PEOPLE TO FLEE TWO VILLAGES IN SOUTHERN LEBANON AFTER STRIKES KILL 14",
+        "ISRAELI ATTACKS ACROSS GAZA HAVE KILLED AT LEAST 1000 PALESTINIANS",
+        "AT LEAST TWO PALESTINIANS SINCE OCTOBER CEASEFIRE STARTED",
+        "AT LEAST TWO PEOPLE KILLED AND OTHERS KIDNAPPED AFTER GUNMEN ATTACK CHURCH IN NIGERIA",
+        "CHINA BANS ALL IMPORTS OF JAPANESE SEAFOOD AS TAIWAN DIPLOMATIC DISPUTE ESCALATES",
+        "U.S. CONGRESS APPROVES BILL FORCING JUSTICE DEPT TO RELEASE REMAINING EPISTOLARY PRIVILEGE DOCUMENTS",
+        "U.S. CONGRESS APPROVES BILL FORCING JUSTICE DEPT TO RELEASE REMAINING EPSTEIN FILES",
+        "TWO CABINET MINISTERS RESIGN IN THE PHILIPPINES AFTER BEING IMPLICATED IN CORRUPTION SCANDAL",
+        "CORRUPTION SCANDAL"
+      ],
+      "hallucination_rate_at_60": 0.289,
+      "wall_seconds": 6831.408971309662,
+      "cost_usd": 0.0,
+      "run": 1,
+      "source_slice": "full_video",
+      "variant": "raw",
+      "vlm": "mistral",
+      "gt_slice": "slice_A"
+    },
+    {
+      "stage": "mistral",
+      "slice": "full_video",
+      "gt_count": 28,
+      "extracted_count": 3214,
+      "thresholds": {
+        "60": {
+          "tp_gt": 28,
+          "tp_ext": 1895,
+          "fn": 0,
+          "fp": 1319,
+          "precision": 0.5896,
+          "recall": 1.0,
+          "f1": 0.7418
+        },
+        "70": {
+          "tp_gt": 28,
+          "tp_ext": 1557,
+          "fn": 0,
+          "fp": 1657,
+          "precision": 0.4844,
+          "recall": 1.0,
+          "f1": 0.6527
+        },
+        "80": {
+          "tp_gt": 28,
+          "tp_ext": 1190,
+          "fn": 0,
+          "fp": 2024,
+          "precision": 0.3703,
+          "recall": 1.0,
+          "f1": 0.5404
+        }
+      },
+      "exact_matches": 28,
+      "coverage_at_50_pct": 28,
+      "avg_cer_at_70": 0.0076,
+      "avg_wer_at_70": 0.0121,
+      "missed_headlines": [],
+      "false_positive_count": 1657,
+      "false_positives_sample": [
+        "U.S. PRESIDENT SAYS GAZA BOARD OF PEACE WILL INCLUDE REPS FROM 'MOST MAJOR COUNTRIES'",
+        "ISRAELI ARMY WARNS PEOPLE TO FLEE TWO VILLAGES IN SOUTHERN LEBANON AFTER STRIKES KILL 14",
+        "ISRAELI ATTACKS ACROSS GAZA HAVE KILLED AT LEAST 1000 PALESTINIANS",
+        "AT LEAST TWO PALESTINIANS SINCE OCTOBER CEASEFIRE STARTED",
+        "AT LEAST TWO PEOPLE KILLED AND OTHERS KIDNAPPED AFTER GUNMEN ATTACK CHURCH IN NIGERIA",
+        "CHINA BANS ALL IMPORTS OF JAPANESE SEAFOOD AS TAIWAN DIPLOMATIC DISPUTE ESCALATES",
+        "U.S. CONGRESS APPROVES BILL FORCING JUSTICE DEPT TO RELEASE REMAINING EPISTOLARY PRIVILEGE DOCUMENTS",
+        "U.S. CONGRESS APPROVES BILL FORCING JUSTICE DEPT TO RELEASE REMAINING EPSTEIN FILES",
+        "TWO CABINET MINISTERS RESIGN IN THE PHILIPPINES AFTER BEING IMPLICATED IN CORRUPTION SCANDAL",
+        "CORRUPTION SCANDAL"
+      ],
+      "hallucination_rate_at_60": 0.4104,
+      "wall_seconds": 6831.408971309662,
+      "cost_usd": 0.0,
+      "run": 1,
+      "source_slice": "full_video",
+      "variant": "raw",
+      "vlm": "mistral",
+      "gt_slice": "slice_B"
+    }
+  ],
+  "aggregates": {
+    "slice_A": {
+      "f1_mean": 0.7667,
+      "f1_std": 0.0,
+      "cer_mean": 0.0072,
+      "cer_std": 0.0,
+      "halluc_mean": 0.289,
+      "halluc_std": 0.0,
+      "wall_mean": 6831.408971309662,
+      "cost_mean": 0.0,
+      "n_runs": 1
+    },
+    "slice_B": {
+      "f1_mean": 0.6527,
+      "f1_std": 0.0,
+      "cer_mean": 0.0076,
+      "cer_std": 0.0,
+      "halluc_mean": 0.4104,
+      "halluc_std": 0.0,
+      "wall_mean": 6831.408971309662,
+      "cost_mean": 0.0,
+      "n_runs": 1
+    }
+  },
+  "gemini_canonical": {
+    "stage": "gemini",
+    "slice": "full_video",
+    "gt_count": 27,
+    "extracted_count": 100,
+    "thresholds": {
+      "60": {
+        "tp_gt": 27,
+        "tp_ext": 62,
+        "fn": 0,
+        "fp": 38,
+        "precision": 0.62,
+        "recall": 1.0,
+        "f1": 0.7654
+      },
+      "70": {
+        "tp_gt": 27,
+        "tp_ext": 48,
+        "fn": 0,
+        "fp": 52,
+        "precision": 0.48,
+        "recall": 1.0,
+        "f1": 0.6486
+      },
+      "80": {
+        "tp_gt": 23,
+        "tp_ext": 27,
+        "fn": 4,
+        "fp": 73,
+        "precision": 0.27,
+        "recall": 0.8519,
+        "f1": 0.41
+      }
+    },
+    "exact_matches": 11,
+    "coverage_at_50_pct": 27,
+    "avg_cer_at_70": 0.1875,
+    "avg_wer_at_70": 0.2626,
+    "missed_headlines": [],
+    "false_positive_count": 52,
+    "false_positives_sample": [
+      "IRAN SAYS STRIKE U.S. FORCES RELOCATED ON KUWAIT'S BUBIYAN ISLANDOPLE INJURED BY MISSILE INTERCEPTION DEBRIS IN NORTHERN KUWAIT: HEALTH MINISTRY",
+      "U.S.-ISRAELI STRIKE KILLS AT LEAST FIVE PEOPLE IN THE IRANIAN CITY OF PRESIDENT LS U.A THAT DEAL IS POSSIBLE BY MONDAY AS IRAN 'NEGOTIATING NOW'",
+      "IRAN'S FOREIGN MINISTRY SPOKESPERSON: IRAN WILL RECIPROCATE ON ITS INFRASTRUCTURE - IR'RECKLESS' SAVE MEAN 'WHOLE REGION GOING TO BURN'",
+      "IRAN'S REVOLUTIONARY GT HAS TARGETED CHEMICAL PLANTS IN UAE, KUWAIT AND S NPCILI-LINKED SPREES SOLIDARI'N ATTACKS ON ENERGY FACILITIES",
+      "PRESIDENT TRUMP TELLS U.S. MEDIA THAT DEAL IS POSSIBLE BY MONDAY AS IRAN 'NEGOTI' THREATENS STRIKES ON IRAN'S SLANTS IF HORMUZ",
+      "IRAN'S ATOMIC ENERGY CHIEF ACCUSES UN NUCLEAR WATCHDOG OF INACTION, WARNS OF RISK FROM ATTACKS ON BUSHEHR POWER PLANTS",
+      "FOR MORE GO TO ALJAZEERA.COPRESIDENT TRUMP TELLS U.S. MEDIA THAT DEAL IS POSSIBLE BY MONDAY AS IRAN 'NEGOTIATING NOW'",
+      "IRAN'S REVOLUTIONARY GUARD ANNOUNCES DEATH OF INTELLIGENCE CHIEF ARNS OF RISK FROM ATTACKS ON BUSHEHR POWER PLANTS",
+      "IRANIAN FOREIGN MINISTRY SPOKESMAN SAYS U.S. HAS DESTROYED DIPLOMATIC PROCESS, FOCUS IS ON DEFENCE OF NATION",
+      "IRAN WARNS IT WILL ATTACK U.S. ECONOMIC INTERESTS IN REGION IF ATTACKS ON IRANIAN CIVILIAN SITES PERSIST"
+    ],
+    "hallucination_rate_at_60": 0.38,
+    "wall_seconds": 3658.7059082984924,
+    "cost_usd": 0.865396,
+    "run": 1,
+    "source_slice": "full_video",
+    "variant": "raw",
+    "vlm": "gemini",
+    "gt_slice": "slice_A"
+  },
+  "ocr_baseline": {
+    "f1_at_70": 0.881,
+    "recall_at_70": 0.923,
+    "precision_at_70": 0.842,
+    "cer_at_70": 0.139,
+    "time_minutes": 12,
+    "cost_usd": 0.05
+  }
+}

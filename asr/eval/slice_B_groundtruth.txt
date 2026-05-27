@@ -1,0 +1,54 @@
+# GROUND-TRUTH TRANSCRIPT — Slice B
+# Source: slice_B_audio.wav  (13:00:00–13:05:00 of AlJazeera 14h broadcast)
+# Author:    Marwan Mohamed
+# Listened on: <DATE>
+#
+# ── FORMAT (must match for fair WER comparison) ────────────────────────────────
+#  • Plain text, one sentence per line
+#  • No timestamps
+#  • Lowercase only
+#  • Numbers spelled out (e.g.  "iran killed thirty four people"  not  "34 people")
+#  • Punctuation: APOSTROPHES allowed ("don't", "iran's"). Drop everything else
+#    (no commas, periods, dashes, quotes, question marks, etc.)
+#  • One blank line marks an unintelligible / non-speech gap (silence, music,
+#    overlap) — do NOT try to transcribe non-speech sounds
+#  • Speaker labels: omit (we are measuring text fidelity, not diarisation)
+#
+# ── EXAMPLE (showing the conventions) ──────────────────────────────────────────
+# israeli air strike on southern lebanon kills seven people
+# multiple injuries reported after iranian missile attack hits central israel
+# iran's parliament speaker warns trump's reckless moves mean whole region going
+# to burn
+#
+# ── BEGIN GROUND TRUTH BELOW THIS LINE ─────────────────────────────────────────
+has been no no letting up of these retaliation attacks across the gulf
+and mike obviously where that deadline by trump is looming has there been any reaction from the gcc in terms of anticipation as to what happens how will that affect the gcc even
+well i think everywhere across the gcc people and officials are extremely concerned right because they the gulf has bared the brunt of these retaliation attacks
+you know more than eightfive percent of these attacks have targeted the gulf
+you know more than six thousand ballistic missiles drones and cruise missiles have have been targeted here
+and we just heard from the ministry of foreign affairs in qatar where the prime minister and foreign minister had a conversation with the spanish foreign minister and you know he they they talked about de escalation and that there needs there's no military solution that you know there needs to be a space for negotiations for a diplomatic path
+you know here in kuwait you know yesterday we've see we saw numerous attacks you know the most devastating day in terms of kuwait
+you know i think what the iranians proved yesterday is that they can indeed target and hit a civilian infrastructure
+two water plants and desalination plants and power plants were hit here yesterday 
+that's extremely critical infrastructure for the gulf here in kuwait
+ninety percent of their drinking water comes from these desalination plants so that's a red line yet again being crossed
+kuwait is also the closest to iran just eighty kilometers of water is what separates these two countries and also borders iraq where we've seen in in the recent week officials believe that a lot of these attacks are coming from affiliated iran affiliated groups in iraq
+so if there's a real concern here i think you know the call has been consistent deescalate the situation
+we saw that yesterday the omanians said they're in talks with the iranians to come up with some kind of mechanism of to to insure passage through the hormuz strait
+i think realistically nobody believes that you know they can come up with a a deal that everybody can agree on within the next you know twelve or twenty four hours
+but you know what i think the the message will be relayed to trump is look the iranians are talking there's talks going on to to open up the strait let's give diplomacy a chance and and let's get a solution that will bring long term stability across the entire region
+all right thanks very much that's malik trainer there live for us in kuwait city
+well israel has carried out multiple strikes across southern lebanon and also on the capital beirut causing widespread damage and death the latest targeted beirut's southern suburbs and this comes after the military issued a forced evacuation threat for residents for seven neighborhoods on sunday multiple attacks on the southern suburbs densely populated areas killed at least five people
+meanwhile in the south of lebanon israeli military attacks targeted areas in the nabatia district at least four people were killed in a drone strike targeting a car there and in a separate attack in the same area one person was killed
+let's go live now to zaina hodder who's been following the latest from the capital beirut
+zaina earlier we saw a smoke that seems to be coming from the dahia area what more do we know about that
+well yet again the israeli military targeting beirut southern suburbs they issued an evacuation order before those strikes come in but not all strikes are preceded by a warning
+as i'm speaking to you now israeli warplanes are flying over the lebanese capital
+they've been doing this for the past few days really
+there's been an escalation with israeli strikes relentless not just in beirut but in the south of the country in the east of the country yesterday a densely populated neighborhood was hit killing five people among them a child  and the target appeared to be a hezbollah military commander
+but even though israel calls these targeted assassinations pinpoint strikes it really doesn't matter if civilians are killed as well 
+and there is growing concern that the latest figure released by the lebanese health ministries one thousnad four hundred sixty one killed among them children and women more than four thousand wounded
+and that number has not been updated because since the early hours of the morning there have been repeated strikes
+now while the ministry doesn't say or differentiate between combatants and civilians if we count the number of women children and paramedics alone that's roughly twenty five percent of the casualty toll
+and zaina where are the israelis in terms of their ground invasion in the south you know talking in the israeli
+

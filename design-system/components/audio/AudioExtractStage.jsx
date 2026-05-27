@@ -3,7 +3,7 @@ import { motion, useInView } from "framer-motion";
 import StagePanel from "../shared/StagePanel.jsx";
 
 /**
- * Visualises the moment audio is peeled off the video container.
+ * Visualizes the moment audio is peeled off the video container.
  * No real audio plays — purely visual metaphor of bars detaching and
  * re-arranging into a horizontal waveform.
  */

@@ -14,17 +14,24 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         </span>
       </h1>
       <p class="prose-thesis mt-8 text-lg">
-        Two parallel pipelines run on the same broadcast.
-        <span class="text-visual font-medium">Vision</span> reads the scrolling
-        ticker bar; <span class="text-audio font-medium">audio</span>
-        transcribes the spoken news. Both feed into the same nine LLMs and
-        get scored against the same human reference.
+        Two modalities, three extraction routes, one broadcast.
+        <span class="text-visual font-medium">Vision</span> reads the
+        scrolling ticker bar with a five-stage OCR pipeline;
+        <span class="text-visual font-medium">VLM</span> swaps the whole
+        OCR stack for one prompted vision-language call per tile;
+        <span class="text-audio font-medium">audio</span> transcribes the
+        spoken news. All three feed the same nine LLMs and are scored
+        against the same human reference.
       </p>
 
       <div class="mt-10 flex flex-wrap gap-3">
         <a href="/visual" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-md
                                  bg-text text-bg text-sm font-medium hover:opacity-90 transition-opacity">
           Walk through the visual pipeline →
+        </a>
+        <a href="/vlm" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-md
+                              border border-border text-sm font-medium hover:bg-surface-2 transition-colors">
+          See the VLM comparison →
         </a>
         <a href="/audio" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-md
                                 border border-border text-sm font-medium hover:bg-surface-2 transition-colors">
@@ -36,40 +43,57 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
   {/* ── PATH OVERVIEW ──────────────────────── */}
   <section>
-    <div class="max-w-content mx-auto px-6 py-20 grid lg:grid-cols-2 gap-8">
+    <div class="max-w-content mx-auto px-6 py-20 grid lg:grid-cols-3 gap-8">
       <a href="/visual"
          class="card p-6 hover:shadow-elevated transition-shadow group">
-        <span class="pill pill-visual mb-4">Visual path</span>
-        <h2 class="text-2xl font-semibold mb-2 group-hover:text-visual transition-colors">
+        <span class="pill pill-visual mb-4">Visual path · OCR</span>
+        <h2 class="text-xl font-semibold mb-2 group-hover:text-visual transition-colors">
           OCR of the scrolling ticker
         </h2>
-        <p class="prose-thesis">
+        <p class="prose-thesis text-sm">
           Sample frames → detect scroll offsets → stitch panorama →
-          recognise text → segment into headlines → LLM-clean → summarise.
-          <strong>F1 88.1%</strong> on the 14-hour validation set after cleaning.
+          recognize text → segment into headlines → LLM-clean.
+          <strong>F1 88.1%</strong> on the 14-hour validation set after
+          cleaning.
         </p>
         <div class="mt-6 flex flex-wrap gap-2 text-xs">
           <span class="pill">EasyOCR + Tesseract</span>
-          <span class="pill">Gemini 2.5 Flash cleaner</span>
-          <span class="pill">9 LLM summarisers</span>
+          <span class="pill">Gemini cleaner</span>
+        </div>
+      </a>
+
+      <a href="/vlm"
+         class="card p-6 hover:shadow-elevated transition-shadow group">
+        <span class="pill pill-visual mb-4">Visual path · VLM</span>
+        <h2 class="text-xl font-semibold mb-2 group-hover:text-visual transition-colors">
+          One vision-language call per tile
+        </h2>
+        <p class="prose-thesis text-sm">
+          Skip OCR entirely — hand each panorama tile to a VLM and ask
+          for JSON headlines. <strong>71.0% F1 / 100% recall / $0</strong>
+          with open-weights Ministral 3 14B, beating paid Gemini 2.5
+          Flash on the same tiles.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-2 text-xs">
+          <span class="pill">Ministral 3 14B</span>
+          <span class="pill">Gemini 2.5 Flash</span>
         </div>
       </a>
 
       <a href="/audio"
          class="card p-6 hover:shadow-elevated transition-shadow group">
         <span class="pill pill-audio mb-4">Audio path</span>
-        <h2 class="text-2xl font-semibold mb-2 group-hover:text-audio transition-colors">
+        <h2 class="text-xl font-semibold mb-2 group-hover:text-audio transition-colors">
           Whisper ASR of the spoken broadcast
         </h2>
-        <p class="prose-thesis">
-          Extract audio → faster-whisper streaming transcription → 15-min
-          chunks → per-chunk summaries (Level 1) → final summary per LLM
-          (Level 2). 13,517 segments transcribed at 3.07× realtime on CPU.
+        <p class="prose-thesis text-sm">
+          Extract audio → faster-whisper streaming transcription →
+          15-min chunks → per-chunk summaries (L1) → final summary per
+          LLM (L2). 13,517 segments at 3.07× realtime on CPU.
         </p>
         <div class="mt-6 flex flex-wrap gap-2 text-xs">
-          <span class="pill">faster-whisper small int8</span>
-          <span class="pill">59 chunks × 9 models</span>
-          <span class="pill">Hierarchical L1 → L2</span>
+          <span class="pill">faster-whisper</span>
+          <span class="pill">L1 → L2 hierarchy</span>
         </div>
       </a>
     </div>
@@ -77,12 +101,13 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
   {/* ── KEY NUMBERS ────────────────────────── */}
   <section class="border-t border-border bg-surface-2/40">
-    <div class="max-w-content mx-auto px-6 py-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div class="max-w-content mx-auto px-6 py-16 grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
       {[
         ["14.55 h", "Source broadcast"],
-        ["13,517", "ASR segments"],
-        ["88.1 %", "Visual F1 (cleaned)"],
-        ["9", "LLMs evaluated"],
+        ["13,517",  "ASR segments"],
+        ["88.1 %",  "OCR F1 (cleaned)"],
+        ["71.0 %",  "Open-VLM F1 (free)"],
+        ["9",       "LLMs evaluated"],
       ].map(([n, l]) => (
         <div class="card p-6">
           <div class="text-3xl font-semibold tracking-tight text-text">{n}</div>

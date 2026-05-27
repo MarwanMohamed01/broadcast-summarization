@@ -1,0 +1,174 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import VLMComparison      from "../../../design-system/components/shared/VLMComparison.jsx";
+import VLMHeadlineSamples from "../../../design-system/components/shared/VLMHeadlineSamples.jsx";
+---
+
+<BaseLayout
+  title="VLM extraction · TV news multimodal extraction"
+  description="One-shot ticker extraction with vision-language models, compared head-to-head with the OCR pipeline."
+>
+  {/* hero */}
+  <section class="border-b border-border">
+    <div class="max-w-content mx-auto px-6 pt-20 pb-12">
+      <span class="pill pill-visual mb-4">Visual path · alternative</span>
+      <h1 class="text-4xl lg:text-5xl font-semibold tracking-tight">
+        One model, one call, one JSON of headlines
+      </h1>
+      <p class="prose-thesis mt-4 max-w-2xl">
+        Instead of detecting glyphs, recognizing text, and segmenting the OCR
+        stream, hand each stitched panorama tile straight to a vision-language
+        model and ask it to emit a list of complete headlines. Same input
+        tiles, same prompt, same aggregator as the OCR branch — only the
+        recognizer changes.
+      </p>
+    </div>
+  </section>
+
+  {/* setup callout */}
+  <section class="border-b border-border">
+    <div class="max-w-content mx-auto px-6 py-12 grid lg:grid-cols-3 gap-6">
+      <div class="card p-6">
+        <div class="text-xs uppercase tracking-wide text-text-subtle mb-2">
+          Input
+        </div>
+        <div class="text-lg font-semibold mb-1">1,845 tiles</div>
+        <p class="text-sm text-text-muted">
+          The same 75 v6 panoramas, sliced into 3,000-pixel tiles with
+          1,000-pixel overlap so headlines straddling a boundary are intact
+          in at least one tile.
+        </p>
+      </div>
+      <div class="card p-6">
+        <div class="text-xs uppercase tracking-wide text-text-subtle mb-2">
+          Prompt
+        </div>
+        <div class="text-lg font-semibold mb-1">Byte-identical</div>
+        <p class="text-sm text-text-muted">
+          One JSON-mode instruction telling the model to emit only headlines
+          whose first and last words land cleanly inside the tile. Shared
+          across every model so quality differences are model-attributable.
+        </p>
+      </div>
+      <div class="card p-6">
+        <div class="text-xs uppercase tracking-wide text-text-subtle mb-2">
+          Output
+        </div>
+        <div class="text-lg font-semibold mb-1">
+          <code class="mono text-sm">headlines_combined.json</code>
+        </div>
+        <p class="text-sm text-text-muted">
+          Same schema as <code class="mono">news_items_cleaned.json</code>,
+          so the nine LLM summarizers consume VLM output without knowing
+          the difference.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  {/* model cards + table */}
+  <section class="border-b border-border">
+    <div class="max-w-content mx-auto px-6 py-16">
+      <h2 class="text-2xl font-semibold mb-2">Three recognizers, one task</h2>
+      <p class="prose-thesis max-w-3xl mb-8">
+        The OCR pipeline is the established baseline. Gemini 2.5 Flash is
+        the original paid VLM run. Ministral 3 14B is an
+        <strong> open-weights</strong> vision model served free through
+        Mistral La Plateforme — the answer to "does the comparison change
+        when the VLM costs zero?"
+      </p>
+
+      <VLMComparison client:load reportUrl="/data/vlm/vlm_opensource_evaluation.json" />
+    </div>
+  </section>
+
+  {/* what the numbers mean */}
+  <section class="border-b border-border">
+    <div class="max-w-content mx-auto px-6 py-16">
+      <h2 class="text-2xl font-semibold mb-6">Reading the table</h2>
+      <div class="grid lg:grid-cols-3 gap-6">
+        <div class="card p-6">
+          <div class="text-xs uppercase tracking-wide text-text-subtle mb-2">
+            Recall
+          </div>
+          <div class="text-2xl font-semibold mb-2 text-visual">100% · both VLMs</div>
+          <p class="text-sm text-text-muted">
+            Every ground-truth headline appears somewhere in the VLM output.
+            The VLM nearly never <em>misses</em>; both recover everything OCR
+            does and then some.
+          </p>
+        </div>
+        <div class="card p-6">
+          <div class="text-xs uppercase tracking-wide text-text-subtle mb-2">
+            Precision
+          </div>
+          <div class="text-2xl font-semibold mb-2">VLM emits too much</div>
+          <p class="text-sm text-text-muted">
+            Mistral emits 3,214 candidate headlines on the 14h video; only a
+            fraction match GT. The OCR pipeline pays its $0.05 LLM-cleanup
+            cost precisely to push precision past 84%.
+          </p>
+        </div>
+        <div class="card p-6">
+          <div class="text-xs uppercase tracking-wide text-text-subtle mb-2">
+            Cost
+          </div>
+          <div class="text-2xl font-semibold mb-2">€8.28 → $0.00</div>
+          <p class="text-sm text-text-muted">
+            The paid Gemini VLM run cost <strong>€8.28 in total</strong>
+            (actual Google billing — the code's per-run token estimate of
+            ~$0.87 under-reported it and is unverified). Swapping Gemini for
+            the open-weights Ministral 3 14B drops cost to literally zero
+            and <em>raises</em> F1 by ~6 points. The free VLM still trails
+            OCR, but it's the cheapest way to get 100% recall.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* headline samples */}
+  <section class="border-b border-border">
+    <div class="max-w-content mx-auto px-6 py-16">
+      <h2 class="text-2xl font-semibold mb-2">First 20 headlines from each VLM</h2>
+      <p class="prose-thesis max-w-3xl mb-8">
+        The same tiles, same prompt, same JSON schema — only the model
+        weights differ. Gemini paraphrases and stitches; Ministral repeats
+        and over-emits. Both, in their own way, capture every real headline.
+      </p>
+      <VLMHeadlineSamples client:load />
+    </div>
+  </section>
+
+  {/* method footnote */}
+  <section>
+    <div class="max-w-content mx-auto px-6 py-16">
+      <h2 class="text-2xl font-semibold mb-4">Method</h2>
+      <ul class="prose-thesis max-w-3xl space-y-2 list-disc pl-5">
+        <li>
+          Tiles are produced by <code class="mono">vlm_extraction/tiler.py</code>,
+          cached under <code class="mono">vlm_extraction/output/_tiles/</code>;
+          every model sees byte-identical inputs.
+        </li>
+        <li>
+          The prompt lives in <code class="mono">vlm_extraction/prompts.py</code>
+          and is sent unmodified to every model.
+        </li>
+        <li>
+          Metrics come from <code class="mono">validation/validate_extraction.py</code>
+          at a 70% fuzzy-match threshold, the same threshold the OCR pipeline
+          is reported at.
+        </li>
+        <li>
+          Hallucination = fraction of emitted headlines that match no GT
+          headline even at the loosest 60% threshold.
+        </li>
+        <li>
+          Ministral 3 14B is the official open-weights successor Mistral
+          recommends after Pixtral 12B was retired on 2025-12-31. It runs
+          on the Free Experiment plan: 1 B tokens per month, no card.
+        </li>
+      </ul>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,37 @@
+{
+  "evaluation_timestamp": "2026-04-28T17:25:30.397101",
+  "model": "faster-whisper small int8 (English)",
+  "slices": {
+    "slice_A": {
+      "wer": 0.05401844532279315,
+      "cer": 0.03661901178831201,
+      "mer": 0.05394736842105263,
+      "wil": 0.06697529193062246,
+      "ref_words": 759,
+      "hyp_words": 730,
+      "ref_chars": 3987,
+      "hyp_chars": 3866
+    },
+    "slice_B": {
+      "wer": 0.07797029702970297,
+      "cer": 0.05710632857447262,
+      "mer": 0.07758620689655173,
+      "wil": 0.11213789217796455,
+      "ref_words": 808,
+      "hyp_words": 782,
+      "ref_chars": 4693,
+      "hyp_chars": 4501
+    }
+  },
+  "combined": {
+    "wer": 0.06636885768985322,
+    "cer": 0.04769035825365741,
+    "mer": 0.06615776081424936,
+    "wil": 0.09044006172276753,
+    "ref_words": 1567,
+    "hyp_words": 1512,
+    "ref_chars": 8681,
+    "hyp_chars": 8368
+  },
+  "notes": "WER/CER/MER/WIL computed with jiwer. Both reference and hypothesis normalised to lowercase, apostrophes preserved, all other punctuation removed, comments and timestamps stripped."
+}

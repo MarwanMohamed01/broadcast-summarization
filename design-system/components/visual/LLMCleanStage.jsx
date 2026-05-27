@@ -5,7 +5,7 @@ import StagePanel from "../shared/StagePanel.jsx";
 const BEFORE = "ISRAEL AIR STRIKE ON SOUTHERN LEBAN0N KILS SEVEN PEPPLE INCLUDING FOUR-YEAR-OLD GIRL";
 const AFTER  = "ISRAELI AIR STRIKE ON SOUTHERN LEBANON KILLS SEVEN PEOPLE, INCLUDING FOUR-YEAR-OLD GIRL";
 
-/** Naive char-diff for visualisation only — not the real LCS algo. */
+/** Naive char-diff for visualization only — not the real LCS algo. */
 function diffChars(a, b) {
   const out = [];
   let i = 0, j = 0;

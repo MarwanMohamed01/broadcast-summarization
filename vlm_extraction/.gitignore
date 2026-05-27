@@ -1,0 +1,8 @@
+.env
+output/raw/
+output/**/raw_*.txt
+output/_tiles/
+# Per-tile LLM response caches (~7400 files). Canonical output is headlines_combined.json
+output/**/headlines_panorama_chunk_*.json
+__pycache__/
+*.pyc

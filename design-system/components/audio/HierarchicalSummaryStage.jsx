@@ -3,7 +3,7 @@ import { motion, useInView } from "framer-motion";
 import StagePanel from "../shared/StagePanel.jsx";
 
 /**
- * Visualises the L1 -> L2 collapse: 59 small chunk cards send particles
+ * Visualizes the L1 -> L2 collapse: 59 small chunk cards send particles
  * to a final L2 summary card, per LLM. Shown for one model column for
  * clarity (the others are alluded to as a stack behind).
  */
@@ -15,14 +15,14 @@ export default function HierarchicalSummaryStage({ totalChunks = 59 }) {
   return (
     <StagePanel
       number="3.5"
-      title="Hierarchical summarisation: L1 → L2"
+      title="Hierarchical summarization: L1 → L2"
       blurb={
         <p>
           A single LLM call cannot fit the {totalChunks}-chunk transcript.
           The pipeline runs <strong>two passes</strong> per model:
-          <strong> Level&nbsp;1</strong> summarises each chunk into one short
+          <strong> Level&nbsp;1</strong> summarizes each chunk into one short
           paragraph; <strong>Level&nbsp;2</strong> concatenates that model's
-          59 paragraphs and summarises again into the day's top stories.
+          59 paragraphs and summarizes again into the day's top stories.
           Total per-model API calls: <strong>{totalChunks} + 1</strong>.
         </p>
       }

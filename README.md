@@ -6,103 +6,154 @@ Master's Thesis — German International University (GIU), Berlin
 
 ## Overview
 
-An end-to-end pipeline that automatically extracts and summarizes news content from TV broadcast videos through two independent modalities:
+An end-to-end pipeline that automatically extracts and summarizes news content from a 14-hour Al Jazeera TV broadcast through three independent modalities, then evaluates every stage against manually-annotated ground truth.
 
 | Path | Input | Method | Output |
 |---|---|---|---|
-| **Visual** | Scrolling ticker bar | OCR (EasyOCR + Tesseract) | Extracted headlines + 9-LLM summaries |
-| **Audio** | Spoken broadcast | ASR (Whisper) | Full transcript + 9-LLM multi-paragraph summaries |
+| **Visual — OCR** | Scrolling ticker bar | 5-step CV pipeline (EasyOCR + Tesseract) | Extracted headlines + 9-LLM summaries |
+| **Visual — VLM** | Same ticker panoramas | Vision-Language Model per tile (Gemini / Ministral) | JSON headlines + 9-LLM summaries |
+| **Audio** | Spoken broadcast | Whisper ASR → 2-level LLM summarization | Full transcript + 9-LLM multi-paragraph summaries |
 
-Both paths are compared against human reference summaries using ROUGE and BERTScore.
+All three extraction outputs feed a shared 9-LLM summarization roster and are scored with ROUGE + BERTScore against separate human reference summaries. Extraction quality is validated against 39 manually-annotated ground-truth headlines. A separate **OCR engine comparison** (`ocr_comparison/`) benchmarks five engines under identical conditions. A **variance experiment** (`evaluation/`) confirms summarization determinism across three independent runs.
 
-The repository ships **two web surfaces** that share a single design system:
+The repository also ships two web surfaces sharing a single design system:
 
-- **`site/`** — a polished, read-only **defense site** (Astro static export) that animates every pipeline stage and exposes the precomputed results for committee review.
-- **`webapp/frontend/`** — an **interactive workbench** (React + FastAPI) where a user uploads a video, picks a time range, and runs the live OCR / ASR / LLM pipeline.
+- **`site/`** — polished, read-only **defense site** (Astro) that animates every pipeline stage with real data and displays all evaluation leaderboards.
+- **`webapp/`** — **interactive workbench** (React + FastAPI) for live video upload and pipeline execution.
 
-A separate **OCR engine comparison** (`ocr_comparison/`) benchmarks five OCR engines (Tesseract, EasyOCR, PaddleOCR, docTR, CRAFT+TrOCR) on the same two ground-truth panoramas, in both pure and Tesseract-dash-augmented configurations.
+---
 
-### Key Results
+## Key Results
 
-| Metric | Raw Vision Pipeline | + LLM Cleaning |
-|---|---|---|
-| **Recall @70%** | 97.4% | 92.3% |
-| **Precision @70%** | 75.0% | 84.2% |
-| **F1 @70%** | 84.8% | **88.1%** |
-| **CER** | 23.4% | **13.9%** |
-| **WER** | 35.9% | **19.6%** |
+### Ticker Extraction (OCR pipeline vs 39 GT headlines)
 
-Validated against 39 manually-annotated ground-truth headlines from two 30-minute slices of a 14-hour Al Jazeera broadcast.
+| Stage | Recall @70% | Precision @70% | F1 @70% | CER |
+|---|---|---|---|---|
+| Raw v6 OCR | 97.4% | 75.0% | 84.8% | 23.4% |
+| + LLM cleaning (Gemini 2.5 Flash) | 92.3% | 84.2% | **88.1%** | **13.9%** |
 
-### OCR Engine Comparison (head-to-head, CPU-only)
+### VLM Extraction (same 39 GT headlines, full-video run)
 
-Five engines on the **same two ground-truth panoramas**, segmentation pipeline held constant, two configurations reported.
+| Pipeline | Items | F1 @70% | Recall | Precision | Cost |
+|---|---|---|---|---|---|
+| OCR + LLM cleaning (above) | 38 | **88.1%** | 92.3% | 84.2% | ≈ $0.05 |
+| Gemini 2.5 Flash (paid VLM) | 100 | 64.9% | **100%** | 48.0% | **€8.28** actual billed |
+| Ministral 3 14B (free, open-weights) | 3,214 | 71.0% | **100%** | 55.3% | **$0.00** |
 
-**Pure engines (no Tesseract dash augmentation)**
+Both VLMs achieve perfect recall at the cost of lower precision. The OCR pipeline leads on F1 by ~17 pp.
+
+### OCR Engine Comparison (CPU-only, same two GT panoramas)
+
+**Pure engines (each engine alone):**
 
 | Engine | Mean F1 | Notes |
 |---|---|---|
-| Tesseract | **85.4%** | Only engine to natively detect the `" - "` delimiter |
-| docTR | 63.9% | Detects some dashes |
-| PaddleOCR | 8.5% | Noisy recognition, few dashes |
-| EasyOCR | 0.0% | Skips `" - "` glyph entirely → segmentation collapses |
-| CRAFT + TrOCR | 0.0% | Same dash problem |
+| Tesseract | **85.4%** | Only engine to natively detect `" - "` delimiters |
+| docTR | 63.9% | — |
+| PaddleOCR | 8.5% | — |
+| EasyOCR | 0.0% | Skips `" - "` glyph → segmentation collapses |
+| CRAFT + TrOCR | 0.0% | Same delimiter problem |
 
-**Engines + Tesseract dash augmentation (matches v6 production architecture)**
+**Engines + Tesseract dash augmentation (v6 production architecture):**
 
 | Engine | Mean F1 | CER | Time | Peak RAM |
 |---|---|---|---|---|
 | **EasyOCR** | **91.3%** | **8.8%** | 3.9 min | 1.8 GB |
 | Tesseract | 85.4% | 10.2% | 0.6 min | 4 MB |
 | docTR | 80.3% | 12.0% | 6.0 min | 2.1 GB |
+| CRAFT + TrOCR | 29.9% | 29.8% | 52.4 min | 2.8 GB |
 | PaddleOCR | 23.0% | 27.8% | 21.9 min | 596 MB |
-| CRAFT + TrOCR (hybrid) | 29.9% | 29.8% | 52.4 min | 2.8 GB |
 
-EasyOCR's win in the augmented configuration validates v6's choice of EasyOCR as the primary recognizer.
+EasyOCR's win in the augmented configuration validates v6's production choice.
+
+### Whisper Transcription Quality (vs manually-annotated ground truth)
+
+| Metric | Combined (1,567-word reference) |
+|---|---|
+| WER | **6.6%** |
+| CER | **4.8%** |
+
+### LLM Summarization — Visual Path (vs 687-word human reference)
+
+| Model | BERT-F1 | ROUGE-L |
+|---|---|---|
+| **Gemini 2.5 Flash** | **0.865** | 0.238 |
+| Llama 4 Scout 17B (Groq) | 0.853 | 0.237 |
+| Llama 3.3 70B (Groq) | 0.850 | 0.208 |
+| **Qwen3 32B (Groq)** | 0.844 | **0.305** |
+| Llama 3 8B (HuggingFace) | 0.850 | 0.186 |
+| Command-R (Cohere) | 0.844 | 0.159 |
+| Llama 3.2 3B (Ollama) | 0.839 | 0.184 |
+| Llama 3.1 8B (Groq) | 0.839 | 0.170 |
+| Llama 3.1 8B (Ollama) | — | — (CPU timeout) |
+
+### LLM Summarization — Audio Path (vs 1,908-word human reference)
+
+| Model | BERT-F1 | ROUGE-L |
+|---|---|---|
+| **Command-R (Cohere)** | **0.778** | 0.104 |
+| Qwen3 32B (Groq) | 0.770 | 0.095 |
+| Llama 3.2 3B (Ollama) | 0.768 | 0.095 |
+| Llama 3.3 70B (Groq) | 0.768 | 0.132 |
+| **Llama 4 Scout 17B (Groq)** | 0.767 | **0.144** |
+| Llama 3.1 8B (Groq) | 0.767 | 0.115 |
+| Gemini 2.5 Flash | 0.767 | 0.117 |
+| Llama 3 8B (HuggingFace) | 0.758 | 0.111 |
+| Llama 3.1 8B (Ollama) | — | — (CPU timeout at L1) |
 
 ---
 
 ## Architecture
 
 ```
-                        INPUT: TV News Video (.mp4)
-                                  |
-                 +----------------+----------------+
-                 |                                 |
-          VISUAL PATH                        AUDIO PATH
-                 |                                 |
-    Frame Extraction (OpenCV)           Audio Extraction (PyAV)
-                 |                                 |
-    Scroll Detection (Template Match)   Whisper ASR (faster-whisper)
-                 |                           small model, int8, CPU
-    Panorama Stitching                         |
-                 |                      Time-based Chunking
-    Dual-Engine OCR                      (59 x 15-min chunks)
-    (EasyOCR text + Tesseract dashes)          |
-                 |                      2-Level LLM Summarization
-    Headline Segmentation               L1: per-chunk paragraph
-    + Deduplication                     L2: final multi-paragraph
-                 |                             |
-    LLM Cleaning (Gemini 2.5 Flash)            |
-                 |                             |
-    9-LLM Summarization  <----same 9 models---->
-                 |                             |
-    ROUGE + BERTScore Evaluation               |
+                       INPUT: TV News Video (.mp4)
+                                 |
+              +------------------+------------------+
+              |                                     |
+       VISUAL PATH                            AUDIO PATH
+              |                                     |
+  Frame Extraction (OpenCV)            Audio Extraction (PyAV)
+              |                                     |
+  Scroll Detection                    Whisper ASR (faster-whisper)
+  (template matching)                 small model, int8, CPU
+              |                                     |
+  Panorama Stitching                  Time-based Chunking
+    |              |                  (59 x 15-min chunks)
+    |           3000px tiles                        |
+    |              |                  2-Level LLM Summarization
+    |         VLM call per tile       L1: per-chunk paragraph (x 9)
+    |         (Gemini / Ministral)    L2: final synthesis (x 9)
+    |              |                              |
+  Dual-Engine OCR     JSON headlines             |
+  EasyOCR + Tesseract                            |
+    |              |                             |
+  Segmentation    Aggregation                    |
+    + Dedup        + Dedup                       |
+    |              |                             |
+  LLM Cleaning (Gemini 2.5 Flash)               |
+    |              |                             |
+    +------+-------+                             |
+           |                                     |
+    9-LLM Summarization  <----- same 9 models ----+
+           |
+    ROUGE + BERTScore vs human reference
 ```
 
-## LLMs Used
+---
+
+## LLM Roster (shared across all paths)
 
 | Provider | Model | Type |
 |---|---|---|
-| Groq | Llama 3.3 70B | Cloud (free tier) |
-| Groq | Llama 3.1 8B | Cloud (free tier) |
-| Groq | Qwen3 32B | Cloud (free tier) |
-| Groq | Llama 4 Scout 17B | Cloud (free tier) |
-| Ollama | Llama 3.2 3B | Local |
-| Ollama | Llama 3.1 8B | Local |
-| Google | Gemini 2.5 Flash | Cloud (free tier) |
-| HuggingFace | Llama 3 8B Instruct | Cloud (free tier) |
-| Cohere | Command-R | Cloud (free trial) |
+| Groq | `llama-3.3-70b-versatile` | Cloud (free tier) |
+| Groq | `llama-3.1-8b-instant` | Cloud (free tier) |
+| Groq | `qwen/qwen3-32b` | Cloud (free tier) |
+| Groq | `meta-llama/llama-4-scout-17b-16e-instruct` | Cloud (free tier) |
+| Ollama | `llama3.2` (3B) | Local |
+| Ollama | `llama3.1:8b` | Local |
+| Google | `gemini-2.5-flash` | Cloud (free tier) |
+| HuggingFace | `meta-llama/Meta-Llama-3-8B-Instruct` | Cloud (free tier) |
+| Cohere | `command-r-08-2024` | Cloud (free trial) |
 
 ---
 
@@ -111,135 +162,147 @@ EasyOCR's win in the augmented configuration validates v6's choice of EasyOCR as
 ### Prerequisites
 
 - Python 3.9+
-- [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) installed and on PATH
+- [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) on PATH
 - (Optional) [Ollama](https://ollama.com/) for local LLM inference
-- Node.js 18+ (for the web app frontend)
+- Node.js 18+ (for the web surfaces)
 
 ### Installation
 
 ```bash
 git clone https://github.com/MarwanMohamed01/broadcast-summarization.git
 cd broadcast-summarization
-
 pip install -r requirements.txt
 ```
 
 ### API Keys
 
-Copy the example env file and fill in your keys (all providers offer free tiers):
-
 ```bash
-cp .env.example llm_summarization/.env
-# Edit llm_summarization/.env with your API keys
+cp llm_summarization/.env.example llm_summarization/.env
+# Edit with your Groq / Gemini / HuggingFace / Cohere keys
+
+cp vlm_extraction/.env.example vlm_extraction/.env
+# Edit with your Gemini / Mistral keys for VLM extraction
 ```
 
-### Run the OCR Pipeline (CLI)
+### Run the OCR Pipeline
 
 ```bash
-# Short video (no chunking needed)
+# Short video
 cd ticker_extraction_v6
 python main.py --video ../videos/your_video.mp4
 
-# Long video (14+ hours) — process in 30-minute chunks
+# Long video (14+ hours) — 30-minute chunks
 python main.py --video ../videos/your_video.mp4 --chunk-minutes 30
 ```
 
-### Run Post-Processing + Summarization
+### Run Post-Processing + Summarization (Visual / OCR)
 
 ```bash
-# Improve segmentation (better dedup, all cycles)
+# Better dedup across all chunks
 python pipeline/improve_segmentation.py
 
-# LLM cleaning (fixes OCR typos, splits merged headlines)
+# LLM error correction (Gemini 2.5 Flash)
 python pipeline/clean_news_items.py
 
-# Run 9-LLM summarization on cleaned headlines
+# 9-LLM summarization on cleaned headlines
 python pipeline/summarize_cleaned.py
+
+# Evaluate vs human reference
+python pipeline/evaluate_cleaned_summaries.py
 ```
 
-### Run the ASR Pipeline (CLI)
+### Run VLM Extraction
 
 ```bash
-# Extract audio
+# Gemini paid run (all panorama tiles)
+python -m vlm_extraction.extract --vlm gemini --slice all --runs 1
+
+# Ministral open-weights run (free tier)
+python -m vlm_extraction.opensource_vlm run --slice full_video
+
+# Evaluate extraction quality
+python -m vlm_extraction.evaluate
+
+# 3-way comparison report (OCR vs Gemini vs Ministral)
+python -m vlm_extraction.opensource_vlm evaluate
+```
+
+### Run the Audio Pipeline
+
+```bash
+# Extract audio track
 python asr/extract_audio.py
 
-# Transcribe with Whisper (small model, ~3x realtime on CPU)
+# Transcribe (~3× realtime on CPU, chunked streaming)
 python asr/transcribe.py
 
-# Chunk into 15-minute segments
+# Split into 15-minute chunks
 python asr/chunk_transcript.py
 
-# 2-level LLM summarization (59 chunks x 9 models)
+# 2-level hierarchical LLM summarization
 python asr/summarize_transcript.py
+
+# Evaluate vs human reference
+python asr/evaluate_audio_summaries.py
 ```
 
-### Run the Interactive Workbench (`webapp/`)
-
-```bash
-# Terminal 1: Backend (FastAPI)
-uvicorn webapp.backend.main:app --reload --port 8000
-
-# Terminal 2: Frontend (React + Vite, redesigned with shared design system)
-cd webapp/frontend
-npm install
-npm run dev
-```
-
-Open http://localhost:5173 in your browser.
-
-### Run the Defense Site (`site/`)
-
-A polished, read-only Astro site that animates every pipeline stage using the
-already-saved outputs. Built for the supervisor and committee — no live runs.
-
-```bash
-# 1. Extract a 30-second demo MP4 + WAV from the source video (idempotent, ~1 min)
-python videos/extract_demo_clip.py
-
-# 2. (Optional but recommended) Capture real EasyOCR bboxes + scroll deltas
-#    on Slice A so the OCR + scroll-detection stages render real data
-python site/scripts/instrument_slice_A.py
-
-# 3. Build the asset bundle (panoramas → WebP, waveform peaks, eval scores)
-cd site
-python scripts/build_assets.py
-
-# 4. Run the dev server
-npm install
-npm run dev      # http://localhost:4321
-```
-
-Routes: `/`, `/visual`, `/audio`, `/results`, `/explore`. Static export (`npm run build`) deploys to any static host.
-
-### Run the OCR Engine Comparison (`ocr_comparison/`)
+### Run the OCR Engine Comparison
 
 ```bash
 pip install paddlepaddle paddleocr "python-doctr[torch]" transformers torch psutil
 
-# Run each engine on both ground-truth slices (skips already-done pairs)
+# Run each engine on both ground-truth slices
 python -m ocr_comparison.run_ocr_engine --engine tesseract   --slice all
 python -m ocr_comparison.run_ocr_engine --engine easyocr     --slice all
 python -m ocr_comparison.run_ocr_engine --engine paddle      --slice all
 python -m ocr_comparison.run_ocr_engine --engine doctr       --slice all
 python -m ocr_comparison.run_ocr_engine --engine craft_trocr --slice all
 
-# Two segmentation passes: pure engines + Tesseract-dash-augmented
+# Segmentation passes
 python -m ocr_comparison.regenerate_pure
 python -m ocr_comparison.augment_dashes
 
-# Aggregate both tables into ocr_comparison/output/comparison_report.{json,txt}
+# Both comparison tables → ocr_comparison/output/comparison_report.{json,txt}
 python -m ocr_comparison.evaluate_all
 ```
 
-### Run Validation
+### Run Extraction Validation
 
 ```bash
-# Regenerate panorama for ground-truth annotation
-python validation/regenerate_panorama.py --chunk 17 --slice A
-
-# Compute P/R/F1/CER/WER against annotated ground truth
+# Compute P/R/F1/CER/WER vs annotated ground truth (39 headlines)
 python validation/validate_extraction.py
 ```
+
+### Run the Defense Site (`site/`)
+
+The asset bundle (`site/public/data/` + `site/public/video/`, ~2.8 MB) is committed so the site works immediately after `npm install` with no source video needed.
+
+```bash
+cd site
+npm install
+npm run dev      # http://localhost:4321
+```
+
+Routes: `/` (landing), `/visual` (OCR pipeline), `/vlm` (VLM comparison), `/audio` (ASR pipeline), `/results` (leaderboards), `/explore` (data browser).
+
+To regenerate assets from a new source video:
+```bash
+python videos/extract_demo_clip.py          # 30-second demo clip
+python site/scripts/instrument_slice_A.py   # real EasyOCR bboxes + scroll deltas
+python site/scripts/build_assets.py         # panoramas, waveform, eval scores
+```
+
+### Run the Interactive Workbench (`webapp/`)
+
+```bash
+# Terminal 1: Backend
+uvicorn webapp.backend.main:app --reload --port 8000
+
+# Terminal 2: Frontend
+cd webapp/frontend && npm install && npm run dev
+```
+
+Open http://localhost:5173. Upload any `.mp4`, select a time range, choose OCR / ASR / both, and watch the 9 LLMs compete in real time.
 
 ---
 
@@ -247,97 +310,115 @@ python validation/validate_extraction.py
 
 ```
 .
-├── ticker_extraction_v6/       # 5-step OCR pipeline (frame → scroll → panorama → OCR → segment)
-│   ├── main.py                 # Entry point: --video, --chunk-minutes, --engine
-│   ├── step1_extract_ticker.py # Frame extraction + ticker crop
-│   ├── step2_scroll_detection.py
-│   ├── step3_stitch_image.py   # Panorama stitching
-│   ├── step4_ocr.py            # Dual-engine: EasyOCR text + Tesseract dash detection
-│   ├── step5_segment.py        # Delimiter split + dedup
-│   └── output/final/           # news_items.json, news_items_cleaned.json
+├── ticker_extraction_v6/       # FROZEN — 5-step OCR pipeline
+│   ├── main.py                 # --video, --chunk-minutes
+│   ├── step1..step5_*.py       # frame extract → scroll → stitch → OCR → segment
+│   └── output/final/           # news_items.json (raw), news_items_cleaned.json
 │
-├── llm_summarization/          # 9-LLM summarization + ROUGE/BERTScore evaluation
-│   ├── summarize.py            # Run all 9 models
-│   ├── evaluate.py             # Score against human reference
-│   ├── output_cleaned/         # Ticker summaries (14h video)
-│   └── output_asr/             # ASR summaries
+├── vlm_extraction/             # VLM-based ticker extraction (parallel to OCR)
+│   ├── extract.py              # top-level runner (--vlm, --slice, --runs)
+│   ├── aggregate.py            # cross-tile dedup → headlines_combined.json
+│   ├── evaluate.py             # P/R/F1/CER vs GT; results/vlm_evaluation.json
+│   ├── opensource_vlm.py       # Ministral runner + 3-way comparison report
+│   ├── tiler.py                # 3000×87 px tiles with 1000 px overlap
+│   ├── adapters/               # gemini, mistral, openai, anthropic, groq, hf
+│   └── output/                 # gemini/, mistral/, groq_scout/ canonical runs
 │
-├── pipeline/                   # Post-processing (outside frozen modules)
-│   ├── improve_segmentation.py # Better dedup across all chunks/cycles
-│   ├── clean_news_items.py     # LLM-based error correction (Gemini 2.5 Flash)
-│   └── summarize_cleaned.py    # Wrapper to run summarization on cleaned items
+├── llm_summarization/          # FROZEN — 9-LLM summarization + evaluation
+│   ├── summarize.py / evaluate.py
+│   ├── reference_summary.txt        # human reference — visual path
+│   ├── reference_summary_audio.txt  # human reference — audio path
+│   ├── output_cleaned/         # canonical visual summaries + evaluation_latest.json
+│   └── output_asr/             # canonical audio summaries + evaluation_latest.json
 │
-├── validation/                 # Ground-truth validation
-│   ├── regenerate_panorama.py  # Build panorama PNG for manual annotation
-│   ├── validate_extraction.py  # Compute P/R/F1/CER/WER
-│   └── ground_truth/           # Annotated headlines + instructions
+├── pipeline/                   # post-processing (outside frozen modules)
+│   ├── improve_segmentation.py
+│   ├── clean_news_items.py     # LLM OCR error correction
+│   ├── clean_vlm_headlines.py  # LLM VLM output correction
+│   ├── summarize_cleaned.py
+│   └── evaluate_cleaned_summaries.py
 │
 ├── asr/                        # Audio pipeline
-│   ├── extract_audio.py        # Video → 16kHz mono WAV (PyAV)
-│   ├── transcribe.py           # Whisper ASR with chunked streaming
-│   ├── chunk_transcript.py     # Split into 15-min text chunks
+│   ├── extract_audio.py        # video → 16 kHz mono WAV (PyAV)
+│   ├── transcribe.py           # faster-whisper, chunked streaming
+│   ├── chunk_transcript.py     # 59 × 15-min text chunks
 │   ├── summarize_transcript.py # 2-level hierarchical LLM summarization
-│   └── output/                 # transcript.json/.txt/.srt + chunks/
-│
-├── webapp/                     # Interactive workbench
-│   ├── backend/                # FastAPI (upload, job queue, pipeline orchestration)
-│   └── frontend/               # React + Vite + Tailwind (redesigned, uses design-system/)
-│
-├── site/                       # Defense site (Astro static export)
-│   ├── src/                    # layouts, pages (visual, audio, results, explore), components
-│   ├── public/data/            # built — gitignored, regenerated by scripts/build_assets.py
-│   └── scripts/                # build_assets.py + instrument_slice_A.py (real OCR bboxes)
-│
-├── design-system/              # Shared visual identity (no build step)
-│   ├── tokens.css              # CSS custom properties (light/dark, motion, type)
-│   └── components/             # React stage components used by site/ AND webapp/frontend/
+│   ├── merge_asr_runs.py       # combines all retry runs → latest.json
+│   ├── evaluate_audio_summaries.py
+│   ├── eval/                   # ASR ground truth + Whisper output (text files)
+│   └── output/                 # transcript_full.{json,txt,srt}, chunks/
 │
 ├── ocr_comparison/             # Multi-OCR head-to-head experiment
-│   ├── engines/                # Tesseract, EasyOCR, Paddle, docTR, CRAFT+TrOCR adapters
-│   ├── augment_dashes.py       # Tesseract PSM 6 dash augmentation
-│   ├── regenerate_pure.py      # Pure-engine segmentation rebuild
-│   └── evaluate_all.py         # Both comparison tables: pure + augmented
+│   ├── engines/                # tesseract, easyocr, paddle, doctr, craft_trocr
+│   ├── run_ocr_engine.py       # top-level runner
+│   ├── augment_dashes.py       # Tesseract PSM 6 dash augmentation pass
+│   ├── regenerate_pure.py      # pure-engine segmentation rebuild
+│   └── evaluate_all.py         # both comparison tables
 │
-├── results/                    # Evaluation reports (validation_report.json)
+├── evaluation/                 # Determinism / variance experiment (3-run repeat)
+│   ├── run_variance_summarization.py
+│   └── aggregate_variance.py   # → results/variance_report.{json,md}
+│
+├── validation/                 # Extraction validation vs annotated GT
+│   ├── validate_extraction.py  # P/R/F1/CER/WER; → results/validation_report.json
+│   └── ground_truth/           # slice_A/B_headlines.txt (39 total GT headlines)
+│
+├── results/                    # Canonical evaluation outputs (thesis tables)
+│   ├── validation_report.json
+│   ├── asr_evaluation.json
+│   ├── asr_summary_evaluation.json
+│   ├── visual_14h_summary_evaluation.json
+│   ├── vlm_evaluation.json / .md
+│   ├── vlm_opensource_evaluation.json / .md
+│   └── variance_report.json / .md
+│
+├── site/                       # Defense site (Astro static export)
+│   ├── src/pages/              # index, visual, vlm, audio, results, explore
+│   ├── public/data/            # prebuilt asset bundle (~2.8 MB, committed)
+│   └── scripts/                # build_assets.py, instrument_slice_A.py
+│
+├── webapp/                     # Interactive workbench
+│   ├── backend/                # FastAPI — upload, job queue, pipeline orchestration
+│   └── frontend/               # React + Vite + Tailwind (uses design-system/)
+│
+├── design-system/              # Shared visual identity (no build step)
+│   ├── tokens.css              # CSS custom properties (colors, motion, spacing)
+│   └── components/             # React stage panels used by site/ and webapp/
+│
+├── scripts/                    # Thesis figure generation
+│   ├── generate_thesis_figures_ch3.py   # F3.1–F3.4 methodology flowcharts
+│   ├── generate_thesis_figures_ch3_f3_0.py  # F3.0 frame-sampling diagram
+│   └── generate_thesis_figures_ch5.py   # Ch5 results charts
+│
+├── videos/
+│   └── extract_demo_clip.py    # extracts 30-second demo MP4 + WAV for site/
+│
 ├── requirements.txt
-├── .env.example                # Template for API keys
-├── PROGRESS_REPORT.md          # Detailed technical report
-└── CLAUDE.md                   # Project conventions + module documentation
+├── .env.example
+├── PROGRESS_REPORT.md          # detailed technical report
+└── CLAUDE.md                   # project conventions + module documentation
 ```
-
----
-
-## Web App
-
-The web interface wraps both pipelines into a user-friendly demo:
-
-1. **Upload** any TV news video (`.mp4`)
-2. **Preview** the video and drag a range slider to select a segment (max 30 min)
-3. **Choose** the task: Ticker extraction, Audio transcription, or Both
-4. **Select** which LLMs to run (default: all 9)
-5. **View results**: each LLM's summary displayed in its own card with latency and token count
-6. **Download** the full results as JSON
-
-The backend runs pipelines in background threads with progress polling. Retry-with-backoff handles transient LLM rate limits automatically.
 
 ---
 
 ## Evaluation Methodology
 
-### Ticker Extraction Validation
+### Extraction Validation
+- Two 30-minute slices manually annotated → 27 + 28 = 39 unique combined GT headlines
+- Fuzzy matching (rapidfuzz) at 60 / 70 / 80% thresholds
+- Metrics: Precision, Recall, F1 @ threshold, CER, WER, exact-match count
+- Evaluated separately for: raw v6 OCR, LLM-cleaned OCR, Gemini VLM, Ministral VLM
 
-- Two 30-minute slices manually annotated (27 + 28 headlines)
-- Combined union: 39 unique ground-truth headlines
-- Fuzzy matching (rapidfuzz) at 60/70/80% thresholds
-- Metrics: Precision, Recall, F1, Character Error Rate, Word Error Rate
-- Per-stage comparison: raw OCR vs. LLM-cleaned
+### Transcription Quality
+- Two short WAV slices manually transcribed (1,567-word reference total)
+- Scored with jiwer: WER, CER, MER, WIL; both normalized to lowercase
 
-### LLM Summarization Evaluation
-
+### Summarization Evaluation
 - ROUGE-1, ROUGE-2, ROUGE-L (n-gram overlap)
-- BERTScore (semantic similarity via contextual embeddings)
-- Ranked by BERTScore F1 descending
-- Same human reference for all 9 models (fair comparison)
+- BERTScore F1 (semantic similarity via contextual embeddings)
+- Visual path scored against `reference_summary.txt` (687 words)
+- Audio path scored against `reference_summary_audio.txt` (1,908 words)
+- 8 of 9 models succeeded on both paths; Llama 3.1 8B (Ollama) timed out on CPU
 
 ---
 
@@ -345,23 +426,22 @@ The backend runs pipelines in background threads with progress polling. Retry-wi
 
 | Component | Technology |
 |---|---|
-| Video processing | OpenCV, NumPy |
-| OCR | EasyOCR (text), Tesseract (delimiter detection) |
+| Video / audio I/O | OpenCV, PyAV |
+| OCR | EasyOCR (text recognition), Tesseract (delimiter detection) |
+| VLM extraction | Google Gemini 2.5 Flash, Mistral Ministral 3 14B |
 | Speech-to-text | faster-whisper (CTranslate2, int8, CPU) |
-| Audio I/O | PyAV |
-| Text matching | rapidfuzz, python-Levenshtein |
-| LLM inference | Groq, Gemini, HuggingFace, Cohere, Ollama, OpenAI SDKs |
-| Evaluation | rouge-score, bert-score |
-| Backend | FastAPI, uvicorn |
-| Frontend | React, Vite, Tailwind CSS, rc-slider |
+| Text dedup | rapidfuzz, python-Levenshtein |
+| LLM providers | Groq, Google Gemini, HuggingFace, Cohere, Ollama, OpenAI SDKs |
+| Evaluation | rouge-score, bert-score, jiwer |
+| Defense site | Astro 4, React, Tailwind CSS |
+| Workbench backend | FastAPI, uvicorn |
+| Workbench frontend | React, Vite, Tailwind CSS, Framer Motion |
 
 ---
 
 ## License
 
 This project is part of a Master's thesis at the German International University (GIU), Berlin.
-
----
 
 ## Author
 

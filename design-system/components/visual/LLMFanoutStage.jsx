@@ -23,7 +23,7 @@ export default function LLMFanoutStage({ accent = "visual" }) {
   return (
     <StagePanel
       number={accent === "audio" ? "4" : "7"}
-      title="9-LLM summarisation fan-out"
+      title="9-LLM summarization fan-out"
       blurb={
         <p>
           The cleaned headlines (or, on the audio path, the chunked transcript)

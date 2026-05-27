@@ -1,0 +1,32 @@
+{
+  "per_tile": [
+    {
+      "wall_seconds": 1.0069122314453125,
+      "input_tokens": 1633,
+      "output_tokens": 147
+    },
+    {
+      "wall_seconds": 1.143216848373413,
+      "input_tokens": 1633,
+      "output_tokens": 144
+    },
+    {
+      "wall_seconds": 0.8457818031311035,
+      "input_tokens": 1633,
+      "output_tokens": 149
+    },
+    {
+      "wall_seconds": 1.0485341548919678,
+      "input_tokens": 1633,
+      "output_tokens": 130
+    },
+    {
+      "wall_seconds": 0.8154850006103516,
+      "input_tokens": 1633,
+      "output_tokens": 124
+    }
+  ],
+  "total_wall_seconds": 12.935726642608643,
+  "total_input_tokens": 8165,
+  "total_output_tokens": 694
+}

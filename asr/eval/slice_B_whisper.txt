@@ -1,0 +1,65 @@
+# Whisper auto-transcript (small int8, en)
+# Source: slice_B_audio.wav
+# Format: [HH:MM:SS.mmm --> HH:MM:SS.mmm] text
+# Detected language: en (prob 1.00)
+
+[00:00:00.000 --> 00:00:08.040] has been no, no letting up of these retaliation attacks across the Gulf.
+[00:00:08.040 --> 00:00:13.920] And Mike, obviously, where that deadline by Trump is looming, has there been any reaction
+[00:00:13.920 --> 00:00:20.560] from the GCC in terms of anticipation as to what happens? How will that affect the GCC
+[00:00:20.560 --> 00:00:29.280] even? Well, I think everywhere across the GCC people and officials are extremely
+[00:00:29.280 --> 00:00:33.840] concerned, right? Because the Gulf has spared the brunt of these retaliation
+[00:00:33.840 --> 00:00:40.000] attacks. You know, more than 85% of these attacks have targeted the Gulf. You
+[00:00:40.000 --> 00:00:44.800] know, more than 6,000 ballistic missiles, drones, and cruise missiles have
+[00:00:44.800 --> 00:00:49.360] been targeted here. We just heard from the Ministry of Foreign Affairs in
+[00:00:49.440 --> 00:00:53.360] Qatar, where the Prime Minister and Foreign Minister had a conversation with
+[00:00:53.360 --> 00:00:57.440] the Spanish Foreign Minister. And, you know, they talked about de-escalation
+[00:00:57.440 --> 00:01:01.600] and that there's no military solution, that, you know, there needs to be a
+[00:01:01.600 --> 00:01:06.880] space for negotiations, for a diplomatic path. You know, here in Kuwait,
+[00:01:06.880 --> 00:01:11.760] you know, yesterday, we saw numerous attacks, you know, probably the most
+[00:01:11.760 --> 00:01:15.680] devastating day in terms of Kuwait. You know, I think what the Iranians
+[00:01:15.680 --> 00:01:20.800] proved yesterday is that they can indeed target and hit a civilian
+[00:01:20.800 --> 00:01:25.280] infrastructure. Two water plants and de-escalation plants and power plants
+[00:01:25.280 --> 00:01:29.840] were hit here yesterday. That's extremely critical infrastructure for the
+[00:01:29.840 --> 00:01:34.080] Gulf. Here in Kuwait, 90% of their drinking water comes from these
+[00:01:34.080 --> 00:01:38.400] de-escalation plants. So that's a red line yet again being crossed.
+[00:01:38.400 --> 00:01:43.440] Kuwait is also the closest to Iran. Just 80 kilometers of water is what
+[00:01:43.440 --> 00:01:48.400] separates these two countries. And also borders Iraq, where we've seen in
+[00:01:48.400 --> 00:01:51.920] the recent week. Officials believe that a lot of these attacks are coming
+[00:01:51.920 --> 00:01:57.360] from affiliated Iran-affiliated groups in Iraq. So if there's a real concern here,
+[00:01:57.360 --> 00:02:02.320] I think, you know, the call has been consistent, de-escalate the situation.
+[00:02:02.320 --> 00:02:06.320] We saw that yesterday the Omanians said they're in talks with the Iranians
+[00:02:06.320 --> 00:02:11.040] to come up with some kind of mechanism to ensure passage through the
+[00:02:11.040 --> 00:02:15.360] Hamun Strait. I think realistically nobody believes that, you know, they can come up
+[00:02:15.360 --> 00:02:22.160] with a deal that everybody can agree on within the next, you know, 12 or 24 hours.
+[00:02:22.160 --> 00:02:26.080] But, you know, what I think the message will be relayed to Trump is, look, the
+[00:02:26.080 --> 00:02:30.880] Iranians are talking. There's talks going on to open up the
+[00:02:30.880 --> 00:02:36.000] Strait. Let's give diplomacy a chance. And let's get a solution that will
+[00:02:36.000 --> 00:02:38.800] bring long-term stability across the entire region.
+[00:02:38.800 --> 00:02:43.440] All right. Thanks very much. That's Malik Treynor there. Live for us in Kuwait City.
+[00:02:44.720 --> 00:02:48.560] Well, Israel has carried out multiple strikes across southern Lebanon and also on the
+[00:02:48.560 --> 00:02:53.760] capital Beirut, causing widespread damage and death. The latest targeted Beirut
+[00:02:53.760 --> 00:02:56.400] southern suburbs. And this comes after the military
+[00:02:56.400 --> 00:03:00.960] issued a forced evacuation threat for residents for seven neighbourhoods.
+[00:03:00.960 --> 00:03:04.480] On Sunday, multiple attacks on the southern suburbs, densely populated
+[00:03:04.480 --> 00:03:09.440] areas, killed at least five people. Meanwhile, in the south of Lebanon, Israeli
+[00:03:09.440 --> 00:03:13.680] military attacks targeted areas in the Nabata district. At least four people were
+[00:03:13.680 --> 00:03:17.760] killed in a drone strike targeting a car there. And in a separate attack in the
+[00:03:17.760 --> 00:03:22.800] same area, one person was killed. Let's go live now to Zayna Hodder, who's
+[00:03:22.800 --> 00:03:27.360] been following the latest from the capital Beirut. Zayna, earlier, we saw
+[00:03:27.360 --> 00:03:31.680] a smoke that seemed to be coming from the Dahya area. What more do we know about that?
+[00:03:34.720 --> 00:03:40.960] Well, yet again, the Israeli military targeting Beirut southern suburbs. They issued
+[00:03:41.600 --> 00:03:46.640] an evacuation order before those strikes come in. But not all strikes are
+[00:03:46.640 --> 00:03:52.160] preceded by a warning. As I'm speaking to you now, Israeli warplanes are flying
+[00:03:52.160 --> 00:03:56.960] over the Lebanese capital. They've been doing this for the past few days. Really,
+[00:03:56.960 --> 00:04:02.320] there's been an escalation with Israeli strikes relentless, not just in Beirut,
+[00:04:02.320 --> 00:04:06.720] but in the south of the country, in the east of the country. Yesterday, a densely
+[00:04:06.720 --> 00:04:11.920] populated neighborhood was hit, killing five people, among them a child. And the target
+[00:04:11.920 --> 00:04:16.480] appeared to be a Hezbollah military commander. But even though Israel calls
+[00:04:16.480 --> 00:04:20.960] these targeted assassinations pinpoint strikes, it really doesn't matter if
+[00:04:20.960 --> 00:04:25.840] civilians are killed as well. And there is growing concern that the latest figure
+[00:04:25.920 --> 00:04:32.560] released by the Lebanese health ministry is 1,461 killed, among them children and women,
+[00:04:32.560 --> 00:04:37.520] more than 4,000 wounded. And that number has not been updated, because since the early hours
+[00:04:37.520 --> 00:04:42.560] of the morning, there have been repeated strikes. Now, while the ministry doesn't say
+[00:04:42.560 --> 00:04:47.360] or differentiate between combatants and civilians, if we count the number of women,
+[00:04:47.360 --> 00:04:52.080] children and paramedics alone, that's roughly 25% of the casualty toll.
+[00:04:52.080 --> 00:04:57.920] And Zayna, where are the Israelis in terms of their ground invasion in the south?

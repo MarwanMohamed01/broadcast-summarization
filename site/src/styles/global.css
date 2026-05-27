@@ -44,7 +44,7 @@
   color: var(--color-text-muted);
 }
 
-/* ── path-coloured pills ───────────────────────────────── */
+/* ── path-colored pills ───────────────────────────────── */
 .pill-visual { color: var(--color-visual); background: var(--color-visual-soft); border-color: transparent; }
 .pill-audio  { color: var(--color-audio);  background: var(--color-audio-soft);  border-color: transparent; }
 

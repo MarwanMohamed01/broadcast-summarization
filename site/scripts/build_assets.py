@@ -186,9 +186,62 @@ def copy_jsons() -> None:
          DATA_DIR / "summaries/visual_14h_cleaned.json"),
         (LLM_DIR / "output_asr/latest.json",
          DATA_DIR / "summaries/asr_final.json"),
+        # VLM branch — Gemini (paid) + Ministral 3 14B (open-weights, free)
+        (RESULTS / "vlm_evaluation.json",
+         DATA_DIR / "vlm/vlm_evaluation.json"),
+        (RESULTS / "vlm_opensource_evaluation.json",
+         DATA_DIR / "vlm/vlm_opensource_evaluation.json"),
+        # ASR summary evaluation against the audio-specific human reference
+        (RESULTS / "asr_summary_evaluation.json",
+         DATA_DIR / "stats/asr_summary_evaluation.json"),
     ]
     for src, out in pairs:
         copy_file(src, out)
+    build_vlm_headline_samples()
+
+
+# ── VLM headline samples ────────────────────────────────────
+
+def build_vlm_headline_samples() -> None:
+    """Emit small per-model headline samples for the /vlm page.
+
+    Each combined file is ~hundreds-to-thousands of items; we ship the
+    first 60 so the page can render without pulling a 300 KB JSON. Source
+    files (`vlm_extraction/output/<model>/full_video/run_1/headlines_combined.json`)
+    stay authoritative for any deeper inspection.
+    """
+    log.info("\n== VLM: headline samples ==")
+    vlm_root = PROJECT_DIR / "vlm_extraction" / "output"
+    out_dir = DATA_DIR / "vlm"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    targets = {
+        "gemini":  vlm_root / "gemini"  / "full_video" / "run_1" / "headlines_combined.json",
+        "mistral": vlm_root / "mistral" / "full_video" / "run_1" / "headlines_combined.json",
+    }
+    for model, src in targets.items():
+        if not src.exists():
+            log.warning("missing VLM headlines: %s", src)
+            continue
+        out = out_dir / f"headlines_{model}_sample.json"
+        if is_up_to_date(src, out):
+            log.info("[skip] %s", out.relative_to(SITE_DIR))
+            continue
+        try:
+            items = json.loads(src.read_text(encoding="utf-8"))
+        except Exception as e:
+            log.warning("  failed to parse %s: %s", src.name, e)
+            continue
+        sample = items[:60]
+        out.write_text(json.dumps({
+            "model": model,
+            "total_extracted": len(items),
+            "sample_size": len(sample),
+            "headlines": sample,
+        }, indent=2, ensure_ascii=False), encoding="utf-8")
+        enforce_size(out)
+        log.info("[build] %s: %d / %d headlines",
+                 out.relative_to(SITE_DIR), len(sample), len(items))
 
 
 # ── stage 2: panorama crops (Slice A + B) ──────────────────

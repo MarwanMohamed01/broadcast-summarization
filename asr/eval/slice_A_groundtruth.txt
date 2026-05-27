@@ -1,0 +1,58 @@
+# GROUND-TRUTH TRANSCRIPT — Slice A
+# Source: slice_A_audio.wav  (08:30:00–08:35:00 of AlJazeera 14h broadcast)
+# Author:    Marwan Mohamed
+# Listened on: <DATE>
+#
+# ── FORMAT (must match for fair WER comparison) ────────────────────────────────
+#  • Plain text, one sentence per line
+#  • No timestamps
+#  • Lowercase only
+#  • Numbers spelled out (e.g.  "iran killed thirty four people"  not  "34 people")
+#  • Punctuation: APOSTROPHES allowed ("don't", "iran's"). Drop everything else
+#    (no commas, periods, dashes, quotes, question marks, etc.)
+#  • One blank line marks an unintelligible / non-speech gap (silence, music,
+#    overlap) — do NOT try to transcribe non-speech sounds
+#  • Speaker labels: omit (we are measuring text fidelity, not diarisation)
+#
+# ── EXAMPLE (showing the conventions) ──────────────────────────────────────────
+# israeli air strike on southern lebanon kills seven people
+# multiple injuries reported after iranian missile attack hits central israel
+# iran's parliament speaker warns trump's reckless moves mean whole region going
+# to burn
+#
+# ── BEGIN GROUND TRUTH BELOW THIS LINE ─────────────────────────────────────────
+nine eleven i mean we we did of course see the destruction of al qaeda
+we saw the the killing of osama bin laden we saw the us pull out of afghanistan 
+but in your mind is what we are what we are seeing now in the middle east some way of a continuation of that War on terror or is it is it something else is it something new
+well i think it is partly a continuation of it yeah 
+we saw as you say the defeat of al qaeda
+but then of course we had al qaeda in iraq which kind of grew out of it
+there was a claim of victory against al qaeda in iraq but then we had isis which which grew to a large extent out of al qaeda in iraq 
+so you have this sort of serial declaration of victories and then people can relax for a little bit but then something else happens
+and a lot of times these threats are feeding into each other
+there's a continuity between these organisations
+i think you know the destruction of gaza you know that is in a way a very distinct problem
+but it was an action that was presented by israel within the framework of a war on terror
+in sri lanka where i was in 2009 you know the government wreaked horrible destruction on the tamil population in the name of an international war on terror 
+and it was actually difficult for britain or the united states to criticize that you know when they themselves were detaining people indefinitely 
+they themselves had the language of the war on terror and we need to be ruthless we need to suspend liberty to a certain extent in the interests of security
+specifically on the language used around the war on terror i guess a very seismic symbolic shift at least came with the rebranding of the secretary of defence to the secretary of war the defence department to the war department
+because i mean that signalled almost a kind of move away from more of a reactive war on terror to a us administration that sought to project power to pursue a peace through strength i think is the words used by by pete hegseth
+so do you see that as a as a rebranding of what's gone before or is that really a defining departure from what we've seen in the past
+i think it's a great question
+i think it is partly a rebranding but it's partly an indication that violence and the assertion of america's right in particular to do what it's like to do what it likes has become sort of incredibly shameless under trump
+and trump is somebody really who has systematically rejected shame and indeed made a lot of political capital in my opinion out of offering people a kind of vicarious shamelessness through his abuses and through his spectacular demonstrations of freedom as i say freedom for himself
+so i think you know there are some significant differences
+for example george w bush and tony blair you know they did make some efforts to try to create some sense of international legitimacy for what they wanted to do in iraq and to try and get the yuan on board to a certain extent
+we're not seeing that now with trump and netanyahu
+we're just seeing a kind of go it alone spirit which i think is incredibly dangerous and incredibly destructive
+so i do think there's a shamelessness about what's going on
+and that thing you mentioned about relabelling as a department of war you know trump would say well this is you know this is honesty
+you know he projects this image of honesty
+i'm not a hypocrite
+the liberals are hypocrites
+i tell you the truth as it is and he's made some considerable political capital out of that in my opinion but it's also a very frightening turn
+david talking about political capital
+we've talked about the big powers
+i'd like to talk about the small powers if I may because I I wonder if the rise of non state actors hezbollah in in in lebanon the houthis in the yemen whether they fit into this into this frame as well because i want to know if they are motivated by the same impulses that perhaps iran or the united states may be for their own ends
+i mean how does your approach to this work when war is being waged by smaller

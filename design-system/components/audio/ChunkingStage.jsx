@@ -3,7 +3,7 @@ import { motion, useInView } from "framer-motion";
 import StagePanel from "../shared/StagePanel.jsx";
 
 /**
- * 59 transcript chunks visualised as a 12-card sample with a "+47 more" tile.
+ * 59 transcript chunks visualized as a 12-card sample with a "+47 more" tile.
  */
 export default function ChunkingStage({ totalChunks = 59, chunkMinutes = 15 }) {
   const ref = useRef(null);

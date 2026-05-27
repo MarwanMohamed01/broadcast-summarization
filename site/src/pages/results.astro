@@ -3,6 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import ResultsHero from "../../../design-system/components/shared/ResultsHero.jsx";
 import EvalStage from "../../../design-system/components/visual/EvalStage.jsx";
 import GTOverlay from "../../../design-system/components/shared/GTOverlay.jsx";
+import VLMComparison from "../../../design-system/components/shared/VLMComparison.jsx";
 ---
 
 <BaseLayout
@@ -17,7 +18,7 @@ import GTOverlay from "../../../design-system/components/shared/GTOverlay.jsx";
       <p class="prose-thesis mt-4 max-w-2xl">
         Two evaluations.  <strong>Headline extraction</strong> is scored
         against 39 manually-annotated headlines from two 30-minute slices.
-        <strong>Summarisation</strong> is scored with ROUGE-L and BERTScore
+        <strong>Summarization</strong> is scored with ROUGE-L and BERTScore
         against a hand-written reference summary.
       </p>
     </div>
@@ -36,7 +37,74 @@ import GTOverlay from "../../../design-system/components/shared/GTOverlay.jsx";
     </div>
   </section>
 
-  <EvalStage client:load accent="visual" />
+  <section class="border-t border-border">
+    <div class="max-w-content mx-auto px-6 py-16">
+      <h2 class="text-2xl font-semibold mb-2">VLM extraction · same tiles, no OCR</h2>
+      <p class="prose-thesis max-w-3xl mb-8">
+        The same panorama tiles passed straight to a vision-language model.
+        Both VLMs hit 100% recall — every GT headline appears somewhere in
+        the output — but precision lags OCR because the VLM emits many
+        extra candidates. The open-weights model edges out paid Gemini and
+        costs nothing. See <a href="/vlm" class="underline">/vlm</a> for the
+        full method and per-model headline samples.
+      </p>
+      <VLMComparison client:load reportUrl="/data/vlm/vlm_opensource_evaluation.json" />
+    </div>
+  </section>
+
+  <section class="border-t border-border">
+    <div class="max-w-content mx-auto px-6 pt-16 pb-2">
+      <h2 class="text-2xl font-semibold mb-2">Summarization · two leaderboards</h2>
+      <p class="prose-thesis max-w-3xl mb-2">
+        The same nine LLMs are scored on both pipelines, against two
+        separate hand-written references. The
+        <strong>visual reference</strong>
+        (<code class="mono">reference_summary.txt</code>, 687 words)
+        captures only headlines that were on the ticker bar. The
+        <strong>audio reference</strong>
+        (<code class="mono">reference_summary_audio.txt</code>, 1,908 words)
+        captures spoken-only content the ticker never carried — the Pope's
+        Easter homily, the Kashmir / France / Senegal voice-over reports,
+        and the rescue-operation interview narrative.
+      </p>
+      <p class="text-sm text-text-muted max-w-3xl">
+        ROUGE measures lexical overlap; BERTScore-F1 measures semantic
+        similarity. Each summary is scored only against its own
+        modality's reference — mixing them would unfairly penalise
+        modality-specific content.
+      </p>
+    </div>
+  </section>
+
+  <section class="border-t border-border">
+    <div class="max-w-content mx-auto px-6 pt-10 pb-2">
+      <h3 class="text-xl font-semibold mb-1">Visual / ticker summaries</h3>
+      <p class="text-sm text-text-muted max-w-3xl">
+        9 LLMs given the 38 LLM-cleaned ticker headlines from the
+        14-hour broadcast, scored against the visual reference
+        (<code class="mono">reference_summary.txt</code>, 687 words).
+      </p>
+    </div>
+  </section>
+  <EvalStage client:load accent="visual"
+             scoresUrl="/data/stats/eval_scores.json"
+             variant="visual_14h_cleaned" />
+
+  <section class="border-t border-border">
+    <div class="max-w-content mx-auto px-6 pt-10 pb-2">
+      <h3 class="text-xl font-semibold mb-1">Audio / spoken summaries</h3>
+      <p class="text-sm text-text-muted max-w-3xl">
+        The same nine LLMs given the 59 Level-1 chunk summaries of the
+        full 14-hour transcript, hierarchically reduced to a final
+        Level-2 paragraph summary, scored against the audio reference.
+        Models that hit free-tier TPM caps on a single 12 K-token L2
+        call are recovered via a 3-batch chunked L2 retry.
+      </p>
+    </div>
+  </section>
+  <EvalStage client:load accent="audio"
+             scoresUrl="/data/stats/eval_scores.json"
+             variant="asr_final" />
 
   <section class="border-t border-border">
     <div class="max-w-content mx-auto px-6 py-16 grid lg:grid-cols-2 gap-6">

@@ -1,0 +1,464 @@
+{
+  "evaluation_timestamp": "2026-04-29T14:04:33.389763",
+  "reference_summary": "llm_summarization\\reference_summary.txt",
+  "reference_length_words": 687,
+  "runs_root": "llm_summarization\\output_cleaned_runs",
+  "n_runs_target": 3,
+  "metrics": [
+    "rouge1",
+    "rouge2",
+    "rougeL",
+    "bertscore_f1"
+  ],
+  "models": [
+    {
+      "model": "Gemini 2.5 Flash",
+      "provider": "gemini",
+      "model_id": "gemini-2.5-flash",
+      "n_successful_runs": 2,
+      "run_statuses": [
+        [
+          1,
+          "error"
+        ],
+        [
+          2,
+          "success"
+        ],
+        [
+          3,
+          "success"
+        ]
+      ],
+      "per_run": [
+        {
+          "rouge1": 0.7078,
+          "rouge2": 0.3935,
+          "rougeL": 0.2127,
+          "bertscore_f1": 0.8654,
+          "run": 2,
+          "latency_s": 22.02
+        },
+        {
+          "rouge1": 0.679,
+          "rouge2": 0.3603,
+          "rougeL": 0.2067,
+          "bertscore_f1": 0.8641,
+          "run": 3,
+          "latency_s": 25.58
+        }
+      ],
+      "rouge1_mean": 0.6934,
+      "rouge1_std": 0.0204,
+      "rouge2_mean": 0.3769,
+      "rouge2_std": 0.0235,
+      "rougeL_mean": 0.2097,
+      "rougeL_std": 0.0042,
+      "bertscore_f1_mean": 0.8647,
+      "bertscore_f1_std": 0.0009,
+      "note": "n=2 (of 3) — partial data. Mean computed over 2 successful runs; std requires n≥2 (else 0)."
+    },
+    {
+      "model": "Llama 4 Scout 17B (Groq)",
+      "provider": "groq",
+      "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "n_successful_runs": 3,
+      "run_statuses": [
+        [
+          1,
+          "success"
+        ],
+        [
+          2,
+          "success"
+        ],
+        [
+          3,
+          "success"
+        ]
+      ],
+      "per_run": [
+        {
+          "rouge1": 0.5416,
+          "rouge2": 0.2461,
+          "rougeL": 0.2476,
+          "bertscore_f1": 0.8563,
+          "run": 1,
+          "latency_s": 1.41
+        },
+        {
+          "rouge1": 0.4914,
+          "rouge2": 0.2492,
+          "rougeL": 0.2002,
+          "bertscore_f1": 0.8537,
+          "run": 2,
+          "latency_s": 1.04
+        },
+        {
+          "rouge1": 0.5306,
+          "rouge2": 0.2434,
+          "rougeL": 0.241,
+          "bertscore_f1": 0.8538,
+          "run": 3,
+          "latency_s": 1.14
+        }
+      ],
+      "rouge1_mean": 0.5212,
+      "rouge1_std": 0.0264,
+      "rouge2_mean": 0.2462,
+      "rouge2_std": 0.0029,
+      "rougeL_mean": 0.2296,
+      "rougeL_std": 0.0257,
+      "bertscore_f1_mean": 0.8546,
+      "bertscore_f1_std": 0.0015
+    },
+    {
+      "model": "Command-R (Cohere)",
+      "provider": "cohere",
+      "model_id": "command-r-08-2024",
+      "n_successful_runs": 3,
+      "run_statuses": [
+        [
+          1,
+          "success"
+        ],
+        [
+          2,
+          "success"
+        ],
+        [
+          3,
+          "success"
+        ]
+      ],
+      "per_run": [
+        {
+          "rouge1": 0.39,
+          "rouge2": 0.1412,
+          "rougeL": 0.156,
+          "bertscore_f1": 0.8486,
+          "run": 1,
+          "latency_s": 141.96
+        },
+        {
+          "rouge1": 0.4233,
+          "rouge2": 0.2078,
+          "rougeL": 0.2011,
+          "bertscore_f1": 0.8494,
+          "run": 2,
+          "latency_s": 7.18
+        },
+        {
+          "rouge1": 0.4247,
+          "rouge2": 0.1405,
+          "rougeL": 0.1548,
+          "bertscore_f1": 0.8546,
+          "run": 3,
+          "latency_s": 10.77
+        }
+      ],
+      "rouge1_mean": 0.4127,
+      "rouge1_std": 0.0196,
+      "rouge2_mean": 0.1632,
+      "rouge2_std": 0.0387,
+      "rougeL_mean": 0.1706,
+      "rougeL_std": 0.0264,
+      "bertscore_f1_mean": 0.8509,
+      "bertscore_f1_std": 0.0033
+    },
+    {
+      "model": "Llama 3.3 70B (Groq)",
+      "provider": "groq",
+      "model_id": "llama-3.3-70b-versatile",
+      "n_successful_runs": 3,
+      "run_statuses": [
+        [
+          1,
+          "success"
+        ],
+        [
+          2,
+          "success"
+        ],
+        [
+          3,
+          "success"
+        ]
+      ],
+      "per_run": [
+        {
+          "rouge1": 0.4714,
+          "rouge2": 0.2164,
+          "rougeL": 0.2056,
+          "bertscore_f1": 0.8466,
+          "run": 1,
+          "latency_s": 2.28
+        },
+        {
+          "rouge1": 0.53,
+          "rouge2": 0.2806,
+          "rougeL": 0.21,
+          "bertscore_f1": 0.8504,
+          "run": 2,
+          "latency_s": 1.37
+        },
+        {
+          "rouge1": 0.521,
+          "rouge2": 0.2851,
+          "rougeL": 0.2445,
+          "bertscore_f1": 0.853,
+          "run": 3,
+          "latency_s": 1.51
+        }
+      ],
+      "rouge1_mean": 0.5075,
+      "rouge1_std": 0.0316,
+      "rouge2_mean": 0.2607,
+      "rouge2_std": 0.0384,
+      "rougeL_mean": 0.22,
+      "rougeL_std": 0.0213,
+      "bertscore_f1_mean": 0.85,
+      "bertscore_f1_std": 0.0032
+    },
+    {
+      "model": "Qwen3 32B (Groq)",
+      "provider": "groq",
+      "model_id": "qwen/qwen3-32b",
+      "n_successful_runs": 3,
+      "run_statuses": [
+        [
+          1,
+          "success"
+        ],
+        [
+          2,
+          "success"
+        ],
+        [
+          3,
+          "success"
+        ]
+      ],
+      "per_run": [
+        {
+          "rouge1": 0.4402,
+          "rouge2": 0.1697,
+          "rougeL": 0.1799,
+          "bertscore_f1": 0.844,
+          "run": 1,
+          "latency_s": 1.87
+        },
+        {
+          "rouge1": 0.5353,
+          "rouge2": 0.2259,
+          "rougeL": 0.2078,
+          "bertscore_f1": 0.846,
+          "run": 2,
+          "latency_s": 2.56
+        },
+        {
+          "rouge1": 0.4113,
+          "rouge2": 0.1505,
+          "rougeL": 0.1959,
+          "bertscore_f1": 0.8431,
+          "run": 3,
+          "latency_s": 3.0
+        }
+      ],
+      "rouge1_mean": 0.4623,
+      "rouge1_std": 0.0649,
+      "rouge2_mean": 0.182,
+      "rouge2_std": 0.0392,
+      "rougeL_mean": 0.1945,
+      "rougeL_std": 0.014,
+      "bertscore_f1_mean": 0.8444,
+      "bertscore_f1_std": 0.0015
+    },
+    {
+      "model": "Llama 3.1 8B (Groq)",
+      "provider": "groq",
+      "model_id": "llama-3.1-8b-instant",
+      "n_successful_runs": 3,
+      "run_statuses": [
+        [
+          1,
+          "success"
+        ],
+        [
+          2,
+          "success"
+        ],
+        [
+          3,
+          "success"
+        ]
+      ],
+      "per_run": [
+        {
+          "rouge1": 0.4242,
+          "rouge2": 0.2083,
+          "rougeL": 0.1866,
+          "bertscore_f1": 0.8489,
+          "run": 1,
+          "latency_s": 0.64
+        },
+        {
+          "rouge1": 0.3771,
+          "rouge2": 0.1613,
+          "rougeL": 0.1985,
+          "bertscore_f1": 0.8424,
+          "run": 2,
+          "latency_s": 0.61
+        },
+        {
+          "rouge1": 0.3926,
+          "rouge2": 0.1674,
+          "rougeL": 0.1887,
+          "bertscore_f1": 0.8365,
+          "run": 3,
+          "latency_s": 0.68
+        }
+      ],
+      "rouge1_mean": 0.398,
+      "rouge1_std": 0.024,
+      "rouge2_mean": 0.179,
+      "rouge2_std": 0.0256,
+      "rougeL_mean": 0.1913,
+      "rougeL_std": 0.0064,
+      "bertscore_f1_mean": 0.8426,
+      "bertscore_f1_std": 0.0062
+    },
+    {
+      "model": "Llama 3 8B (HuggingFace)",
+      "provider": "huggingface",
+      "model_id": "meta-llama/Meta-Llama-3-8B-Instruct",
+      "n_successful_runs": 3,
+      "run_statuses": [
+        [
+          1,
+          "success"
+        ],
+        [
+          2,
+          "success"
+        ],
+        [
+          3,
+          "success"
+        ]
+      ],
+      "per_run": [
+        {
+          "rouge1": 0.2521,
+          "rouge2": 0.0739,
+          "rougeL": 0.1213,
+          "bertscore_f1": 0.8293,
+          "run": 1,
+          "latency_s": 6.01
+        },
+        {
+          "rouge1": 0.4057,
+          "rouge2": 0.2132,
+          "rougeL": 0.193,
+          "bertscore_f1": 0.8506,
+          "run": 2,
+          "latency_s": 3.28
+        },
+        {
+          "rouge1": 0.4035,
+          "rouge2": 0.1858,
+          "rougeL": 0.1636,
+          "bertscore_f1": 0.8382,
+          "run": 3,
+          "latency_s": 3.35
+        }
+      ],
+      "rouge1_mean": 0.3538,
+      "rouge1_std": 0.0881,
+      "rouge2_mean": 0.1576,
+      "rouge2_std": 0.0738,
+      "rougeL_mean": 0.1593,
+      "rougeL_std": 0.036,
+      "bertscore_f1_mean": 0.8394,
+      "bertscore_f1_std": 0.0107
+    },
+    {
+      "model": "Llama 3.2 3B (Ollama local)",
+      "provider": "ollama",
+      "model_id": "llama3.2",
+      "n_successful_runs": 2,
+      "run_statuses": [
+        [
+          1,
+          "success"
+        ],
+        [
+          2,
+          "success"
+        ],
+        [
+          3,
+          "error"
+        ]
+      ],
+      "per_run": [
+        {
+          "rouge1": 0.3743,
+          "rouge2": 0.1576,
+          "rougeL": 0.175,
+          "bertscore_f1": 0.8431,
+          "run": 1,
+          "latency_s": 264.85
+        },
+        {
+          "rouge1": 0.3965,
+          "rouge2": 0.1933,
+          "rougeL": 0.2232,
+          "bertscore_f1": 0.8332,
+          "run": 2,
+          "latency_s": 250.78
+        }
+      ],
+      "rouge1_mean": 0.3854,
+      "rouge1_std": 0.0157,
+      "rouge2_mean": 0.1754,
+      "rouge2_std": 0.0252,
+      "rougeL_mean": 0.1991,
+      "rougeL_std": 0.0341,
+      "bertscore_f1_mean": 0.8381,
+      "bertscore_f1_std": 0.007,
+      "note": "n=2 (of 3) — partial data. Mean computed over 2 successful runs; std requires n≥2 (else 0)."
+    },
+    {
+      "model": "Llama 3.1 8B (Ollama local)",
+      "provider": "ollama",
+      "model_id": "llama3.1:8b",
+      "n_successful_runs": 0,
+      "run_statuses": [
+        [
+          1,
+          "error"
+        ],
+        [
+          2,
+          "error"
+        ],
+        [
+          3,
+          "error"
+        ]
+      ],
+      "per_run": [],
+      "rouge1_mean": 0.0,
+      "rouge1_std": 0.0,
+      "rouge2_mean": 0.0,
+      "rouge2_std": 0.0,
+      "rougeL_mean": 0.0,
+      "rougeL_std": 0.0,
+      "bertscore_f1_mean": 0.0,
+      "bertscore_f1_std": 0.0,
+      "note": "n=0 (of 3) — partial data. Mean computed over 0 successful runs; std requires n≥2 (else 0)."
+    }
+  ],
+  "notes": "Mean ± std reported only over models that succeeded on ≥1 run. n is shown explicitly per model. std=0 when n=1 (insufficient samples for spread). std requires n≥2."
+}

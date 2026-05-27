@@ -2,7 +2,7 @@
 
 **Project**: Master's Thesis — GIU Berlin
 **Author**: Marwan Mohamed
-**Last updated**: April 2026
+**Last updated**: 2026-05-13
 
 ---
 
@@ -15,9 +15,12 @@
 5. [Phase 4 — Ticker Summarization (9-LLM Comparison)](#5-phase-4--ticker-summarization-9-llm-comparison)
 6. [Phase 5 — Validation (Ground Truth + Metrics)](#6-phase-5--validation-ground-truth--metrics)
 7. [Phase 6 — Audio Pipeline (ASR + LLM Summarization)](#7-phase-6--audio-pipeline-asr--llm-summarization)
-8. [End-to-End Pipeline Diagram](#8-end-to-end-pipeline-diagram)
-9. [Project Structure](#9-project-structure)
-10. [Technical Glossary](#10-technical-glossary)
+8. [Phase 7 — Multi-Engine OCR Comparison](#8-phase-7--multi-engine-ocr-comparison)
+9. [Phase 8 — VLM-Based Ticker Extraction](#9-phase-8--vlm-based-ticker-extraction)
+10. [Phase 9 — Web Surfaces (Defense Site + Interactive Workbench)](#10-phase-9--web-surfaces-defense-site--interactive-workbench)
+11. [End-to-End Pipeline Diagram](#11-end-to-end-pipeline-diagram)
+12. [Project Structure](#12-project-structure)
+13. [Technical Glossary](#13-technical-glossary)
 
 ---
 
@@ -25,27 +28,36 @@
 
 This thesis implements a complete pipeline for automatic extraction and summarization of TV news content from two complementary modalities:
 
-- **Visual modality**: the scrolling news ticker at the bottom of the screen (OCR)
+- **Visual modality**: the scrolling news ticker at the bottom of the screen (OCR + VLM)
 - **Auditory modality**: the spoken broadcast content (ASR — Automatic Speech Recognition)
 
 The final output for each modality is a ranked comparison of 9 different LLMs summarizing the day's news, benchmarked against a human reference using ROUGE + BERTScore.
+
+The visual modality is now investigated under **two parallel approaches**:
+1. **OCR pipeline** — traditional 5-stage CV approach (frames → scroll → panorama → OCR → segment), validated and now baseline.
+2. **VLM pipeline** — single-shot Vision-Language Model extraction (panorama tile → JSON headlines), added to compare against OCR head-to-head.
+
+A separate **multi-engine OCR comparison** (Phase 7) benchmarks Tesseract, EasyOCR, PaddleOCR, docTR, and CRAFT+TrOCR on identical input, validating the engine choice in the production pipeline.
 
 ### Input videos
 
 - **`AlJazeera_sample.mp4`** — 27-minute Al Jazeera sample (1280×720, 30fps) — used for initial pipeline development
 - **`AlJazeera_14hrs_without_edits.mp4`** — 14.55-hour Al Jazeera broadcast (1,571,786 frames) — the main experimental dataset
 
-### Pipeline summary (both modalities)
+### Pipeline summary (all modalities)
 
 ```
 VIDEO
   │
-  ├── VISUAL PATH: frames → scroll detection → panorama → dual-engine OCR
-  │                → segmentation → improved segmentation → LLM cleaning
-  │                → 9-LLM summarization → evaluation
+  ├── VISUAL (OCR): frames → scroll detection → panorama → dual-engine OCR
+  │                  → segmentation → improved segmentation → LLM cleaning
+  │                  → 9-LLM summarization → evaluation
   │
-  └── AUDIO PATH: WAV extraction → Whisper ASR → time-based chunking
-                  → 2-level LLM summarization → evaluation
+  ├── VISUAL (VLM): v6 panoramas → tiling → Gemini 2.5 Flash per-tile JSON
+  │                  → cross-tile dedup → (optional cleanup) → evaluation
+  │
+  └── AUDIO:        WAV extraction → Whisper ASR → time-based chunking
+                    → 2-level LLM summarization → evaluation
 ```
 
 ---
@@ -167,11 +179,35 @@ The same 9-LLM summarization pipeline used for the original 27-min sample is re-
 
 All models receive the same system prompt ("professional news editor, neutral journalistic style, one paragraph, no hallucinations") and user prompt (numbered list of the 38 cleaned headlines). Temperature=0.3, max_tokens=1024.
 
-### Results (ticker summarization)
+### Results (ticker summarization, 14-hour broadcast)
 
-**8 of 9 models succeeded** — only Ollama `llama3.1:8b` timed out (300s CPU limit). Summaries range from 1226 chars (terse) to 3024 chars (verbose). Output stored in `llm_summarization/output_cleaned/latest.json`.
+**8 of 9 models succeeded** — only Ollama `llama3.1:8b` timed out (300s CPU limit). Summaries range from 1,226 chars (terse) to 3,024 chars (verbose). Output stored in `llm_summarization/output_cleaned/latest.json`.
 
-Final evaluation against a human reference summary (ROUGE + BERTScore) is pending your reference submission.
+### Evaluation against the human visual reference (`reference_summary.txt`)
+
+Scored via `pipeline/evaluate_cleaned_summaries.py` (monkey-patches the frozen
+evaluator to write into `output_cleaned/` and mirrors to
+`results/visual_14h_summary_evaluation.json`).
+
+| Rank | Model | ROUGE-1 | ROUGE-L | BERT-F1 | Words |
+|---|---|---|---|---|---|
+| 1 | Gemini 2.5 Flash | 0.428 | 0.238 | **0.865** | 453 |
+| 2 | Llama 4 Scout 17B (Groq) | 0.460 | 0.237 | 0.853 | 294 |
+| 3 | Llama 3.3 70B (Groq) | 0.422 | 0.208 | 0.850 | 290 |
+| 4 | Llama 3 8B (HuggingFace) | 0.341 | 0.186 | 0.850 | 215 |
+| 5 | Command-R (Cohere) | 0.351 | 0.159 | 0.844 | 200 |
+| 6 | Qwen3 32B (Groq) | 0.388 | **0.305** | 0.844 | 288 |
+| 7 | Llama 3.2 3B (Ollama) | 0.330 | 0.184 | 0.839 | 213 |
+| 8 | Llama 3.1 8B (Groq) | 0.290 | 0.170 | 0.839 | 194 |
+| — | Llama 3.1 8B (Ollama) | — | — | — | failed L1 (CPU timeout) |
+
+**Note on the legacy 27-min sample.** The earlier 9-LLM run in
+`llm_summarization/output/` was performed against a different broadcast
+(March 2026: Saudi / Sudan / Ukraine stories), but it was originally scored
+against this same `reference_summary.txt`. That pairing was incorrect —
+the reference describes the 14h Iran/Hormuz broadcast — so the 27-min run
+is retained on disk for historical record only and is not surfaced on the
+defense site. The canonical visual leaderboard is the table above.
 
 ---
 
@@ -195,11 +231,11 @@ The two slices come from different hours to test whether the pipeline works cons
 Manual annotation produced:
 - `slice_A_headlines.txt` — **27 unique headlines** (what appeared on screen)
 - `slice_B_headlines.txt` — **28 unique headlines**
-- **Combined (union)**: **39 unique headlines**
+- **Combined (union)**: **39 unique headlines** (16 stories appeared in both slices)
 
 ### Metrics (`validation/validate_extraction.py`)
 
-Computes, for each stage (raw v6, LLM-cleaned) × each slice (A, B, combined):
+Computes, for each stage (raw v6, LLM-cleaned, VLM raw, VLM cleaned) × each slice (A, B, combined):
 
 - **Precision** at 60% / 70% / 80% fuzzy-match thresholds
 - **Recall** at same thresholds
@@ -211,7 +247,7 @@ Computes, for each stage (raw v6, LLM-cleaned) × each slice (A, B, combined):
 - **Missed headlines** list (specific GT items not found)
 - **False-positive** list (extracted items with no GT match — some may be legitimate headlines from unsampled parts of the 14h)
 
-### Key results
+### Key results (OCR pipeline)
 
 | Stage | GT | Ext | P@70 | **R@70** | **F1@70** | Exact | CER | WER |
 |---|---|---|---|---|---|---|---|---|
@@ -296,113 +332,392 @@ Same 9 LLMs as ticker summarization. Same monkey-patch pattern (no modification 
 | Llama 3.2 3B (Ollama local) | 2 / 59 (CPU timeouts) |
 | Llama 3.1 8B (Ollama local) | 0 / 59 (CPU timeouts) |
 
-### Level-2 final summary results
+### Level-2 final summary results (after full retry cascade)
 
-| Model | Level-1 coverage | Level-2 status | Output length |
-|---|---|---|---|
-| Llama 3.3 70B (Groq) | 36/59 | ✅ | 3,411 chars |
-| Llama 4 Scout 17B (Groq) | **59/59** | ✅ | 4,857 chars |
-| Gemini 2.5 Flash | 21/59 | ✅ | 3,917 chars |
-| Command-R (Cohere) | **59/59** | ✅ | 2,362 chars |
-| Llama 3.2 3B (Ollama) | 2/59 | ✅ (earlier run) | 3,023 chars |
-| Llama 3.1 8B (Groq) | 59/59 | ❌ TPM exceeded on 12 K-token concatenated input |
-| Qwen3 32B (Groq) | 59/59 | ❌ TPM exceeded |
-| Llama 3 8B (HuggingFace) | 59/59 | ❌ HF "Bad Request" (context length) |
+After three rounds of recovery work (original → simple retry → chunked-L2
+for TPM-capped cloud models → Ollama L1+L2 backfill), **8 of 9 models**
+produced complete Level-2 summaries:
 
-**5 out of 9 models** produced complete final summaries covering the full day's broadcast. The retry script (`asr/retry_level2.py`) uses exponential backoff on rate limits.
+| Model | Level-1 coverage | Path to L2 success |
+|---|---|---|
+| Llama 3.3 70B (Groq) | 36/59 | original run with partial L1 |
+| Llama 4 Scout 17B (Groq) | 59/59 | original run |
+| Gemini 2.5 Flash | 21/59 | original run with partial L1 |
+| Command-R (Cohere) | 59/59 | original run |
+| Llama 3.1 8B (Groq) | 59/59 | **recovered via chunked-L2** (3-batch reduction avoids 6K TPM cap) |
+| Qwen3 32B (Groq) | 59/59 | **recovered via chunked-L2** |
+| Llama 3 8B (HuggingFace) | 59/59 | **recovered via chunked-L2** |
+| Llama 3.2 3B (Ollama local) | **59/59** (filled in) | **L1+L2 backfilled** by `run_ollama_l1_l2.py` (~6.5 h CPU) |
+| Llama 3.1 8B (Ollama local) | 4/59 | ❌ aborted — every chunk past #4 hit the 1200 s CPU timeout |
+
+**Why the chunked-L2 recovery works.** The original Level-2 input is ~12 K
+tokens (59 concatenated L1 paragraphs). Groq's free tier caps Llama 3.1 8B
+and Qwen3 32B at **6 K TPM**, so a single L2 call rate-limits immediately
+even with backoff. `asr/retry_level2_chunked.py` splits the 59 paragraphs
+into 3 batches of 20, summarises each batch into one consolidated paragraph
+(~3 K-token input, ~600-token output — comfortably inside the TPM budget),
+then summarises the 3 batch-summaries into the final L2. Three calls per
+model × backoff pacing keeps the running token rate under the limit.
+
+**Why one Ollama model still fails.** Llama 3.1 8B (4.9 GB) on commodity
+CPU takes ~14-17 min per 3 K-token chunk and creeps past the 1200 s read
+timeout from chunk 5 onward — every retry produces the same `ReadTimeout`.
+This is a hardware-level limit, not a software bug; documented as the
+single failure in both leaderboards.
+
+### Evaluation against the human audio reference (`reference_summary_audio.txt`)
+
+Reference: 1,908 words, topic-grouped with a chronological backbone,
+covering audio-only content (Pope's Easter homily, Kashmir / France /
+Senegal voice-over reports, rescue-operation interview narrative) that
+never appears in the ticker bar. Scored via `asr/merge_asr_runs.py` (which
+calls `asr/evaluate_audio_summaries.py`). Report mirrored to
+`results/asr_summary_evaluation.json`.
+
+| Rank | Model | ROUGE-1 | ROUGE-L | BERT-F1 | Words |
+|---|---|---|---|---|---|
+| 1 | Command-R (Cohere) | 0.219 | 0.103 | **0.778** | 367 |
+| 2 | Qwen3 32B (Groq) | 0.227 | 0.095 | 0.770 | 413 |
+| 3 | Llama 3.2 3B (Ollama) | 0.225 | 0.095 | 0.768 | 444 |
+| 4 | Llama 3.3 70B (Groq) | 0.307 | 0.132 | 0.768 | 540 |
+| 5 | Llama 4 Scout 17B (Groq) | 0.373 | **0.144** | 0.767 | 742 |
+| 6 | Llama 3.1 8B (Groq) | 0.271 | 0.115 | 0.767 | 449 |
+| 7 | Gemini 2.5 Flash | 0.296 | 0.117 | 0.767 | 557 |
+| 8 | Llama 3 8B (HuggingFace) | 0.261 | 0.111 | 0.758 | 466 |
+| — | Llama 3.1 8B (Ollama) | — | — | — | failed L1 (CPU timeout) |
+
+The two metrics disagree at the top — Command-R wins BERTScore F1 with the
+shortest summary (semantically aligned), Llama 4 Scout wins ROUGE-L with the
+longest (most n-gram overlap). BERT-F1 is uniformly lower than on the
+visual path (0.76 vs 0.85) because the audio reference is 2.4× longer than
+the median LLM summary; ROUGE recall is length-asymmetric.
+
+### Whisper transcription quality (ASR vs human reference)
+
+Separately, the Whisper output itself is evaluated on the two annotated
+audio slices (`asr/eval/slice_{A,B}_groundtruth.txt`, 1,567 reference
+words total) using `jiwer`. Run via
+`evaluation/asr_evaluate.py`; output `results/asr_evaluation.json`.
+
+| Slice | WER | CER |
+|---|---|---|
+| Slice A (08:30–09:00) | 5.4 % | 3.7 % |
+| Slice B (13:00–13:30) | 7.8 % | 5.7 % |
+| **Combined** | **6.6 %** | **4.8 %** |
+
+faster-whisper `small` int8 on CPU is essentially production-grade on this
+broadcast — 93–95 % word-level accuracy with no fine-tuning.
 
 ### Sample Level-2 output (Llama 3.3 70B)
 
 > *"The day's major stories began with the ongoing tensions between the US and Iran, with President Trump's rhetoric being seen as potentially strengthening Iran's position. A US airman who was missing in Iran after his F-15E fighter jet was shot down was rescued in a daring operation, involving a firefight and the deployment of dozens of aircraft and hundreds of troops. Meanwhile, in the Gaza Strip, Hamas stated that it would not disarm, a key component of the second phase of the Gaza ceasefire plan, citing continued Israeli aggression and the killing of Palestinians. [...]"*
 
-Full output: `llm_summarization/output_asr/latest.json`.
-
-### Evaluation (pending)
-
-Requires a human reference ASR summary (to be written). When available, `llm_summarization/evaluate.py` is run via a monkey-patched wrapper against the Level-2 summaries to compute ROUGE + BERTScore rankings for each of the 5 successful models.
+Full output: `llm_summarization/output_asr/latest.json` (merged from
+`summaries_*.json` + `summaries_retry_*.json` +
+`summaries_retry_chunked_*.json` + `summaries_retry_ollama_*.json` via
+`asr/merge_asr_runs.py`).
 
 ---
 
-## 8. End-to-End Pipeline Diagram
+## 8. Phase 7 — Multi-Engine OCR Comparison
+
+Reference: `ocr_comparison/` folder.
+
+A head-to-head benchmark of five OCR engines on the same two ground-truth panoramas used by Phase 5 validation, designed to **justify v6's choice of EasyOCR + Tesseract dash augmentation** as the production pipeline.
+
+### Engines compared
+
+| Engine | Type | Notes |
+|---|---|---|
+| **Tesseract** | classical | the only engine that natively detects the thin `" - "` delimiter |
+| **EasyOCR** | scene-text DL | strong word-level recognition, blind to delimiters |
+| **PaddleOCR (PP-OCRv5)** | DL | trained primarily on document text, weaker on TV-ticker fonts |
+| **docTR** (db_resnet50 + crnn_vgg16_bn) | DL detector + recognizer | competent on news fonts |
+| **CRAFT + TrOCR** (microsoft/trocr-base-printed) | hybrid | CRAFT detector + transformer recognizer |
+
+A Gemini 2.5 Flash Vision adapter was also implemented but **excluded from reported results** — free-tier 20 RPM made wall-clock measurements non-comparable.
+
+All engines were run **CPU-only** on the same two 30-min panoramas. The thesis notes this constraint disproportionately affects PaddleOCR and TrOCR (which benefit most from GPU).
+
+### Two-table comparison architecture
+
+The runner (`run_ocr_engine.py`) saves each engine's raw words and timing. Two distinct evaluations are emitted:
+
+1. **Pure engines** — what each engine produces alone, with no help from other engines. Reveals which can detect the delimiter natively.
+2. **Engines + dash augmentation** — Tesseract PSM 6 is run once across the panorama, dash positions are cached, then each engine's words are merged with synthetic `" - "` tokens at those x-positions before re-segmentation. This is the **v6 production architecture** applied uniformly across engines, so the comparison measures recognition quality only.
+
+### Results (combined two slices = 39 GT headlines)
+
+**Pure engines (engine alone):**
+
+| Engine | Mean F1 | Mean CER |
+|---|---|---|
+| Tesseract | **85.4%** | 10.0% |
+| docTR | 63.9% | 20.1% |
+| PaddleOCR | 8.5% | 45.0% |
+| EasyOCR | 0.0% | — (no delimiters detected) |
+| CRAFT+TrOCR | 0.0% | — (no delimiters detected) |
+
+**Engines + Tesseract dash augmentation (v6 production architecture):**
+
+| Engine | Mean F1 | Mean CER | Time | Peak RAM |
+|---|---|---|---|---|
+| **EasyOCR** | **91.3%** | **8.8%** | 3.9 min | 1.8 GB |
+| Tesseract | 85.4% | 10.2% | 0.6 min | 4 MB |
+| docTR | 80.3% | 12.0% | 6.0 min | 2.1 GB |
+| PaddleOCR | 23.0% | 27.8% | 21.9 min | 596 MB |
+| CRAFT+TrOCR (hybrid) | 29.9% | 29.8% | 52.4 min | 2.8 GB |
+
+### Thesis takeaways
+
+1. **EasyOCR + Tesseract dash augmentation is the empirical winner** — 91.3 % F1, 8.8 % CER. The v6 production pipeline's engine choice is validated.
+2. **Scene-text recognizers (EasyOCR, PaddleOCR, docTR, CRAFT+TrOCR) skip the thin `" - "` glyph entirely** when run alone. Without dash augmentation EasyOCR scores 0 % F1 — a striking demonstration that recognition quality is necessary but not sufficient when delimiter detection matters.
+3. **Tesseract is uniquely valuable as a delimiter detector** even though it isn't the best general-purpose recognizer. The hybrid two-engine architecture exploits each engine's strength.
+4. **Vision-Transformer recognizers (TrOCR, PaddleOCR) underperform on TV-ticker fonts** because their training distributions favor document text. Stylised broadcast fonts at low resolution are a documented weakness.
+
+Output: `ocr_comparison/output/comparison_report.{json,txt}` (both tables, machine + human readable).
+
+---
+
+## 9. Phase 8 — VLM-Based Ticker Extraction
+
+Reference: `vlm_extraction/` folder. Detailed standalone report: `vlm_extraction/PROGRESS_REPORT.md`.
+
+Parallel alternative to the OCR pipeline. Instead of recognising glyphs and segmenting on delimiters, send a stitched panorama tile directly to a Vision-Language Model and have it emit structured JSON headlines in one shot.
+
+### Strategy and architecture
+
+- **Strategy A only**: feed v6-stitched panoramas to the VLM, one tile per call. Strategy B (per-frame) was explicitly out of scope.
+- **Tile geometry**: 3000 × 87 px tiles, 1000 px overlap (stride 2000). Mirrors v6's slicing geometry. For the full 14 h video this is **1,845 tiles** across 75 chunk panoramas. Tiles are cached idempotently in `vlm_extraction/output/_tiles/`.
+- **Output schema parity with OCR**: VLM produces `[{"id": int, "text": str}, ...]` identical to `news_items_cleaned.json`, so `llm_summarization/` consumes it unchanged via the same monkey-patch pattern as `pipeline/summarize_cleaned.py`.
+- **Provider abstraction**: `vlm_extraction/adapters/{base,gemini,openai,anthropic,huggingface,groq}_adapter.py`. All adapters share the same prompt from `prompts.py`.
+
+### Provider attempts — what worked, what didn't
+
+| Provider | Status | Why |
+|---|---|---|
+| **Gemini 2.5 Flash** (paid tier 1) | ✅ Canonical paid run | $0.30/M input + $2.50/M output; thinking disabled via REST API for cost control |
+| **Ministral 3 14B** (Mistral La Plateforme) | ✅ Canonical open-weights run | Free Experiment-plan tier (1 B tokens / month, no card), empirical ~40 RPM. Open-weights successor to the retired Pixtral 12B |
+| Qwen2-VL 7B (HF Inference) | ❌ blocked | HF Inference Providers requires enabling a paid partner provider for vision models — free `HUGGINGFACE_API_KEY` cannot authorise |
+| Groq Llama 4 Scout 17B vision | ⚠️ partial | Free-tier rate cap below 1,845-call requirement; aborted after 152/1,845 tiles |
+| GPT-4o-mini (OpenAI) | ⏸ deferred | Key provided but billing not topped up; adapter ready and gated by `OPENAI_BILLING_ACTIVE=true` |
+| Claude 3.5 Sonnet (Anthropic) | ⏸ deferred | No key provided; adapter ready |
+
+### Major issues encountered and resolved
+
+1. **Panorama too wide** (142,165 × 87 px → Gemini 400'd) — solved by introducing the tiler.
+2. **Tile-edge fragments and mashed pairs** in the original prompt's output — Gemini sometimes concatenated two adjacent ticker headlines when " - " fell on a tile boundary. Required a strict-prompt rewrite (only fully-visible complete headlines, explicit anti-concatenation rule).
+3. **Cost-tracking error** — discovered after the cumulative Google bill far exceeded the code's token-derived estimates. Two compounded bugs:
+   - Wrong pricing constants in `config.py` ($0.075/M input vs actual $0.30/M; $0.30/M output vs actual $2.50/M) → 4× under-reporting.
+   - Gemini 2.5 Flash thinking mode enabled by default → invisible reasoning tokens billed at $3.50/M, not captured in `candidates_token_count`.
+   - **Fixed**: corrected pricing in config; rewrote `gemini_adapter.py` to use REST API with `thinkingConfig.thinkingBudget=0`. Cost-per-call is now *estimated* at ≈$0.000481, but this token-derived figure is **not reconciled against the actual invoice** — see "Cumulative VLM spend" below for the real billed total (**€8.28**).
+4. **Cleanup over-merging** — an LLM cleanup pass (`pipeline/clean_vlm_headlines.py`) was implemented mirroring `clean_news_items.py`. With aggressive prompts the LLM dropped 72 → 9 items in one experiment. A 50 %-removal safety guard was added; even so, the cleanup hurts F1 on the strict-prompt raw output (drops recall 100 % → 62 %).
+
+### Final canonical run (2026-05-04)
+
+| | |
+|---|---|
+| Model | Gemini 2.5 Flash, paid tier 1, thinking disabled |
+| Tiles | 1,845 (1 errored — recoverable) |
+| Raw VLM emissions | 1,695 (~0.9 per tile, vs 6,397 with the old prompt) |
+| After cross-tile fuzzy dedup | **100 items** (canonical output) |
+| Wall time | 61 min (1.6 s/call, vs 9.4 s with thinking on) |
+| Cost (token-derived estimate, **unverified**) | **≈$0.87** for this run — see real-spend note below |
+
+### Results vs OCR (combined slice GT, same 39-headline annotation)
+
+| Pipeline | Items | F1@70 | Mean CER | Recall | Cost | Wall time |
+|---|---|---|---|---|---|---|
+| OCR raw (v6) | 48 | 84.8 % | 23.4 % | 97.4 % | $0 | 12 min |
+| **OCR LLM-cleaned** | **38** | **86.6 %** | **12.4 %** | **89.1 %** | **~$0.05** | **~12 min** |
+| **VLM raw (Gemini, strict prompt)** | **100** | **60.5 %** | **18.8 %** | **100 %** | **≈$0.87**† | **~61 min** |
+| VLM LLM-cleaned (over-merged) | 44 | 48.4 % | 11.5 % | 61.9 % | ≈$0.88† | ~61 min + cleanup |
+
+†Cost column = code-computed token estimate for the canonical run only. It is **not** reconciled against the Google invoice and under-reports real spend. The **actual amount billed across all VLM experiments was €8.28** (see "Cumulative VLM spend"). Per-run accuracy is unverified.
+
+### Thesis interpretation
+
+Two valid readings of the data:
+
+1. **F1-as-headline-metric reading**: OCR pipeline wins clearly (86.6 % vs 60.5 %). VLM is bottlenecked by per-tile recognition without global panorama context. OCR is also **17× cheaper and 5× faster**.
+2. **Granularity-aware reading**: VLM achieves **100 % recall** vs OCR's 89 %. Lower precision is a granularity choice — VLM preserves per-cycle digit drift and minor rewordings as distinct items, OCR's segmentation collapses them. For downstream summarisation (where over-extraction is harmless and under-extraction loses information), VLM's recall advantage may matter more than precision.
+
+The thesis can present this as a **methodology tradeoff finding** rather than a pure quality ranking.
+
+### Cumulative VLM spend
+
+**Actual amount billed by Google across all VLM experiments: €8.28** (the
+user's real billing statement — this is the authoritative figure for the
+thesis). This total covers the first full-video run with the old prompt
+and thinking enabled, three cleanup-pass iterations, the strict-prompt
+re-run, and the final cleanup attempt.
+
+The per-call USD figures elsewhere in this document and in
+`results/vlm_evaluation.{json,md}` are **code-computed token-cost
+estimates only**. They were never reconciled against the invoice and
+collectively under-report the real spend; the per-run accuracy (≈$0.87
+for the canonical strict-prompt run) is **unverified**. Where a thesis
+table needs a single cost number for the VLM approach, cite the real
+billed total (**€8.28**), not the token estimate.
+
+Output: `vlm_extraction/output/gemini/full_video/run_1/headlines_combined.json` (canonical 100 items).
+Eval: `results/vlm_evaluation.json` and `results/vlm_evaluation.md`.
+
+### Phase 8.5 — Open-weights VLM extension (Ministral 3 14B, free)
+
+Added in 2026-05-12 to answer "does a free open-weights VLM compete?".
+Entry point: `vlm_extraction/opensource_vlm.py`. The Mistral
+La Plateforme free tier (1 B tokens / mo) serves Ministral 3 14B —
+open-weights, vision-capable, and the official successor Mistral docs
+point to after Pixtral 12B's 2025-12-31 retirement.
+
+### 3-way head-to-head (same prompt, same tiles, 39-headline GT)
+
+| Pipeline | F1@70 | Recall | Precision | Hallucination | Cost | Wall |
+|---|---|---|---|---|---|---|
+| OCR LLM-cleaned (v6 + Gemini cleaner) | **88.1 %** | 92.3 % | 84.2 % | n/a | ≈$0.05† | ~12 min |
+| Gemini 2.5 Flash (paid) | 64.9 % | 100 % | 48.0 % | 38.0 % | ≈$0.87† | 61 min |
+| **Ministral 3 14B (open-weights, free)** | **71.0 %** | 100 % | 55.3 % | 35.0 % | **$0.00** | 114 min |
+
+†Code-computed token estimate for that single run. **Real money billed
+by Google across all VLM experiments was €8.28** (see "Cumulative VLM
+spend"); the per-run estimates under-report actual spend and their
+accuracy is unverified.
+
+The open-weights free VLM **beats paid Gemini on F1 with the same prompt
+and tiles, at zero cost**; both VLMs still trail the OCR pipeline by
+~17 pp on F1 because they emit many more candidate headlines (lower
+precision, but better recall). Mistral emits 3,214 raw items across the
+14 h broadcast versus Gemini's 100; the cross-tile fuzzy aggregator keeps
+both within the same recall envelope.
+
+Output: `vlm_extraction/output/mistral/full_video/run_1/headlines_combined.json`.
+Report: `results/vlm_opensource_evaluation.{json,md}`.
+
+---
+
+## 10. Phase 9 — Web Surfaces (Defense Site + Interactive Workbench)
+
+Reference: `site/`, `webapp/`, `design-system/`. Two parallel web deliverables sharing one design system.
+
+### `site/` — Defense site (read-only, static)
+
+Astro 4 static export with React islands for animation. **Six routes**:
+
+- **Landing** — project overview, three-card path navigation (OCR / VLM / Audio), key-numbers strip including the open-weights VLM result.
+- **`/visual`** — 8 animated stage panels walking through the OCR pipeline (frame extraction → scroll → panorama → OCR → segmentation → improved segmentation → LLM cleaning → 9-LLM summarization). Real EasyOCR bboxes and per-frame scroll deltas rendered from cached telemetry collected by `instrument_slice_A.py`. Stages with live data show a small "live data" badge; representative numbers are clearly labelled where used.
+- **`/vlm`** — 3-way comparison (OCR / Gemini / Ministral) with method callout, ranked card row, per-run metrics table, and side-by-side first-20-headline samples from each VLM. Driven by `VLMComparison.jsx` + `VLMHeadlineSamples.jsx`.
+- **`/audio`** — 5 animated stage panels for the ASR pipeline, plus the audio summarisation leaderboard (8 LLMs vs the audio reference) and the Whisper-quality WER/CER callout.
+- **`/results`** — P/R/F1/CER tables, **parallel ROUGE/BERTScore leaderboards** for visual + audio summarisation (same EvalStage component, different accents), 3-way VLM comparison repeated for context, and the GT-vs-extracted overlay.
+- **`/explore`** — tabbed data browser: headlines / transcript / summaries / raw OCR output, all searchable.
+
+### `site/scripts/` — asset pipeline
+
+- **`build_assets.py`** — idempotent. Reads source artefacts (eval JSONs, panoramas, transcript, summaries) from the project root and bundles ~2.8 MB into `site/public/data/` and `site/public/video/`. The bundled assets are committed so a fresh clone can `cd site && npm install && npm run dev` without the source video.
+- **`instrument_slice_A.py`** — companion script that imports v6's modules read-only and persists artefacts v6 doesn't normally save (per-frame scroll deltas, real EasyOCR word-level bboxes on the first 3000-px panorama segment, real frame counts). The site's animated stages render these real numbers.
+
+### Demo clip — `videos/extract_demo_clip.py`
+
+Uses PyAV to extract `videos/demo_clip_30s.mp4` (480p H.264, ~1.3 MB) and `demo_clip_30s.wav` (16 kHz mono PCM, ~940 KB) from 08:30:00 → 08:30:30 of the source video. Aligns with Slice A so the OCR walkthrough matches the annotated panorama. Idempotent — skips if outputs exist. Both files are gitignored.
+
+### `webapp/frontend/` — Interactive workbench (live, with backend)
+
+Existing React + Vite UI redesigned to match the defense site's visual identity. Same FastAPI backend (`webapp/backend/`) — UI rewrite only, no backend changes. Adds Framer Motion animations, Lucide icons, dark mode, animated status pills, drag-drop upload zone. All API endpoints unchanged.
+
+### `design-system/` — Shared visual identity (no build step)
+
+- `tokens.css` — light + dark palettes, path-accent colors per pipeline (visual / audio / VLM), motion tokens, spacing, radii, shadows
+- `components/visual/` — 8 React stage components reused by both `site/` and `webapp/frontend/`
+- `components/audio/` — 4 React stage components, same pattern
+- `components/shared/` — `StagePanel`, `ResultsHero`, `GTOverlay`, `Explorer`
+
+Both projects' Tailwind configs glob the design-system folder so utility classes are extracted from the shared components. No copy-paste — single source of truth.
+
+---
+
+## 11. End-to-End Pipeline Diagram
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                 INPUT: AlJazeera_14hrs.mp4 (14.55 h)            │
 └─────────────────────────────────────────────────────────────────┘
                               │
-          ┌───────────────────┴───────────────────┐
-          │                                       │
- ┌────────▼──────────┐               ┌───────────▼──────────┐
- │ VISUAL PATH       │               │ AUDIO PATH            │
- │ (ticker_extraction│               │ (asr/)                │
- │  _v6 + pipeline)  │               │                       │
- └────────┬──────────┘               └───────────┬──────────┘
-          │                                       │
- ┌────────▼──────────┐               ┌───────────▼──────────┐
- │ Step 1: frames    │               │ extract_audio.py     │
- │ Step 2: scroll    │               │ (PyAV → 16kHz WAV)   │
- │ Step 3: panorama  │               │                       │
- └────────┬──────────┘               │ → audio_full.wav      │
-          │                          │   (1.68 GB, 14h)      │
- ┌────────▼──────────┐               └───────────┬──────────┘
- │ Step 4: OCR       │                           │
- │ (EasyOCR text +   │               ┌───────────▼──────────┐
- │  Tesseract dash)  │               │ transcribe.py        │
- └────────┬──────────┘               │ (faster-whisper,     │
-          │                          │  small, int8, CPU,   │
- ┌────────▼──────────┐               │  20-min chunks)      │
- │ Step 5: segment   │               │                       │
- │ (delimiter split) │               │ → transcript_full     │
- │ → ~48 items       │               │   .json/.txt/.srt     │
- └────────┬──────────┘               │   (13,517 segments)   │
-          │                          └───────────┬──────────┘
- ┌────────▼──────────┐                           │
- │ improve_segment   │               ┌───────────▼──────────┐
- │ ation.py          │               │ chunk_transcript.py  │
- │ (all cycles, best │               │ (15-min chunks)      │
- │  version dedup)   │               │ → 59 chunk .txt files│
- │ → 48 items        │               └───────────┬──────────┘
- └────────┬──────────┘                           │
-          │                          ┌───────────▼──────────┐
- ┌────────▼──────────┐               │ summarize_transcript │
- │ clean_news_items  │               │ .py                  │
- │ .py (Gemini 2.5)  │               │ LEVEL 1: 59×9 LLMs   │
- │ → 38 items        │               │ LEVEL 2: 9 final     │
- └────────┬──────────┘               │  multi-paragraph     │
-          │                          │  summaries           │
- ┌────────▼──────────┐               └───────────┬──────────┘
- │ summarize_cleaned │                           │
- │ .py (9 LLMs)      │               ┌───────────▼──────────┐
- │ → 9 paragraph-    │               │ output_asr/latest    │
- │   summaries       │               │ .json (5 of 9 with   │
- └────────┬──────────┘               │  successful L2)      │
-          │                          └──────────────────────┘
- ┌────────▼──────────┐
- │ output_cleaned/   │
- │ latest.json       │
- │ (8 of 9 with      │
- │  successful sum)  │
- └────────┬──────────┘
-          │
- ┌────────▼──────────┐
- │ VALIDATION        │
- │ (validation/)     │
- │ P/R/F1, CER/WER   │
- │ vs manually       │
- │ annotated GT      │
- └───────────────────┘
+        ┌─────────────────────┼─────────────────────┐
+        │                     │                     │
+┌───────▼────────────┐ ┌──────▼──────────────┐ ┌───▼──────────┐
+│ VISUAL — OCR       │ │ VISUAL — VLM        │ │ AUDIO        │
+│ (ticker_extraction │ │ (vlm_extraction/)   │ │ (asr/)       │
+│  _v6 + pipeline)   │ │                     │ │              │
+└───────┬────────────┘ └──────┬──────────────┘ └───┬──────────┘
+        │                     │                    │
+┌───────▼────────────┐ ┌──────▼──────────────┐ ┌───▼──────────┐
+│ Step 1: frames     │ │ tiler.py:           │ │ extract_audio│
+│ Step 2: scroll     │ │ panoramas → 3000x87 │ │ (PyAV→WAV)   │
+│ Step 3: panorama   │ │ tiles, 1000 overlap │ │ → 1.68 GB    │
+│ → 75 panoramas     │ │ → 1845 tiles        │ │   audio_full │
+└───────┬────────────┘ └──────┬──────────────┘ └───┬──────────┘
+        │                     │                    │
+┌───────▼────────────┐ ┌──────▼──────────────┐ ┌───▼──────────┐
+│ Step 4: dual-engine│ │ extract.py:         │ │ transcribe.py│
+│ EasyOCR + Tesseract│ │ Gemini 2.5 Flash    │ │ faster-      │
+│ (delimiter detect) │ │ (REST, thinking off)│ │ whisper      │
+└───────┬────────────┘ │ → per-tile JSON     │ │ small int8   │
+        │              └──────┬──────────────┘ │ 20-min chunks│
+┌───────▼────────────┐        │                │ → 13,517 segs│
+│ Step 5: segment    │ ┌──────▼──────────────┐ └───┬──────────┘
+│ → 48 raw items     │ │ aggregate.py:       │     │
+└───────┬────────────┘ │ rapidfuzz dedup     │ ┌───▼──────────┐
+        │              │ → 100 items         │ │ chunk_       │
+┌───────▼────────────┐ └──────┬──────────────┘ │ transcript   │
+│ improve_segment    │        │                │ (15-min)     │
+│ ation.py           │ ┌──────▼──────────────┐ │ → 59 chunks  │
+│ → 48 items         │ │ headlines_combined  │ └───┬──────────┘
+└───────┬────────────┘ │ .json               │     │
+        │              │ (canonical VLM out) │ ┌───▼──────────┐
+┌───────▼────────────┐ └──────────────┬──────┘ │ summarize_   │
+│ clean_news_items.py│                │        │ transcript   │
+│ (Gemini 2.5)       │                │        │ L1: 59x9 LLMs│
+│ → 38 items         │                │        │ L2: 9 final  │
+└───────┬────────────┘                │        └───┬──────────┘
+        │                             │            │
+┌───────▼────────────┐                │        ┌───▼──────────┐
+│ summarize_cleaned  │                │        │ output_asr/  │
+│ (9 LLMs)           │                │        │ latest.json  │
+│ → output_cleaned/  │                │        └───┬──────────┘
+└───────┬────────────┘                │            │
+        │                             │            │
+        └────────────┬────────────────┴────────────┘
+                     │
+        ┌────────────▼────────────────┐
+        │ EVALUATION                  │
+        │ validation/validate_extr.py │
+        │ vlm_extraction/evaluate.py  │
+        │ ocr_comparison/evaluate_all │
+        │ → results/                  │
+        │   • validation_report.json  │
+        │   • vlm_evaluation.json/md  │
+        │   • ocr_comparison_report   │
+        └────────────┬────────────────┘
+                     │
+        ┌────────────▼────────────────┐
+        │ WEB SURFACES                │
+        │ site/  (defense, static)    │
+        │ webapp/  (interactive)      │
+        │ design-system/  (shared)    │
+        └─────────────────────────────┘
 ```
 
 ---
 
-## 9. Project Structure
+## 12. Project Structure
 
 ```
 ticker_extraction/
 ├── ticker_extraction_v6/        ← FROZEN — 5-step OCR pipeline (DO NOT MODIFY)
 │   ├── main.py, config.py, step1..step5_*.py
 │   └── output/
-│       ├── chunks/              (per-chunk outputs from chunked mode)
+│       ├── chunks/              (per-chunk outputs)
+│       ├── panorama/            (75 chunk panorama PNGs, ~407 MB)
 │       └── final/
 │           ├── news_items.json             (improved raw v6 output, 48 items)
 │           ├── news_items_cleaned.json     (LLM-cleaned, 38 items)
@@ -410,51 +725,111 @@ ticker_extraction/
 │
 ├── llm_summarization/           ← FROZEN — 9-LLM summarization + evaluation
 │   ├── config.py, prompt.py, summarize.py, evaluate.py
-│   ├── reference_summary.txt    (for 27-min sample)
-│   ├── output/                  (summaries for original 27-min sample)
-│   ├── output_cleaned/          (summaries for LLM-cleaned 14h ticker)
-│   └── output_asr/              (summaries for ASR transcript)
-│       ├── level1_<ts>.json
-│       ├── summaries_<ts>.json
-│       └── latest.json
+│   ├── reference_summary.txt
+│   ├── output/                  (27-min sample summaries)
+│   ├── output_cleaned/          (LLM-cleaned 14h ticker summaries)
+│   └── output_asr/              (ASR transcript summaries)
 │
-├── videos/                      ← raw input .mp4 files
+├── videos/                      ← raw input .mp4 files + extract_demo_clip.py
 │
-├── pipeline/                    ← Phase 3 post-processing scripts
+├── pipeline/                    ← Phase 3 + Phase 8 post-processing
 │   ├── improve_segmentation.py  (re-segments raw OCR, better dedup)
-│   ├── clean_news_items.py      (LLM correction via Gemini 2.5)
-│   └── summarize_cleaned.py     (runs 9-LLM summ on cleaned items)
+│   ├── clean_news_items.py      (LLM correction for OCR output)
+│   ├── clean_vlm_headlines.py   (LLM correction for VLM output)
+│   ├── summarize_cleaned.py     (runs 9-LLM summ on cleaned items)
+│   └── evaluate_cleaned_summaries.py  (scores output_cleaned/ vs reference,
+│                                       canonical 14h visual eval)
 │
 ├── validation/                  ← Phase 5 ground-truth validation
 │   ├── regenerate_panorama.py   (rebuilds panorama PNG for a slice)
 │   ├── validate_extraction.py   (computes P/R/F1, CER, WER)
 │   └── ground_truth/
-│       ├── README.md            (annotation instructions)
 │       ├── slice_A_panorama.png (15 MB, hours 8:30–9:00)
 │       ├── slice_A_headlines.txt (27 manually-annotated headlines)
 │       ├── slice_B_panorama.png (13.6 MB, hours 13:00–13:30)
 │       └── slice_B_headlines.txt (28 manually-annotated headlines)
 │
-├── asr/                         ← Phase 6 audio pipeline
-│   ├── extract_audio.py         (PyAV → 16 kHz mono WAV)
-│   ├── transcribe.py            (faster-whisper chunked streaming)
-│   ├── chunk_transcript.py      (time-based 15-min chunking)
-│   ├── summarize_transcript.py  (2-level LLM summarization)
-│   ├── retry_level2.py          (retry Level-2 with backoff)
+├── ocr_comparison/              ← Phase 7 multi-engine OCR comparison
+│   ├── config.py, run_ocr_engine.py
+│   ├── augment_dashes.py, regenerate_pure.py, evaluate_all.py
+│   ├── engines/  (Tesseract, EasyOCR, Paddle, docTR, Gemini, CRAFT+TrOCR)
 │   └── output/
-│       ├── audio_full.wav       (1.68 GB, 14h)
-│       ├── audio_slice_*.wav    (test slices)
-│       ├── transcript_full.json/.txt/.srt (13,517 segments)
-│       ├── transcript_slice_A.* (test slice transcript)
-│       ├── chunks/              (59 × 15-min chunks)
-│       └── _chunks_transcript_full/ (intermediate per-20min resume files)
+│       ├── slice_A/, slice_B/   (per-engine raw text, words, headlines, timing)
+│       ├── comparison_report.json (both pure + augmented tables)
+│       └── comparison_report.txt
 │
-├── results/                     ← all evaluation outputs
-│   └── validation_report.json   (full Phase 5 metrics)
+├── vlm_extraction/              ← Phase 8 VLM extraction
+│   ├── README.md, PROGRESS_REPORT.md
+│   ├── config.py, prompts.py, tiler.py
+│   ├── extract.py, aggregate.py, evaluate.py
+│   ├── opensource_vlm.py        (open-source VLM runner + bespoke evaluator
+│   │                             for the 3-way OCR vs Gemini vs Ministral
+│   │                             comparison)
+│   ├── adapters/                (base + gemini, openai, anthropic, hf, groq,
+│   │                             mistral)
+│   ├── output/
+│   │   ├── _tiles/              (1845 cached 3000×87 tile PNGs)
+│   │   ├── gemini/full_video/run_1/      (paid canonical run, 100 items)
+│   │   ├── mistral/full_video/run_1/     (open-weights canonical run, 3214
+│   │   │                                   raw items, 100% recall, $0.00)
+│   │   └── groq_scout/                    (partial / abandoned)
+│   ├── .env (gitignored), .env.example, .gitignore
 │
-├── old/                         ← superseded experiments
-│   ├── extract_headlines_llm.py
-│   └── resegment.py
+├── asr/                         ← Phase 6 audio pipeline
+│   ├── extract_audio.py, transcribe.py
+│   ├── chunk_transcript.py, summarize_transcript.py
+│   ├── retry_level2.py                   (single-call retry with backoff)
+│   ├── retry_level2_chunked.py           (3-batch L2 for TPM-capped models)
+│   ├── run_ollama_l1_l2.py               (resume-safe Ollama L1+L2,
+│   │                                       1200s timeout + warmup,
+│   │                                       supports --l2-only)
+│   ├── merge_asr_runs.py                 (merges original + all retries +
+│   │                                       re-runs evaluation)
+│   ├── evaluate_audio_summaries.py       (wrapper: scores latest.json vs
+│   │                                       reference_summary_audio.txt)
+│   ├── extract_eval_slices.py, transcribe_eval_slices.py
+│   │                                      (Whisper-quality ground truth flow)
+│   ├── eval/                              (manually-annotated audio slices
+│   │                                       for WER/CER scoring)
+│   └── output/  (audio_full.wav, transcript_full.{json,txt,srt}, chunks/,
+│                 level1_ollama_inflight.json)
+│
+├── evaluation/                  ← variance / determinism experiment
+│   ├── asr_evaluate.py                    (Whisper-quality scorer)
+│   ├── run_variance_summarization.py     (3-run repeat)
+│   └── aggregate_variance.py
+│
+├── design-system/               ← Phase 9 shared visual identity (NEW)
+│   ├── tokens.css
+│   └── components/  (shared, visual, audio React components)
+│
+├── site/                        ← Phase 9 defense site, Astro 4 (NEW)
+│   ├── astro.config.mjs, package.json
+│   ├── src/{layouts,components,pages,styles}
+│   ├── public/{data,video}      (BUNDLED, ~2.8 MB)
+│   └── scripts/  (build_assets.py, instrument_slice_A.py)
+│
+├── webapp/                      ← Phase 9 interactive workbench (NEW)
+│   ├── backend/                 (FastAPI: upload, jobs, pipeline orchestration)
+│   ├── frontend/                (React + Vite, redesigned UI)
+│   ├── jobs/, uploads/          (runtime state, gitignored)
+│   └── README.md
+│
+├── results/                     ← all evaluation outputs (canonical thesis tables)
+│   ├── validation_report.json   (Phase 5 OCR metrics, 88.1% F1 cleaned)
+│   ├── asr_evaluation.json      (Phase 6 Whisper-quality WER/CER, 6.6%/4.8%)
+│   ├── asr_summary_evaluation.json     (Phase 6 audio summarisation, 8 LLMs
+│   │                                     vs reference_summary_audio.txt)
+│   ├── visual_14h_summary_evaluation.json   (Phase 4 visual summarisation,
+│   │                                          8 LLMs vs reference_summary.txt
+│   │                                          on the 14h cleaned headlines)
+│   ├── vlm_evaluation.json + .md       (Phase 8 paid Gemini run)
+│   ├── vlm_opensource_evaluation.json + .md  (Phase 8.5 3-way comparison
+│   │                                          OCR vs Gemini vs Ministral)
+│   ├── ocr_comparison_report.json + .txt    (Phase 7 5-engine comparison)
+│   ├── variance_report.json + .md           (3-run determinism experiment)
+│
+├── logs/                        (vlm_<provider>.log per provider)
 │
 ├── CLAUDE.md                    ← project instructions for Claude
 ├── TODO.md
@@ -466,15 +841,17 @@ ticker_extraction/
 
 ---
 
-## 10. Technical Glossary
+## 13. Technical Glossary
 
 | Term | Meaning |
 |---|---|
 | **OCR** | Optical Character Recognition — reading text from images |
+| **VLM** | Vision-Language Model — large language model whose input layer accepts images alongside text (e.g. Gemini 2.5 Flash, GPT-4o-mini, Claude 3.5 Sonnet) |
 | **ASR** | Automatic Speech Recognition — converting spoken audio to text |
 | **Whisper** | Open-source speech recognition model by OpenAI |
 | **faster-whisper** | CTranslate2 port of Whisper that runs 4× faster on CPU with int8 quantization |
 | **Panorama stitching** | Combining many overlapping images into one long image |
+| **Tile / tiling** | In the VLM pipeline: cutting a wide panorama into VLM-digestible chunks (3000×87 px with 1000 px overlap) so the model can process it without exceeding image-size limits |
 | **rapidfuzz** | Python library for fast fuzzy string matching (used for deduplication) |
 | **ROUGE** | Recall-Oriented Understudy for Gisting Evaluation — n-gram overlap metric for summary evaluation |
 | **BERTScore** | Semantic similarity metric using BERT embeddings, correlates with human judgment |
@@ -486,5 +863,9 @@ ticker_extraction/
 | **Fuzzy match threshold** | Minimum similarity (0–100) for two strings to be considered the same |
 | **Chunked processing** | Splitting long inputs into manageable pieces to avoid memory/context-window issues |
 | **Monkey-patching** | Modifying a module's attributes at runtime without changing its source code (used to reuse `llm_summarization/` without violating the "do not modify" rule) |
-| **TPM** | Tokens Per Minute — rate limit measured by most LLM providers |
+| **Thinking tokens** | (Gemini 2.5+ specific) Invisible reasoning tokens generated by "thinking" mode and billed separately at a higher rate ($3.50/M for Flash). Disabled in the VLM adapter via `thinkingConfig.thinkingBudget=0` |
+| **TPM / RPM / RPD** | Tokens / Requests Per Minute / Day — rate limits measured by most LLM providers |
 | **PSM** | Page Segmentation Mode — Tesseract's layout hint (6 = uniform block, 7 = single line) |
+| **Strategy A / B** | (VLM extraction terminology) Strategy A = panorama-tile input, one VLM call per tile. Strategy B = per-frame input, multiple calls per ticker cycle. This thesis uses Strategy A only |
+| **Hallucination rate** | (VLM evaluation) Fraction of model-emitted headlines that match no GT headline at the loosest 60 % fuzzy threshold — i.e. headlines the model invented or garbled beyond recognition |
+| **Granularity** | The level at which an extraction pipeline keeps stories distinct. OCR's segmentation merges per-cycle digit drift into one item; VLM keeps each cycle separate. Both are valid; they trade precision for recall |

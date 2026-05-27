@@ -21,9 +21,17 @@ import EvalStage                from "../../../design-system/components/visual/E
       </h1>
       <p class="prose-thesis mt-4 max-w-2xl">
         Five stages on the same broadcast — but only the spoken track.
-        The transcript is too long to summarise in one shot, so the pipeline
-        runs Whisper, splits the result into 15-minute chunks, summarises
-        each chunk, then summarises the summaries.
+        The transcript is too long to summarize in one shot, so the pipeline
+        runs Whisper, splits the result into 15-minute chunks, summarizes
+        each chunk, then summarizes the summaries.
+      </p>
+      <p class="text-sm text-text-muted mt-3 max-w-2xl">
+        The final Level-2 summaries are scored against a hand-written
+        audio-only reference. <strong>Command-R</strong> wins BERTScore F1
+        with the shortest output (367 words);
+        <strong>Llama 4 Scout 17B</strong> wins ROUGE-L with the longest
+        (742 words). Five of nine models failed Level-2 due to rate limits
+        or local CPU timeouts.
       </p>
     </div>
   </section>

@@ -1,0 +1,247 @@
+{
+  "model": "mistral",
+  "total_extracted": 3214,
+  "sample_size": 60,
+  "headlines": [
+    {
+      "id": 1,
+      "text": "U.S. PRESIDENT SAYS GAZA BOARD OF PEACE WILL INCLUDE REPS FROM 'MOST MAJOR COUNTRIES'"
+    },
+    {
+      "id": 2,
+      "text": "ISRAELI ARMY WARNS PEOPLE TO FLEE TWO VILLAGES IN SOUTHERN LEBANON AFTER STRIKES KILL 14"
+    },
+    {
+      "id": 3,
+      "text": "GAZA HEALTH MINISTRY: ISRAEL HAS KILLED AT LEAST 280 PALESTINIANS SINCE OCT 10 CEASEFIRE STARTED"
+    },
+    {
+      "id": 4,
+      "text": "ISRAELI ATTACKS ACROSS GAZA HAVE KILLED AT LEAST 1000 PALESTINIANS"
+    },
+    {
+      "id": 5,
+      "text": "ISRAELI ATTACKS ACROSS GAZA HAVE KILLED AT LEAST 69,513 PALESTINIANS SINCE OCTOBER 2023"
+    },
+    {
+      "id": 6,
+      "text": "ISRAELI FORCES AND SETTLERS HAVE KILLED 1,073 PALESTINIANS IN OCCUPIED WEST BANK SINCE OCTOBER 2023"
+    },
+    {
+      "id": 7,
+      "text": "AT LEAST TWO PALESTINIANS SINCE OCTOBER CEASEFIRE STARTED"
+    },
+    {
+      "id": 8,
+      "text": "1,073 PALESTINIANS IN OCCUPIED WEST BANK SINCE OCTOBER 2023"
+    },
+    {
+      "id": 9,
+      "text": "AT LEAST TWO PEOPLE KILLED AND OTHERS KIDNAPPED AFTER GUNMEN ATTACK CHURCH IN NIGERIA"
+    },
+    {
+      "id": 10,
+      "text": "CHINA BANS ALL IMPORTS OF JAPANESE SEAFOOD AS TAIWAN DIPLOMATIC DISPUTE ESCALATES"
+    },
+    {
+      "id": 11,
+      "text": "U.S. CONGRESS APPROVES BILL FORCING JUSTICE DEPT TO RELEASE REMAINING EPISTOLARY PRIVILEGE DOCUMENTS"
+    },
+    {
+      "id": 12,
+      "text": "U.S. CONGRESS APPROVES BILL FORCING JUSTICE DEPT TO RELEASE REMAINING EPSTEIN FILES"
+    },
+    {
+      "id": 13,
+      "text": "TWO CABINET MINISTERS RESIGN IN THE PHILIPPINES AFTER BEING IMPLICATED IN CORRUPTION SCANDAL"
+    },
+    {
+      "id": 14,
+      "text": "CORRUPTION SCANDAL"
+    },
+    {
+      "id": 15,
+      "text": "INDONESIA RAISES ALERT FOR MOUNT SEMERU VOLCANO TO HIGHEST LEVEL AFTER ERUPTIONS"
+    },
+    {
+      "id": 16,
+      "text": "SEVERAL PEOPLE KILLED AS RUSSIAN DRONES AND MISSILES HIT MULTIPLE CITIES IN UKRAINE"
+    },
+    {
+      "id": 17,
+      "text": "AT LEAST 14"
+    },
+    {
+      "id": 18,
+      "text": "PEOPLE KILLED AS RUSSIAN DRONES AND MISSILES HIT MULTIPLE CITIES IN UKRAINE"
+    },
+    {
+      "id": 19,
+      "text": "AT LEAST 14 CHILDREN INJURED AND BUILDINGS DAMAGED IN RUSSIAN STRIKES ON UKRAINE"
+    },
+    {
+      "id": 20,
+      "text": "UKRAINE'S PRESIDENT ATTENDS MEETING IN TURKIYE IN NEW PUSH TO REVIVE PEACE TALKS"
+    },
+    {
+      "id": 21,
+      "text": "PRESIDENT ATTENDS MEETING IN TURKIYE IN NEW PUSH TO REVIVE PEACE TALKS"
+    },
+    {
+      "id": 22,
+      "text": "POLAND CLOSES LAST OPERATING RUSSIAN CONSULATE IN CITY OF GDANSK AFTER RAIL BLAST"
+    },
+    {
+      "id": 23,
+      "text": "U.S. PRESIDENT DECLARES SAUDI ARABIA MAJOR NON-NATO ALLY AFTER CROWN PRINCE'S VISIT"
+    },
+    {
+      "id": 24,
+      "text": "PRESIDENT DECLARES SAUDI ARABIA MAJOR NON-NATO ALLY AFTER CROWN PRINCE'S VISIT"
+    },
+    {
+      "id": 25,
+      "text": "SAUDI CROWN PRINCE SAYS INVESTMENT IN U.S. WILL INCREASE TO $1 TRILLION OVER"
+    },
+    {
+      "id": 26,
+      "text": "ISRAELI FORCES AND SETTLERS HAVE KILLED 1,073 PALESTINIANS IN OCCUPIED WEST BANK"
+    },
+    {
+      "id": 27,
+      "text": "ISRAELI FORCES AND SETTLERS HAVE KILLED AT LEAST 69,513 PALESTINIANS SINCE OCTOBER 2023"
+    },
+    {
+      "id": 28,
+      "text": "CHINA BANS ALL IMPORTS OF JAPANESE SEAFOOD AS TAIWAN"
+    },
+    {
+      "id": 29,
+      "text": "SUDAN'S KORDOFAN REGION BECOMES LATEST BATTLEGROUND BETWEEN SUDANESE ARMY AND RSF"
+    },
+    {
+      "id": 30,
+      "text": "U.S. CONGRESS APPROVES BILL FORCING JUSTICE"
+    },
+    {
+      "id": 31,
+      "text": "GROUND BETWEEN SUDANESE ARMY AND RSF"
+    },
+    {
+      "id": 32,
+      "text": "INDONESIA RAISES ALERT FOLLOWING"
+    },
+    {
+      "id": 33,
+      "text": "PHILIPPINES AFTER BEING IMPLICATED IN CORRUPTION SCANDAL"
+    },
+    {
+      "id": 34,
+      "text": "SEVERAL PEOPLE KILLED AS RUSSIAN DRONES AND MISSILES HIT MULTIPLE CITIES"
+    },
+    {
+      "id": 35,
+      "text": "AT LEAST 16 CHILDREN INJURED AND BUILDINGS DAMAGED IN RUSSIAN STRIKES ON UKRAINE"
+    },
+    {
+      "id": 36,
+      "text": "UKRAINE'S PRESIDENT ATTENDS PEACE TALKS"
+    },
+    {
+      "id": 37,
+      "text": "POLAND CLOSES LAST OP"
+    },
+    {
+      "id": 38,
+      "text": "SAUDI CROWN PRINCE"
+    },
+    {
+      "id": 39,
+      "text": "SAUDI CROWN PRINCE SAYS INVESTMENT IN U.S. WILL INCREASE TO $1 TRILLION OVER FOUR YEARS"
+    },
+    {
+      "id": 40,
+      "text": "U.S. AND SAUDI ARABIA STRIKE SEVERAL DEALS AT MEETING INCLUDING SALE OF U.S. MILITARY JETS"
+    },
+    {
+      "id": 41,
+      "text": "SAUDI ARABIA STRIKE SEVERAL DEALS AT MEETING INCLUDING SAE OF U.S. MILITARY JETS"
+    },
+    {
+      "id": 42,
+      "text": "U.S. PRESIDENT SAYS 'GAZA BOARD OF PEACE WILL INCLUDE REPS FROM MOST MAJOR COUNTRIES'"
+    },
+    {
+      "id": 43,
+      "text": "UN SECURITY COUNCIL PASSES RESOLUTION BACKING TRUMP'S PEACE PLAN FOR GAZA ON"
+    },
+    {
+      "id": 44,
+      "text": "UN SECURITY COUNCIL PASSES RESOLUTION BACKING TRUMP'S PEACE PLAN FOR GAZA"
+    },
+    {
+      "id": 45,
+      "text": "ISRAELI ARMY WANTS PEOPLE TO LEAVE NORTHERN GAZA"
+    },
+    {
+      "id": 46,
+      "text": "LEBANON STRIKES KILL 14"
+    },
+    {
+      "id": 47,
+      "text": "GAZA HEALTH MINISTRY: ISRAEL HAS KILLED AT LEAST 280 PALESTINIANS SINCE OCT 10 CEASEFIRE"
+    },
+    {
+      "id": 48,
+      "text": "SETTLERS HAVE KILLED 1,073 PALESTINIANS IN OCCUPIED WEST BANK SINCE OCTOBER 2023"
+    },
+    {
+      "id": 49,
+      "text": "U.S. CONGRESS APPROVES BILL FORCING JUSTICE DEPT TO RELEASE"
+    },
+    {
+      "id": 50,
+      "text": "TWO CA(ORID BAINPEAS) RURESWN IN YLS AY JT MEAPLE"
+    },
+    {
+      "id": 51,
+      "text": "GPALAEB PI SEVICE ED IN HOD JKOWEEN SUDANESE ARMY AND RSF"
+    },
+    {
+      "id": 52,
+      "text": "U.S. CONGRESS APPROVES BILL FORCING JUSTICE DEPT TO RELEASE REMAINING ESTEIN FILES"
+    },
+    {
+      "id": 53,
+      "text": "TWO CA INDON LEASE 14 CH"
+    },
+    {
+      "id": 54,
+      "text": "LEAST 14 CHILDREN INJURED AND BUILDINGS DAMAGED IN RUSSIAN STRIKES ON UKRAINE"
+    },
+    {
+      "id": 55,
+      "text": "POLAND CLOSES LAST OPERATING RUSSIAN CONSULATE IN CITY OF GDANSK AFTER RAIL"
+    },
+    {
+      "id": 56,
+      "text": "RS RESIGN IN THE PHILIPPINES AFTER BEING IMPLICATED IN CORRUPTION SCANDAL"
+    },
+    {
+      "id": 57,
+      "text": "INDONESIA RAIZEE"
+    },
+    {
+      "id": 58,
+      "text": "AT LEAST 14 CHILDREN INJURED AND BUILDINGS DAMAGED IN RUSSIAN STRIKES"
+    },
+    {
+      "id": 59,
+      "text": "POLAND CLOSES LAST OPERATING RUSSIAN CONSULATE IN CITY OF GDANSK AFTER WAR IN UKRAINE"
+    },
+    {
+      "id": 60,
+      "text": "SAUDI CROWN PRINCE SAYS INVESTMENT IN U.S. WILL INCREASE TO $110 BILLION"
+    }
+  ]
+}

@@ -1,7 +1,13 @@
 {
-  "run_timestamp": "2026-04-13T02:05:37.460557",
-  "level1_source": "C:\\Users\\lenovo\\Desktop\\GIU Berlin\\Masters\\ticker_extraction\\llm_summarization\\output_asr\\level1_20260412_125636.json",
-  "retry_run": true,
+  "run_timestamp": "2026-05-13T01:20:41+00:00",
+  "merged_from": [
+    "original:summaries_20260412_125636.json",
+    "retry:summaries_retry_20260413_020537.json",
+    "chunked:summaries_retry_chunked_20260512_163230.json",
+    "ollama:summaries_retry_ollama_20260513_031651.json"
+  ],
+  "models_successful": 8,
+  "models_total": 9,
   "results": [
     {
       "provider": "groq",
@@ -20,27 +26,29 @@
       "provider": "groq",
       "model_id": "llama-3.1-8b-instant",
       "display_name": "Llama 3.1 8B (Groq)",
-      "summary": null,
-      "input_tokens": 0,
-      "output_tokens": 0,
-      "latency_seconds": 0.12,
-      "status": "error",
-      "error": "Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.1-8b-instant` in organization `org_01kg9vrby3f8zb98sje8rnrfb2` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 11335, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
-      "timestamp": "2026-04-13T01:58:47.000109",
-      "level1_coverage": "59/59"
+      "summary": "The ongoing conflict between the US, Israel, and Iran has reached a critical point, with tensions escalating significantly over the past 24 hours. The US has threatened to bomb Iran's power plants and bridges if the Strait of Hormuz is not reopened by a Tuesday deadline, prompting Iran to vow retaliation against any US attacks. This has led to a series of airstrikes and missile attacks across the Middle East, resulting in civilian casualties and damage to infrastructure in Israel, Lebanon, and other areas.\n\nThe humanitarian crisis in Gaza has deepened, with Palestinians struggling to survive amidst rubble and destruction. The international community's response has been criticized for being inadequate, leaving the people of Gaza to suffer in limbo. The conflict has also had far-reaching effects on global economies, with rising oil and gas prices affecting industries such as fishing in France and handicrafts in Kashmir. The global energy crisis is deepening due to the ongoing war, with countries beginning to look for alternative routes to bypass the Strait of Hormuz.\n\nThe conflict has resulted in significant civilian casualties, including the deaths of hundreds of schoolgirls, and has severely damaged Iran's industrial and energy infrastructure. The US and Israel have launched a series of airstrikes on Iranian targets, including universities and cities, while Iran has retaliated with missile strikes against Israel and other Gulf countries. The humanitarian crisis in Gaza continues to deepen, with over 1.7 million people displaced and struggling to access basic necessities like food, medicine, and shelter.\n\nThe situation remains perilous, with millions displaced and the threat of further escalation hanging over the region. The US President has threatened to take military action against Iran if it does not meet his deadline to open the Strait of Hormuz. The conflict has also had a significant impact on the domestic politics of Israel, with Prime Minister Netanyahu's popularity declining due to his handling of the war.\n\nThe global economy is feeling the effects of the conflict, with oil prices surging and leading to fuel shortages and price increases in countries such as Sri Lanka. Greece is reassessing its energy options, considering nuclear power as a potential solution to provide baseload electricity and stabilize energy costs. The international community is watching the situation closely, with concerns about the safety of regional energy routes and the potential for a nuclear accident at Iran's Bushehr nuclear plant.\n\nAs the conflict continues to escalate, the international community is under pressure to find a solution to the crisis. The situation remains volatile, with the risk of mission creep and further escalation, and the international community is working to prevent a wider conflict that could have devastating consequences for global stability and security.",
+      "input_tokens": 898,
+      "output_tokens": 521,
+      "latency_seconds": 85.47,
+      "status": "success",
+      "error": null,
+      "timestamp": "2026-05-12T16:30:06.993058",
+      "level1_coverage": "59/59",
+      "strategy": "chunked_L2_3batches"
     },
     {
       "provider": "groq",
       "model_id": "qwen/qwen3-32b",
       "display_name": "Qwen3 32B (Groq)",
-      "summary": null,
-      "input_tokens": 0,
-      "output_tokens": 0,
-      "latency_seconds": 0.1,
-      "status": "error",
-      "error": "Error code: 413 - {'error': {'message': 'Request too large for model `qwen/qwen3-32b` in organization `org_01kg9vrby3f8zb98sje8rnrfb2` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 12388, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
-      "timestamp": "2026-04-13T02:02:19.352022",
-      "level1_coverage": "59/59"
+      "summary": "The U.S.-Iran standoff dominated global news, with President Trump threatening military strikes on Iranian infrastructure if the Strait of Hormuz remained closed, while Iran dismissed U.S. demands and vowed retaliation. A U.S. airman was rescued in Iran after his jet was shot down, though conflicting accounts of the incident fueled regional tensions. Iranian missile attacks on Israel, including a deadly strike in Haifa, and Israeli airstrikes in Lebanon, which killed over 1,400 people, including civilians and paramedics, intensified hostilities. Hezbollah’s resistance in Lebanon and the displacement of over a million people underscored the conflict’s human toll, while fears of a nuclear disaster grew at Iran’s Bushehr plant amid strike risks.  \n\nIn Gaza, Hamas rejected ceasefire terms requiring disarmament, citing stalled aid deliveries and ongoing Israeli attacks, worsening the humanitarian crisis. Over 73,000 Palestinian deaths since October 2023 and widespread displacement were reported, with international attention waning despite global calls for de-escalation. Regional tensions extended to the Sahel, where media freedom eroded, and Serbia, where explosives were discovered near a Russian gas pipeline. Meanwhile, a coal mine collapse in Ukraine and Greece’s consideration of nuclear energy highlighted unrelated but significant global developments.  \n\nEconomic ripple effects from the conflicts included disrupted shipping through the Strait of Hormuz, fueling energy price surges and energy shortages in Pakistan and Sri Lanka. The Kashmiri handicraft industry and French fishing sectors faced setbacks, while global markets grappled with instability. Diplomatic efforts, including Oman’s mediation with Iran and Pakistan’s talks, yielded no breakthroughs as both U.S. and Iranian leaders emphasized military readiness. Religious leaders, including Pope Leo, urged peace amid Easter tensions, but Trump’s contradictory signals—threats of strikes alongside ongoing negotiations—left the situation in a perilous stalemate.  \n\nThe humanitarian fallout deepened as Israeli ground forces advanced in Lebanon, targeting Hezbollah, and Iranian missile strikes damaged infrastructure in Israel and Gulf states like Kuwait and the UAE. In Lebanon, civilian casualties from airstrikes included Sudanese nationals, while Gaza’s aid shortages and restricted ceasefire terms stalled progress. International mediation efforts struggled to counter accusations from both sides of normalizing war crimes and targeting civilian infrastructure.  \n\nElsewhere, Birmingham, Alabama, faced controversy over AI-driven gun violence prevention systems, and Greece debated nuclear energy as an energy security measure. The U.S. military’s conflicting accounts of the downed jet in Iran and the broader regional instability underscored the complexity of the crisis. As economic and human costs mounted, the world awaited signs of de-escalation, with diplomatic channels remaining the only viable path to averting further catastrophe.",
+      "input_tokens": 869,
+      "output_tokens": 896,
+      "latency_seconds": 113.31,
+      "status": "success",
+      "error": null,
+      "timestamp": "2026-05-12T16:32:00.299809",
+      "level1_coverage": "59/59",
+      "strategy": "chunked_L2_3batches"
     },
     {
       "provider": "groq",
@@ -54,6 +62,27 @@
       "error": null,
       "timestamp": "2026-04-13T02:04:23.834793",
       "level1_coverage": "59/59"
+    },
+    {
+      "provider": "ollama",
+      "model_id": "llama3.2",
+      "display_name": "Llama 3.2 3B (Ollama local)",
+      "summary": "The day began with a tense standoff between the US and Iran, as President Donald Trump dismissed direct talks and made demands that include surrendering nuclear capabilities and influence in the region. This rhetoric has been seen as strengthening Iran's position, rather than weakening it. Meanwhile, news emerged of a successful rescue operation for a US Airman held captive by Iranian forces, with President Trump announcing on social media that the pilot had been behind enemy lines but would be \"just fine\". The rescue operation involved intense fighting and dozens of aircraft, raising questions about the effectiveness of US military operations in hostile territory.\n\nThe situation in Gaza remained volatile, despite ceasefire talks. Hamas announced that it will not disarm during negotiations, citing Israeli aggression and a refusal to meet international demands for a withdrawal from occupied territories. Daily shootings and bombings continued, with religious leaders calling for peace amidst the Easter holiday celebrations. The ongoing conflict has resulted in significant loss of life and displacement of civilians.\n\nIn other global news, countries are seeking reliable energy supplies as they navigate the challenges of climate change and economic uncertainty. Greece is reassessing its nuclear energy options, despite having no history of nuclear power, due to growing concerns about energy security and the need for baseload electricity. The country's reliance on imported fossil fuels has driven up costs, while climate change and renewable energy efforts have reignited the debate over nuclear power.\n\nThe international community is also grappling with the implications of emerging technologies, including nuclear power. As countries seek to stabilize energy costs and support their economic ambitions, some are exploring the potential benefits of emerging nuclear technologies. In Greece's case, this could involve the development of large data centers and undersea cables, which would require reliable and stable baseload electricity.\n\nThe situation in the Middle East remains a major concern, with ongoing tensions between Israel and Hamas in Gaza. The US has been critical of Israeli actions in the region, while also expressing concerns about Iranian aggression. As the conflict continues to simmer, international leaders are urging restraint and calling for a peaceful resolution.\n\nIn other news, the successful rescue of the US Airman from Iranian captivity has raised questions about the effectiveness of US military operations in hostile territory. The operation involved intense fighting and dozens of aircraft, highlighting the risks faced by US personnel serving overseas.\n\nAs the day drew to a close, international leaders were focusing on finding ways to stabilize global energy markets and reduce tensions between countries. With climate change and economic uncertainty posing significant challenges, the need for reliable and sustainable energy supplies is becoming increasingly pressing.",
+      "input_tokens": 482,
+      "output_tokens": 502,
+      "latency_seconds": 91.33,
+      "status": "success",
+      "error": null,
+      "timestamp": "2026-04-12T23:14:43.422832"
+    },
+    {
+      "provider": "ollama",
+      "model_id": "llama3.1:8b",
+      "display_name": "Llama 3.1 8B (Ollama local)",
+      "status": "error",
+      "summary": "",
+      "error": "only 4 L1 summaries",
+      "latency_seconds": 0
     },
     {
       "provider": "gemini",
@@ -72,14 +101,15 @@
       "provider": "huggingface",
       "model_id": "meta-llama/Meta-Llama-3-8B-Instruct",
       "display_name": "Llama 3 8B (HuggingFace)",
-      "summary": null,
-      "input_tokens": 0,
-      "output_tokens": 0,
-      "latency_seconds": 0.88,
-      "status": "error",
-      "error": "(Request ID: Root=1-69dc333a-2ad247cd254743b65c2fde52;66dbea9f-0c90-4ab8-9e21-d1f48b426897)\n\nBad request:",
-      "timestamp": "2026-04-13T02:05:14.385541",
-      "level1_coverage": "59/59"
+      "summary": "Tensions in the Middle East continue to escalate, with the US, Israel, and Iran locked in a standoff over the Strait of Hormuz. The conflict has resulted in significant damage and civilian casualties, with reports of airstrikes and rocket attacks in Israel, Lebanon, and the occupied West Bank. The global economy is also being affected, with oil prices nearly doubling to over $100 a barrel and workers in various industries facing reduced orders and cancelled sales due to the regional conflict.\n\nThe humanitarian crisis in Gaza has worsened, with over 700 Palestinians killed and 172,000 wounded since the ceasefire began. Thousands more are trapped under rubble, and the international community's inaction has led to a \"crime against humanity,\" with the Palestinian people facing extreme vulnerability to destitution, food insecurity, and hunger. The situation in Gaza remains highly volatile, with Iran threatening to impose a new system on the Strait of Hormuz and the US and its allies preparing for a possible escalation.\n\nThe conflict has already resulted in the deaths of numerous civilians, including children, and has led to a series of drone and missile attacks on Gulf countries, including Kuwait and Bahrain. Israel has also been targeted by Iranian missile fire, with at least two people killed in a strike on a building in Haifa. The humanitarian crisis in Gaza continues to worsen, with nearly 73,000 Palestinians killed, over 172,000 wounded, and 10,000 unaccounted for since October 2023.\n\nThe conflict has had a ripple effect on the global economy, with oil prices surging and countries like Sri Lanka feeling the pinch of higher fuel costs. Russia is benefiting from the increased prices, but its capacity to meet global demand is under threat due to Ukrainian attacks on its oil infrastructure. The situation remains highly volatile, with the US, Israel, and Iran trading threats and the region bracing for further escalation.\n\nThe international community's inaction has led to a dire situation in the Middle East, with the Palestinian people facing extreme vulnerability to destitution, food insecurity, and hunger. The conflict has resulted in significant damage and civilian casualties, with reports of airstrikes and rocket attacks in Israel, Lebanon, and the occupied West Bank. The global economy is also being affected, with oil prices nearly doubling to over $100 a barrel and workers in various industries facing reduced orders and cancelled sales due to the regional conflict.\n\nThe conflict in the Middle East continues to escalate, with the US, Israel, and Iran engaging in a cycle of airstrikes and retaliatory strikes. Over 1,460 people have been killed and more than 4,000 wounded in Lebanon since the conflict began, with the Israeli military's invasion of southern Lebanon slowed by fierce resistance from Hezbollah. The situation remains volatile, with both sides trading threats and neither showing signs of de-escalation.",
+      "input_tokens": 850,
+      "output_tokens": 567,
+      "latency_seconds": 30.36,
+      "status": "success",
+      "error": null,
+      "timestamp": "2026-05-12T16:32:30.659515",
+      "level1_coverage": "59/59",
+      "strategy": "chunked_L2_3batches"
     },
     {
       "provider": "cohere",

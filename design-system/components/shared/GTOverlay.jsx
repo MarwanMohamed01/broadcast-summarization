@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 /**
  * Side-by-side ground-truth vs extracted headlines, with a fuzzy-match
- * highlight per pair. Pure visualisation — uses naive Jaro-Winkler in the
+ * highlight per pair. Pure visualization — uses naive Jaro-Winkler in the
  * browser to flag the matched extracted item without needing a server.
  */
 function similarity(a, b) {

@@ -82,6 +82,152 @@
       "latency_seconds": 1.95
     }
   ],
-  "visual_14h_cleaned": [],
-  "asr_final": []
+  "visual_14h_cleaned": [
+    {
+      "model": "Gemini 2.5 Flash",
+      "provider": "gemini",
+      "rougeL": 0.2383,
+      "rouge1": 0.6468,
+      "rouge2": 0.324,
+      "bertscore": 0.8648,
+      "latency_seconds": 22.48
+    },
+    {
+      "model": "Llama 4 Scout 17B (Groq)",
+      "provider": "groq",
+      "rougeL": 0.2368,
+      "rouge1": 0.5095,
+      "rouge2": 0.2532,
+      "bertscore": 0.8528,
+      "latency_seconds": 1.02
+    },
+    {
+      "model": "Llama 3.3 70B (Groq)",
+      "provider": "groq",
+      "rougeL": 0.2082,
+      "rouge1": 0.5245,
+      "rouge2": 0.2608,
+      "bertscore": 0.8496,
+      "latency_seconds": 4.59
+    },
+    {
+      "model": "Llama 3 8B (HuggingFace)",
+      "provider": "huggingface",
+      "rougeL": 0.1863,
+      "rouge1": 0.416,
+      "rouge2": 0.2193,
+      "bertscore": 0.8496,
+      "latency_seconds": 4.48
+    },
+    {
+      "model": "Command-R (Cohere)",
+      "provider": "cohere",
+      "rougeL": 0.1588,
+      "rouge1": 0.3594,
+      "rouge2": 0.1459,
+      "bertscore": 0.8443,
+      "latency_seconds": 131.16
+    },
+    {
+      "model": "Qwen3 32B (Groq)",
+      "provider": "groq",
+      "rougeL": 0.3045,
+      "rouge1": 0.4995,
+      "rouge2": 0.1974,
+      "bertscore": 0.8436,
+      "latency_seconds": 3.11
+    },
+    {
+      "model": "Llama 3.2 3B (Ollama local)",
+      "provider": "ollama",
+      "rougeL": 0.1836,
+      "rouge1": 0.3978,
+      "rouge2": 0.1533,
+      "bertscore": 0.839,
+      "latency_seconds": 185.01
+    },
+    {
+      "model": "Llama 3.1 8B (Groq)",
+      "provider": "groq",
+      "rougeL": 0.1695,
+      "rouge1": 0.3523,
+      "rouge2": 0.1497,
+      "bertscore": 0.8385,
+      "latency_seconds": 0.63
+    }
+  ],
+  "asr_final": [
+    {
+      "model": "Command-R (Cohere)",
+      "provider": "cohere",
+      "rougeL": 0.1035,
+      "rouge1": 0.2193,
+      "rouge2": 0.0564,
+      "bertscore": 0.7779,
+      "latency_seconds": 19.07
+    },
+    {
+      "model": "Qwen3 32B (Groq)",
+      "provider": "groq",
+      "rougeL": 0.095,
+      "rouge1": 0.227,
+      "rouge2": 0.0498,
+      "bertscore": 0.7695,
+      "latency_seconds": 113.31
+    },
+    {
+      "model": "Llama 3.2 3B (Ollama local)",
+      "provider": "ollama",
+      "rougeL": 0.0953,
+      "rouge1": 0.2252,
+      "rouge2": 0.0451,
+      "bertscore": 0.7684,
+      "latency_seconds": 91.33
+    },
+    {
+      "model": "Llama 3.3 70B (Groq)",
+      "provider": "groq",
+      "rougeL": 0.1316,
+      "rouge1": 0.3065,
+      "rouge2": 0.0955,
+      "bertscore": 0.7678,
+      "latency_seconds": 4.19
+    },
+    {
+      "model": "Llama 4 Scout 17B (Groq)",
+      "provider": "groq",
+      "rougeL": 0.1437,
+      "rouge1": 0.3727,
+      "rouge2": 0.1122,
+      "bertscore": 0.7673,
+      "latency_seconds": 2.46
+    },
+    {
+      "model": "Llama 3.1 8B (Groq)",
+      "provider": "groq",
+      "rougeL": 0.1145,
+      "rouge1": 0.2709,
+      "rouge2": 0.0756,
+      "bertscore": 0.7669,
+      "latency_seconds": 85.47
+    },
+    {
+      "model": "Gemini 2.5 Flash",
+      "provider": "gemini",
+      "rougeL": 0.117,
+      "rouge1": 0.2957,
+      "rouge2": 0.0783,
+      "bertscore": 0.7666,
+      "latency_seconds": 13.85
+    },
+    {
+      "model": "Llama 3 8B (HuggingFace)",
+      "provider": "huggingface",
+      "rougeL": 0.1114,
+      "rouge1": 0.2607,
+      "rouge2": 0.0661,
+      "bertscore": 0.758,
+      "latency_seconds": 30.36
+    }
+  ]
 }

@@ -72,6 +72,22 @@ videos/demo_clip_30s.wav
 # ── Thesis poster assets (kept locally only)
 poster/
 
+# ── Thesis figure outputs and parameter notes (generated/local only) ─────────
+img/
+thesis_artifacts/
+
+# ── Claude Code internal runtime files ───────────────────────────────────────
+.claude/scheduled_tasks.lock
+
+# ── Intermediate dated evaluation snapshots (evaluation_latest.json is canonical)
+llm_summarization/output_asr/evaluation_2026*.json
+llm_summarization/output_cleaned/evaluation_2026*.json
+
+# ── Intermediate ASR retry/inflight files (all merged into latest.json) ──────
+llm_summarization/output_asr/level1_ollama_inflight.json
+llm_summarization/output_asr/summaries_retry_chunked_*.json
+llm_summarization/output_asr/summaries_retry_ollama_*.json
+
 # ── Logs ─────────────────────────────────────────────
 logs/
 *.log

@@ -55,7 +55,7 @@ export default function FrameExtractionStage({
     return () => { cancelled = true; };
   }, [statsUrl, pipelineStatsUrl]);
 
-  // 30-frame visualisation (illustrative regardless of underlying numbers)
+  // 30-frame visualization (illustrative regardless of underlying numbers)
   const tileCount = totalFramesProp;
   const tiles = Array.from({ length: tileCount }, (_, i) => i + 1);
   const sampledTiles = Math.ceil(tileCount / sampleRate);

@@ -28,7 +28,7 @@ export default function PanoramaStitchStage({ segmentSrcs = [], totalWidthPx = 1
         </p>
       }
       accent="visual"
-      data={{ panorama_width_px: totalWidthPx, segments_visualised: segs.length }}
+      data={{ panorama_width_px: totalWidthPx, segments_visualized: segs.length }}
     >
       <div ref={ref} className="space-y-4">
         <div className="flex items-center gap-1 overflow-hidden">
